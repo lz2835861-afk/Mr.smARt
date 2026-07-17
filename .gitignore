@@ -64,3 +64,6 @@ Thumbs.db
 *.sw?
 ~$*
 *.tmp
+
+.vercel
+.env*
