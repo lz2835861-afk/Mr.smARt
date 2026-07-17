@@ -1,0 +1,781 @@
+{
+  "generated_at": "2026-07-17",
+  "status": "NEEDS_REVIEW",
+  "summary": {
+    "total_fields": 70,
+    "total_findings": 46,
+    "BLOCK": 0,
+    "ERROR": 0,
+    "WARN": 46,
+    "blocked_fields": 0,
+    "needs_review_fields": 23,
+    "ready_fields": 47
+  },
+  "fields": {
+    "oms_aa001_pub": {
+      "section_id": "oms_architecture",
+      "question_id": "oms_q_aa001",
+      "status": "READY",
+      "findings": []
+    },
+    "oms_aa001_partner": {
+      "section_id": "oms_architecture",
+      "question_id": "oms_q_aa001",
+      "status": "READY",
+      "findings": []
+    },
+    "oms_aa002_comments": {
+      "section_id": "oms_architecture",
+      "question_id": "oms_q_aa002",
+      "status": "NEEDS_REVIEW",
+      "findings": [
+        {
+          "severity": "WARN",
+          "rule": "review-hook",
+          "loc": "ZH",
+          "message": "[REVIEW: product] 未来18个月新增国家/地区的具体扩张计划属于前瞻性商业信息，公开渠道未披露具体清单。国际业务战略团队应核实是否可对外披露、披露到什么颗粒度。",
+          "suggest": "交由 product 审核"
+        },
+        {
+          "severity": "WARN",
+          "rule": "review-hook",
+          "loc": "EN",
+          "message": "[REVIEW: product] Forward-looking market-expansion plans for the next 18 months are not disclosed publicly. The international strategy team should confirm whether, and at what granularity, this can be shared externally.",
+          "suggest": "交由 product 审核"
+        }
+      ]
+    },
+    "oms_aa003_pub": {
+      "section_id": "oms_architecture",
+      "question_id": "oms_q_aa003",
+      "status": "READY",
+      "findings": []
+    },
+    "oms_aa003_priv": {
+      "section_id": "oms_architecture",
+      "question_id": "oms_q_aa003",
+      "status": "READY",
+      "findings": []
+    },
+    "oms_aa004_pub": {
+      "section_id": "oms_architecture",
+      "question_id": "oms_q_aa004",
+      "status": "READY",
+      "findings": []
+    },
+    "oms_aa004_priv": {
+      "section_id": "oms_architecture",
+      "question_id": "oms_q_aa004",
+      "status": "READY",
+      "findings": []
+    },
+    "oms_aa005_comments": {
+      "section_id": "oms_architecture",
+      "question_id": "oms_q_aa005",
+      "status": "NEEDS_REVIEW",
+      "findings": [
+        {
+          "severity": "WARN",
+          "rule": "review-hook",
+          "loc": "ZH",
+          "message": "[REVIEW: product] 相对定价对比涉及商业报价策略与合同条款，不同部署模式(公有云/专有云TCE/合作伙伴云)定价机制差异较大，公开渠道无统一披露。需销售/产品定价团队确认对外可披露的相对定价口径。",
+          "suggest": "交由 product 审核"
+        },
+        {
+          "severity": "WARN",
+          "rule": "review-hook",
+          "loc": "EN",
+          "message": "[REVIEW: product] Relative pricing involves commercial quoting strategy and contract terms that differ materially by deployment model (public cloud / TCE / partner cloud) and are not disclosed publicly. Sales/pricing teams should confirm a defensible relative-pricing statement.",
+          "suggest": "交由 product 审核"
+        }
+      ]
+    },
+    "oms_ab001_pub": {
+      "section_id": "oms_dataprivacy",
+      "question_id": "oms_q_ab001",
+      "status": "READY",
+      "findings": []
+    },
+    "oms_ab001_priv": {
+      "section_id": "oms_dataprivacy",
+      "question_id": "oms_q_ab001",
+      "status": "READY",
+      "findings": []
+    },
+    "oms_ab002_pub": {
+      "section_id": "oms_dataprivacy",
+      "question_id": "oms_q_ab002",
+      "status": "READY",
+      "findings": []
+    },
+    "oms_ab002_priv": {
+      "section_id": "oms_dataprivacy",
+      "question_id": "oms_q_ab002",
+      "status": "READY",
+      "findings": []
+    },
+    "oms_ab003_comments": {
+      "section_id": "oms_dataprivacy",
+      "question_id": "oms_q_ab003",
+      "status": "NEEDS_REVIEW",
+      "findings": [
+        {
+          "severity": "WARN",
+          "rule": "review-hook",
+          "loc": "ZH",
+          "message": "[REVIEW: product] 过去3年美国法院数据调取请求次数属于法律合规敏感信息，不属于公开数据范畴，需由法务/合规团队核实真实数字后填写，不可编造具体数字。",
+          "suggest": "交由 product 审核"
+        },
+        {
+          "severity": "WARN",
+          "rule": "review-hook",
+          "loc": "EN",
+          "message": "[REVIEW: product] The count of U.S. court data-access requests over the past three years is legally sensitive and not publicly disclosed. Legal/compliance must supply the verified figure; it cannot be estimated.",
+          "suggest": "交由 product 审核"
+        }
+      ]
+    },
+    "oms_ab004_comments": {
+      "section_id": "oms_dataprivacy",
+      "question_id": "oms_q_ab004",
+      "status": "NEEDS_REVIEW",
+      "findings": [
+        {
+          "severity": "WARN",
+          "rule": "review-hook",
+          "loc": "ZH",
+          "message": "[REVIEW: product] 过去3年其他国家法院数据调取请求次数同样属于法务合规敏感信息，需法务团队核实提供真实数字，不可编造。",
+          "suggest": "交由 product 审核"
+        },
+        {
+          "severity": "WARN",
+          "rule": "review-hook",
+          "loc": "EN",
+          "message": "[REVIEW: product] The equivalent count for non-U.S. court requests is likewise legally sensitive and requires verified figures from legal/compliance.",
+          "suggest": "交由 product 审核"
+        }
+      ]
+    },
+    "oms_ab005_priv": {
+      "section_id": "oms_dataprivacy",
+      "question_id": "oms_q_ab005",
+      "status": "READY",
+      "findings": []
+    },
+    "oms_ab006_pub": {
+      "section_id": "oms_dataprivacy",
+      "question_id": "oms_q_ab006",
+      "status": "READY",
+      "findings": []
+    },
+    "oms_ab006_priv": {
+      "section_id": "oms_dataprivacy",
+      "question_id": "oms_q_ab006",
+      "status": "READY",
+      "findings": []
+    },
+    "oms_ab006_comments": {
+      "section_id": "oms_dataprivacy",
+      "question_id": "oms_q_ab006",
+      "status": "NEEDS_REVIEW",
+      "findings": [
+        {
+          "severity": "WARN",
+          "rule": "review-hook",
+          "loc": "ZH",
+          "message": "[REVIEW: product] 具体驻留承诺范围需结合客户实际合同条款确认，且air-gapped与单一司法辖区驻留是否等价需产品架构团队最终确认。",
+          "suggest": "交由 product 审核"
+        },
+        {
+          "severity": "WARN",
+          "rule": "review-hook",
+          "loc": "EN",
+          "message": "[REVIEW: product] The exact scope of the residency commitment should be confirmed against the specific customer contract, and product/architecture teams should confirm that air-gapped isolation is equivalent to single-jurisdiction residency in all cases.",
+          "suggest": "交由 product 审核"
+        }
+      ]
+    },
+    "oms_ab007_pub": {
+      "section_id": "oms_dataprivacy",
+      "question_id": "oms_q_ab007",
+      "status": "READY",
+      "findings": []
+    },
+    "oms_ab007_priv": {
+      "section_id": "oms_dataprivacy",
+      "question_id": "oms_q_ab007",
+      "status": "READY",
+      "findings": []
+    },
+    "oms_ab007_comments": {
+      "section_id": "oms_dataprivacy",
+      "question_id": "oms_q_ab007",
+      "status": "NEEDS_REVIEW",
+      "findings": [
+        {
+          "severity": "WARN",
+          "rule": "review-hook",
+          "loc": "ZH",
+          "message": "[REVIEW: product] 具体条款因客户合同和部署架构而异，此处按“客户可选”通用情形描述，正式提交前需核实具体合同措辞。",
+          "suggest": "交由 product 审核"
+        },
+        {
+          "severity": "WARN",
+          "rule": "review-hook",
+          "loc": "EN",
+          "message": "[REVIEW: product] Exact terms vary by customer contract and deployment architecture; this describes the general customer-optionality model and should be verified against actual contract language before submission.",
+          "suggest": "交由 product 审核"
+        }
+      ]
+    },
+    "oms_ac001_partner": {
+      "section_id": "oms_jurisdiction",
+      "question_id": "oms_q_ac001",
+      "status": "NEEDS_REVIEW",
+      "findings": [
+        {
+          "severity": "WARN",
+          "rule": "review-hook",
+          "loc": "ZH",
+          "message": "无法从公开资料确认。True IDC 与腾讯云已确认在泰国建立合作，但公告未披露运营人员是否全部为居住在当地的本国公民。[REVIEW: product] 请本地运营团队核实人员国籍与居住地政策。",
+          "suggest": "交由 product 审核"
+        },
+        {
+          "severity": "WARN",
+          "rule": "review-hook",
+          "loc": "EN",
+          "message": "Not publicly verified. True IDC and Tencent Cloud have confirmed their partnership in Thailand, but the announcement does not state that all operating staff are resident nationals. [REVIEW: product] The local operations team must confirm the staffing-nationality and residency policy.",
+          "suggest": "交由 product 审核"
+        }
+      ]
+    },
+    "oms_ac001_priv": {
+      "section_id": "oms_jurisdiction",
+      "question_id": "oms_q_ac001",
+      "status": "NEEDS_REVIEW",
+      "findings": [
+        {
+          "severity": "WARN",
+          "rule": "review-hook",
+          "loc": "ZH",
+          "message": "无法从公开资料确认。TCE 的人员配置取决于客户或本地伙伴的运营安排，不能据此认定全部人员均为居住在当地的本国公民。[REVIEW: product] 请产品与本地运营团队核实。",
+          "suggest": "交由 product 审核"
+        },
+        {
+          "severity": "WARN",
+          "rule": "review-hook",
+          "loc": "EN",
+          "message": "Not publicly verified. TCE staffing depends on the customer's or local partner's operating model and does not establish that all staff are resident nationals. [REVIEW: product] Product and local operations teams must confirm this policy.",
+          "suggest": "交由 product 审核"
+        }
+      ]
+    },
+    "oms_ac001_comments": {
+      "section_id": "oms_jurisdiction",
+      "question_id": "oms_q_ac001",
+      "status": "NEEDS_REVIEW",
+      "findings": [
+        {
+          "severity": "WARN",
+          "rule": "review-hook",
+          "loc": "ZH",
+          "message": "[REVIEW: product] 具体人员国籍构成的政策承诺公开渠道未披露，建议由本地运营团队核实后补充完整表述。",
+          "suggest": "交由 product 审核"
+        },
+        {
+          "severity": "WARN",
+          "rule": "review-hook",
+          "loc": "EN",
+          "message": "[REVIEW: product] The specific nationality-of-staff policy commitment is not publicly documented; local operations teams should verify before finalizing this claim.",
+          "suggest": "交由 product 审核"
+        }
+      ]
+    },
+    "oms_ac002_pub": {
+      "section_id": "oms_jurisdiction",
+      "question_id": "oms_q_ac002",
+      "status": "READY",
+      "findings": []
+    },
+    "oms_ac002_partner": {
+      "section_id": "oms_jurisdiction",
+      "question_id": "oms_q_ac002",
+      "status": "READY",
+      "findings": []
+    },
+    "oms_ac002_priv": {
+      "section_id": "oms_jurisdiction",
+      "question_id": "oms_q_ac002",
+      "status": "READY",
+      "findings": []
+    },
+    "oms_ac003_pub": {
+      "section_id": "oms_jurisdiction",
+      "question_id": "oms_q_ac003",
+      "status": "READY",
+      "findings": []
+    },
+    "oms_ac003_priv": {
+      "section_id": "oms_jurisdiction",
+      "question_id": "oms_q_ac003",
+      "status": "READY",
+      "findings": []
+    },
+    "oms_ac003_comments": {
+      "section_id": "oms_jurisdiction",
+      "question_id": "oms_q_ac003",
+      "status": "NEEDS_REVIEW",
+      "findings": [
+        {
+          "severity": "WARN",
+          "rule": "review-hook",
+          "loc": "ZH",
+          "message": "[REVIEW: product] 需按具体产品/服务核实控制面组件是否存在跨区域依赖。",
+          "suggest": "交由 product 审核"
+        },
+        {
+          "severity": "WARN",
+          "rule": "review-hook",
+          "loc": "EN",
+          "message": "[REVIEW: product] Product teams should verify, product by product, whether any control-plane components have cross-region dependencies.",
+          "suggest": "交由 product 审核"
+        }
+      ]
+    },
+    "oms_ac004_pub": {
+      "section_id": "oms_jurisdiction",
+      "question_id": "oms_q_ac004",
+      "status": "NEEDS_REVIEW",
+      "findings": [
+        {
+          "severity": "WARN",
+          "rule": "review-hook",
+          "loc": "ZH",
+          "message": "[REVIEW: product] 公有云设施的运营主体可能因地域与机房合同而异。公开来源不足以逐地域确认由腾讯云还是托管数据中心运营商负责，需基础设施团队提供清单。",
+          "suggest": "交由 product 审核"
+        },
+        {
+          "severity": "WARN",
+          "rule": "review-hook",
+          "loc": "EN",
+          "message": "[REVIEW: product] The public-cloud facility operator may vary by region and data-centre contract. Public sources do not establish, region by region, whether Tencent Cloud or a colocation operator runs each facility; infrastructure teams must supply the operator list.",
+          "suggest": "交由 product 审核"
+        }
+      ]
+    },
+    "oms_ac004_partner": {
+      "section_id": "oms_jurisdiction",
+      "question_id": "oms_q_ac004",
+      "status": "READY",
+      "findings": []
+    },
+    "oms_ac004_priv": {
+      "section_id": "oms_jurisdiction",
+      "question_id": "oms_q_ac004",
+      "status": "NEEDS_REVIEW",
+      "findings": [
+        {
+          "severity": "WARN",
+          "rule": "review-hook",
+          "loc": "ZH",
+          "message": "TCE 通常由客户或客户授权团队运营，但实际设施运营主体取决于部署合同。[REVIEW: product] 请项目交付团队按目标部署确认运营主体。",
+          "suggest": "交由 product 审核"
+        },
+        {
+          "severity": "WARN",
+          "rule": "review-hook",
+          "loc": "EN",
+          "message": "TCE is typically operated by the customer or its authorized team, but the actual facility operator depends on the deployment contract. [REVIEW: product] The delivery team must confirm the operator for the target deployment.",
+          "suggest": "交由 product 审核"
+        }
+      ]
+    },
+    "oms_ac005_pub": {
+      "section_id": "oms_jurisdiction",
+      "question_id": "oms_q_ac005",
+      "status": "READY",
+      "findings": []
+    },
+    "oms_ac005_priv": {
+      "section_id": "oms_jurisdiction",
+      "question_id": "oms_q_ac005",
+      "status": "READY",
+      "findings": []
+    },
+    "oms_ac005_comments": {
+      "section_id": "oms_jurisdiction",
+      "question_id": "oms_q_ac005",
+      "status": "NEEDS_REVIEW",
+      "findings": [
+        {
+          "severity": "WARN",
+          "rule": "review-hook",
+          "loc": "ZH",
+          "message": "[REVIEW: product] 需按具体产品清单逐项核实是否存在境外依赖组件。",
+          "suggest": "交由 product 审核"
+        },
+        {
+          "severity": "WARN",
+          "rule": "review-hook",
+          "loc": "EN",
+          "message": "[REVIEW: product] Product teams should review the product list line-by-line to confirm which, if any, components carry offshore dependencies.",
+          "suggest": "交由 product 审核"
+        }
+      ]
+    },
+    "oms_ac006_pub": {
+      "section_id": "oms_jurisdiction",
+      "question_id": "oms_q_ac006",
+      "status": "NEEDS_REVIEW",
+      "findings": [
+        {
+          "severity": "WARN",
+          "rule": "review-hook",
+          "loc": "ZH",
+          "message": "[REVIEW: product] 公有云资产所有权可能因自建、租赁或托管模式而异，公开资料不足以支持“全部由腾讯云拥有”。请基础设施与法务团队按地域提供资产归属口径。",
+          "suggest": "交由 product 审核"
+        },
+        {
+          "severity": "WARN",
+          "rule": "review-hook",
+          "loc": "EN",
+          "message": "[REVIEW: product] Public-cloud asset ownership may vary across owned, leased and colocation models. Public evidence does not support a blanket claim that Tencent Cloud owns every asset; infrastructure and legal teams must provide the regional ownership position.",
+          "suggest": "交由 product 审核"
+        }
+      ]
+    },
+    "oms_ac006_partner": {
+      "section_id": "oms_jurisdiction",
+      "question_id": "oms_q_ac006",
+      "status": "NEEDS_REVIEW",
+      "findings": [
+        {
+          "severity": "WARN",
+          "rule": "review-hook",
+          "loc": "ZH",
+          "message": "True IDC 公开确认其在曼谷拥有云服务和数据中心布局，但该表述不足以证明具体腾讯云合作设施的法律所有权。[REVIEW: product] 请 True IDC 合作团队与法务核实资产权属。",
+          "suggest": "交由 product 审核"
+        },
+        {
+          "severity": "WARN",
+          "rule": "review-hook",
+          "loc": "EN",
+          "message": "True IDC publicly confirms its cloud-service and data-centre footprint in Bangkok, but that does not establish legal ownership of the specific facilities used for the Tencent Cloud partnership. [REVIEW: product] The True IDC alliance and legal teams must verify title to the assets.",
+          "suggest": "交由 product 审核"
+        }
+      ]
+    },
+    "oms_ac006_priv": {
+      "section_id": "oms_jurisdiction",
+      "question_id": "oms_q_ac006",
+      "status": "NEEDS_REVIEW",
+      "findings": [
+        {
+          "severity": "WARN",
+          "rule": "review-hook",
+          "loc": "ZH",
+          "message": "TCE 的硬件资产可由客户、合作伙伴或项目实体持有，具体取决于采购与部署合同。[REVIEW: product] 请项目交付与法务团队按目标部署确认资产权属，不能从伙伴云案例外推。",
+          "suggest": "交由 product 审核"
+        },
+        {
+          "severity": "WARN",
+          "rule": "review-hook",
+          "loc": "EN",
+          "message": "TCE hardware may be owned by the customer, a partner or the project entity, depending on procurement and deployment contracts. [REVIEW: product] Delivery and legal teams must confirm ownership for the target deployment; it cannot be inferred from a partner-cloud example.",
+          "suggest": "交由 product 审核"
+        }
+      ]
+    },
+    "oms_ad001_pub": {
+      "section_id": "oms_management",
+      "question_id": "oms_q_ad001",
+      "status": "READY",
+      "findings": []
+    },
+    "oms_ad001_priv": {
+      "section_id": "oms_management",
+      "question_id": "oms_q_ad001",
+      "status": "READY",
+      "findings": []
+    },
+    "oms_ad002_pub": {
+      "section_id": "oms_management",
+      "question_id": "oms_q_ad002",
+      "status": "READY",
+      "findings": []
+    },
+    "oms_ad002_priv": {
+      "section_id": "oms_management",
+      "question_id": "oms_q_ad002",
+      "status": "READY",
+      "findings": []
+    },
+    "oms_ad003_pub": {
+      "section_id": "oms_management",
+      "question_id": "oms_q_ad003",
+      "status": "READY",
+      "findings": []
+    },
+    "oms_ad003_priv": {
+      "section_id": "oms_management",
+      "question_id": "oms_q_ad003",
+      "status": "READY",
+      "findings": []
+    },
+    "oms_ad004_pub": {
+      "section_id": "oms_management",
+      "question_id": "oms_q_ad004",
+      "status": "READY",
+      "findings": []
+    },
+    "oms_ad004_priv": {
+      "section_id": "oms_management",
+      "question_id": "oms_q_ad004",
+      "status": "READY",
+      "findings": []
+    },
+    "oms_ad005_pub": {
+      "section_id": "oms_management",
+      "question_id": "oms_q_ad005",
+      "status": "READY",
+      "findings": []
+    },
+    "oms_ad005_priv": {
+      "section_id": "oms_management",
+      "question_id": "oms_q_ad005",
+      "status": "READY",
+      "findings": []
+    },
+    "oms_ad006_pub": {
+      "section_id": "oms_management",
+      "question_id": "oms_q_ad006",
+      "status": "READY",
+      "findings": []
+    },
+    "oms_ad006_priv": {
+      "section_id": "oms_management",
+      "question_id": "oms_q_ad006",
+      "status": "READY",
+      "findings": []
+    },
+    "oms_ae001_pub": {
+      "section_id": "oms_software",
+      "question_id": "oms_q_ae001",
+      "status": "READY",
+      "findings": []
+    },
+    "oms_ae001_partner": {
+      "section_id": "oms_software",
+      "question_id": "oms_q_ae001",
+      "status": "READY",
+      "findings": []
+    },
+    "oms_ae001_comments": {
+      "section_id": "oms_software",
+      "question_id": "oms_q_ae001",
+      "status": "NEEDS_REVIEW",
+      "findings": [
+        {
+          "severity": "WARN",
+          "rule": "review-hook",
+          "loc": "ZH",
+          "message": "[REVIEW: product] 需按客户所在具体地域及监管要求核实受限服务清单。",
+          "suggest": "交由 product 审核"
+        },
+        {
+          "severity": "WARN",
+          "rule": "review-hook",
+          "loc": "EN",
+          "message": "[REVIEW: product] The specific list of restricted services should be verified per customer region and regulatory regime.",
+          "suggest": "交由 product 审核"
+        }
+      ]
+    },
+    "oms_ae002_priv": {
+      "section_id": "oms_software",
+      "question_id": "oms_q_ae002",
+      "status": "READY",
+      "findings": []
+    },
+    "oms_ae002_comments": {
+      "section_id": "oms_software",
+      "question_id": "oms_q_ae002",
+      "status": "NEEDS_REVIEW",
+      "findings": [
+        {
+          "severity": "WARN",
+          "rule": "review-hook",
+          "loc": "ZH",
+          "message": "[REVIEW: product] 题目要求的精确百分比未在公开渠道披露，需产品团队按最新产品清单逐项核实计算。",
+          "suggest": "交由 product 审核"
+        },
+        {
+          "severity": "WARN",
+          "rule": "review-hook",
+          "loc": "EN",
+          "message": "[REVIEW: product] The exact percentage the question asks for is not publicly disclosed; the product team should calculate it against the current product catalog.",
+          "suggest": "交由 product 审核"
+        }
+      ]
+    },
+    "oms_ae003_pub": {
+      "section_id": "oms_software",
+      "question_id": "oms_q_ae003",
+      "status": "READY",
+      "findings": []
+    },
+    "oms_ae003_priv": {
+      "section_id": "oms_software",
+      "question_id": "oms_q_ae003",
+      "status": "READY",
+      "findings": []
+    },
+    "oms_ae004_pub": {
+      "section_id": "oms_software",
+      "question_id": "oms_q_ae004",
+      "status": "READY",
+      "findings": []
+    },
+    "oms_ae004_priv": {
+      "section_id": "oms_software",
+      "question_id": "oms_q_ae004",
+      "status": "READY",
+      "findings": []
+    },
+    "oms_ae004_comments": {
+      "section_id": "oms_software",
+      "question_id": "oms_q_ae004",
+      "status": "NEEDS_REVIEW",
+      "findings": [
+        {
+          "severity": "WARN",
+          "rule": "review-hook",
+          "loc": "ZH",
+          "message": "[REVIEW: product] 具体许可条款因合同类型(公有云按量/包年包月, TCE项目制)而异，需法务/商务团队核实标准条款表述。",
+          "suggest": "交由 product 审核"
+        },
+        {
+          "severity": "WARN",
+          "rule": "review-hook",
+          "loc": "EN",
+          "message": "[REVIEW: product] Exact licensing terms vary by contract type (public-cloud pay-as-you-go/annual vs. TCE project-based); legal/commercial teams should confirm the standard contract language.",
+          "suggest": "交由 product 审核"
+        }
+      ]
+    },
+    "oms_ae005_pub": {
+      "section_id": "oms_software",
+      "question_id": "oms_q_ae005",
+      "status": "READY",
+      "findings": []
+    },
+    "oms_ae005_priv": {
+      "section_id": "oms_software",
+      "question_id": "oms_q_ae005",
+      "status": "READY",
+      "findings": []
+    },
+    "oms_ae006_comments": {
+      "section_id": "oms_software",
+      "question_id": "oms_q_ae006",
+      "status": "NEEDS_REVIEW",
+      "findings": [
+        {
+          "severity": "WARN",
+          "rule": "review-hook",
+          "loc": "ZH",
+          "message": "[REVIEW: product] 平台生态ISV具体数量属于内部运营数据，公开渠道未披露，需生态合作团队核实后填写。",
+          "suggest": "交由 product 审核"
+        },
+        {
+          "severity": "WARN",
+          "rule": "review-hook",
+          "loc": "EN",
+          "message": "[REVIEW: product] The number of ISVs on the platform is an internal operating metric not publicly disclosed; the ecosystem team should supply the verified figure.",
+          "suggest": "交由 product 审核"
+        }
+      ]
+    },
+    "oms_af001_pub": {
+      "section_id": "oms_strategy",
+      "question_id": "oms_q_af001",
+      "status": "READY",
+      "findings": []
+    },
+    "oms_af001_comments": {
+      "section_id": "oms_strategy",
+      "question_id": "oms_q_af001",
+      "status": "NEEDS_REVIEW",
+      "findings": [
+        {
+          "severity": "WARN",
+          "rule": "review-hook",
+          "loc": "ZH",
+          "message": "[REVIEW: Kevin] 本题是Strategy/Vision类题型，是否以“risk management framework”作为核心论点框架（对齐Roy Illsley的评分透镜）需AR专家确认这是否是最打动Omdia分析师的framing选择。",
+          "suggest": "交由 Kevin 审核"
+        },
+        {
+          "severity": "WARN",
+          "rule": "review-hook",
+          "loc": "EN",
+          "message": "[REVIEW: Kevin] This is a Strategy/Vision question; whether framing sovereignty as a risk-management framework (aligned to Roy Illsley's scoring lens) is the strongest angle should be confirmed by the AR lead.",
+          "suggest": "交由 Kevin 审核"
+        }
+      ]
+    },
+    "oms_af002_pub": {
+      "section_id": "oms_strategy",
+      "question_id": "oms_q_af002",
+      "status": "READY",
+      "findings": []
+    },
+    "oms_af002_comments": {
+      "section_id": "oms_strategy",
+      "question_id": "oms_q_af002",
+      "status": "NEEDS_REVIEW",
+      "findings": [
+        {
+          "severity": "WARN",
+          "rule": "review-hook",
+          "loc": "ZH",
+          "message": "[REVIEW: Kevin] AI unit economics（per-token / per-GPU-hour成本口径）是Omdia评分的关注点之一，当前回答未提供量化的AI经济性数据，是否需要补充需Kevin判断。",
+          "suggest": "交由 Kevin 审核"
+        },
+        {
+          "severity": "WARN",
+          "rule": "review-hook",
+          "loc": "EN",
+          "message": "[REVIEW: Kevin] Omdia's lens weighs AI unit economics (per-token / per-GPU-hour cost); the current answer has no quantified figures on this — whether to add them is a framing call for the AR lead.",
+          "suggest": "交由 Kevin 审核"
+        }
+      ]
+    },
+    "oms_af003_pub": {
+      "section_id": "oms_strategy",
+      "question_id": "oms_q_af003",
+      "status": "READY",
+      "findings": []
+    },
+    "oms_af003_comments": {
+      "section_id": "oms_strategy",
+      "question_id": "oms_q_af003",
+      "status": "NEEDS_REVIEW",
+      "findings": [
+        {
+          "severity": "WARN",
+          "rule": "review-hook",
+          "loc": "ZH",
+          "message": "[REVIEW: Kevin] 题目要求“唯一(the one)”核心差异化——是否用“架构同源”而非其他候选角度(如唯一入选Leader象限的中国厂商)最打动分析师，需Kevin拍板最终framing。",
+          "suggest": "交由 Kevin 审核"
+        },
+        {
+          "severity": "WARN",
+          "rule": "review-hook",
+          "loc": "EN",
+          "message": "[REVIEW: Kevin] The question asks for the one differentiator — whether same-source architecture beats the alternative framing (sole Chinese Leader) as the strongest hook for the analyst is a call for the AR lead.",
+          "suggest": "交由 Kevin 审核"
+        }
+      ]
+    }
+  }
+}

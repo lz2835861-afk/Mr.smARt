@@ -1,0 +1,517 @@
+{
+  "generated": "2026-07-17",
+  "by": "build-omdia-sovereign-pipeline",
+  "summary": {
+    "section_count": 6,
+    "question_count": 33,
+    "field_count": 70,
+    "source_count": 33,
+    "review_count": 54,
+    "high": 9,
+    "medium": 0,
+    "low": 24
+  },
+  "questions": [
+    {
+      "section_id": "oms_architecture",
+      "section_title": "Architecture · 架构",
+      "question_id": "oms_q_aa001",
+      "question_title": "AA001 · 在多少个不同的国家/地区运营",
+      "field_count": 2,
+      "source_count": 2,
+      "review_count": 0,
+      "groundability": "high",
+      "action": "ai-draft",
+      "missing_for_ar": [],
+      "note": "2 fields, 2 sources, 0 review items; groundability high."
+    },
+    {
+      "section_id": "oms_architecture",
+      "section_title": "Architecture · 架构",
+      "question_id": "oms_q_aa002",
+      "question_title": "AA002 · 未来18个月计划新增多少个国家/地区",
+      "field_count": 1,
+      "source_count": 0,
+      "review_count": 2,
+      "groundability": "low",
+      "action": "ai-draft+ar-supply",
+      "missing_for_ar": [
+        "[REVIEW: product] 未来18个月新增国家/地区的具体扩张计划属于前瞻性商业信息，公开渠道未披露具体清单。国际业务战略团队应核实是否可对外披露、披露到什么颗粒度。",
+        "[REVIEW: product] Forward-looking market-expansion plans for the next 18 months are not disclosed publicly. The international strategy team should confirm whether, and at what granularity, this can be shared externally."
+      ],
+      "note": "1 fields, 0 sources, 2 review items; groundability low."
+    },
+    {
+      "section_id": "oms_architecture",
+      "section_title": "Architecture · 架构",
+      "question_id": "oms_q_aa003",
+      "question_title": "AA003 · 如何提供容灾能力",
+      "field_count": 2,
+      "source_count": 2,
+      "review_count": 0,
+      "groundability": "high",
+      "action": "ai-draft",
+      "missing_for_ar": [],
+      "note": "2 fields, 2 sources, 0 review items; groundability high."
+    },
+    {
+      "section_id": "oms_architecture",
+      "section_title": "Architecture · 架构",
+      "question_id": "oms_q_aa004",
+      "question_title": "AA004 · 如何提供网络连接",
+      "field_count": 2,
+      "source_count": 2,
+      "review_count": 0,
+      "groundability": "high",
+      "action": "ai-draft",
+      "missing_for_ar": [],
+      "note": "2 fields, 2 sources, 0 review items; groundability high."
+    },
+    {
+      "section_id": "oms_architecture",
+      "section_title": "Architecture · 架构",
+      "question_id": "oms_q_aa005",
+      "question_title": "AA005 · 相对定价水平如何",
+      "field_count": 1,
+      "source_count": 0,
+      "review_count": 2,
+      "groundability": "low",
+      "action": "ai-draft+ar-supply",
+      "missing_for_ar": [
+        "[REVIEW: product] 相对定价对比涉及商业报价策略与合同条款，不同部署模式(公有云/专有云TCE/合作伙伴云)定价机制差异较大，公开渠道无统一披露。需销售/产品定价团队确认对外可披露的相对定价口径。",
+        "[REVIEW: product] Relative pricing involves commercial quoting strategy and contract terms that differ materially by deployment model (public cloud / TCE / partner cloud) and are not disclosed publicly. Sales/pricing teams should confirm a defensible relative-pricing statement."
+      ],
+      "note": "1 fields, 0 sources, 2 review items; groundability low."
+    },
+    {
+      "section_id": "oms_dataprivacy",
+      "section_title": "Data privacy · 数据隐私",
+      "question_id": "oms_q_ab001",
+      "question_title": "AB001 · 方案是否使用机密计算",
+      "field_count": 2,
+      "source_count": 2,
+      "review_count": 0,
+      "groundability": "high",
+      "action": "ai-draft",
+      "missing_for_ar": [],
+      "note": "2 fields, 2 sources, 0 review items; groundability high."
+    },
+    {
+      "section_id": "oms_dataprivacy",
+      "section_title": "Data privacy · 数据隐私",
+      "question_id": "oms_q_ab002",
+      "question_title": "AB002 · 方案是否对静态与传输中数据完全加密",
+      "field_count": 2,
+      "source_count": 2,
+      "review_count": 0,
+      "groundability": "high",
+      "action": "ai-draft",
+      "missing_for_ar": [],
+      "note": "2 fields, 2 sources, 0 review items; groundability high."
+    },
+    {
+      "section_id": "oms_dataprivacy",
+      "section_title": "Data privacy · 数据隐私",
+      "question_id": "oms_q_ab003",
+      "question_title": "AB003 · 过去3年美国法院提出的数据访问请求有多少次",
+      "field_count": 1,
+      "source_count": 0,
+      "review_count": 2,
+      "groundability": "low",
+      "action": "ai-draft+ar-supply",
+      "missing_for_ar": [
+        "[REVIEW: product] 过去3年美国法院数据调取请求次数属于法律合规敏感信息，不属于公开数据范畴，需由法务/合规团队核实真实数字后填写，不可编造具体数字。",
+        "[REVIEW: product] The count of U.S. court data-access requests over the past three years is legally sensitive and not publicly disclosed. Legal/compliance must supply the verified figure; it cannot be estimated."
+      ],
+      "note": "1 fields, 0 sources, 2 review items; groundability low."
+    },
+    {
+      "section_id": "oms_dataprivacy",
+      "section_title": "Data privacy · 数据隐私",
+      "question_id": "oms_q_ab004",
+      "question_title": "AB004 · 过去3年其他国家法院提出的数据访问请求有多少次",
+      "field_count": 1,
+      "source_count": 0,
+      "review_count": 2,
+      "groundability": "low",
+      "action": "ai-draft+ar-supply",
+      "missing_for_ar": [
+        "[REVIEW: product] 过去3年其他国家法院数据调取请求次数同样属于法务合规敏感信息，需法务团队核实提供真实数字，不可编造。",
+        "[REVIEW: product] The equivalent count for non-U.S. court requests is likewise legally sensitive and requires verified figures from legal/compliance."
+      ],
+      "note": "1 fields, 0 sources, 2 review items; groundability low."
+    },
+    {
+      "section_id": "oms_dataprivacy",
+      "section_title": "Data privacy · 数据隐私",
+      "question_id": "oms_q_ab005",
+      "question_title": "AB005 · 云是否完全物理隔离(air-gapped)",
+      "field_count": 1,
+      "source_count": 1,
+      "review_count": 0,
+      "groundability": "high",
+      "action": "ai-draft",
+      "missing_for_ar": [],
+      "note": "1 fields, 1 sources, 0 review items; groundability high."
+    },
+    {
+      "section_id": "oms_dataprivacy",
+      "section_title": "Data privacy · 数据隐私",
+      "question_id": "oms_q_ab006",
+      "question_title": "AB006 · 是否保证数据驻留在单一司法辖区",
+      "field_count": 3,
+      "source_count": 0,
+      "review_count": 2,
+      "groundability": "low",
+      "action": "ai-draft+ar-supply",
+      "missing_for_ar": [
+        "[REVIEW: product] 具体驻留承诺范围需结合客户实际合同条款确认，且air-gapped与单一司法辖区驻留是否等价需产品架构团队最终确认。",
+        "[REVIEW: product] The exact scope of the residency commitment should be confirmed against the specific customer contract, and product/architecture teams should confirm that air-gapped isolation is equivalent to single-jurisdiction residency in all cases."
+      ],
+      "note": "3 fields, 0 sources, 2 review items; groundability low."
+    },
+    {
+      "section_id": "oms_dataprivacy",
+      "section_title": "Data privacy · 数据隐私",
+      "question_id": "oms_q_ab007",
+      "question_title": "AB007 · 各国加密密钥在何种监管框架下管理",
+      "field_count": 3,
+      "source_count": 0,
+      "review_count": 2,
+      "groundability": "low",
+      "action": "ai-draft+ar-supply",
+      "missing_for_ar": [
+        "[REVIEW: product] 具体条款因客户合同和部署架构而异，此处按“客户可选”通用情形描述，正式提交前需核实具体合同措辞。",
+        "[REVIEW: product] Exact terms vary by customer contract and deployment architecture; this describes the general customer-optionality model and should be verified against actual contract language before submission."
+      ],
+      "note": "3 fields, 0 sources, 2 review items; groundability low."
+    },
+    {
+      "section_id": "oms_jurisdiction",
+      "section_title": "Operational jurisdiction · 运营管辖权",
+      "question_id": "oms_q_ac001",
+      "question_title": "AC001 · 是否仅由居住在该国/地区的本国公民管理和任职",
+      "field_count": 3,
+      "source_count": 2,
+      "review_count": 8,
+      "groundability": "low",
+      "action": "ai-draft+ar-verify",
+      "missing_for_ar": [
+        "无法从公开资料确认。True IDC 与腾讯云已确认在泰国建立合作，但公告未披露运营人员是否全部为居住在当地的本国公民。[REVIEW: product] 请本地运营团队核实人员国籍与居住地政策。",
+        "Not publicly verified. True IDC and Tencent Cloud have confirmed their partnership in Thailand, but the announcement does not state that all operating staff are resident nationals. [REVIEW: product] The local operations team must confirm the staffing-nationality and residency policy.",
+        "[REVIEW: product] 该来源只证明伙伴关系，不证明具体人员国籍构成；本地运营团队必须核实后才能作答“是”。",
+        "无法从公开资料确认。TCE 的人员配置取决于客户或本地伙伴的运营安排，不能据此认定全部人员均为居住在当地的本国公民。[REVIEW: product] 请产品与本地运营团队核实。",
+        "Not publicly verified. TCE staffing depends on the customer's or local partner's operating model and does not establish that all staff are resident nationals. [REVIEW: product] Product and local operations teams must confirm this policy.",
+        "[REVIEW: product] 该来源不披露TCE部署的人员国籍或居住地政策，不能据此升级为verified。",
+        "[REVIEW: product] 具体人员国籍构成的政策承诺公开渠道未披露，建议由本地运营团队核实后补充完整表述。",
+        "[REVIEW: product] The specific nationality-of-staff policy commitment is not publicly documented; local operations teams should verify before finalizing this claim."
+      ],
+      "note": "3 fields, 2 sources, 8 review items; groundability low."
+    },
+    {
+      "section_id": "oms_jurisdiction",
+      "section_title": "Operational jurisdiction · 运营管辖权",
+      "question_id": "oms_q_ac002",
+      "question_title": "AC002 · 是否在当地法律法规下运营",
+      "field_count": 3,
+      "source_count": 5,
+      "review_count": 0,
+      "groundability": "high",
+      "action": "ai-draft",
+      "missing_for_ar": [],
+      "note": "3 fields, 5 sources, 0 review items; groundability high."
+    },
+    {
+      "section_id": "oms_jurisdiction",
+      "section_title": "Operational jurisdiction · 运营管辖权",
+      "question_id": "oms_q_ac003",
+      "question_title": "AC003 · 该部署的控制面位于何处",
+      "field_count": 3,
+      "source_count": 0,
+      "review_count": 2,
+      "groundability": "low",
+      "action": "ai-draft+ar-supply",
+      "missing_for_ar": [
+        "[REVIEW: product] 需按具体产品/服务核实控制面组件是否存在跨区域依赖。",
+        "[REVIEW: product] Product teams should verify, product by product, whether any control-plane components have cross-region dependencies."
+      ],
+      "note": "3 fields, 0 sources, 2 review items; groundability low."
+    },
+    {
+      "section_id": "oms_jurisdiction",
+      "section_title": "Operational jurisdiction · 运营管辖权",
+      "question_id": "oms_q_ac004",
+      "question_title": "AC004 · 由谁运营该设施",
+      "field_count": 3,
+      "source_count": 2,
+      "review_count": 6,
+      "groundability": "low",
+      "action": "ai-draft+ar-verify",
+      "missing_for_ar": [
+        "[REVIEW: product] 公有云设施的运营主体可能因地域与机房合同而异。公开来源不足以逐地域确认由腾讯云还是托管数据中心运营商负责，需基础设施团队提供清单。",
+        "[REVIEW: product] The public-cloud facility operator may vary by region and data-centre contract. Public sources do not establish, region by region, whether Tencent Cloud or a colocation operator runs each facility; infrastructure teams must supply the operator list.",
+        "[REVIEW: product] 现有公开证据不能支持“全部由腾讯云自身运营”的统一结论，需基础设施团队逐地域核实。",
+        "TCE 通常由客户或客户授权团队运营，但实际设施运营主体取决于部署合同。[REVIEW: product] 请项目交付团队按目标部署确认运营主体。",
+        "TCE is typically operated by the customer or its authorized team, but the actual facility operator depends on the deployment contract. [REVIEW: product] The delivery team must confirm the operator for the target deployment.",
+        "[REVIEW: product] 泰国伙伴资料不能证明所有TCE项目的设施运营安排，需按部署合同核实。"
+      ],
+      "note": "3 fields, 2 sources, 6 review items; groundability low."
+    },
+    {
+      "section_id": "oms_jurisdiction",
+      "section_title": "Operational jurisdiction · 运营管辖权",
+      "question_id": "oms_q_ac005",
+      "question_title": "AC005 · 是否存在位于云所在国之外的服务或依赖项",
+      "field_count": 3,
+      "source_count": 0,
+      "review_count": 2,
+      "groundability": "low",
+      "action": "ai-draft+ar-supply",
+      "missing_for_ar": [
+        "[REVIEW: product] 需按具体产品清单逐项核实是否存在境外依赖组件。",
+        "[REVIEW: product] Product teams should review the product list line-by-line to confirm which, if any, components carry offshore dependencies."
+      ],
+      "note": "3 fields, 0 sources, 2 review items; groundability low."
+    },
+    {
+      "section_id": "oms_jurisdiction",
+      "section_title": "Operational jurisdiction · 运营管辖权",
+      "question_id": "oms_q_ac006",
+      "question_title": "AC006 · 资产归属于谁",
+      "field_count": 3,
+      "source_count": 1,
+      "review_count": 9,
+      "groundability": "low",
+      "action": "ai-draft+ar-verify",
+      "missing_for_ar": [
+        "[REVIEW: product] 公有云资产所有权可能因自建、租赁或托管模式而异，公开资料不足以支持“全部由腾讯云拥有”。请基础设施与法务团队按地域提供资产归属口径。",
+        "[REVIEW: product] Public-cloud asset ownership may vary across owned, leased and colocation models. Public evidence does not support a blanket claim that Tencent Cloud owns every asset; infrastructure and legal teams must provide the regional ownership position.",
+        "[REVIEW: product] 公开来源未提供逐地域资产权属清单。",
+        "True IDC 公开确认其在曼谷拥有云服务和数据中心布局，但该表述不足以证明具体腾讯云合作设施的法律所有权。[REVIEW: product] 请 True IDC 合作团队与法务核实资产权属。",
+        "True IDC publicly confirms its cloud-service and data-centre footprint in Bangkok, but that does not establish legal ownership of the specific facilities used for the Tencent Cloud partnership. [REVIEW: product] The True IDC alliance and legal teams must verify title to the assets.",
+        "[REVIEW: product] “have”不能替代具体设施的产权文件，不能据此认定资产所有权。",
+        "TCE 的硬件资产可由客户、合作伙伴或项目实体持有，具体取决于采购与部署合同。[REVIEW: product] 请项目交付与法务团队按目标部署确认资产权属，不能从伙伴云案例外推。",
+        "TCE hardware may be owned by the customer, a partner or the project entity, depending on procurement and deployment contracts. [REVIEW: product] Delivery and legal teams must confirm ownership for the target deployment; it cannot be inferred from a partner-cloud example.",
+        "[REVIEW: product] 公开来源未披露TCE项目通用的硬件资产权属规则，需按合同核验。"
+      ],
+      "note": "3 fields, 1 sources, 9 review items; groundability low."
+    },
+    {
+      "section_id": "oms_management",
+      "section_title": "Management · 管理",
+      "question_id": "oms_q_ad001",
+      "question_title": "AD001 · 如何实施更新和缺陷修复",
+      "field_count": 2,
+      "source_count": 0,
+      "review_count": 0,
+      "groundability": "low",
+      "action": "ai-draft+ar-supply",
+      "missing_for_ar": [],
+      "note": "2 fields, 0 sources, 0 review items; groundability low."
+    },
+    {
+      "section_id": "oms_management",
+      "section_title": "Management · 管理",
+      "question_id": "oms_q_ad002",
+      "question_title": "AD002 · 谁可以访问该设施",
+      "field_count": 2,
+      "source_count": 0,
+      "review_count": 0,
+      "groundability": "low",
+      "action": "ai-draft+ar-supply",
+      "missing_for_ar": [],
+      "note": "2 fields, 0 sources, 0 review items; groundability low."
+    },
+    {
+      "section_id": "oms_management",
+      "section_title": "Management · 管理",
+      "question_id": "oms_q_ad003",
+      "question_title": "AD003 · 如何管理支持服务",
+      "field_count": 2,
+      "source_count": 0,
+      "review_count": 0,
+      "groundability": "low",
+      "action": "ai-draft+ar-supply",
+      "missing_for_ar": [],
+      "note": "2 fields, 0 sources, 0 review items; groundability low."
+    },
+    {
+      "section_id": "oms_management",
+      "section_title": "Management · 管理",
+      "question_id": "oms_q_ad004",
+      "question_title": "AD004 · 谁拥有管理员权限",
+      "field_count": 2,
+      "source_count": 0,
+      "review_count": 0,
+      "groundability": "low",
+      "action": "ai-draft+ar-supply",
+      "missing_for_ar": [],
+      "note": "2 fields, 0 sources, 0 review items; groundability low."
+    },
+    {
+      "section_id": "oms_management",
+      "section_title": "Management · 管理",
+      "question_id": "oms_q_ad005",
+      "question_title": "AD005 · 谁管理/控制身份认证",
+      "field_count": 2,
+      "source_count": 0,
+      "review_count": 0,
+      "groundability": "low",
+      "action": "ai-draft+ar-supply",
+      "missing_for_ar": [],
+      "note": "2 fields, 0 sources, 0 review items; groundability low."
+    },
+    {
+      "section_id": "oms_management",
+      "section_title": "Management · 管理",
+      "question_id": "oms_q_ad006",
+      "question_title": "AD006 · 安全响应团队位于何处",
+      "field_count": 2,
+      "source_count": 0,
+      "review_count": 0,
+      "groundability": "low",
+      "action": "ai-draft+ar-supply",
+      "missing_for_ar": [],
+      "note": "2 fields, 0 sources, 0 review items; groundability low."
+    },
+    {
+      "section_id": "oms_software",
+      "section_title": "Software & Services · 软件与服务",
+      "question_id": "oms_q_ae001",
+      "question_title": "AE001 · 服务可用性是否存在限制",
+      "field_count": 3,
+      "source_count": 0,
+      "review_count": 2,
+      "groundability": "low",
+      "action": "ai-draft+ar-supply",
+      "missing_for_ar": [
+        "[REVIEW: product] 需按客户所在具体地域及监管要求核实受限服务清单。",
+        "[REVIEW: product] The specific list of restricted services should be verified per customer region and regulatory regime."
+      ],
+      "note": "3 fields, 0 sources, 2 review items; groundability low."
+    },
+    {
+      "section_id": "oms_software",
+      "section_title": "Software & Services · 软件与服务",
+      "question_id": "oms_q_ae002",
+      "question_title": "AE002 · 该形态的云平均能提供全球公共云服务的百分之多少",
+      "field_count": 2,
+      "source_count": 1,
+      "review_count": 2,
+      "groundability": "low",
+      "action": "ai-draft+ar-verify",
+      "missing_for_ar": [
+        "[REVIEW: product] 题目要求的精确百分比未在公开渠道披露，需产品团队按最新产品清单逐项核实计算。",
+        "[REVIEW: product] The exact percentage the question asks for is not publicly disclosed; the product team should calculate it against the current product catalog."
+      ],
+      "note": "2 fields, 1 sources, 2 review items; groundability low."
+    },
+    {
+      "section_id": "oms_software",
+      "section_title": "Software & Services · 软件与服务",
+      "question_id": "oms_q_ae003",
+      "question_title": "AE003 · 谁拥有该云的源代码",
+      "field_count": 2,
+      "source_count": 2,
+      "review_count": 0,
+      "groundability": "high",
+      "action": "ai-draft",
+      "missing_for_ar": [],
+      "note": "2 fields, 2 sources, 0 review items; groundability high."
+    },
+    {
+      "section_id": "oms_software",
+      "section_title": "Software & Services · 软件与服务",
+      "question_id": "oms_q_ae004",
+      "question_title": "AE004 · 该云的授权许可模式是怎样的",
+      "field_count": 3,
+      "source_count": 0,
+      "review_count": 2,
+      "groundability": "low",
+      "action": "ai-draft+ar-supply",
+      "missing_for_ar": [
+        "[REVIEW: product] 具体许可条款因合同类型(公有云按量/包年包月, TCE项目制)而异，需法务/商务团队核实标准条款表述。",
+        "[REVIEW: product] Exact licensing terms vary by contract type (public-cloud pay-as-you-go/annual vs. TCE project-based); legal/commercial teams should confirm the standard contract language."
+      ],
+      "note": "3 fields, 0 sources, 2 review items; groundability low."
+    },
+    {
+      "section_id": "oms_software",
+      "section_title": "Software & Services · 软件与服务",
+      "question_id": "oms_q_ae005",
+      "question_title": "AE005 · 该软件是否基于开放标准构建",
+      "field_count": 2,
+      "source_count": 2,
+      "review_count": 0,
+      "groundability": "high",
+      "action": "ai-draft",
+      "missing_for_ar": [],
+      "note": "2 fields, 2 sources, 0 review items; groundability high."
+    },
+    {
+      "section_id": "oms_software",
+      "section_title": "Software & Services · 软件与服务",
+      "question_id": "oms_q_ae006",
+      "question_title": "AE006 · 有多少ISV使用该平台交付第三方服务",
+      "field_count": 1,
+      "source_count": 0,
+      "review_count": 2,
+      "groundability": "low",
+      "action": "ai-draft+ar-supply",
+      "missing_for_ar": [
+        "[REVIEW: product] 平台生态ISV具体数量属于内部运营数据，公开渠道未披露，需生态合作团队核实后填写。",
+        "[REVIEW: product] The number of ISVs on the platform is an internal operating metric not publicly disclosed; the ecosystem team should supply the verified figure."
+      ],
+      "note": "1 fields, 0 sources, 2 review items; groundability low."
+    },
+    {
+      "section_id": "oms_strategy",
+      "section_title": "Strategy & execution · 战略与执行",
+      "question_id": "oms_q_af001",
+      "question_title": "AF001 · 说明贵司的主权云方案",
+      "field_count": 2,
+      "source_count": 3,
+      "review_count": 2,
+      "groundability": "low",
+      "action": "ai-draft+ar-verify",
+      "missing_for_ar": [
+        "[REVIEW: Kevin] 本题是Strategy/Vision类题型，是否以“risk management framework”作为核心论点框架（对齐Roy Illsley的评分透镜）需AR专家确认这是否是最打动Omdia分析师的framing选择。",
+        "[REVIEW: Kevin] This is a Strategy/Vision question; whether framing sovereignty as a risk-management framework (aligned to Roy Illsley's scoring lens) is the strongest angle should be confirmed by the AR lead."
+      ],
+      "note": "2 fields, 3 sources, 2 review items; groundability low."
+    },
+    {
+      "section_id": "oms_strategy",
+      "section_title": "Strategy & execution · 战略与执行",
+      "question_id": "oms_q_af002",
+      "question_title": "AF002 · 说明贵司的主权AI方案",
+      "field_count": 2,
+      "source_count": 1,
+      "review_count": 2,
+      "groundability": "low",
+      "action": "ai-draft+ar-verify",
+      "missing_for_ar": [
+        "[REVIEW: Kevin] AI unit economics（per-token / per-GPU-hour成本口径）是Omdia评分的关注点之一，当前回答未提供量化的AI经济性数据，是否需要补充需Kevin判断。",
+        "[REVIEW: Kevin] Omdia's lens weighs AI unit economics (per-token / per-GPU-hour cost); the current answer has no quantified figures on this — whether to add them is a framing call for the AR lead."
+      ],
+      "note": "2 fields, 1 sources, 2 review items; groundability low."
+    },
+    {
+      "section_id": "oms_strategy",
+      "section_title": "Strategy & execution · 战略与执行",
+      "question_id": "oms_q_af003",
+      "question_title": "AF003 · 指出贵司认为能为客户提供的唯一核心差异化优势",
+      "field_count": 2,
+      "source_count": 3,
+      "review_count": 3,
+      "groundability": "low",
+      "action": "ai-draft+ar-verify",
+      "missing_for_ar": [
+        "[REVIEW: Kevin] 题目要求“唯一(the one)”核心差异化——是否最终只保留“架构同源”作为主论点，仍需Kevin拍板。",
+        "[REVIEW: Kevin] 题目要求“唯一(the one)”核心差异化——是否用“架构同源”而非其他候选角度(如唯一入选Leader象限的中国厂商)最打动分析师，需Kevin拍板最终framing。",
+        "[REVIEW: Kevin] The question asks for the one differentiator — whether same-source architecture beats the alternative framing (sole Chinese Leader) as the strongest hook for the analyst is a call for the AR lead."
+      ],
+      "note": "2 fields, 3 sources, 3 review items; groundability low."
+    }
+  ]
+}

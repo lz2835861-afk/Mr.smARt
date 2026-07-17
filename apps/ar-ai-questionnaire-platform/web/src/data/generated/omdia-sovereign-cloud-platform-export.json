@@ -1,0 +1,2431 @@
+{
+  "export_version": "1.0",
+  "questionnaire_id": "omdia-sovereign-cloud-2026",
+  "firm": "Omdia",
+  "generated_at": "2026-07-17T00:00:00.000Z",
+  "questions": [
+    {
+      "question_id": "oms_q_aa001",
+      "type_tag": {
+        "macro": "产品能力",
+        "form": "简答",
+        "modifiers": []
+      },
+      "word_limit": 0,
+      "status": "READY",
+      "fields": [
+        {
+          "field_id": "oms_aa001_pub",
+          "content_zh": "腾讯云在全球运营 22 个地理区域、64 个可用区，海外覆盖东南亚、东北亚、欧洲、北美、南美、中东共 9 个区域。",
+          "content_en": "Tencent Cloud operates 22 geographic regions and 64 availability zones globally, spanning nine international regions across Southeast Asia, Northeast Asia, Europe, North America, South America and the Middle East.",
+          "evidence": [
+            {
+              "tag": "CITED",
+              "claim": "腾讯云在22个地区运营64个可用区",
+              "source": "https://www.tencentcloud.com/global-infrastructure",
+              "quote": "\"Tencent Cloud International operates 64 availability zones spread across 22 regions globally.\"",
+              "retrieved": "2026-07-16"
+            }
+          ],
+          "reviewer_hooks": [],
+          "lint": [],
+          "conflicts": []
+        },
+        {
+          "field_id": "oms_aa001_partner",
+          "content_zh": "合作伙伴云覆盖包括泰国。True IDC 与腾讯云已签署战略合作备忘录，共同推进泰国本地云服务。",
+          "content_en": "Partner-cloud coverage includes Thailand. True IDC and Tencent Cloud have signed a strategic MOU to advance in-country cloud services.",
+          "evidence": [
+            {
+              "tag": "CITED",
+              "claim": "True IDC与腾讯云已签署战略合作备忘录",
+              "source": "https://www.trueidc.com/en/news-detail/227/strategic-partnership-mou-tencent-cloud",
+              "quote": "True Internet Data Center Co., Ltd. (True IDC), Thailand’s leading provider of data center and cloud services, has announced the signing of a landmark Memorandum of Understanding (MOU) with Tencent Cloud International Pte. Ltd. (Tencent Cloud) in Shenzhen, China.",
+              "retrieved": "2026-07-17"
+            }
+          ],
+          "reviewer_hooks": [],
+          "lint": [],
+          "conflicts": []
+        }
+      ]
+    },
+    {
+      "question_id": "oms_q_aa002",
+      "type_tag": {
+        "macro": "产品能力",
+        "form": "简答",
+        "modifiers": [
+          "需人审"
+        ]
+      },
+      "word_limit": 0,
+      "status": "PRODUCT REVIEW",
+      "fields": [
+        {
+          "field_id": "oms_aa002_comments",
+          "content_zh": "[REVIEW: product] 未来18个月新增国家/地区的具体扩张计划属于前瞻性商业信息，公开渠道未披露具体清单。国际业务战略团队应核实是否可对外披露、披露到什么颗粒度。",
+          "content_en": "[REVIEW: product] Forward-looking market-expansion plans for the next 18 months are not disclosed publicly. The international strategy team should confirm whether, and at what granularity, this can be shared externally.",
+          "evidence": [
+            {
+              "tag": "REVIEW",
+              "reviewer": "product",
+              "claim": "未来18个月新增国家/地区的具体扩张计划属于前瞻性商业信息，公开渠道未披露具体清单。国际业务战略团队应核实是否可对外披露、披露到什么颗粒度。",
+              "reason": "[REVIEW: product] 未来18个月新增国家/地区的具体扩张计划属于前瞻性商业信息，公开渠道未披露具体清单。国际业务战略团队应核实是否可对外披露、披露到什么颗粒度。"
+            },
+            {
+              "tag": "REVIEW",
+              "reviewer": "product",
+              "claim": "Forward-looking market-expansion plans for the next 18 months are not disclosed publicly. The international strategy team should confirm whether, and at what granularity, this can be shared externally.",
+              "reason": "[REVIEW: product] Forward-looking market-expansion plans for the next 18 months are not disclosed publicly. The international strategy team should confirm whether, and at what granularity, this can be shared externally."
+            }
+          ],
+          "reviewer_hooks": [
+            {
+              "reviewer": "product",
+              "kind": "placeholder",
+              "text": "未来18个月新增国家/地区的具体扩张计划属于前瞻性商业信息，公开渠道未披露具体清单。国际业务战略团队应核实是否可对外披露、披露到什么颗粒度。",
+              "reason": "[REVIEW: product] 未来18个月新增国家/地区的具体扩张计划属于前瞻性商业信息，公开渠道未披露具体清单。国际业务战略团队应核实是否可对外披露、披露到什么颗粒度。"
+            },
+            {
+              "reviewer": "product",
+              "kind": "placeholder",
+              "text": "Forward-looking market-expansion plans for the next 18 months are not disclosed publicly. The international strategy team should confirm whether, and at what granularity, this can be shared externally.",
+              "reason": "[REVIEW: product] Forward-looking market-expansion plans for the next 18 months are not disclosed publicly. The international strategy team should confirm whether, and at what granularity, this can be shared externally."
+            }
+          ],
+          "lint": [
+            {
+              "severity": "WARN",
+              "rule": "review-hook",
+              "loc": "ZH",
+              "message": "[REVIEW: product] 未来18个月新增国家/地区的具体扩张计划属于前瞻性商业信息，公开渠道未披露具体清单。国际业务战略团队应核实是否可对外披露、披露到什么颗粒度。",
+              "suggest": "交由 product 审核"
+            },
+            {
+              "severity": "WARN",
+              "rule": "review-hook",
+              "loc": "EN",
+              "message": "[REVIEW: product] Forward-looking market-expansion plans for the next 18 months are not disclosed publicly. The international strategy team should confirm whether, and at what granularity, this can be shared externally.",
+              "suggest": "交由 product 审核"
+            }
+          ],
+          "conflicts": []
+        }
+      ]
+    },
+    {
+      "question_id": "oms_q_aa003",
+      "type_tag": {
+        "macro": "产品能力",
+        "form": "简答",
+        "modifiers": []
+      },
+      "word_limit": 0,
+      "status": "READY",
+      "fields": [
+        {
+          "field_id": "oms_aa003_pub",
+          "content_zh": "同地域内多可用区(AZ)部署 + 跨地域容灾，AZ 之间通过低延迟专用网络互联，物理独立供电与网络。",
+          "content_en": "Multi-AZ deployment within a region plus cross-region disaster recovery. AZs are interconnected via low-latency dedicated networks, each with independent power and networking.",
+          "evidence": [
+            {
+              "tag": "CITED",
+              "claim": "公开案例证实TCE支持双活/多活容灾架构",
+              "source": "https://cloud.tencent.com/developer/article/2678070",
+              "quote": "澎门财政局依托腾讯专有云TCE全栈产品构建“三中心两区域”双活数据中心架构，支撑智慧财政平台稳定运行。",
+              "retrieved": "2026-07-16"
+            }
+          ],
+          "reviewer_hooks": [],
+          "lint": [],
+          "conflicts": []
+        },
+        {
+          "field_id": "oms_aa003_priv",
+          "content_zh": "TCE 专有云支持“两地三中心”双活/多活数据中心架构，客户可在其主权环境内自建同城/异地容灾。",
+          "content_en": "Tencent Cloud Enterprise supports a two-city, three-center active-active or multi-active data-center architecture, letting customers build same-city or geo-redundant disaster recovery within their own sovereign environment.",
+          "evidence": [
+            {
+              "tag": "CITED",
+              "claim": "公开案例证实TCE支持双活/多活容灾架构",
+              "source": "https://cloud.tencent.com/developer/article/2678070",
+              "quote": "澎门财政局依托腾讯专有云TCE全栈产品构建“三中心两区域”双活数据中心架构，支撑智慧财政平台稳定运行。",
+              "retrieved": "2026-07-16"
+            }
+          ],
+          "reviewer_hooks": [],
+          "lint": [],
+          "conflicts": []
+        }
+      ]
+    },
+    {
+      "question_id": "oms_q_aa004",
+      "type_tag": {
+        "macro": "产品能力",
+        "form": "简答",
+        "modifiers": []
+      },
+      "word_limit": 0,
+      "status": "READY",
+      "fields": [
+        {
+          "field_id": "oms_aa004_pub",
+          "content_zh": "腾讯云全球骨干网络，200T+全球带宽储备、3200+全球加速节点，提供低延迟高稳定的全球连接。",
+          "content_en": "A global backbone network with more than 200T of reserved bandwidth and 3,200-plus global acceleration nodes delivers low-latency, high-stability connectivity worldwide.",
+          "evidence": [
+            {
+              "tag": "CITED",
+              "claim": "腾讯云披露200T+带宽储备与3200+全球加速节点",
+              "source": "https://cloud.tencent.com/developer/article/2678070",
+              "quote": "具备 200T+全球带宽储备与3200+全球加速节点，实现高效数据传输。",
+              "retrieved": "2026-07-16"
+            }
+          ],
+          "reviewer_hooks": [],
+          "lint": [],
+          "conflicts": []
+        },
+        {
+          "field_id": "oms_aa004_priv",
+          "content_zh": "TCE 私有化部署下，网络可由客户自建，也可通过专线/VPN 与中心云互通，形成云边协同架构。",
+          "content_en": "Under a TCE private deployment, the network can be customer-built, or connected to the central cloud via dedicated line or VPN, forming a cloud-edge collaborative architecture.",
+          "evidence": [
+            {
+              "tag": "CITED",
+              "claim": "腾讯云披露200T+带宽储备与3200+全球加速节点",
+              "source": "https://cloud.tencent.com/developer/article/2678070",
+              "quote": "具备 200T+全球带宽储备与3200+全球加速节点，实现高效数据传输。",
+              "retrieved": "2026-07-16"
+            }
+          ],
+          "reviewer_hooks": [],
+          "lint": [],
+          "conflicts": []
+        }
+      ]
+    },
+    {
+      "question_id": "oms_q_aa005",
+      "type_tag": {
+        "macro": "产品能力",
+        "form": "简答",
+        "modifiers": [
+          "需人审"
+        ]
+      },
+      "word_limit": 0,
+      "status": "PRODUCT REVIEW",
+      "fields": [
+        {
+          "field_id": "oms_aa005_comments",
+          "content_zh": "[REVIEW: product] 相对定价对比涉及商业报价策略与合同条款，不同部署模式(公有云/专有云TCE/合作伙伴云)定价机制差异较大，公开渠道无统一披露。需销售/产品定价团队确认对外可披露的相对定价口径。",
+          "content_en": "[REVIEW: product] Relative pricing involves commercial quoting strategy and contract terms that differ materially by deployment model (public cloud / TCE / partner cloud) and are not disclosed publicly. Sales/pricing teams should confirm a defensible relative-pricing statement.",
+          "evidence": [
+            {
+              "tag": "REVIEW",
+              "reviewer": "product",
+              "claim": "相对定价对比涉及商业报价策略与合同条款，不同部署模式(公有云/专有云TCE/合作伙伴云)定价机制差异较大，公开渠道无统一披露。需销售/产品定价团队确认对外可披露的相对定价口径。",
+              "reason": "[REVIEW: product] 相对定价对比涉及商业报价策略与合同条款，不同部署模式(公有云/专有云TCE/合作伙伴云)定价机制差异较大，公开渠道无统一披露。需销售/产品定价团队确认对外可披露的相对定价口径。"
+            },
+            {
+              "tag": "REVIEW",
+              "reviewer": "product",
+              "claim": "Relative pricing involves commercial quoting strategy and contract terms that differ materially by deployment model (public cloud / TCE / partner cloud) and are not disclosed publicly. Sales/pricing teams should confirm a defensible relative-pricing statement.",
+              "reason": "[REVIEW: product] Relative pricing involves commercial quoting strategy and contract terms that differ materially by deployment model (public cloud / TCE / partner cloud) and are not disclosed publicly. Sales/pricing teams should confirm a defensible relative-pricing statement."
+            }
+          ],
+          "reviewer_hooks": [
+            {
+              "reviewer": "product",
+              "kind": "placeholder",
+              "text": "相对定价对比涉及商业报价策略与合同条款，不同部署模式(公有云/专有云TCE/合作伙伴云)定价机制差异较大，公开渠道无统一披露。需销售/产品定价团队确认对外可披露的相对定价口径。",
+              "reason": "[REVIEW: product] 相对定价对比涉及商业报价策略与合同条款，不同部署模式(公有云/专有云TCE/合作伙伴云)定价机制差异较大，公开渠道无统一披露。需销售/产品定价团队确认对外可披露的相对定价口径。"
+            },
+            {
+              "reviewer": "product",
+              "kind": "placeholder",
+              "text": "Relative pricing involves commercial quoting strategy and contract terms that differ materially by deployment model (public cloud / TCE / partner cloud) and are not disclosed publicly. Sales/pricing teams should confirm a defensible relative-pricing statement.",
+              "reason": "[REVIEW: product] Relative pricing involves commercial quoting strategy and contract terms that differ materially by deployment model (public cloud / TCE / partner cloud) and are not disclosed publicly. Sales/pricing teams should confirm a defensible relative-pricing statement."
+            }
+          ],
+          "lint": [
+            {
+              "severity": "WARN",
+              "rule": "review-hook",
+              "loc": "ZH",
+              "message": "[REVIEW: product] 相对定价对比涉及商业报价策略与合同条款，不同部署模式(公有云/专有云TCE/合作伙伴云)定价机制差异较大，公开渠道无统一披露。需销售/产品定价团队确认对外可披露的相对定价口径。",
+              "suggest": "交由 product 审核"
+            },
+            {
+              "severity": "WARN",
+              "rule": "review-hook",
+              "loc": "EN",
+              "message": "[REVIEW: product] Relative pricing involves commercial quoting strategy and contract terms that differ materially by deployment model (public cloud / TCE / partner cloud) and are not disclosed publicly. Sales/pricing teams should confirm a defensible relative-pricing statement.",
+              "suggest": "交由 product 审核"
+            }
+          ],
+          "conflicts": []
+        }
+      ]
+    },
+    {
+      "question_id": "oms_q_ab001",
+      "type_tag": {
+        "macro": "产品能力",
+        "form": "简答",
+        "modifiers": []
+      },
+      "word_limit": 0,
+      "status": "READY",
+      "fields": [
+        {
+          "field_id": "oms_ab001_pub",
+          "content_zh": "是，通过 Tencent Cloud SGX 机密计算环境提供，作为可选增值能力，SGX 远程证明服务已部署北京、上海、广州、南京、新加坡等地域。",
+          "content_en": "Yes, delivered through Tencent Cloud SGX confidential computing as an optional capability, with remote-attestation service deployed across Beijing, Shanghai, Guangzhou, Nanjing and Singapore.",
+          "evidence": [
+            {
+              "tag": "CITED",
+              "claim": "SGX机密计算能力及其部署地域",
+              "source": "https://www.tencentcloud.com/document/product/213/45510",
+              "quote": "腾讯云SGX远程证明服务部署在北京、上海、广州、南京、新加坡地域。",
+              "retrieved": "2026-07-16"
+            }
+          ],
+          "reviewer_hooks": [],
+          "lint": [],
+          "conflicts": []
+        },
+        {
+          "field_id": "oms_ab001_priv",
+          "content_zh": "TCE 可集成同等机密计算能力，具体依客户部署架构而定。",
+          "content_en": "TCE can integrate equivalent confidential-computing capability, depending on the customer's deployment architecture.",
+          "evidence": [
+            {
+              "tag": "CITED",
+              "claim": "SGX机密计算能力及其部署地域",
+              "source": "https://www.tencentcloud.com/document/product/213/45510",
+              "quote": "腾讯云SGX远程证明服务部署在北京、上海、广州、南京、新加坡地域。",
+              "retrieved": "2026-07-16"
+            }
+          ],
+          "reviewer_hooks": [],
+          "lint": [],
+          "conflicts": []
+        }
+      ]
+    },
+    {
+      "question_id": "oms_q_ab002",
+      "type_tag": {
+        "macro": "产品能力",
+        "form": "简答",
+        "modifiers": []
+      },
+      "word_limit": 0,
+      "status": "READY",
+      "fields": [
+        {
+          "field_id": "oms_ab002_pub",
+          "content_zh": "是，通过 Tencent Cloud KMS 提供密钥全生命周期管理及信封加密方案，传输层采用 TLS 加密，确保核心数据安全。",
+          "content_en": "Yes. Tencent Cloud KMS provides full key-lifecycle management with envelope encryption, and TLS secures data in transit.",
+          "evidence": [
+            {
+              "tag": "CITED",
+              "claim": "KMS信封加密能力",
+              "source": "https://cloud.tencent.com.cn/developer/article/2679650",
+              "quote": "Tencent Cloud KMS支持生成、存储、使用及终止密钥，提供信封加密方案，确保核心数据安全。",
+              "retrieved": "2026-07-16"
+            }
+          ],
+          "reviewer_hooks": [],
+          "lint": [],
+          "conflicts": []
+        },
+        {
+          "field_id": "oms_ab002_priv",
+          "content_zh": "TCE 同源架构下提供同等加密能力，客户可自管密钥(CMEK)。",
+          "content_en": "Under TCE's same-source architecture, equivalent encryption is available, with customer-managed encryption keys (CMEK).",
+          "evidence": [
+            {
+              "tag": "CITED",
+              "claim": "KMS信封加密能力",
+              "source": "https://cloud.tencent.com.cn/developer/article/2679650",
+              "quote": "Tencent Cloud KMS支持生成、存储、使用及终止密钥，提供信封加密方案，确保核心数据安全。",
+              "retrieved": "2026-07-16"
+            }
+          ],
+          "reviewer_hooks": [],
+          "lint": [],
+          "conflicts": []
+        }
+      ]
+    },
+    {
+      "question_id": "oms_q_ab003",
+      "type_tag": {
+        "macro": "产品能力",
+        "form": "简答",
+        "modifiers": [
+          "需人审"
+        ]
+      },
+      "word_limit": 0,
+      "status": "PRODUCT REVIEW",
+      "fields": [
+        {
+          "field_id": "oms_ab003_comments",
+          "content_zh": "[REVIEW: product] 过去3年美国法院数据调取请求次数属于法律合规敏感信息，不属于公开数据范畴，需由法务/合规团队核实真实数字后填写，不可编造具体数字。",
+          "content_en": "[REVIEW: product] The count of U.S. court data-access requests over the past three years is legally sensitive and not publicly disclosed. Legal/compliance must supply the verified figure; it cannot be estimated.",
+          "evidence": [
+            {
+              "tag": "REVIEW",
+              "reviewer": "product",
+              "claim": "过去3年美国法院数据调取请求次数属于法律合规敏感信息，不属于公开数据范畴，需由法务/合规团队核实真实数字后填写，不可编造具体数字。",
+              "reason": "[REVIEW: product] 过去3年美国法院数据调取请求次数属于法律合规敏感信息，不属于公开数据范畴，需由法务/合规团队核实真实数字后填写，不可编造具体数字。"
+            },
+            {
+              "tag": "REVIEW",
+              "reviewer": "product",
+              "claim": "The count of U.S. court data-access requests over the past three years is legally sensitive and not publicly disclosed. Legal/compliance must supply the verified figure; it cannot be estimated.",
+              "reason": "[REVIEW: product] The count of U.S. court data-access requests over the past three years is legally sensitive and not publicly disclosed. Legal/compliance must supply the verified figure; it cannot be estimated."
+            }
+          ],
+          "reviewer_hooks": [
+            {
+              "reviewer": "product",
+              "kind": "placeholder",
+              "text": "过去3年美国法院数据调取请求次数属于法律合规敏感信息，不属于公开数据范畴，需由法务/合规团队核实真实数字后填写，不可编造具体数字。",
+              "reason": "[REVIEW: product] 过去3年美国法院数据调取请求次数属于法律合规敏感信息，不属于公开数据范畴，需由法务/合规团队核实真实数字后填写，不可编造具体数字。"
+            },
+            {
+              "reviewer": "product",
+              "kind": "placeholder",
+              "text": "The count of U.S. court data-access requests over the past three years is legally sensitive and not publicly disclosed. Legal/compliance must supply the verified figure; it cannot be estimated.",
+              "reason": "[REVIEW: product] The count of U.S. court data-access requests over the past three years is legally sensitive and not publicly disclosed. Legal/compliance must supply the verified figure; it cannot be estimated."
+            }
+          ],
+          "lint": [
+            {
+              "severity": "WARN",
+              "rule": "review-hook",
+              "loc": "ZH",
+              "message": "[REVIEW: product] 过去3年美国法院数据调取请求次数属于法律合规敏感信息，不属于公开数据范畴，需由法务/合规团队核实真实数字后填写，不可编造具体数字。",
+              "suggest": "交由 product 审核"
+            },
+            {
+              "severity": "WARN",
+              "rule": "review-hook",
+              "loc": "EN",
+              "message": "[REVIEW: product] The count of U.S. court data-access requests over the past three years is legally sensitive and not publicly disclosed. Legal/compliance must supply the verified figure; it cannot be estimated.",
+              "suggest": "交由 product 审核"
+            }
+          ],
+          "conflicts": []
+        }
+      ]
+    },
+    {
+      "question_id": "oms_q_ab004",
+      "type_tag": {
+        "macro": "产品能力",
+        "form": "简答",
+        "modifiers": [
+          "需人审"
+        ]
+      },
+      "word_limit": 0,
+      "status": "PRODUCT REVIEW",
+      "fields": [
+        {
+          "field_id": "oms_ab004_comments",
+          "content_zh": "[REVIEW: product] 过去3年其他国家法院数据调取请求次数同样属于法务合规敏感信息，需法务团队核实提供真实数字，不可编造。",
+          "content_en": "[REVIEW: product] The equivalent count for non-U.S. court requests is likewise legally sensitive and requires verified figures from legal/compliance.",
+          "evidence": [
+            {
+              "tag": "REVIEW",
+              "reviewer": "product",
+              "claim": "过去3年其他国家法院数据调取请求次数同样属于法务合规敏感信息，需法务团队核实提供真实数字，不可编造。",
+              "reason": "[REVIEW: product] 过去3年其他国家法院数据调取请求次数同样属于法务合规敏感信息，需法务团队核实提供真实数字，不可编造。"
+            },
+            {
+              "tag": "REVIEW",
+              "reviewer": "product",
+              "claim": "The equivalent count for non-U.S. court requests is likewise legally sensitive and requires verified figures from legal/compliance.",
+              "reason": "[REVIEW: product] The equivalent count for non-U.S. court requests is likewise legally sensitive and requires verified figures from legal/compliance."
+            }
+          ],
+          "reviewer_hooks": [
+            {
+              "reviewer": "product",
+              "kind": "placeholder",
+              "text": "过去3年其他国家法院数据调取请求次数同样属于法务合规敏感信息，需法务团队核实提供真实数字，不可编造。",
+              "reason": "[REVIEW: product] 过去3年其他国家法院数据调取请求次数同样属于法务合规敏感信息，需法务团队核实提供真实数字，不可编造。"
+            },
+            {
+              "reviewer": "product",
+              "kind": "placeholder",
+              "text": "The equivalent count for non-U.S. court requests is likewise legally sensitive and requires verified figures from legal/compliance.",
+              "reason": "[REVIEW: product] The equivalent count for non-U.S. court requests is likewise legally sensitive and requires verified figures from legal/compliance."
+            }
+          ],
+          "lint": [
+            {
+              "severity": "WARN",
+              "rule": "review-hook",
+              "loc": "ZH",
+              "message": "[REVIEW: product] 过去3年其他国家法院数据调取请求次数同样属于法务合规敏感信息，需法务团队核实提供真实数字，不可编造。",
+              "suggest": "交由 product 审核"
+            },
+            {
+              "severity": "WARN",
+              "rule": "review-hook",
+              "loc": "EN",
+              "message": "[REVIEW: product] The equivalent count for non-U.S. court requests is likewise legally sensitive and requires verified figures from legal/compliance.",
+              "suggest": "交由 product 审核"
+            }
+          ],
+          "conflicts": []
+        }
+      ]
+    },
+    {
+      "question_id": "oms_q_ab005",
+      "type_tag": {
+        "macro": "产品能力",
+        "form": "简答",
+        "modifiers": []
+      },
+      "word_limit": 0,
+      "status": "READY",
+      "fields": [
+        {
+          "field_id": "oms_ab005_priv",
+          "content_zh": "是，TCE 支持完全物理隔离(air-gapped)的专有云部署模式，可满足最高安全等级的隔离需求。",
+          "content_en": "Yes. TCE supports a fully air-gapped private-cloud deployment model for the highest tier of isolation requirements.",
+          "evidence": [
+            {
+              "tag": "CITED",
+              "claim": "Forrester报告确认腾讯云支持公有云及私有物理隔离环境",
+              "source": "https://www.tencentcloud.com/dynamic/news-details/101217",
+              "quote": "Its standardized governance enables full-process management and multiteam collaboration based on CI/CD standards and unified API services, while it supports both public cloud and private air-gapped environments.",
+              "retrieved": "2026-07-16"
+            }
+          ],
+          "reviewer_hooks": [],
+          "lint": [],
+          "conflicts": []
+        }
+      ]
+    },
+    {
+      "question_id": "oms_q_ab006",
+      "type_tag": {
+        "macro": "产品能力",
+        "form": "简答",
+        "modifiers": [
+          "需人审"
+        ]
+      },
+      "word_limit": 0,
+      "status": "PRODUCT REVIEW",
+      "fields": [
+        {
+          "field_id": "oms_ab006_pub",
+          "content_zh": "公有云默认区域内数据驻留，具体以客户选择的 Region 为准，不跨区域传输。",
+          "content_en": "Public cloud defaults to in-region data residency, scoped to the customer's chosen region, with no cross-region transfer.",
+          "evidence": [
+            {
+              "tag": "REVIEW",
+              "reviewer": "product",
+              "claim": "具体驻留承诺范围需结合客户实际合同条款确认，且air-gapped与单一司法辖区驻留是否等价需产品架构团队最终确认。",
+              "reason": "[REVIEW: product] 具体驻留承诺范围需结合客户实际合同条款确认，且air-gapped与单一司法辖区驻留是否等价需产品架构团队最终确认。"
+            }
+          ],
+          "reviewer_hooks": [
+            {
+              "reviewer": "product",
+              "kind": "placeholder",
+              "text": "具体驻留承诺范围需结合客户实际合同条款确认，且air-gapped与单一司法辖区驻留是否等价需产品架构团队最终确认。",
+              "reason": "[REVIEW: product] 具体驻留承诺范围需结合客户实际合同条款确认，且air-gapped与单一司法辖区驻留是否等价需产品架构团队最终确认。"
+            }
+          ],
+          "lint": [],
+          "conflicts": []
+        },
+        {
+          "field_id": "oms_ab006_priv",
+          "content_zh": "是，TCE 可架构为数据完全保留在单一司法辖区内，不依赖跨境传输，满足最严格的数据主权要求。",
+          "content_en": "Yes. TCE can be architected so data remains entirely within a single jurisdiction with no dependency on cross-border transfer, meeting the strictest data-sovereignty requirements.",
+          "evidence": [
+            {
+              "tag": "REVIEW",
+              "reviewer": "product",
+              "claim": "具体驻留承诺范围需结合客户实际合同条款确认，且air-gapped与单一司法辖区驻留是否等价需产品架构团队最终确认。",
+              "reason": "[REVIEW: product] 具体驻留承诺范围需结合客户实际合同条款确认，且air-gapped与单一司法辖区驻留是否等价需产品架构团队最终确认。"
+            }
+          ],
+          "reviewer_hooks": [
+            {
+              "reviewer": "product",
+              "kind": "placeholder",
+              "text": "具体驻留承诺范围需结合客户实际合同条款确认，且air-gapped与单一司法辖区驻留是否等价需产品架构团队最终确认。",
+              "reason": "[REVIEW: product] 具体驻留承诺范围需结合客户实际合同条款确认，且air-gapped与单一司法辖区驻留是否等价需产品架构团队最终确认。"
+            }
+          ],
+          "lint": [],
+          "conflicts": []
+        },
+        {
+          "field_id": "oms_ab006_comments",
+          "content_zh": "[REVIEW: product] 具体驻留承诺范围需结合客户实际合同条款确认，且air-gapped与单一司法辖区驻留是否等价需产品架构团队最终确认。",
+          "content_en": "[REVIEW: product] The exact scope of the residency commitment should be confirmed against the specific customer contract, and product/architecture teams should confirm that air-gapped isolation is equivalent to single-jurisdiction residency in all cases.",
+          "evidence": [
+            {
+              "tag": "REVIEW",
+              "reviewer": "product",
+              "claim": "具体驻留承诺范围需结合客户实际合同条款确认，且air-gapped与单一司法辖区驻留是否等价需产品架构团队最终确认。",
+              "reason": "[REVIEW: product] 具体驻留承诺范围需结合客户实际合同条款确认，且air-gapped与单一司法辖区驻留是否等价需产品架构团队最终确认。"
+            },
+            {
+              "tag": "REVIEW",
+              "reviewer": "product",
+              "claim": "The exact scope of the residency commitment should be confirmed against the specific customer contract, and product/architecture teams should confirm that air-gapped isolation is equivalent to single-jurisdiction residency in all cases.",
+              "reason": "[REVIEW: product] The exact scope of the residency commitment should be confirmed against the specific customer contract, and product/architecture teams should confirm that air-gapped isolation is equivalent to single-jurisdiction residency in all cases."
+            }
+          ],
+          "reviewer_hooks": [
+            {
+              "reviewer": "product",
+              "kind": "placeholder",
+              "text": "具体驻留承诺范围需结合客户实际合同条款确认，且air-gapped与单一司法辖区驻留是否等价需产品架构团队最终确认。",
+              "reason": "[REVIEW: product] 具体驻留承诺范围需结合客户实际合同条款确认，且air-gapped与单一司法辖区驻留是否等价需产品架构团队最终确认。"
+            },
+            {
+              "reviewer": "product",
+              "kind": "placeholder",
+              "text": "The exact scope of the residency commitment should be confirmed against the specific customer contract, and product/architecture teams should confirm that air-gapped isolation is equivalent to single-jurisdiction residency in all cases.",
+              "reason": "[REVIEW: product] The exact scope of the residency commitment should be confirmed against the specific customer contract, and product/architecture teams should confirm that air-gapped isolation is equivalent to single-jurisdiction residency in all cases."
+            }
+          ],
+          "lint": [
+            {
+              "severity": "WARN",
+              "rule": "review-hook",
+              "loc": "ZH",
+              "message": "[REVIEW: product] 具体驻留承诺范围需结合客户实际合同条款确认，且air-gapped与单一司法辖区驻留是否等价需产品架构团队最终确认。",
+              "suggest": "交由 product 审核"
+            },
+            {
+              "severity": "WARN",
+              "rule": "review-hook",
+              "loc": "EN",
+              "message": "[REVIEW: product] The exact scope of the residency commitment should be confirmed against the specific customer contract, and product/architecture teams should confirm that air-gapped isolation is equivalent to single-jurisdiction residency in all cases.",
+              "suggest": "交由 product 审核"
+            }
+          ],
+          "conflicts": []
+        }
+      ]
+    },
+    {
+      "question_id": "oms_q_ab007",
+      "type_tag": {
+        "macro": "产品能力",
+        "form": "简答",
+        "modifiers": [
+          "需人审"
+        ]
+      },
+      "word_limit": 0,
+      "status": "PRODUCT REVIEW",
+      "fields": [
+        {
+          "field_id": "oms_ab007_pub",
+          "content_zh": "默认采用腾讯云所在地域的监管框架，客户可通过 KMS 自主选择/管理密钥。",
+          "content_en": "By default, keys are governed under the regulatory framework of the region where Tencent Cloud operates, with customers able to select and manage keys independently via KMS.",
+          "evidence": [],
+          "reviewer_hooks": [],
+          "lint": [],
+          "conflicts": []
+        },
+        {
+          "field_id": "oms_ab007_priv",
+          "content_zh": "TCE 部署下密钥可完全由客户在本地环境内自主管理，不受腾讯总部监管框架约束。",
+          "content_en": "Under TCE, keys can be managed entirely by the customer within the local environment, independent of Tencent's home-jurisdiction regulatory framework.",
+          "evidence": [],
+          "reviewer_hooks": [],
+          "lint": [],
+          "conflicts": []
+        },
+        {
+          "field_id": "oms_ab007_comments",
+          "content_zh": "[REVIEW: product] 具体条款因客户合同和部署架构而异，此处按“客户可选”通用情形描述，正式提交前需核实具体合同措辞。",
+          "content_en": "[REVIEW: product] Exact terms vary by customer contract and deployment architecture; this describes the general customer-optionality model and should be verified against actual contract language before submission.",
+          "evidence": [
+            {
+              "tag": "REVIEW",
+              "reviewer": "product",
+              "claim": "具体条款因客户合同和部署架构而异，此处按“客户可选”通用情形描述，正式提交前需核实具体合同措辞。",
+              "reason": "[REVIEW: product] 具体条款因客户合同和部署架构而异，此处按“客户可选”通用情形描述，正式提交前需核实具体合同措辞。"
+            },
+            {
+              "tag": "REVIEW",
+              "reviewer": "product",
+              "claim": "Exact terms vary by customer contract and deployment architecture; this describes the general customer-optionality model and should be verified against actual contract language before submission.",
+              "reason": "[REVIEW: product] Exact terms vary by customer contract and deployment architecture; this describes the general customer-optionality model and should be verified against actual contract language before submission."
+            }
+          ],
+          "reviewer_hooks": [
+            {
+              "reviewer": "product",
+              "kind": "placeholder",
+              "text": "具体条款因客户合同和部署架构而异，此处按“客户可选”通用情形描述，正式提交前需核实具体合同措辞。",
+              "reason": "[REVIEW: product] 具体条款因客户合同和部署架构而异，此处按“客户可选”通用情形描述，正式提交前需核实具体合同措辞。"
+            },
+            {
+              "reviewer": "product",
+              "kind": "placeholder",
+              "text": "Exact terms vary by customer contract and deployment architecture; this describes the general customer-optionality model and should be verified against actual contract language before submission.",
+              "reason": "[REVIEW: product] Exact terms vary by customer contract and deployment architecture; this describes the general customer-optionality model and should be verified against actual contract language before submission."
+            }
+          ],
+          "lint": [
+            {
+              "severity": "WARN",
+              "rule": "review-hook",
+              "loc": "ZH",
+              "message": "[REVIEW: product] 具体条款因客户合同和部署架构而异，此处按“客户可选”通用情形描述，正式提交前需核实具体合同措辞。",
+              "suggest": "交由 product 审核"
+            },
+            {
+              "severity": "WARN",
+              "rule": "review-hook",
+              "loc": "EN",
+              "message": "[REVIEW: product] Exact terms vary by customer contract and deployment architecture; this describes the general customer-optionality model and should be verified against actual contract language before submission.",
+              "suggest": "交由 product 审核"
+            }
+          ],
+          "conflicts": []
+        }
+      ]
+    },
+    {
+      "question_id": "oms_q_ac001",
+      "type_tag": {
+        "macro": "产品能力",
+        "form": "简答",
+        "modifiers": [
+          "需人审"
+        ]
+      },
+      "word_limit": 0,
+      "status": "PRODUCT REVIEW",
+      "fields": [
+        {
+          "field_id": "oms_ac001_partner",
+          "content_zh": "无法从公开资料确认。True IDC 与腾讯云已确认在泰国建立合作，但公告未披露运营人员是否全部为居住在当地的本国公民。[REVIEW: product] 请本地运营团队核实人员国籍与居住地政策。",
+          "content_en": "Not publicly verified. True IDC and Tencent Cloud have confirmed their partnership in Thailand, but the announcement does not state that all operating staff are resident nationals. [REVIEW: product] The local operations team must confirm the staffing-nationality and residency policy.",
+          "evidence": [
+            {
+              "tag": "CITED",
+              "claim": "True IDC与腾讯云已确认在泰国建立合作",
+              "source": "https://www.trueidc.com/en/news-detail/227/strategic-partnership-mou-tencent-cloud",
+              "quote": "True Internet Data Center Co., Ltd. (True IDC), Thailand’s leading provider of data center and cloud services, has announced the signing of a landmark Memorandum of Understanding (MOU) with Tencent Cloud International Pte. Ltd. (Tencent Cloud) in Shenzhen, China.",
+              "retrieved": "2026-07-17"
+            },
+            {
+              "tag": "REVIEW",
+              "reviewer": "product",
+              "claim": "无法从公开资料确认。True IDC 与腾讯云已确认在泰国建立合作，但公告未披露运营人员是否全部为居住在当地的本国公民。请本地运营团队核实人员国籍与居住地政策。",
+              "reason": "无法从公开资料确认。True IDC 与腾讯云已确认在泰国建立合作，但公告未披露运营人员是否全部为居住在当地的本国公民。[REVIEW: product] 请本地运营团队核实人员国籍与居住地政策。"
+            },
+            {
+              "tag": "REVIEW",
+              "reviewer": "product",
+              "claim": "Not publicly verified. True IDC and Tencent Cloud have confirmed their partnership in Thailand, but the announcement does not state that all operating staff are resident nationals. The local operations team must confirm the staffing-nationality and residency policy.",
+              "reason": "Not publicly verified. True IDC and Tencent Cloud have confirmed their partnership in Thailand, but the announcement does not state that all operating staff are resident nationals. [REVIEW: product] The local operations team must confirm the staffing-nationality and residency policy."
+            },
+            {
+              "tag": "REVIEW",
+              "reviewer": "product",
+              "claim": "该来源只证明伙伴关系，不证明具体人员国籍构成；本地运营团队必须核实后才能作答“是”。",
+              "reason": "[REVIEW: product] 该来源只证明伙伴关系，不证明具体人员国籍构成；本地运营团队必须核实后才能作答“是”。"
+            }
+          ],
+          "reviewer_hooks": [
+            {
+              "reviewer": "product",
+              "kind": "placeholder",
+              "text": "无法从公开资料确认。True IDC 与腾讯云已确认在泰国建立合作，但公告未披露运营人员是否全部为居住在当地的本国公民。请本地运营团队核实人员国籍与居住地政策。",
+              "reason": "无法从公开资料确认。True IDC 与腾讯云已确认在泰国建立合作，但公告未披露运营人员是否全部为居住在当地的本国公民。[REVIEW: product] 请本地运营团队核实人员国籍与居住地政策。"
+            },
+            {
+              "reviewer": "product",
+              "kind": "placeholder",
+              "text": "Not publicly verified. True IDC and Tencent Cloud have confirmed their partnership in Thailand, but the announcement does not state that all operating staff are resident nationals. The local operations team must confirm the staffing-nationality and residency policy.",
+              "reason": "Not publicly verified. True IDC and Tencent Cloud have confirmed their partnership in Thailand, but the announcement does not state that all operating staff are resident nationals. [REVIEW: product] The local operations team must confirm the staffing-nationality and residency policy."
+            },
+            {
+              "reviewer": "product",
+              "kind": "placeholder",
+              "text": "该来源只证明伙伴关系，不证明具体人员国籍构成；本地运营团队必须核实后才能作答“是”。",
+              "reason": "[REVIEW: product] 该来源只证明伙伴关系，不证明具体人员国籍构成；本地运营团队必须核实后才能作答“是”。"
+            }
+          ],
+          "lint": [
+            {
+              "severity": "WARN",
+              "rule": "review-hook",
+              "loc": "ZH",
+              "message": "无法从公开资料确认。True IDC 与腾讯云已确认在泰国建立合作，但公告未披露运营人员是否全部为居住在当地的本国公民。[REVIEW: product] 请本地运营团队核实人员国籍与居住地政策。",
+              "suggest": "交由 product 审核"
+            },
+            {
+              "severity": "WARN",
+              "rule": "review-hook",
+              "loc": "EN",
+              "message": "Not publicly verified. True IDC and Tencent Cloud have confirmed their partnership in Thailand, but the announcement does not state that all operating staff are resident nationals. [REVIEW: product] The local operations team must confirm the staffing-nationality and residency policy.",
+              "suggest": "交由 product 审核"
+            }
+          ],
+          "conflicts": []
+        },
+        {
+          "field_id": "oms_ac001_priv",
+          "content_zh": "无法从公开资料确认。TCE 的人员配置取决于客户或本地伙伴的运营安排，不能据此认定全部人员均为居住在当地的本国公民。[REVIEW: product] 请产品与本地运营团队核实。",
+          "content_en": "Not publicly verified. TCE staffing depends on the customer's or local partner's operating model and does not establish that all staff are resident nationals. [REVIEW: product] Product and local operations teams must confirm this policy.",
+          "evidence": [
+            {
+              "tag": "CITED",
+              "claim": "True IDC公开确认其在泰国通过与腾讯云等厂商合作提供云服务",
+              "source": "https://www.trueidc.com/en/about",
+              "quote": "True IDC is recognized as the first cloud provider in Thailand through partnership with ... Tencent Cloud",
+              "retrieved": "2026-07-17"
+            },
+            {
+              "tag": "REVIEW",
+              "reviewer": "product",
+              "claim": "无法从公开资料确认。TCE 的人员配置取决于客户或本地伙伴的运营安排，不能据此认定全部人员均为居住在当地的本国公民。请产品与本地运营团队核实。",
+              "reason": "无法从公开资料确认。TCE 的人员配置取决于客户或本地伙伴的运营安排，不能据此认定全部人员均为居住在当地的本国公民。[REVIEW: product] 请产品与本地运营团队核实。"
+            },
+            {
+              "tag": "REVIEW",
+              "reviewer": "product",
+              "claim": "Not publicly verified. TCE staffing depends on the customer's or local partner's operating model and does not establish that all staff are resident nationals. Product and local operations teams must confirm this policy.",
+              "reason": "Not publicly verified. TCE staffing depends on the customer's or local partner's operating model and does not establish that all staff are resident nationals. [REVIEW: product] Product and local operations teams must confirm this policy."
+            },
+            {
+              "tag": "REVIEW",
+              "reviewer": "product",
+              "claim": "该来源不披露TCE部署的人员国籍或居住地政策，不能据此升级为verified。",
+              "reason": "[REVIEW: product] 该来源不披露TCE部署的人员国籍或居住地政策，不能据此升级为verified。"
+            }
+          ],
+          "reviewer_hooks": [
+            {
+              "reviewer": "product",
+              "kind": "placeholder",
+              "text": "无法从公开资料确认。TCE 的人员配置取决于客户或本地伙伴的运营安排，不能据此认定全部人员均为居住在当地的本国公民。请产品与本地运营团队核实。",
+              "reason": "无法从公开资料确认。TCE 的人员配置取决于客户或本地伙伴的运营安排，不能据此认定全部人员均为居住在当地的本国公民。[REVIEW: product] 请产品与本地运营团队核实。"
+            },
+            {
+              "reviewer": "product",
+              "kind": "placeholder",
+              "text": "Not publicly verified. TCE staffing depends on the customer's or local partner's operating model and does not establish that all staff are resident nationals. Product and local operations teams must confirm this policy.",
+              "reason": "Not publicly verified. TCE staffing depends on the customer's or local partner's operating model and does not establish that all staff are resident nationals. [REVIEW: product] Product and local operations teams must confirm this policy."
+            },
+            {
+              "reviewer": "product",
+              "kind": "placeholder",
+              "text": "该来源不披露TCE部署的人员国籍或居住地政策，不能据此升级为verified。",
+              "reason": "[REVIEW: product] 该来源不披露TCE部署的人员国籍或居住地政策，不能据此升级为verified。"
+            }
+          ],
+          "lint": [
+            {
+              "severity": "WARN",
+              "rule": "review-hook",
+              "loc": "ZH",
+              "message": "无法从公开资料确认。TCE 的人员配置取决于客户或本地伙伴的运营安排，不能据此认定全部人员均为居住在当地的本国公民。[REVIEW: product] 请产品与本地运营团队核实。",
+              "suggest": "交由 product 审核"
+            },
+            {
+              "severity": "WARN",
+              "rule": "review-hook",
+              "loc": "EN",
+              "message": "Not publicly verified. TCE staffing depends on the customer's or local partner's operating model and does not establish that all staff are resident nationals. [REVIEW: product] Product and local operations teams must confirm this policy.",
+              "suggest": "交由 product 审核"
+            }
+          ],
+          "conflicts": []
+        },
+        {
+          "field_id": "oms_ac001_comments",
+          "content_zh": "[REVIEW: product] 具体人员国籍构成的政策承诺公开渠道未披露，建议由本地运营团队核实后补充完整表述。",
+          "content_en": "[REVIEW: product] The specific nationality-of-staff policy commitment is not publicly documented; local operations teams should verify before finalizing this claim.",
+          "evidence": [
+            {
+              "tag": "REVIEW",
+              "reviewer": "product",
+              "claim": "具体人员国籍构成的政策承诺公开渠道未披露，建议由本地运营团队核实后补充完整表述。",
+              "reason": "[REVIEW: product] 具体人员国籍构成的政策承诺公开渠道未披露，建议由本地运营团队核实后补充完整表述。"
+            },
+            {
+              "tag": "REVIEW",
+              "reviewer": "product",
+              "claim": "The specific nationality-of-staff policy commitment is not publicly documented; local operations teams should verify before finalizing this claim.",
+              "reason": "[REVIEW: product] The specific nationality-of-staff policy commitment is not publicly documented; local operations teams should verify before finalizing this claim."
+            }
+          ],
+          "reviewer_hooks": [
+            {
+              "reviewer": "product",
+              "kind": "placeholder",
+              "text": "具体人员国籍构成的政策承诺公开渠道未披露，建议由本地运营团队核实后补充完整表述。",
+              "reason": "[REVIEW: product] 具体人员国籍构成的政策承诺公开渠道未披露，建议由本地运营团队核实后补充完整表述。"
+            },
+            {
+              "reviewer": "product",
+              "kind": "placeholder",
+              "text": "The specific nationality-of-staff policy commitment is not publicly documented; local operations teams should verify before finalizing this claim.",
+              "reason": "[REVIEW: product] The specific nationality-of-staff policy commitment is not publicly documented; local operations teams should verify before finalizing this claim."
+            }
+          ],
+          "lint": [
+            {
+              "severity": "WARN",
+              "rule": "review-hook",
+              "loc": "ZH",
+              "message": "[REVIEW: product] 具体人员国籍构成的政策承诺公开渠道未披露，建议由本地运营团队核实后补充完整表述。",
+              "suggest": "交由 product 审核"
+            },
+            {
+              "severity": "WARN",
+              "rule": "review-hook",
+              "loc": "EN",
+              "message": "[REVIEW: product] The specific nationality-of-staff policy commitment is not publicly documented; local operations teams should verify before finalizing this claim.",
+              "suggest": "交由 product 审核"
+            }
+          ],
+          "conflicts": []
+        }
+      ]
+    },
+    {
+      "question_id": "oms_q_ac002",
+      "type_tag": {
+        "macro": "产品能力",
+        "form": "简答",
+        "modifiers": []
+      },
+      "word_limit": 0,
+      "status": "READY",
+      "fields": [
+        {
+          "field_id": "oms_ac002_pub",
+          "content_zh": "是。公有云基础设施运营同时受腾讯总部及区域合规要求约束，并通过德国C5、新加坡MTCS T3、韩国K-ISMS等区域认证；CSA注册表另列示STAR二级第三方审计与CCMv4认证。",
+          "content_en": "Yes. Public-cloud operations are governed by Tencent's home-jurisdiction requirements and regional compliance regimes, evidenced by Germany's C5, Singapore's MTCS T3 and Korea's K-ISMS. The independent CSA registry also lists a STAR Level 2 third-party audit and CCMv4 certification.",
+          "evidence": [
+            {
+              "tag": "CITED",
+              "claim": "腾讯云已获德国C5/新加坡MTCS T3/韩国K-ISMS等区域合规认证",
+              "source": "https://cloud.tencent.com.cn/developer/article/2679650",
+              "quote": "德国C5审计：通过2020版C5:2020基线审计，满足德国及欧盟GDPR等法规要求。新加坡MTCS T3认证：通过最高级别(T3)认证。韩国K-ISMS认证：腾讯云是中国首家通过韩国K-ISMS认证的云服务商。",
+              "retrieved": "2026-07-16"
+            },
+            {
+              "tag": "CITED",
+              "claim": "CSA独立注册表列示腾讯云的STAR二级第三方审计与CCMv4认证",
+              "source": "https://cloudsecurityalliance.org/star/registry/tencent-cloud-computing-beijing-company-limited/services/tencent-cloud-computing-beijing-company-limited",
+              "quote": "STAR Level 2 Third-Party Audit; Cloud Controls Matrix STAR Certification (CCMv4)",
+              "retrieved": "2026-07-17"
+            }
+          ],
+          "reviewer_hooks": [],
+          "lint": [],
+          "conflicts": []
+        },
+        {
+          "field_id": "oms_ac002_partner",
+          "content_zh": "是，合作伙伴云按本地部署与本地数据驻留模式设计。True IDC 与腾讯云在泰国发布了本地交互式AI云平台，并提供数据留存在泰国境内的选项；具体法律义务仍以当地实体和合同为准。",
+          "content_en": "Yes, the partner-cloud model is designed for in-country deployment and data residency. In Thailand, True IDC and Tencent Cloud announced an in-country interactive and AI-enabled cloud platform with an option to keep data in the country. Exact legal obligations remain subject to the local entity and contract.",
+          "evidence": [
+            {
+              "tag": "CITED",
+              "claim": "True IDC与腾讯云发布泰国本地云平台",
+              "source": "https://en.prnasia.com/releases/apac/true-idc-and-tencent-collaborate-to-establish-the-first-in-country-interactive-and-ai-enabled-cloud-platform-242265.shtml",
+              "quote": "the first in-country interactive and AI-enabled cloud platform in Thailand",
+              "retrieved": "2026-07-17"
+            },
+            {
+              "tag": "CITED",
+              "claim": "该平台提供将数据留存在泰国境内的选项",
+              "source": "https://en.prnasia.com/releases/apac/true-idc-and-tencent-collaborate-to-establish-the-first-in-country-interactive-and-ai-enabled-cloud-platform-242265.shtml",
+              "quote": "an option to secure their data in the country.",
+              "retrieved": "2026-07-17"
+            }
+          ],
+          "reviewer_hooks": [],
+          "lint": [],
+          "conflicts": []
+        },
+        {
+          "field_id": "oms_ac002_priv",
+          "content_zh": "TCE 私有化部署下，运营主体和合规主体为客户自身，天然适用本地法律法规。",
+          "content_en": "Under a TCE private deployment, the operating and compliance entity is the customer itself, so local laws and regulations naturally apply.",
+          "evidence": [
+            {
+              "tag": "CITED",
+              "claim": "腾讯云已获德国C5/新加坡MTCS T3/韩国K-ISMS等区域合规认证",
+              "source": "https://cloud.tencent.com.cn/developer/article/2679650",
+              "quote": "德国C5审计：通过2020版C5:2020基线审计，满足德国及欧盟GDPR等法规要求。新加坡MTCS T3认证：通过最高级别(T3)认证。韩国K-ISMS认证：腾讯云是中国首家通过韩国K-ISMS认证的云服务商。",
+              "retrieved": "2026-07-16"
+            }
+          ],
+          "reviewer_hooks": [],
+          "lint": [],
+          "conflicts": []
+        }
+      ]
+    },
+    {
+      "question_id": "oms_q_ac003",
+      "type_tag": {
+        "macro": "产品能力",
+        "form": "简答",
+        "modifiers": [
+          "需人审"
+        ]
+      },
+      "word_limit": 0,
+      "status": "PRODUCT REVIEW",
+      "fields": [
+        {
+          "field_id": "oms_ac003_pub",
+          "content_zh": "控制面通常位于部署所在地域内，具体因产品而异。",
+          "content_en": "The control plane is typically located within the deployment region, though this varies by product.",
+          "evidence": [],
+          "reviewer_hooks": [],
+          "lint": [],
+          "conflicts": []
+        },
+        {
+          "field_id": "oms_ac003_priv",
+          "content_zh": "TCE 架构下控制面完全部署于客户指定的本地环境内。",
+          "content_en": "Under the TCE architecture, the control plane is deployed entirely within the customer's designated local environment.",
+          "evidence": [],
+          "reviewer_hooks": [],
+          "lint": [],
+          "conflicts": []
+        },
+        {
+          "field_id": "oms_ac003_comments",
+          "content_zh": "[REVIEW: product] 需按具体产品/服务核实控制面组件是否存在跨区域依赖。",
+          "content_en": "[REVIEW: product] Product teams should verify, product by product, whether any control-plane components have cross-region dependencies.",
+          "evidence": [
+            {
+              "tag": "REVIEW",
+              "reviewer": "product",
+              "claim": "需按具体产品/服务核实控制面组件是否存在跨区域依赖。",
+              "reason": "[REVIEW: product] 需按具体产品/服务核实控制面组件是否存在跨区域依赖。"
+            },
+            {
+              "tag": "REVIEW",
+              "reviewer": "product",
+              "claim": "Product teams should verify, product by product, whether any control-plane components have cross-region dependencies.",
+              "reason": "[REVIEW: product] Product teams should verify, product by product, whether any control-plane components have cross-region dependencies."
+            }
+          ],
+          "reviewer_hooks": [
+            {
+              "reviewer": "product",
+              "kind": "placeholder",
+              "text": "需按具体产品/服务核实控制面组件是否存在跨区域依赖。",
+              "reason": "[REVIEW: product] 需按具体产品/服务核实控制面组件是否存在跨区域依赖。"
+            },
+            {
+              "reviewer": "product",
+              "kind": "placeholder",
+              "text": "Product teams should verify, product by product, whether any control-plane components have cross-region dependencies.",
+              "reason": "[REVIEW: product] Product teams should verify, product by product, whether any control-plane components have cross-region dependencies."
+            }
+          ],
+          "lint": [
+            {
+              "severity": "WARN",
+              "rule": "review-hook",
+              "loc": "ZH",
+              "message": "[REVIEW: product] 需按具体产品/服务核实控制面组件是否存在跨区域依赖。",
+              "suggest": "交由 product 审核"
+            },
+            {
+              "severity": "WARN",
+              "rule": "review-hook",
+              "loc": "EN",
+              "message": "[REVIEW: product] Product teams should verify, product by product, whether any control-plane components have cross-region dependencies.",
+              "suggest": "交由 product 审核"
+            }
+          ],
+          "conflicts": []
+        }
+      ]
+    },
+    {
+      "question_id": "oms_q_ac004",
+      "type_tag": {
+        "macro": "产品能力",
+        "form": "简答",
+        "modifiers": [
+          "需人审"
+        ]
+      },
+      "word_limit": 0,
+      "status": "PRODUCT REVIEW",
+      "fields": [
+        {
+          "field_id": "oms_ac004_pub",
+          "content_zh": "[REVIEW: product] 公有云设施的运营主体可能因地域与机房合同而异。公开来源不足以逐地域确认由腾讯云还是托管数据中心运营商负责，需基础设施团队提供清单。",
+          "content_en": "[REVIEW: product] The public-cloud facility operator may vary by region and data-centre contract. Public sources do not establish, region by region, whether Tencent Cloud or a colocation operator runs each facility; infrastructure teams must supply the operator list.",
+          "evidence": [
+            {
+              "tag": "REVIEW",
+              "reviewer": "product",
+              "claim": "公有云设施的运营主体可能因地域与机房合同而异。公开来源不足以逐地域确认由腾讯云还是托管数据中心运营商负责，需基础设施团队提供清单。",
+              "reason": "[REVIEW: product] 公有云设施的运营主体可能因地域与机房合同而异。公开来源不足以逐地域确认由腾讯云还是托管数据中心运营商负责，需基础设施团队提供清单。"
+            },
+            {
+              "tag": "REVIEW",
+              "reviewer": "product",
+              "claim": "The public-cloud facility operator may vary by region and data-centre contract. Public sources do not establish, region by region, whether Tencent Cloud or a colocation operator runs each facility; infrastructure teams must supply the operator list.",
+              "reason": "[REVIEW: product] The public-cloud facility operator may vary by region and data-centre contract. Public sources do not establish, region by region, whether Tencent Cloud or a colocation operator runs each facility; infrastructure teams must supply the operator list."
+            },
+            {
+              "tag": "REVIEW",
+              "reviewer": "product",
+              "claim": "现有公开证据不能支持“全部由腾讯云自身运营”的统一结论，需基础设施团队逐地域核实。",
+              "reason": "[REVIEW: product] 现有公开证据不能支持“全部由腾讯云自身运营”的统一结论，需基础设施团队逐地域核实。"
+            }
+          ],
+          "reviewer_hooks": [
+            {
+              "reviewer": "product",
+              "kind": "placeholder",
+              "text": "公有云设施的运营主体可能因地域与机房合同而异。公开来源不足以逐地域确认由腾讯云还是托管数据中心运营商负责，需基础设施团队提供清单。",
+              "reason": "[REVIEW: product] 公有云设施的运营主体可能因地域与机房合同而异。公开来源不足以逐地域确认由腾讯云还是托管数据中心运营商负责，需基础设施团队提供清单。"
+            },
+            {
+              "reviewer": "product",
+              "kind": "placeholder",
+              "text": "The public-cloud facility operator may vary by region and data-centre contract. Public sources do not establish, region by region, whether Tencent Cloud or a colocation operator runs each facility; infrastructure teams must supply the operator list.",
+              "reason": "[REVIEW: product] The public-cloud facility operator may vary by region and data-centre contract. Public sources do not establish, region by region, whether Tencent Cloud or a colocation operator runs each facility; infrastructure teams must supply the operator list."
+            },
+            {
+              "reviewer": "product",
+              "kind": "placeholder",
+              "text": "现有公开证据不能支持“全部由腾讯云自身运营”的统一结论，需基础设施团队逐地域核实。",
+              "reason": "[REVIEW: product] 现有公开证据不能支持“全部由腾讯云自身运营”的统一结论，需基础设施团队逐地域核实。"
+            }
+          ],
+          "lint": [
+            {
+              "severity": "WARN",
+              "rule": "review-hook",
+              "loc": "ZH",
+              "message": "[REVIEW: product] 公有云设施的运营主体可能因地域与机房合同而异。公开来源不足以逐地域确认由腾讯云还是托管数据中心运营商负责，需基础设施团队提供清单。",
+              "suggest": "交由 product 审核"
+            },
+            {
+              "severity": "WARN",
+              "rule": "review-hook",
+              "loc": "EN",
+              "message": "[REVIEW: product] The public-cloud facility operator may vary by region and data-centre contract. Public sources do not establish, region by region, whether Tencent Cloud or a colocation operator runs each facility; infrastructure teams must supply the operator list.",
+              "suggest": "交由 product 审核"
+            }
+          ],
+          "conflicts": []
+        },
+        {
+          "field_id": "oms_ac004_partner",
+          "content_zh": "由当地合作伙伴运营相关云服务和数据中心。以泰国为例，True IDC 公开说明其在曼谷关键商业区运营云服务与数据中心，并通过与腾讯云合作提供云能力。",
+          "content_en": "The local partner operates the relevant cloud services and data centres. In Thailand, True IDC states that it runs cloud services and data centres in Bangkok business districts and provides cloud capability through its Tencent Cloud partnership.",
+          "evidence": [
+            {
+              "tag": "CITED",
+              "claim": "True IDC说明其在曼谷提供云服务并运营数据中心",
+              "source": "https://www.trueidc.com/en/about",
+              "quote": "We have a cloud services and data centers located in key business districts in Bangkok.",
+              "retrieved": "2026-07-17"
+            },
+            {
+              "tag": "CITED",
+              "claim": "True IDC说明其通过与腾讯云等厂商合作提供泰国云服务",
+              "source": "https://www.trueidc.com/en/about",
+              "quote": "True IDC is recognized as the first cloud provider in Thailand through partnership with ... Tencent Cloud",
+              "retrieved": "2026-07-17"
+            }
+          ],
+          "reviewer_hooks": [],
+          "lint": [],
+          "conflicts": []
+        },
+        {
+          "field_id": "oms_ac004_priv",
+          "content_zh": "TCE 通常由客户或客户授权团队运营，但实际设施运营主体取决于部署合同。[REVIEW: product] 请项目交付团队按目标部署确认运营主体。",
+          "content_en": "TCE is typically operated by the customer or its authorized team, but the actual facility operator depends on the deployment contract. [REVIEW: product] The delivery team must confirm the operator for the target deployment.",
+          "evidence": [
+            {
+              "tag": "REVIEW",
+              "reviewer": "product",
+              "claim": "TCE 通常由客户或客户授权团队运营，但实际设施运营主体取决于部署合同。请项目交付团队按目标部署确认运营主体。",
+              "reason": "TCE 通常由客户或客户授权团队运营，但实际设施运营主体取决于部署合同。[REVIEW: product] 请项目交付团队按目标部署确认运营主体。"
+            },
+            {
+              "tag": "REVIEW",
+              "reviewer": "product",
+              "claim": "TCE is typically operated by the customer or its authorized team, but the actual facility operator depends on the deployment contract. The delivery team must confirm the operator for the target deployment.",
+              "reason": "TCE is typically operated by the customer or its authorized team, but the actual facility operator depends on the deployment contract. [REVIEW: product] The delivery team must confirm the operator for the target deployment."
+            },
+            {
+              "tag": "REVIEW",
+              "reviewer": "product",
+              "claim": "泰国伙伴资料不能证明所有TCE项目的设施运营安排，需按部署合同核实。",
+              "reason": "[REVIEW: product] 泰国伙伴资料不能证明所有TCE项目的设施运营安排，需按部署合同核实。"
+            }
+          ],
+          "reviewer_hooks": [
+            {
+              "reviewer": "product",
+              "kind": "placeholder",
+              "text": "TCE 通常由客户或客户授权团队运营，但实际设施运营主体取决于部署合同。请项目交付团队按目标部署确认运营主体。",
+              "reason": "TCE 通常由客户或客户授权团队运营，但实际设施运营主体取决于部署合同。[REVIEW: product] 请项目交付团队按目标部署确认运营主体。"
+            },
+            {
+              "reviewer": "product",
+              "kind": "placeholder",
+              "text": "TCE is typically operated by the customer or its authorized team, but the actual facility operator depends on the deployment contract. The delivery team must confirm the operator for the target deployment.",
+              "reason": "TCE is typically operated by the customer or its authorized team, but the actual facility operator depends on the deployment contract. [REVIEW: product] The delivery team must confirm the operator for the target deployment."
+            },
+            {
+              "reviewer": "product",
+              "kind": "placeholder",
+              "text": "泰国伙伴资料不能证明所有TCE项目的设施运营安排，需按部署合同核实。",
+              "reason": "[REVIEW: product] 泰国伙伴资料不能证明所有TCE项目的设施运营安排，需按部署合同核实。"
+            }
+          ],
+          "lint": [
+            {
+              "severity": "WARN",
+              "rule": "review-hook",
+              "loc": "ZH",
+              "message": "TCE 通常由客户或客户授权团队运营，但实际设施运营主体取决于部署合同。[REVIEW: product] 请项目交付团队按目标部署确认运营主体。",
+              "suggest": "交由 product 审核"
+            },
+            {
+              "severity": "WARN",
+              "rule": "review-hook",
+              "loc": "EN",
+              "message": "TCE is typically operated by the customer or its authorized team, but the actual facility operator depends on the deployment contract. [REVIEW: product] The delivery team must confirm the operator for the target deployment.",
+              "suggest": "交由 product 审核"
+            }
+          ],
+          "conflicts": []
+        }
+      ]
+    },
+    {
+      "question_id": "oms_q_ac005",
+      "type_tag": {
+        "macro": "产品能力",
+        "form": "简答",
+        "modifiers": [
+          "需人审"
+        ]
+      },
+      "word_limit": 0,
+      "status": "PRODUCT REVIEW",
+      "fields": [
+        {
+          "field_id": "oms_ac005_pub",
+          "content_zh": "部分全局性服务(如某些AI基础模型能力)可能存在跨区域技术依赖，具体因服务而异。",
+          "content_en": "Certain global services, such as some foundation-model capabilities, may carry cross-region technical dependencies; this varies by service.",
+          "evidence": [],
+          "reviewer_hooks": [],
+          "lint": [],
+          "conflicts": []
+        },
+        {
+          "field_id": "oms_ac005_priv",
+          "content_zh": "TCE air-gapped 部署下可实现无外部依赖的完全隔离运行。",
+          "content_en": "Under a TCE air-gapped deployment, the environment can run fully isolated with no external dependency.",
+          "evidence": [],
+          "reviewer_hooks": [],
+          "lint": [],
+          "conflicts": []
+        },
+        {
+          "field_id": "oms_ac005_comments",
+          "content_zh": "[REVIEW: product] 需按具体产品清单逐项核实是否存在境外依赖组件。",
+          "content_en": "[REVIEW: product] Product teams should review the product list line-by-line to confirm which, if any, components carry offshore dependencies.",
+          "evidence": [
+            {
+              "tag": "REVIEW",
+              "reviewer": "product",
+              "claim": "需按具体产品清单逐项核实是否存在境外依赖组件。",
+              "reason": "[REVIEW: product] 需按具体产品清单逐项核实是否存在境外依赖组件。"
+            },
+            {
+              "tag": "REVIEW",
+              "reviewer": "product",
+              "claim": "Product teams should review the product list line-by-line to confirm which, if any, components carry offshore dependencies.",
+              "reason": "[REVIEW: product] Product teams should review the product list line-by-line to confirm which, if any, components carry offshore dependencies."
+            }
+          ],
+          "reviewer_hooks": [
+            {
+              "reviewer": "product",
+              "kind": "placeholder",
+              "text": "需按具体产品清单逐项核实是否存在境外依赖组件。",
+              "reason": "[REVIEW: product] 需按具体产品清单逐项核实是否存在境外依赖组件。"
+            },
+            {
+              "reviewer": "product",
+              "kind": "placeholder",
+              "text": "Product teams should review the product list line-by-line to confirm which, if any, components carry offshore dependencies.",
+              "reason": "[REVIEW: product] Product teams should review the product list line-by-line to confirm which, if any, components carry offshore dependencies."
+            }
+          ],
+          "lint": [
+            {
+              "severity": "WARN",
+              "rule": "review-hook",
+              "loc": "ZH",
+              "message": "[REVIEW: product] 需按具体产品清单逐项核实是否存在境外依赖组件。",
+              "suggest": "交由 product 审核"
+            },
+            {
+              "severity": "WARN",
+              "rule": "review-hook",
+              "loc": "EN",
+              "message": "[REVIEW: product] Product teams should review the product list line-by-line to confirm which, if any, components carry offshore dependencies.",
+              "suggest": "交由 product 审核"
+            }
+          ],
+          "conflicts": []
+        }
+      ]
+    },
+    {
+      "question_id": "oms_q_ac006",
+      "type_tag": {
+        "macro": "产品能力",
+        "form": "简答",
+        "modifiers": [
+          "需人审"
+        ]
+      },
+      "word_limit": 0,
+      "status": "PRODUCT REVIEW",
+      "fields": [
+        {
+          "field_id": "oms_ac006_pub",
+          "content_zh": "[REVIEW: product] 公有云资产所有权可能因自建、租赁或托管模式而异，公开资料不足以支持“全部由腾讯云拥有”。请基础设施与法务团队按地域提供资产归属口径。",
+          "content_en": "[REVIEW: product] Public-cloud asset ownership may vary across owned, leased and colocation models. Public evidence does not support a blanket claim that Tencent Cloud owns every asset; infrastructure and legal teams must provide the regional ownership position.",
+          "evidence": [
+            {
+              "tag": "REVIEW",
+              "reviewer": "product",
+              "claim": "公有云资产所有权可能因自建、租赁或托管模式而异，公开资料不足以支持“全部由腾讯云拥有”。请基础设施与法务团队按地域提供资产归属口径。",
+              "reason": "[REVIEW: product] 公有云资产所有权可能因自建、租赁或托管模式而异，公开资料不足以支持“全部由腾讯云拥有”。请基础设施与法务团队按地域提供资产归属口径。"
+            },
+            {
+              "tag": "REVIEW",
+              "reviewer": "product",
+              "claim": "Public-cloud asset ownership may vary across owned, leased and colocation models. Public evidence does not support a blanket claim that Tencent Cloud owns every asset; infrastructure and legal teams must provide the regional ownership position.",
+              "reason": "[REVIEW: product] Public-cloud asset ownership may vary across owned, leased and colocation models. Public evidence does not support a blanket claim that Tencent Cloud owns every asset; infrastructure and legal teams must provide the regional ownership position."
+            },
+            {
+              "tag": "REVIEW",
+              "reviewer": "product",
+              "claim": "公开来源未提供逐地域资产权属清单。",
+              "reason": "[REVIEW: product] 公开来源未提供逐地域资产权属清单。"
+            }
+          ],
+          "reviewer_hooks": [
+            {
+              "reviewer": "product",
+              "kind": "placeholder",
+              "text": "公有云资产所有权可能因自建、租赁或托管模式而异，公开资料不足以支持“全部由腾讯云拥有”。请基础设施与法务团队按地域提供资产归属口径。",
+              "reason": "[REVIEW: product] 公有云资产所有权可能因自建、租赁或托管模式而异，公开资料不足以支持“全部由腾讯云拥有”。请基础设施与法务团队按地域提供资产归属口径。"
+            },
+            {
+              "reviewer": "product",
+              "kind": "placeholder",
+              "text": "Public-cloud asset ownership may vary across owned, leased and colocation models. Public evidence does not support a blanket claim that Tencent Cloud owns every asset; infrastructure and legal teams must provide the regional ownership position.",
+              "reason": "[REVIEW: product] Public-cloud asset ownership may vary across owned, leased and colocation models. Public evidence does not support a blanket claim that Tencent Cloud owns every asset; infrastructure and legal teams must provide the regional ownership position."
+            },
+            {
+              "reviewer": "product",
+              "kind": "placeholder",
+              "text": "公开来源未提供逐地域资产权属清单。",
+              "reason": "[REVIEW: product] 公开来源未提供逐地域资产权属清单。"
+            }
+          ],
+          "lint": [
+            {
+              "severity": "WARN",
+              "rule": "review-hook",
+              "loc": "ZH",
+              "message": "[REVIEW: product] 公有云资产所有权可能因自建、租赁或托管模式而异，公开资料不足以支持“全部由腾讯云拥有”。请基础设施与法务团队按地域提供资产归属口径。",
+              "suggest": "交由 product 审核"
+            },
+            {
+              "severity": "WARN",
+              "rule": "review-hook",
+              "loc": "EN",
+              "message": "[REVIEW: product] Public-cloud asset ownership may vary across owned, leased and colocation models. Public evidence does not support a blanket claim that Tencent Cloud owns every asset; infrastructure and legal teams must provide the regional ownership position.",
+              "suggest": "交由 product 审核"
+            }
+          ],
+          "conflicts": []
+        },
+        {
+          "field_id": "oms_ac006_partner",
+          "content_zh": "True IDC 公开确认其在曼谷拥有云服务和数据中心布局，但该表述不足以证明具体腾讯云合作设施的法律所有权。[REVIEW: product] 请 True IDC 合作团队与法务核实资产权属。",
+          "content_en": "True IDC publicly confirms its cloud-service and data-centre footprint in Bangkok, but that does not establish legal ownership of the specific facilities used for the Tencent Cloud partnership. [REVIEW: product] The True IDC alliance and legal teams must verify title to the assets.",
+          "evidence": [
+            {
+              "tag": "CITED",
+              "claim": "True IDC确认其在曼谷的云服务和数据中心布局",
+              "source": "https://www.trueidc.com/en/about",
+              "quote": "We have a cloud services and data centers located in key business districts in Bangkok.",
+              "retrieved": "2026-07-17"
+            },
+            {
+              "tag": "REVIEW",
+              "reviewer": "product",
+              "claim": "True IDC 公开确认其在曼谷拥有云服务和数据中心布局，但该表述不足以证明具体腾讯云合作设施的法律所有权。请 True IDC 合作团队与法务核实资产权属。",
+              "reason": "True IDC 公开确认其在曼谷拥有云服务和数据中心布局，但该表述不足以证明具体腾讯云合作设施的法律所有权。[REVIEW: product] 请 True IDC 合作团队与法务核实资产权属。"
+            },
+            {
+              "tag": "REVIEW",
+              "reviewer": "product",
+              "claim": "True IDC publicly confirms its cloud-service and data-centre footprint in Bangkok, but that does not establish legal ownership of the specific facilities used for the Tencent Cloud partnership. The True IDC alliance and legal teams must verify title to the assets.",
+              "reason": "True IDC publicly confirms its cloud-service and data-centre footprint in Bangkok, but that does not establish legal ownership of the specific facilities used for the Tencent Cloud partnership. [REVIEW: product] The True IDC alliance and legal teams must verify title to the assets."
+            },
+            {
+              "tag": "REVIEW",
+              "reviewer": "product",
+              "claim": "“have”不能替代具体设施的产权文件，不能据此认定资产所有权。",
+              "reason": "[REVIEW: product] “have”不能替代具体设施的产权文件，不能据此认定资产所有权。"
+            }
+          ],
+          "reviewer_hooks": [
+            {
+              "reviewer": "product",
+              "kind": "placeholder",
+              "text": "True IDC 公开确认其在曼谷拥有云服务和数据中心布局，但该表述不足以证明具体腾讯云合作设施的法律所有权。请 True IDC 合作团队与法务核实资产权属。",
+              "reason": "True IDC 公开确认其在曼谷拥有云服务和数据中心布局，但该表述不足以证明具体腾讯云合作设施的法律所有权。[REVIEW: product] 请 True IDC 合作团队与法务核实资产权属。"
+            },
+            {
+              "reviewer": "product",
+              "kind": "placeholder",
+              "text": "True IDC publicly confirms its cloud-service and data-centre footprint in Bangkok, but that does not establish legal ownership of the specific facilities used for the Tencent Cloud partnership. The True IDC alliance and legal teams must verify title to the assets.",
+              "reason": "True IDC publicly confirms its cloud-service and data-centre footprint in Bangkok, but that does not establish legal ownership of the specific facilities used for the Tencent Cloud partnership. [REVIEW: product] The True IDC alliance and legal teams must verify title to the assets."
+            },
+            {
+              "reviewer": "product",
+              "kind": "placeholder",
+              "text": "“have”不能替代具体设施的产权文件，不能据此认定资产所有权。",
+              "reason": "[REVIEW: product] “have”不能替代具体设施的产权文件，不能据此认定资产所有权。"
+            }
+          ],
+          "lint": [
+            {
+              "severity": "WARN",
+              "rule": "review-hook",
+              "loc": "ZH",
+              "message": "True IDC 公开确认其在曼谷拥有云服务和数据中心布局，但该表述不足以证明具体腾讯云合作设施的法律所有权。[REVIEW: product] 请 True IDC 合作团队与法务核实资产权属。",
+              "suggest": "交由 product 审核"
+            },
+            {
+              "severity": "WARN",
+              "rule": "review-hook",
+              "loc": "EN",
+              "message": "True IDC publicly confirms its cloud-service and data-centre footprint in Bangkok, but that does not establish legal ownership of the specific facilities used for the Tencent Cloud partnership. [REVIEW: product] The True IDC alliance and legal teams must verify title to the assets.",
+              "suggest": "交由 product 审核"
+            }
+          ],
+          "conflicts": []
+        },
+        {
+          "field_id": "oms_ac006_priv",
+          "content_zh": "TCE 的硬件资产可由客户、合作伙伴或项目实体持有，具体取决于采购与部署合同。[REVIEW: product] 请项目交付与法务团队按目标部署确认资产权属，不能从伙伴云案例外推。",
+          "content_en": "TCE hardware may be owned by the customer, a partner or the project entity, depending on procurement and deployment contracts. [REVIEW: product] Delivery and legal teams must confirm ownership for the target deployment; it cannot be inferred from a partner-cloud example.",
+          "evidence": [
+            {
+              "tag": "REVIEW",
+              "reviewer": "product",
+              "claim": "TCE 的硬件资产可由客户、合作伙伴或项目实体持有，具体取决于采购与部署合同。请项目交付与法务团队按目标部署确认资产权属，不能从伙伴云案例外推。",
+              "reason": "TCE 的硬件资产可由客户、合作伙伴或项目实体持有，具体取决于采购与部署合同。[REVIEW: product] 请项目交付与法务团队按目标部署确认资产权属，不能从伙伴云案例外推。"
+            },
+            {
+              "tag": "REVIEW",
+              "reviewer": "product",
+              "claim": "TCE hardware may be owned by the customer, a partner or the project entity, depending on procurement and deployment contracts. Delivery and legal teams must confirm ownership for the target deployment; it cannot be inferred from a partner-cloud example.",
+              "reason": "TCE hardware may be owned by the customer, a partner or the project entity, depending on procurement and deployment contracts. [REVIEW: product] Delivery and legal teams must confirm ownership for the target deployment; it cannot be inferred from a partner-cloud example."
+            },
+            {
+              "tag": "REVIEW",
+              "reviewer": "product",
+              "claim": "公开来源未披露TCE项目通用的硬件资产权属规则，需按合同核验。",
+              "reason": "[REVIEW: product] 公开来源未披露TCE项目通用的硬件资产权属规则，需按合同核验。"
+            }
+          ],
+          "reviewer_hooks": [
+            {
+              "reviewer": "product",
+              "kind": "placeholder",
+              "text": "TCE 的硬件资产可由客户、合作伙伴或项目实体持有，具体取决于采购与部署合同。请项目交付与法务团队按目标部署确认资产权属，不能从伙伴云案例外推。",
+              "reason": "TCE 的硬件资产可由客户、合作伙伴或项目实体持有，具体取决于采购与部署合同。[REVIEW: product] 请项目交付与法务团队按目标部署确认资产权属，不能从伙伴云案例外推。"
+            },
+            {
+              "reviewer": "product",
+              "kind": "placeholder",
+              "text": "TCE hardware may be owned by the customer, a partner or the project entity, depending on procurement and deployment contracts. Delivery and legal teams must confirm ownership for the target deployment; it cannot be inferred from a partner-cloud example.",
+              "reason": "TCE hardware may be owned by the customer, a partner or the project entity, depending on procurement and deployment contracts. [REVIEW: product] Delivery and legal teams must confirm ownership for the target deployment; it cannot be inferred from a partner-cloud example."
+            },
+            {
+              "reviewer": "product",
+              "kind": "placeholder",
+              "text": "公开来源未披露TCE项目通用的硬件资产权属规则，需按合同核验。",
+              "reason": "[REVIEW: product] 公开来源未披露TCE项目通用的硬件资产权属规则，需按合同核验。"
+            }
+          ],
+          "lint": [
+            {
+              "severity": "WARN",
+              "rule": "review-hook",
+              "loc": "ZH",
+              "message": "TCE 的硬件资产可由客户、合作伙伴或项目实体持有，具体取决于采购与部署合同。[REVIEW: product] 请项目交付与法务团队按目标部署确认资产权属，不能从伙伴云案例外推。",
+              "suggest": "交由 product 审核"
+            },
+            {
+              "severity": "WARN",
+              "rule": "review-hook",
+              "loc": "EN",
+              "message": "TCE hardware may be owned by the customer, a partner or the project entity, depending on procurement and deployment contracts. [REVIEW: product] Delivery and legal teams must confirm ownership for the target deployment; it cannot be inferred from a partner-cloud example.",
+              "suggest": "交由 product 审核"
+            }
+          ],
+          "conflicts": []
+        }
+      ]
+    },
+    {
+      "question_id": "oms_q_ad001",
+      "type_tag": {
+        "macro": "产品能力",
+        "form": "简答",
+        "modifiers": []
+      },
+      "word_limit": 0,
+      "status": "READY",
+      "fields": [
+        {
+          "field_id": "oms_ad001_pub",
+          "content_zh": "由腾讯云团队远程按标准运维流程实施更新与缺陷修复。",
+          "content_en": "Updates and bug fixes are implemented remotely by the Tencent Cloud team under standard operating procedures.",
+          "evidence": [],
+          "reviewer_hooks": [],
+          "lint": [],
+          "conflicts": []
+        },
+        {
+          "field_id": "oms_ad001_priv",
+          "content_zh": "TCE 支持客户自主排期更新，air-gapped 环境下可采用离线包方式人工升级。",
+          "content_en": "TCE lets customers schedule updates on their own timeline; in air-gapped environments, upgrades can be applied manually via offline packages.",
+          "evidence": [],
+          "reviewer_hooks": [],
+          "lint": [],
+          "conflicts": []
+        }
+      ]
+    },
+    {
+      "question_id": "oms_q_ad002",
+      "type_tag": {
+        "macro": "产品能力",
+        "form": "简答",
+        "modifiers": []
+      },
+      "word_limit": 0,
+      "status": "READY",
+      "fields": [
+        {
+          "field_id": "oms_ad002_pub",
+          "content_zh": "仅限腾讯云授权人员访问。",
+          "content_en": "Access is restricted to authorized Tencent Cloud personnel.",
+          "evidence": [],
+          "reviewer_hooks": [],
+          "lint": [],
+          "conflicts": []
+        },
+        {
+          "field_id": "oms_ad002_priv",
+          "content_zh": "TCE 环境下完全由客户自主管控访问权限，腾讯默认无访问权限。",
+          "content_en": "In a TCE environment, access is controlled entirely by the customer; Tencent has no default access.",
+          "evidence": [],
+          "reviewer_hooks": [],
+          "lint": [],
+          "conflicts": []
+        }
+      ]
+    },
+    {
+      "question_id": "oms_q_ad003",
+      "type_tag": {
+        "macro": "产品能力",
+        "form": "简答",
+        "modifiers": []
+      },
+      "word_limit": 0,
+      "status": "READY",
+      "fields": [
+        {
+          "field_id": "oms_ad003_pub",
+          "content_zh": "全球统一支持体系。",
+          "content_en": "A unified global support organization.",
+          "evidence": [],
+          "reviewer_hooks": [],
+          "lint": [],
+          "conflicts": []
+        },
+        {
+          "field_id": "oms_ad003_priv",
+          "content_zh": "TCE 提供本地一线支持，复杂/技术性问题升级至腾讯全球技术团队处理。",
+          "content_en": "TCE provides local first-line support, with complex or technical issues escalated to Tencent's global technical team.",
+          "evidence": [],
+          "reviewer_hooks": [],
+          "lint": [],
+          "conflicts": []
+        }
+      ]
+    },
+    {
+      "question_id": "oms_q_ad004",
+      "type_tag": {
+        "macro": "产品能力",
+        "form": "简答",
+        "modifiers": []
+      },
+      "word_limit": 0,
+      "status": "READY",
+      "fields": [
+        {
+          "field_id": "oms_ad004_pub",
+          "content_zh": "腾讯云及经授权客户管理员共同拥有管理员权限。",
+          "content_en": "Administrator access is shared between Tencent Cloud and authorized customer administrators.",
+          "evidence": [],
+          "reviewer_hooks": [],
+          "lint": [],
+          "conflicts": []
+        },
+        {
+          "field_id": "oms_ad004_priv",
+          "content_zh": "TCE 环境下由客户自主决定管理员权限分配，腾讯默认无管理员访问权限，需客户明确授权。",
+          "content_en": "In a TCE environment, administrator-access allocation is decided by the customer; Tencent has no default administrator access unless explicitly granted.",
+          "evidence": [],
+          "reviewer_hooks": [],
+          "lint": [],
+          "conflicts": []
+        }
+      ]
+    },
+    {
+      "question_id": "oms_q_ad005",
+      "type_tag": {
+        "macro": "产品能力",
+        "form": "简答",
+        "modifiers": []
+      },
+      "word_limit": 0,
+      "status": "READY",
+      "fields": [
+        {
+          "field_id": "oms_ad005_pub",
+          "content_zh": "默认使用腾讯云 CAM 身份与访问管理体系。",
+          "content_en": "Identity is managed by default through Tencent Cloud's CAM identity and access management system.",
+          "evidence": [],
+          "reviewer_hooks": [],
+          "lint": [],
+          "conflicts": []
+        },
+        {
+          "field_id": "oms_ad005_priv",
+          "content_zh": "TCE 支持客户使用自有身份认证方案并自主管理。",
+          "content_en": "TCE supports customers bringing and managing their own identity solution.",
+          "evidence": [],
+          "reviewer_hooks": [],
+          "lint": [],
+          "conflicts": []
+        }
+      ]
+    },
+    {
+      "question_id": "oms_q_ad006",
+      "type_tag": {
+        "macro": "产品能力",
+        "form": "简答",
+        "modifiers": []
+      },
+      "word_limit": 0,
+      "status": "READY",
+      "fields": [
+        {
+          "field_id": "oms_ad006_pub",
+          "content_zh": "全球化安全运营中心(SOC)团队负责安全响应。",
+          "content_en": "Security response is handled by a global Security Operations Center (SOC) team.",
+          "evidence": [],
+          "reviewer_hooks": [],
+          "lint": [],
+          "conflicts": []
+        },
+        {
+          "field_id": "oms_ad006_priv",
+          "content_zh": "TCE 部署下可按客户要求实现安全响应团队本地化配置。",
+          "content_en": "Under TCE, the security-response team can be localized to meet customer requirements.",
+          "evidence": [],
+          "reviewer_hooks": [],
+          "lint": [],
+          "conflicts": []
+        }
+      ]
+    },
+    {
+      "question_id": "oms_q_ae001",
+      "type_tag": {
+        "macro": "产品能力",
+        "form": "简答",
+        "modifiers": [
+          "需人审"
+        ]
+      },
+      "word_limit": 0,
+      "status": "PRODUCT REVIEW",
+      "fields": [
+        {
+          "field_id": "oms_ae001_pub",
+          "content_zh": "大部分服务可用，部分高级AI/新兴服务可能因技术或监管原因存在区域限制。",
+          "content_en": "Most services are available; certain advanced AI or emerging services may carry regional restrictions for technical or regulatory reasons.",
+          "evidence": [],
+          "reviewer_hooks": [],
+          "lint": [],
+          "conflicts": []
+        },
+        {
+          "field_id": "oms_ae001_partner",
+          "content_zh": "合作伙伴云模式下的服务范围受限于伙伴解决方案覆盖能力。",
+          "content_en": "Under the partner-cloud model, service scope is bounded by the partner's own solution coverage.",
+          "evidence": [],
+          "reviewer_hooks": [],
+          "lint": [],
+          "conflicts": []
+        },
+        {
+          "field_id": "oms_ae001_comments",
+          "content_zh": "[REVIEW: product] 需按客户所在具体地域及监管要求核实受限服务清单。",
+          "content_en": "[REVIEW: product] The specific list of restricted services should be verified per customer region and regulatory regime.",
+          "evidence": [
+            {
+              "tag": "REVIEW",
+              "reviewer": "product",
+              "claim": "需按客户所在具体地域及监管要求核实受限服务清单。",
+              "reason": "[REVIEW: product] 需按客户所在具体地域及监管要求核实受限服务清单。"
+            },
+            {
+              "tag": "REVIEW",
+              "reviewer": "product",
+              "claim": "The specific list of restricted services should be verified per customer region and regulatory regime.",
+              "reason": "[REVIEW: product] The specific list of restricted services should be verified per customer region and regulatory regime."
+            }
+          ],
+          "reviewer_hooks": [
+            {
+              "reviewer": "product",
+              "kind": "placeholder",
+              "text": "需按客户所在具体地域及监管要求核实受限服务清单。",
+              "reason": "[REVIEW: product] 需按客户所在具体地域及监管要求核实受限服务清单。"
+            },
+            {
+              "reviewer": "product",
+              "kind": "placeholder",
+              "text": "The specific list of restricted services should be verified per customer region and regulatory regime.",
+              "reason": "[REVIEW: product] The specific list of restricted services should be verified per customer region and regulatory regime."
+            }
+          ],
+          "lint": [
+            {
+              "severity": "WARN",
+              "rule": "review-hook",
+              "loc": "ZH",
+              "message": "[REVIEW: product] 需按客户所在具体地域及监管要求核实受限服务清单。",
+              "suggest": "交由 product 审核"
+            },
+            {
+              "severity": "WARN",
+              "rule": "review-hook",
+              "loc": "EN",
+              "message": "[REVIEW: product] The specific list of restricted services should be verified per customer region and regulatory regime.",
+              "suggest": "交由 product 审核"
+            }
+          ],
+          "conflicts": []
+        }
+      ]
+    },
+    {
+      "question_id": "oms_q_ae002",
+      "type_tag": {
+        "macro": "产品能力",
+        "form": "简答",
+        "modifiers": [
+          "需人审"
+        ]
+      },
+      "word_limit": 0,
+      "status": "PRODUCT REVIEW",
+      "fields": [
+        {
+          "field_id": "oms_ae002_priv",
+          "content_zh": "TCE 基于与公有云同源架构，提供近百款产品的全栈私有化能力，与公有云高度对齐。",
+          "content_en": "Built on the same-source architecture as the public cloud, TCE delivers full-stack private capability across close to one hundred products, closely aligned with the public-cloud offering.",
+          "evidence": [
+            {
+              "tag": "CITED",
+              "claim": "TCE覆盖近百款产品的全栈能力",
+              "source": "https://cloud.tencent.com.cn/developer/article/2678942",
+              "quote": "腾讯专有云(TCE)基于公有云同源架构，提供覆盖计算、存储、网络、安全、数据库、中间件等近百个产品的全栈能力。",
+              "retrieved": "2026-07-16"
+            },
+            {
+              "tag": "REVIEW",
+              "reviewer": "product",
+              "claim": "题目要求的精确百分比未在公开渠道披露，需产品团队按最新产品清单逐项核实计算。",
+              "reason": "[REVIEW: product] 题目要求的精确百分比未在公开渠道披露，需产品团队按最新产品清单逐项核实计算。"
+            }
+          ],
+          "reviewer_hooks": [
+            {
+              "reviewer": "product",
+              "kind": "placeholder",
+              "text": "题目要求的精确百分比未在公开渠道披露，需产品团队按最新产品清单逐项核实计算。",
+              "reason": "[REVIEW: product] 题目要求的精确百分比未在公开渠道披露，需产品团队按最新产品清单逐项核实计算。"
+            }
+          ],
+          "lint": [],
+          "conflicts": []
+        },
+        {
+          "field_id": "oms_ae002_comments",
+          "content_zh": "[REVIEW: product] 题目要求的精确百分比未在公开渠道披露，需产品团队按最新产品清单逐项核实计算。",
+          "content_en": "[REVIEW: product] The exact percentage the question asks for is not publicly disclosed; the product team should calculate it against the current product catalog.",
+          "evidence": [
+            {
+              "tag": "REVIEW",
+              "reviewer": "product",
+              "claim": "题目要求的精确百分比未在公开渠道披露，需产品团队按最新产品清单逐项核实计算。",
+              "reason": "[REVIEW: product] 题目要求的精确百分比未在公开渠道披露，需产品团队按最新产品清单逐项核实计算。"
+            },
+            {
+              "tag": "REVIEW",
+              "reviewer": "product",
+              "claim": "The exact percentage the question asks for is not publicly disclosed; the product team should calculate it against the current product catalog.",
+              "reason": "[REVIEW: product] The exact percentage the question asks for is not publicly disclosed; the product team should calculate it against the current product catalog."
+            }
+          ],
+          "reviewer_hooks": [
+            {
+              "reviewer": "product",
+              "kind": "placeholder",
+              "text": "题目要求的精确百分比未在公开渠道披露，需产品团队按最新产品清单逐项核实计算。",
+              "reason": "[REVIEW: product] 题目要求的精确百分比未在公开渠道披露，需产品团队按最新产品清单逐项核实计算。"
+            },
+            {
+              "reviewer": "product",
+              "kind": "placeholder",
+              "text": "The exact percentage the question asks for is not publicly disclosed; the product team should calculate it against the current product catalog.",
+              "reason": "[REVIEW: product] The exact percentage the question asks for is not publicly disclosed; the product team should calculate it against the current product catalog."
+            }
+          ],
+          "lint": [
+            {
+              "severity": "WARN",
+              "rule": "review-hook",
+              "loc": "ZH",
+              "message": "[REVIEW: product] 题目要求的精确百分比未在公开渠道披露，需产品团队按最新产品清单逐项核实计算。",
+              "suggest": "交由 product 审核"
+            },
+            {
+              "severity": "WARN",
+              "rule": "review-hook",
+              "loc": "EN",
+              "message": "[REVIEW: product] The exact percentage the question asks for is not publicly disclosed; the product team should calculate it against the current product catalog.",
+              "suggest": "交由 product 审核"
+            }
+          ],
+          "conflicts": []
+        }
+      ]
+    },
+    {
+      "question_id": "oms_q_ae003",
+      "type_tag": {
+        "macro": "产品能力",
+        "form": "简答",
+        "modifiers": []
+      },
+      "word_limit": 0,
+      "status": "READY",
+      "fields": [
+        {
+          "field_id": "oms_ae003_pub",
+          "content_zh": "腾讯云拥有源代码。",
+          "content_en": "Source code is owned by Tencent Cloud.",
+          "evidence": [
+            {
+              "tag": "CITED",
+              "claim": "TCE架构同源，统一代码",
+              "source": "https://cloud.tencent.com.cn/developer/article/2678942",
+              "quote": "架构同源：将公有云能力1:1完全输送至私有环境，统一架构、统一代码。",
+              "retrieved": "2026-07-16"
+            }
+          ],
+          "reviewer_hooks": [],
+          "lint": [],
+          "conflicts": []
+        },
+        {
+          "field_id": "oms_ae003_priv",
+          "content_zh": "TCE 与公有云采用同一套源代码架构(“架构同源”)，部署至客户私有环境后代码使用受合同条款约束。",
+          "content_en": "TCE shares the same source-code architecture as the public cloud (\"same-source architecture\"); once deployed into a customer's private environment, code use is governed by contract terms.",
+          "evidence": [
+            {
+              "tag": "CITED",
+              "claim": "TCE架构同源，统一代码",
+              "source": "https://cloud.tencent.com.cn/developer/article/2678942",
+              "quote": "架构同源：将公有云能力1:1完全输送至私有环境，统一架构、统一代码。",
+              "retrieved": "2026-07-16"
+            }
+          ],
+          "reviewer_hooks": [],
+          "lint": [],
+          "conflicts": []
+        }
+      ]
+    },
+    {
+      "question_id": "oms_q_ae004",
+      "type_tag": {
+        "macro": "产品能力",
+        "form": "简答",
+        "modifiers": [
+          "需人审"
+        ]
+      },
+      "word_limit": 0,
+      "status": "PRODUCT REVIEW",
+      "fields": [
+        {
+          "field_id": "oms_ae004_pub",
+          "content_zh": "按需订阅/合同期限制授权。",
+          "content_en": "Licensed on a subscription or contract-term basis.",
+          "evidence": [],
+          "reviewer_hooks": [],
+          "lint": [],
+          "conflicts": []
+        },
+        {
+          "field_id": "oms_ae004_priv",
+          "content_zh": "TCE 通常采用与合同期绑定的授权模式，续约后延续授权。",
+          "content_en": "TCE is typically licensed on a term tied to the contract, renewed alongside contract renewal.",
+          "evidence": [],
+          "reviewer_hooks": [],
+          "lint": [],
+          "conflicts": []
+        },
+        {
+          "field_id": "oms_ae004_comments",
+          "content_zh": "[REVIEW: product] 具体许可条款因合同类型(公有云按量/包年包月, TCE项目制)而异，需法务/商务团队核实标准条款表述。",
+          "content_en": "[REVIEW: product] Exact licensing terms vary by contract type (public-cloud pay-as-you-go/annual vs. TCE project-based); legal/commercial teams should confirm the standard contract language.",
+          "evidence": [
+            {
+              "tag": "REVIEW",
+              "reviewer": "product",
+              "claim": "具体许可条款因合同类型(公有云按量/包年包月, TCE项目制)而异，需法务/商务团队核实标准条款表述。",
+              "reason": "[REVIEW: product] 具体许可条款因合同类型(公有云按量/包年包月, TCE项目制)而异，需法务/商务团队核实标准条款表述。"
+            },
+            {
+              "tag": "REVIEW",
+              "reviewer": "product",
+              "claim": "Exact licensing terms vary by contract type (public-cloud pay-as-you-go/annual vs. TCE project-based); legal/commercial teams should confirm the standard contract language.",
+              "reason": "[REVIEW: product] Exact licensing terms vary by contract type (public-cloud pay-as-you-go/annual vs. TCE project-based); legal/commercial teams should confirm the standard contract language."
+            }
+          ],
+          "reviewer_hooks": [
+            {
+              "reviewer": "product",
+              "kind": "placeholder",
+              "text": "具体许可条款因合同类型(公有云按量/包年包月, TCE项目制)而异，需法务/商务团队核实标准条款表述。",
+              "reason": "[REVIEW: product] 具体许可条款因合同类型(公有云按量/包年包月, TCE项目制)而异，需法务/商务团队核实标准条款表述。"
+            },
+            {
+              "reviewer": "product",
+              "kind": "placeholder",
+              "text": "Exact licensing terms vary by contract type (public-cloud pay-as-you-go/annual vs. TCE project-based); legal/commercial teams should confirm the standard contract language.",
+              "reason": "[REVIEW: product] Exact licensing terms vary by contract type (public-cloud pay-as-you-go/annual vs. TCE project-based); legal/commercial teams should confirm the standard contract language."
+            }
+          ],
+          "lint": [
+            {
+              "severity": "WARN",
+              "rule": "review-hook",
+              "loc": "ZH",
+              "message": "[REVIEW: product] 具体许可条款因合同类型(公有云按量/包年包月, TCE项目制)而异，需法务/商务团队核实标准条款表述。",
+              "suggest": "交由 product 审核"
+            },
+            {
+              "severity": "WARN",
+              "rule": "review-hook",
+              "loc": "EN",
+              "message": "[REVIEW: product] Exact licensing terms vary by contract type (public-cloud pay-as-you-go/annual vs. TCE project-based); legal/commercial teams should confirm the standard contract language.",
+              "suggest": "交由 product 审核"
+            }
+          ],
+          "conflicts": []
+        }
+      ]
+    },
+    {
+      "question_id": "oms_q_ae005",
+      "type_tag": {
+        "macro": "产品能力",
+        "form": "简答",
+        "modifiers": []
+      },
+      "word_limit": 0,
+      "status": "READY",
+      "fields": [
+        {
+          "field_id": "oms_ae005_pub",
+          "content_zh": "是，遵循 Kubernetes/CNCF 等主流开放标准。",
+          "content_en": "Yes, built on mainstream open standards including Kubernetes and CNCF.",
+          "evidence": [
+            {
+              "tag": "CITED",
+              "claim": "TCE一云多芯与软硬解耦能力",
+              "source": "https://cloud.tencent.com.cn/developer/article/2678942",
+              "quote": "多芯支持：支持X86(Intel、海光)及ARM(鲲鹏、飞腾)架构...软硬解耦：不绑定硬件品牌。",
+              "retrieved": "2026-07-16"
+            }
+          ],
+          "reviewer_hooks": [],
+          "lint": [],
+          "conflicts": []
+        },
+        {
+          "field_id": "oms_ae005_priv",
+          "content_zh": "是，TCE 支持 Kubernetes/CNCF 标准，兼容主流国产及国际芯片架构(X86/ARM)、操作系统(银河麒麟、UOS等)，软硬件解耦不绑定特定厂商。",
+          "content_en": "Yes. TCE supports Kubernetes/CNCF standards and is compatible with mainstream domestic and international chip architectures (x86/ARM) and operating systems (Kylin, UOS, and others), decoupling software from hardware and avoiding vendor lock-in.",
+          "evidence": [
+            {
+              "tag": "CITED",
+              "claim": "TCE一云多芯与软硬解耦能力",
+              "source": "https://cloud.tencent.com.cn/developer/article/2678942",
+              "quote": "多芯支持：支持X86(Intel、海光)及ARM(鲲鹏、飞腾)架构...软硬解耦：不绑定硬件品牌。",
+              "retrieved": "2026-07-16"
+            }
+          ],
+          "reviewer_hooks": [],
+          "lint": [],
+          "conflicts": []
+        }
+      ]
+    },
+    {
+      "question_id": "oms_q_ae006",
+      "type_tag": {
+        "macro": "产品能力",
+        "form": "简答",
+        "modifiers": [
+          "需人审"
+        ]
+      },
+      "word_limit": 0,
+      "status": "PRODUCT REVIEW",
+      "fields": [
+        {
+          "field_id": "oms_ae006_comments",
+          "content_zh": "[REVIEW: product] 平台生态ISV具体数量属于内部运营数据，公开渠道未披露，需生态合作团队核实后填写。",
+          "content_en": "[REVIEW: product] The number of ISVs on the platform is an internal operating metric not publicly disclosed; the ecosystem team should supply the verified figure.",
+          "evidence": [
+            {
+              "tag": "REVIEW",
+              "reviewer": "product",
+              "claim": "平台生态ISV具体数量属于内部运营数据，公开渠道未披露，需生态合作团队核实后填写。",
+              "reason": "[REVIEW: product] 平台生态ISV具体数量属于内部运营数据，公开渠道未披露，需生态合作团队核实后填写。"
+            },
+            {
+              "tag": "REVIEW",
+              "reviewer": "product",
+              "claim": "The number of ISVs on the platform is an internal operating metric not publicly disclosed; the ecosystem team should supply the verified figure.",
+              "reason": "[REVIEW: product] The number of ISVs on the platform is an internal operating metric not publicly disclosed; the ecosystem team should supply the verified figure."
+            }
+          ],
+          "reviewer_hooks": [
+            {
+              "reviewer": "product",
+              "kind": "placeholder",
+              "text": "平台生态ISV具体数量属于内部运营数据，公开渠道未披露，需生态合作团队核实后填写。",
+              "reason": "[REVIEW: product] 平台生态ISV具体数量属于内部运营数据，公开渠道未披露，需生态合作团队核实后填写。"
+            },
+            {
+              "reviewer": "product",
+              "kind": "placeholder",
+              "text": "The number of ISVs on the platform is an internal operating metric not publicly disclosed; the ecosystem team should supply the verified figure.",
+              "reason": "[REVIEW: product] The number of ISVs on the platform is an internal operating metric not publicly disclosed; the ecosystem team should supply the verified figure."
+            }
+          ],
+          "lint": [
+            {
+              "severity": "WARN",
+              "rule": "review-hook",
+              "loc": "ZH",
+              "message": "[REVIEW: product] 平台生态ISV具体数量属于内部运营数据，公开渠道未披露，需生态合作团队核实后填写。",
+              "suggest": "交由 product 审核"
+            },
+            {
+              "severity": "WARN",
+              "rule": "review-hook",
+              "loc": "EN",
+              "message": "[REVIEW: product] The number of ISVs on the platform is an internal operating metric not publicly disclosed; the ecosystem team should supply the verified figure.",
+              "suggest": "交由 product 审核"
+            }
+          ],
+          "conflicts": []
+        }
+      ]
+    },
+    {
+      "question_id": "oms_q_af001",
+      "type_tag": {
+        "macro": "产品能力",
+        "form": "简答",
+        "modifiers": [
+          "需人审"
+        ]
+      },
+      "word_limit": 0,
+      "status": "KEVIN REVIEW",
+      "fields": [
+        {
+          "field_id": "oms_af001_pub",
+          "content_zh": "腾讯云的主权云方案以 Tencent Cloud Enterprise(TCE)专有云为核心，围绕数据主权、运营主权、技术主权三大维度构建全栈解决方案。TCE与腾讯公有云架构同源、代码一致，支持公有、私有、混合及完全物理隔离(air-gapped)等多种部署模式，客户可根据监管要求灵活选择。在《The Forrester Wave: Sovereign Cloud Platforms, Q2 2026》报告中，腾讯云凭借TCE被评为“领导者(Leader)”象限，是唯一获评的中国厂商，同时获得“Customer Favorite”认可，在主权数据治理服务维度获得满分。",
+          "content_en": "Sovereignty is treated as a risk management framework, not a compliance checkbox. Tencent Cloud Enterprise (TCE) is the core of Tencent Cloud's sovereign cloud approach, built around data sovereignty, operational sovereignty and technical sovereignty in all their different forms — public, private, hybrid and fully air-gapped deployment, sharing the same source-code architecture as the public cloud so customers are not trading capability for isolation. In The Forrester Wave: Sovereign Cloud Platforms, Q2 2026, Tencent Cloud was named a Leader on the strength of TCE, the only Chinese hyperscaler in that quadrant, and was recognized as a Customer Favorite with the highest possible score on Sovereign Data Governance Services.",
+          "evidence": [
+            {
+              "tag": "CITED",
+              "claim": "腾讯云公告称Forrester Wave将其列为主权云领导者并标注Customer Favorite",
+              "source": "https://www.tencentcloud.com/dynamic/news-details/101217",
+              "quote": "Tencent Cloud is recognized as a Leader in the Sovereign Cloud market...Tencent Cloud is designated as a \"Customer Favorite.\"",
+              "retrieved": "2026-07-17"
+            },
+            {
+              "tag": "CITED",
+              "claim": "腾讯云报告落地页披露主权数据治理服务维度获得最高分",
+              "source": "https://www.tencentcloud.com/analyst/detail/101093",
+              "quote": "Tencent Cloud received the highest possible score in the Sovereign Data Governance Services criterion.",
+              "retrieved": "2026-07-17"
+            },
+            {
+              "tag": "CITED",
+              "claim": "独立行业媒体对Forrester Wave的公开摘要亦将腾讯云列入Leader组",
+              "source": "https://cloudnews.tech/forrester-places-sovereign-cloud-at-the-center-of-cloud-strategy/",
+              "quote": "Among the leaders are Google Cloud, Microsoft, Amazon Web Services, Oracle, and Tencent Cloud.",
+              "retrieved": "2026-07-17"
+            },
+            {
+              "tag": "REVIEW",
+              "reviewer": "Kevin",
+              "claim": "本题是Strategy/Vision类题型，是否以“risk management framework”作为核心论点框架（对齐Roy Illsley的评分透镜）需AR专家确认这是否是最打动Omdia分析师的framing选择。",
+              "reason": "[REVIEW: Kevin] 本题是Strategy/Vision类题型，是否以“risk management framework”作为核心论点框架（对齐Roy Illsley的评分透镜）需AR专家确认这是否是最打动Omdia分析师的framing选择。"
+            }
+          ],
+          "reviewer_hooks": [
+            {
+              "reviewer": "Kevin",
+              "kind": "thesis",
+              "text": "本题是Strategy/Vision类题型，是否以“risk management framework”作为核心论点框架（对齐Roy Illsley的评分透镜）需AR专家确认这是否是最打动Omdia分析师的framing选择。",
+              "reason": "[REVIEW: Kevin] 本题是Strategy/Vision类题型，是否以“risk management framework”作为核心论点框架（对齐Roy Illsley的评分透镜）需AR专家确认这是否是最打动Omdia分析师的framing选择。"
+            }
+          ],
+          "lint": [],
+          "conflicts": []
+        },
+        {
+          "field_id": "oms_af001_comments",
+          "content_zh": "[REVIEW: Kevin] 本题是Strategy/Vision类题型，是否以“risk management framework”作为核心论点框架（对齐Roy Illsley的评分透镜）需AR专家确认这是否是最打动Omdia分析师的framing选择。",
+          "content_en": "[REVIEW: Kevin] This is a Strategy/Vision question; whether framing sovereignty as a risk-management framework (aligned to Roy Illsley's scoring lens) is the strongest angle should be confirmed by the AR lead.",
+          "evidence": [
+            {
+              "tag": "REVIEW",
+              "reviewer": "Kevin",
+              "claim": "本题是Strategy/Vision类题型，是否以“risk management framework”作为核心论点框架（对齐Roy Illsley的评分透镜）需AR专家确认这是否是最打动Omdia分析师的framing选择。",
+              "reason": "[REVIEW: Kevin] 本题是Strategy/Vision类题型，是否以“risk management framework”作为核心论点框架（对齐Roy Illsley的评分透镜）需AR专家确认这是否是最打动Omdia分析师的framing选择。"
+            },
+            {
+              "tag": "REVIEW",
+              "reviewer": "Kevin",
+              "claim": "This is a Strategy/Vision question; whether framing sovereignty as a risk-management framework (aligned to Roy Illsley's scoring lens) is the strongest angle should be confirmed by the AR lead.",
+              "reason": "[REVIEW: Kevin] This is a Strategy/Vision question; whether framing sovereignty as a risk-management framework (aligned to Roy Illsley's scoring lens) is the strongest angle should be confirmed by the AR lead."
+            }
+          ],
+          "reviewer_hooks": [
+            {
+              "reviewer": "Kevin",
+              "kind": "thesis",
+              "text": "本题是Strategy/Vision类题型，是否以“risk management framework”作为核心论点框架（对齐Roy Illsley的评分透镜）需AR专家确认这是否是最打动Omdia分析师的framing选择。",
+              "reason": "[REVIEW: Kevin] 本题是Strategy/Vision类题型，是否以“risk management framework”作为核心论点框架（对齐Roy Illsley的评分透镜）需AR专家确认这是否是最打动Omdia分析师的framing选择。"
+            },
+            {
+              "reviewer": "Kevin",
+              "kind": "thesis",
+              "text": "This is a Strategy/Vision question; whether framing sovereignty as a risk-management framework (aligned to Roy Illsley's scoring lens) is the strongest angle should be confirmed by the AR lead.",
+              "reason": "[REVIEW: Kevin] This is a Strategy/Vision question; whether framing sovereignty as a risk-management framework (aligned to Roy Illsley's scoring lens) is the strongest angle should be confirmed by the AR lead."
+            }
+          ],
+          "lint": [
+            {
+              "severity": "WARN",
+              "rule": "review-hook",
+              "loc": "ZH",
+              "message": "[REVIEW: Kevin] 本题是Strategy/Vision类题型，是否以“risk management framework”作为核心论点框架（对齐Roy Illsley的评分透镜）需AR专家确认这是否是最打动Omdia分析师的framing选择。",
+              "suggest": "交由 Kevin 审核"
+            },
+            {
+              "severity": "WARN",
+              "rule": "review-hook",
+              "loc": "EN",
+              "message": "[REVIEW: Kevin] This is a Strategy/Vision question; whether framing sovereignty as a risk-management framework (aligned to Roy Illsley's scoring lens) is the strongest angle should be confirmed by the AR lead.",
+              "suggest": "交由 Kevin 审核"
+            }
+          ],
+          "conflicts": []
+        }
+      ]
+    },
+    {
+      "question_id": "oms_q_af002",
+      "type_tag": {
+        "macro": "产品能力",
+        "form": "简答",
+        "modifiers": [
+          "需人审"
+        ]
+      },
+      "word_limit": 0,
+      "status": "KEVIN REVIEW",
+      "fields": [
+        {
+          "field_id": "oms_af002_pub",
+          "content_zh": "腾讯云将AI能力深度集成至TCE云底座，支持客户在主权合规框架内构建大模型训练、推理及Agent应用，实现“合规云”与“智能云”的统一落地。通过Agent Development Platform(ADP)等平台，企业可在本地化、隔离环境中部署基于混元大模型的AI应用，满足数据不出境、模型可控的监管要求。",
+          "content_en": "Sovereign AI is framed around the economics and control of the model layer, not just where data sits. Tencent Cloud integrates AI capability directly into the TCE cloud foundation, so customers can run large-model training, inference and agent workloads inside the same sovereign compliance boundary as the rest of their infrastructure. Through the Agent Development Platform (ADP), enterprises deploy Hunyuan-based AI applications in localized, isolated environments that keep data in-jurisdiction and the model itself under customer control.",
+          "evidence": [
+            {
+              "tag": "CITED",
+              "claim": "TCE已将AI能力集成至云底座",
+              "source": "https://www.tencentcloud.com/dynamic/news-details/101217",
+              "quote": "By integrating advanced AI capabilities, Tencent Cloud Enterprise provides customers with a secure and compliant path for digital transformation.",
+              "retrieved": "2026-07-16"
+            },
+            {
+              "tag": "REVIEW",
+              "reviewer": "Kevin",
+              "claim": "AI unit economics（per-token / per-GPU-hour成本口径）是Omdia评分的关注点之一，当前回答未提供量化的AI经济性数据，是否需要补充需Kevin判断。",
+              "reason": "[REVIEW: Kevin] AI unit economics（per-token / per-GPU-hour成本口径）是Omdia评分的关注点之一，当前回答未提供量化的AI经济性数据，是否需要补充需Kevin判断。"
+            }
+          ],
+          "reviewer_hooks": [
+            {
+              "reviewer": "Kevin",
+              "kind": "thesis",
+              "text": "AI unit economics（per-token / per-GPU-hour成本口径）是Omdia评分的关注点之一，当前回答未提供量化的AI经济性数据，是否需要补充需Kevin判断。",
+              "reason": "[REVIEW: Kevin] AI unit economics（per-token / per-GPU-hour成本口径）是Omdia评分的关注点之一，当前回答未提供量化的AI经济性数据，是否需要补充需Kevin判断。"
+            }
+          ],
+          "lint": [],
+          "conflicts": []
+        },
+        {
+          "field_id": "oms_af002_comments",
+          "content_zh": "[REVIEW: Kevin] AI unit economics（per-token / per-GPU-hour成本口径）是Omdia评分的关注点之一，当前回答未提供量化的AI经济性数据，是否需要补充需Kevin判断。",
+          "content_en": "[REVIEW: Kevin] Omdia's lens weighs AI unit economics (per-token / per-GPU-hour cost); the current answer has no quantified figures on this — whether to add them is a framing call for the AR lead.",
+          "evidence": [
+            {
+              "tag": "REVIEW",
+              "reviewer": "Kevin",
+              "claim": "AI unit economics（per-token / per-GPU-hour成本口径）是Omdia评分的关注点之一，当前回答未提供量化的AI经济性数据，是否需要补充需Kevin判断。",
+              "reason": "[REVIEW: Kevin] AI unit economics（per-token / per-GPU-hour成本口径）是Omdia评分的关注点之一，当前回答未提供量化的AI经济性数据，是否需要补充需Kevin判断。"
+            },
+            {
+              "tag": "REVIEW",
+              "reviewer": "Kevin",
+              "claim": "Omdia's lens weighs AI unit economics (per-token / per-GPU-hour cost); the current answer has no quantified figures on this — whether to add them is a framing call for the AR lead.",
+              "reason": "[REVIEW: Kevin] Omdia's lens weighs AI unit economics (per-token / per-GPU-hour cost); the current answer has no quantified figures on this — whether to add them is a framing call for the AR lead."
+            }
+          ],
+          "reviewer_hooks": [
+            {
+              "reviewer": "Kevin",
+              "kind": "thesis",
+              "text": "AI unit economics（per-token / per-GPU-hour成本口径）是Omdia评分的关注点之一，当前回答未提供量化的AI经济性数据，是否需要补充需Kevin判断。",
+              "reason": "[REVIEW: Kevin] AI unit economics（per-token / per-GPU-hour成本口径）是Omdia评分的关注点之一，当前回答未提供量化的AI经济性数据，是否需要补充需Kevin判断。"
+            },
+            {
+              "reviewer": "Kevin",
+              "kind": "thesis",
+              "text": "Omdia's lens weighs AI unit economics (per-token / per-GPU-hour cost); the current answer has no quantified figures on this — whether to add them is a framing call for the AR lead.",
+              "reason": "[REVIEW: Kevin] Omdia's lens weighs AI unit economics (per-token / per-GPU-hour cost); the current answer has no quantified figures on this — whether to add them is a framing call for the AR lead."
+            }
+          ],
+          "lint": [
+            {
+              "severity": "WARN",
+              "rule": "review-hook",
+              "loc": "ZH",
+              "message": "[REVIEW: Kevin] AI unit economics（per-token / per-GPU-hour成本口径）是Omdia评分的关注点之一，当前回答未提供量化的AI经济性数据，是否需要补充需Kevin判断。",
+              "suggest": "交由 Kevin 审核"
+            },
+            {
+              "severity": "WARN",
+              "rule": "review-hook",
+              "loc": "EN",
+              "message": "[REVIEW: Kevin] Omdia's lens weighs AI unit economics (per-token / per-GPU-hour cost); the current answer has no quantified figures on this — whether to add them is a framing call for the AR lead.",
+              "suggest": "交由 Kevin 审核"
+            }
+          ],
+          "conflicts": []
+        }
+      ]
+    },
+    {
+      "question_id": "oms_q_af003",
+      "type_tag": {
+        "macro": "产品能力",
+        "form": "简答",
+        "modifiers": [
+          "需人审"
+        ]
+      },
+      "word_limit": 0,
+      "status": "KEVIN REVIEW",
+      "fields": [
+        {
+          "field_id": "oms_af003_pub",
+          "content_zh": "核心差异化是“同源而不降级”：TCE专有云与腾讯公有云共享统一架构和代码，使客户在私有化或物理隔离环境中获得持续迭代的云能力，而不是以功能缩水换取主权控制。该主张由三层证据支撑：TCE同源架构的产品事实、Forrester Wave Leader组的独立市场认可，以及True IDC泰国合作所体现的本地交付能力。",
+          "content_en": "The differentiator is sovereignty without a downgraded cloud. TCE and Tencent Cloud's public service share one architecture and codebase, so customers retain a continuously evolving cloud capability in private or air-gapped environments rather than trading functionality for control. The claim is supported at three levels: the same-source product architecture, independent recognition in the Forrester Wave Leader group, and in-country execution through the True IDC partnership in Thailand.",
+          "evidence": [
+            {
+              "tag": "CITED",
+              "claim": "架构同源是TCE的核心技术差异化",
+              "source": "https://cloud.tencent.com.cn/developer/article/2678942",
+              "quote": "架构同源：将公有云能力1:1完全输送至私有环境，统一架构、统一代码，支持从十几台到上万台节点的平滑扩展。",
+              "retrieved": "2026-07-17"
+            },
+            {
+              "tag": "CITED",
+              "claim": "独立行业媒体的Forrester Wave公开摘要将腾讯云列入Leader组",
+              "source": "https://cloudnews.tech/forrester-places-sovereign-cloud-at-the-center-of-cloud-strategy/",
+              "quote": "Among the leaders are Google Cloud, Microsoft, Amazon Web Services, Oracle, and Tencent Cloud.",
+              "retrieved": "2026-07-17"
+            },
+            {
+              "tag": "CITED",
+              "claim": "True IDC官方公告证实腾讯云在泰国采用本地伙伴协作交付",
+              "source": "https://www.trueidc.com/en/news-detail/227/strategic-partnership-mou-tencent-cloud",
+              "quote": "True Internet Data Center Co., Ltd. (True IDC), Thailand’s leading provider of data center and cloud services, has announced the signing of a landmark Memorandum of Understanding (MOU) with Tencent Cloud International Pte. Ltd. (Tencent Cloud) in Shenzhen, China.",
+              "retrieved": "2026-07-17"
+            },
+            {
+              "tag": "REVIEW",
+              "reviewer": "Kevin",
+              "claim": "题目要求“唯一(the one)”核心差异化——是否最终只保留“架构同源”作为主论点，仍需Kevin拍板。",
+              "reason": "[REVIEW: Kevin] 题目要求“唯一(the one)”核心差异化——是否最终只保留“架构同源”作为主论点，仍需Kevin拍板。"
+            }
+          ],
+          "reviewer_hooks": [
+            {
+              "reviewer": "Kevin",
+              "kind": "thesis",
+              "text": "题目要求“唯一(the one)”核心差异化——是否最终只保留“架构同源”作为主论点，仍需Kevin拍板。",
+              "reason": "[REVIEW: Kevin] 题目要求“唯一(the one)”核心差异化——是否最终只保留“架构同源”作为主论点，仍需Kevin拍板。"
+            }
+          ],
+          "lint": [],
+          "conflicts": []
+        },
+        {
+          "field_id": "oms_af003_comments",
+          "content_zh": "[REVIEW: Kevin] 题目要求“唯一(the one)”核心差异化——是否用“架构同源”而非其他候选角度(如唯一入选Leader象限的中国厂商)最打动分析师，需Kevin拍板最终framing。",
+          "content_en": "[REVIEW: Kevin] The question asks for the one differentiator — whether same-source architecture beats the alternative framing (sole Chinese Leader) as the strongest hook for the analyst is a call for the AR lead.",
+          "evidence": [
+            {
+              "tag": "REVIEW",
+              "reviewer": "Kevin",
+              "claim": "题目要求“唯一(the one)”核心差异化——是否用“架构同源”而非其他候选角度(如唯一入选Leader象限的中国厂商)最打动分析师，需Kevin拍板最终framing。",
+              "reason": "[REVIEW: Kevin] 题目要求“唯一(the one)”核心差异化——是否用“架构同源”而非其他候选角度(如唯一入选Leader象限的中国厂商)最打动分析师，需Kevin拍板最终framing。"
+            },
+            {
+              "tag": "REVIEW",
+              "reviewer": "Kevin",
+              "claim": "The question asks for the one differentiator — whether same-source architecture beats the alternative framing (sole Chinese Leader) as the strongest hook for the analyst is a call for the AR lead.",
+              "reason": "[REVIEW: Kevin] The question asks for the one differentiator — whether same-source architecture beats the alternative framing (sole Chinese Leader) as the strongest hook for the analyst is a call for the AR lead."
+            }
+          ],
+          "reviewer_hooks": [
+            {
+              "reviewer": "Kevin",
+              "kind": "thesis",
+              "text": "题目要求“唯一(the one)”核心差异化——是否用“架构同源”而非其他候选角度(如唯一入选Leader象限的中国厂商)最打动分析师，需Kevin拍板最终framing。",
+              "reason": "[REVIEW: Kevin] 题目要求“唯一(the one)”核心差异化——是否用“架构同源”而非其他候选角度(如唯一入选Leader象限的中国厂商)最打动分析师，需Kevin拍板最终framing。"
+            },
+            {
+              "reviewer": "Kevin",
+              "kind": "thesis",
+              "text": "The question asks for the one differentiator — whether same-source architecture beats the alternative framing (sole Chinese Leader) as the strongest hook for the analyst is a call for the AR lead.",
+              "reason": "[REVIEW: Kevin] The question asks for the one differentiator — whether same-source architecture beats the alternative framing (sole Chinese Leader) as the strongest hook for the analyst is a call for the AR lead."
+            }
+          ],
+          "lint": [
+            {
+              "severity": "WARN",
+              "rule": "review-hook",
+              "loc": "ZH",
+              "message": "[REVIEW: Kevin] 题目要求“唯一(the one)”核心差异化——是否用“架构同源”而非其他候选角度(如唯一入选Leader象限的中国厂商)最打动分析师，需Kevin拍板最终framing。",
+              "suggest": "交由 Kevin 审核"
+            },
+            {
+              "severity": "WARN",
+              "rule": "review-hook",
+              "loc": "EN",
+              "message": "[REVIEW: Kevin] The question asks for the one differentiator — whether same-source architecture beats the alternative framing (sole Chinese Leader) as the strongest hook for the analyst is a call for the AR lead.",
+              "suggest": "交由 Kevin 审核"
+            }
+          ],
+          "conflicts": []
+        }
+      ]
+    }
+  ]
+}

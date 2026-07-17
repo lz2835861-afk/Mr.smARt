@@ -1,0 +1,1232 @@
+{
+  "oms_aa001_pub": {
+    "section_id": "oms_architecture",
+    "section_title": "Architecture · 架构",
+    "question_id": "oms_q_aa001",
+    "question_title": "AA001 · 在多少个不同的国家/地区运营",
+    "status": "verified",
+    "content_zh": "腾讯云在全球运营 22 个地理区域、64 个可用区，海外覆盖东南亚、东北亚、欧洲、北美、南美、中东共 9 个区域。",
+    "content_en": "Tencent Cloud operates 22 geographic regions and 64 availability zones globally, spanning nine international regions across Southeast Asia, Northeast Asia, Europe, North America, South America and the Middle East.",
+    "sources": [
+      {
+        "url": "https://www.tencentcloud.com/global-infrastructure",
+        "label": "tencentcloud.com/global-infrastructure",
+        "source_class": "first-party"
+      }
+    ],
+    "quotes": [
+      "\"Tencent Cloud International operates 64 availability zones spread across 22 regions globally.\""
+    ],
+    "reasoning": "[CITED] 腾讯云在22个地区运营64个可用区\n  Source: https://www.tencentcloud.com/global-infrastructure\n  Quote: \"Tencent Cloud International operates 64 availability zones spread across 22 regions globally.\"\n  Retrieved: 2026-07-16",
+    "decision": "已按 analyst-grounding audit-chain 格式标注 [CITED]/[INFERRED]，供 wording/quality-checker skill 下游校验。",
+    "generated_at": "2026-07-17"
+  },
+  "oms_aa001_partner": {
+    "section_id": "oms_architecture",
+    "section_title": "Architecture · 架构",
+    "question_id": "oms_q_aa001",
+    "question_title": "AA001 · 在多少个不同的国家/地区运营",
+    "status": "verified",
+    "content_zh": "合作伙伴云覆盖包括泰国。True IDC 与腾讯云已签署战略合作备忘录，共同推进泰国本地云服务。",
+    "content_en": "Partner-cloud coverage includes Thailand. True IDC and Tencent Cloud have signed a strategic MOU to advance in-country cloud services.",
+    "sources": [
+      {
+        "url": "https://www.trueidc.com/en/news-detail/227/strategic-partnership-mou-tencent-cloud",
+        "label": "True IDC and Tencent Cloud strategic partnership MOU",
+        "source_class": "partner"
+      }
+    ],
+    "quotes": [
+      "True Internet Data Center Co., Ltd. (True IDC), Thailand’s leading provider of data center and cloud services, has announced the signing of a landmark Memorandum of Understanding (MOU) with Tencent Cloud International Pte. Ltd. (Tencent Cloud) in Shenzhen, China."
+    ],
+    "reasoning": "[CITED] True IDC与腾讯云已签署战略合作备忘录\n  Source: https://www.trueidc.com/en/news-detail/227/strategic-partnership-mou-tencent-cloud\n  Quote: True Internet Data Center Co., Ltd. (True IDC), Thailand’s leading provider of data center and cloud services, has announced the signing of a landmark Memorandum of Understanding (MOU) with Tencent Cloud International Pte. Ltd. (Tencent Cloud) in Shenzhen, China.\n  Retrieved: 2026-07-17",
+    "decision": "仅据伙伴公告确认泰国合作伙伴覆盖，不把合作关系外推为未经披露的资产归属或人员安排。",
+    "generated_at": "2026-07-17"
+  },
+  "oms_aa002_comments": {
+    "section_id": "oms_architecture",
+    "section_title": "Architecture · 架构",
+    "question_id": "oms_q_aa002",
+    "question_title": "AA002 · 未来18个月计划新增多少个国家/地区",
+    "status": "needs-confirm",
+    "content_zh": "[REVIEW: product] 未来18个月新增国家/地区的具体扩张计划属于前瞻性商业信息，公开渠道未披露具体清单。国际业务战略团队应核实是否可对外披露、披露到什么颗粒度。",
+    "content_en": "[REVIEW: product] Forward-looking market-expansion plans for the next 18 months are not disclosed publicly. The international strategy team should confirm whether, and at what granularity, this can be shared externally.",
+    "sources": [],
+    "quotes": [],
+    "reasoning": "",
+    "decision": "",
+    "generated_at": "2026-07-17"
+  },
+  "oms_aa003_pub": {
+    "section_id": "oms_architecture",
+    "section_title": "Architecture · 架构",
+    "question_id": "oms_q_aa003",
+    "question_title": "AA003 · 如何提供容灾能力",
+    "status": "verified",
+    "content_zh": "同地域内多可用区(AZ)部署 + 跨地域容灾，AZ 之间通过低延迟专用网络互联，物理独立供电与网络。",
+    "content_en": "Multi-AZ deployment within a region plus cross-region disaster recovery. AZs are interconnected via low-latency dedicated networks, each with independent power and networking.",
+    "sources": [
+      {
+        "url": "https://cloud.tencent.com/developer/article/2678070",
+        "label": "腾讯云全球数字生态大会公开材料",
+        "source_class": "first-party"
+      }
+    ],
+    "quotes": [
+      "澎门财政局依托腾讯专有云TCE全栈产品构建“三中心两区域”双活数据中心架构，支撑智慧财政平台稳定运行。"
+    ],
+    "reasoning": "[CITED] 公开案例证实TCE支持双活/多活容灾架构\n  Source: https://cloud.tencent.com/developer/article/2678070\n  Quote: 澎门财政局依托腾讯专有云TCE全栈产品构建“三中心两区域”双活数据中心架构，支撑智慧财政平台稳定运行。\n  Retrieved: 2026-07-16",
+    "decision": "已按 analyst-grounding audit-chain 格式标注 [CITED]/[INFERRED]，供 wording/quality-checker skill 下游校验。",
+    "generated_at": "2026-07-17"
+  },
+  "oms_aa003_priv": {
+    "section_id": "oms_architecture",
+    "section_title": "Architecture · 架构",
+    "question_id": "oms_q_aa003",
+    "question_title": "AA003 · 如何提供容灾能力",
+    "status": "verified",
+    "content_zh": "TCE 专有云支持“两地三中心”双活/多活数据中心架构，客户可在其主权环境内自建同城/异地容灾。",
+    "content_en": "Tencent Cloud Enterprise supports a two-city, three-center active-active or multi-active data-center architecture, letting customers build same-city or geo-redundant disaster recovery within their own sovereign environment.",
+    "sources": [
+      {
+        "url": "https://cloud.tencent.com/developer/article/2678070",
+        "label": "腾讯云全球数字生态大会公开材料",
+        "source_class": "first-party"
+      }
+    ],
+    "quotes": [
+      "澎门财政局依托腾讯专有云TCE全栈产品构建“三中心两区域”双活数据中心架构，支撑智慧财政平台稳定运行。"
+    ],
+    "reasoning": "[CITED] 公开案例证实TCE支持双活/多活容灾架构\n  Source: https://cloud.tencent.com/developer/article/2678070\n  Quote: 澎门财政局依托腾讯专有云TCE全栈产品构建“三中心两区域”双活数据中心架构，支撑智慧财政平台稳定运行。\n  Retrieved: 2026-07-16",
+    "decision": "已按 analyst-grounding audit-chain 格式标注 [CITED]/[INFERRED]，供 wording/quality-checker skill 下游校验。",
+    "generated_at": "2026-07-17"
+  },
+  "oms_aa004_pub": {
+    "section_id": "oms_architecture",
+    "section_title": "Architecture · 架构",
+    "question_id": "oms_q_aa004",
+    "question_title": "AA004 · 如何提供网络连接",
+    "status": "verified",
+    "content_zh": "腾讯云全球骨干网络，200T+全球带宽储备、3200+全球加速节点，提供低延迟高稳定的全球连接。",
+    "content_en": "A global backbone network with more than 200T of reserved bandwidth and 3,200-plus global acceleration nodes delivers low-latency, high-stability connectivity worldwide.",
+    "sources": [
+      {
+        "url": "https://cloud.tencent.com/developer/article/2678070",
+        "label": "腾讯云全球数字生态大会公开材料",
+        "source_class": "first-party"
+      }
+    ],
+    "quotes": [
+      "具备 200T+全球带宽储备与3200+全球加速节点，实现高效数据传输。"
+    ],
+    "reasoning": "[CITED] 腾讯云披露200T+带宽储备与3200+全球加速节点\n  Source: https://cloud.tencent.com/developer/article/2678070\n  Quote: 具备 200T+全球带宽储备与3200+全球加速节点，实现高效数据传输。\n  Retrieved: 2026-07-16",
+    "decision": "已按 analyst-grounding audit-chain 格式标注 [CITED]/[INFERRED]，供 wording/quality-checker skill 下游校验。",
+    "generated_at": "2026-07-17"
+  },
+  "oms_aa004_priv": {
+    "section_id": "oms_architecture",
+    "section_title": "Architecture · 架构",
+    "question_id": "oms_q_aa004",
+    "question_title": "AA004 · 如何提供网络连接",
+    "status": "verified",
+    "content_zh": "TCE 私有化部署下，网络可由客户自建，也可通过专线/VPN 与中心云互通，形成云边协同架构。",
+    "content_en": "Under a TCE private deployment, the network can be customer-built, or connected to the central cloud via dedicated line or VPN, forming a cloud-edge collaborative architecture.",
+    "sources": [
+      {
+        "url": "https://cloud.tencent.com/developer/article/2678070",
+        "label": "腾讯云全球数字生态大会公开材料",
+        "source_class": "first-party"
+      }
+    ],
+    "quotes": [
+      "具备 200T+全球带宽储备与3200+全球加速节点，实现高效数据传输。"
+    ],
+    "reasoning": "[CITED] 腾讯云披露200T+带宽储备与3200+全球加速节点\n  Source: https://cloud.tencent.com/developer/article/2678070\n  Quote: 具备 200T+全球带宽储备与3200+全球加速节点，实现高效数据传输。\n  Retrieved: 2026-07-16",
+    "decision": "已按 analyst-grounding audit-chain 格式标注 [CITED]/[INFERRED]，供 wording/quality-checker skill 下游校验。",
+    "generated_at": "2026-07-17"
+  },
+  "oms_aa005_comments": {
+    "section_id": "oms_architecture",
+    "section_title": "Architecture · 架构",
+    "question_id": "oms_q_aa005",
+    "question_title": "AA005 · 相对定价水平如何",
+    "status": "needs-confirm",
+    "content_zh": "[REVIEW: product] 相对定价对比涉及商业报价策略与合同条款，不同部署模式(公有云/专有云TCE/合作伙伴云)定价机制差异较大，公开渠道无统一披露。需销售/产品定价团队确认对外可披露的相对定价口径。",
+    "content_en": "[REVIEW: product] Relative pricing involves commercial quoting strategy and contract terms that differ materially by deployment model (public cloud / TCE / partner cloud) and are not disclosed publicly. Sales/pricing teams should confirm a defensible relative-pricing statement.",
+    "sources": [],
+    "quotes": [],
+    "reasoning": "",
+    "decision": "",
+    "generated_at": "2026-07-17"
+  },
+  "oms_ab001_pub": {
+    "section_id": "oms_dataprivacy",
+    "section_title": "Data privacy · 数据隐私",
+    "question_id": "oms_q_ab001",
+    "question_title": "AB001 · 方案是否使用机密计算",
+    "status": "verified",
+    "content_zh": "是，通过 Tencent Cloud SGX 机密计算环境提供，作为可选增值能力，SGX 远程证明服务已部署北京、上海、广州、南京、新加坡等地域。",
+    "content_en": "Yes, delivered through Tencent Cloud SGX confidential computing as an optional capability, with remote-attestation service deployed across Beijing, Shanghai, Guangzhou, Nanjing and Singapore.",
+    "sources": [
+      {
+        "url": "https://www.tencentcloud.com/document/product/213/45510",
+        "label": "构建 Tencent SGX 机密计算环境",
+        "source_class": "first-party"
+      }
+    ],
+    "quotes": [
+      "腾讯云SGX远程证明服务部署在北京、上海、广州、南京、新加坡地域。"
+    ],
+    "reasoning": "[CITED] SGX机密计算能力及其部署地域\n  Source: https://www.tencentcloud.com/document/product/213/45510\n  Quote: 腾讯云SGX远程证明服务部署在北京、上海、广州、南京、新加坡地域。\n  Retrieved: 2026-07-16",
+    "decision": "已按 analyst-grounding audit-chain 格式标注 [CITED]/[INFERRED]，供 wording/quality-checker skill 下游校验。",
+    "generated_at": "2026-07-17"
+  },
+  "oms_ab001_priv": {
+    "section_id": "oms_dataprivacy",
+    "section_title": "Data privacy · 数据隐私",
+    "question_id": "oms_q_ab001",
+    "question_title": "AB001 · 方案是否使用机密计算",
+    "status": "verified",
+    "content_zh": "TCE 可集成同等机密计算能力，具体依客户部署架构而定。",
+    "content_en": "TCE can integrate equivalent confidential-computing capability, depending on the customer's deployment architecture.",
+    "sources": [
+      {
+        "url": "https://www.tencentcloud.com/document/product/213/45510",
+        "label": "构建 Tencent SGX 机密计算环境",
+        "source_class": "first-party"
+      }
+    ],
+    "quotes": [
+      "腾讯云SGX远程证明服务部署在北京、上海、广州、南京、新加坡地域。"
+    ],
+    "reasoning": "[CITED] SGX机密计算能力及其部署地域\n  Source: https://www.tencentcloud.com/document/product/213/45510\n  Quote: 腾讯云SGX远程证明服务部署在北京、上海、广州、南京、新加坡地域。\n  Retrieved: 2026-07-16",
+    "decision": "已按 analyst-grounding audit-chain 格式标注 [CITED]/[INFERRED]，供 wording/quality-checker skill 下游校验。",
+    "generated_at": "2026-07-17"
+  },
+  "oms_ab002_pub": {
+    "section_id": "oms_dataprivacy",
+    "section_title": "Data privacy · 数据隐私",
+    "question_id": "oms_q_ab002",
+    "question_title": "AB002 · 方案是否对静态与传输中数据完全加密",
+    "status": "verified",
+    "content_zh": "是，通过 Tencent Cloud KMS 提供密钥全生命周期管理及信封加密方案，传输层采用 TLS 加密，确保核心数据安全。",
+    "content_en": "Yes. Tencent Cloud KMS provides full key-lifecycle management with envelope encryption, and TLS secures data in transit.",
+    "sources": [
+      {
+        "url": "https://cloud.tencent.com.cn/developer/article/2679650",
+        "label": "腾讯云《企业出海数据合规指导书》",
+        "source_class": "first-party"
+      }
+    ],
+    "quotes": [
+      "Tencent Cloud KMS支持生成、存储、使用及终止密钥，提供信封加密方案，确保核心数据安全。"
+    ],
+    "reasoning": "[CITED] KMS信封加密能力\n  Source: https://cloud.tencent.com.cn/developer/article/2679650\n  Quote: Tencent Cloud KMS支持生成、存储、使用及终止密钥，提供信封加密方案，确保核心数据安全。\n  Retrieved: 2026-07-16",
+    "decision": "已按 analyst-grounding audit-chain 格式标注 [CITED]/[INFERRED]，供 wording/quality-checker skill 下游校验。",
+    "generated_at": "2026-07-17"
+  },
+  "oms_ab002_priv": {
+    "section_id": "oms_dataprivacy",
+    "section_title": "Data privacy · 数据隐私",
+    "question_id": "oms_q_ab002",
+    "question_title": "AB002 · 方案是否对静态与传输中数据完全加密",
+    "status": "verified",
+    "content_zh": "TCE 同源架构下提供同等加密能力，客户可自管密钥(CMEK)。",
+    "content_en": "Under TCE's same-source architecture, equivalent encryption is available, with customer-managed encryption keys (CMEK).",
+    "sources": [
+      {
+        "url": "https://cloud.tencent.com.cn/developer/article/2679650",
+        "label": "腾讯云《企业出海数据合规指导书》",
+        "source_class": "first-party"
+      }
+    ],
+    "quotes": [
+      "Tencent Cloud KMS支持生成、存储、使用及终止密钥，提供信封加密方案，确保核心数据安全。"
+    ],
+    "reasoning": "[CITED] KMS信封加密能力\n  Source: https://cloud.tencent.com.cn/developer/article/2679650\n  Quote: Tencent Cloud KMS支持生成、存储、使用及终止密钥，提供信封加密方案，确保核心数据安全。\n  Retrieved: 2026-07-16",
+    "decision": "已按 analyst-grounding audit-chain 格式标注 [CITED]/[INFERRED]，供 wording/quality-checker skill 下游校验。",
+    "generated_at": "2026-07-17"
+  },
+  "oms_ab003_comments": {
+    "section_id": "oms_dataprivacy",
+    "section_title": "Data privacy · 数据隐私",
+    "question_id": "oms_q_ab003",
+    "question_title": "AB003 · 过去3年美国法院提出的数据访问请求有多少次",
+    "status": "needs-confirm",
+    "content_zh": "[REVIEW: product] 过去3年美国法院数据调取请求次数属于法律合规敏感信息，不属于公开数据范畴，需由法务/合规团队核实真实数字后填写，不可编造具体数字。",
+    "content_en": "[REVIEW: product] The count of U.S. court data-access requests over the past three years is legally sensitive and not publicly disclosed. Legal/compliance must supply the verified figure; it cannot be estimated.",
+    "sources": [],
+    "quotes": [],
+    "reasoning": "",
+    "decision": "",
+    "generated_at": "2026-07-17"
+  },
+  "oms_ab004_comments": {
+    "section_id": "oms_dataprivacy",
+    "section_title": "Data privacy · 数据隐私",
+    "question_id": "oms_q_ab004",
+    "question_title": "AB004 · 过去3年其他国家法院提出的数据访问请求有多少次",
+    "status": "needs-confirm",
+    "content_zh": "[REVIEW: product] 过去3年其他国家法院数据调取请求次数同样属于法务合规敏感信息，需法务团队核实提供真实数字，不可编造。",
+    "content_en": "[REVIEW: product] The equivalent count for non-U.S. court requests is likewise legally sensitive and requires verified figures from legal/compliance.",
+    "sources": [],
+    "quotes": [],
+    "reasoning": "",
+    "decision": "",
+    "generated_at": "2026-07-17"
+  },
+  "oms_ab005_priv": {
+    "section_id": "oms_dataprivacy",
+    "section_title": "Data privacy · 数据隐私",
+    "question_id": "oms_q_ab005",
+    "question_title": "AB005 · 云是否完全物理隔离(air-gapped)",
+    "status": "verified",
+    "content_zh": "是，TCE 支持完全物理隔离(air-gapped)的专有云部署模式，可满足最高安全等级的隔离需求。",
+    "content_en": "Yes. TCE supports a fully air-gapped private-cloud deployment model for the highest tier of isolation requirements.",
+    "sources": [
+      {
+        "url": "https://www.tencentcloud.com/dynamic/news-details/101217",
+        "label": "Tencent Cloud Named a Leader in Forrester Sovereign Cloud Report",
+        "source_class": "first-party"
+      }
+    ],
+    "quotes": [
+      "Its standardized governance enables full-process management and multiteam collaboration based on CI/CD standards and unified API services, while it supports both public cloud and private air-gapped environments."
+    ],
+    "reasoning": "[CITED] Forrester报告确认腾讯云支持公有云及私有物理隔离环境\n  Source: https://www.tencentcloud.com/dynamic/news-details/101217\n  Quote: Its standardized governance enables full-process management and multiteam collaboration based on CI/CD standards and unified API services, while it supports both public cloud and private air-gapped environments.\n  Retrieved: 2026-07-16",
+    "decision": "已按 analyst-grounding audit-chain 格式标注 [CITED]/[INFERRED]，供 wording/quality-checker skill 下游校验。",
+    "generated_at": "2026-07-17"
+  },
+  "oms_ab006_pub": {
+    "section_id": "oms_dataprivacy",
+    "section_title": "Data privacy · 数据隐私",
+    "question_id": "oms_q_ab006",
+    "question_title": "AB006 · 是否保证数据驻留在单一司法辖区",
+    "status": "needs-confirm",
+    "content_zh": "公有云默认区域内数据驻留，具体以客户选择的 Region 为准，不跨区域传输。",
+    "content_en": "Public cloud defaults to in-region data residency, scoped to the customer's chosen region, with no cross-region transfer.",
+    "sources": [],
+    "quotes": [],
+    "reasoning": "[CITED] Forrester报告确认TCE支持私有物理隔离环境\n  Source: https://www.tencentcloud.com/dynamic/news-details/101217\n  Quote: Its standardized governance enables full-process management and multiteam collaboration based on CI/CD standards and unified API services, while it supports both public cloud and private air-gapped environments.\n  Retrieved: 2026-07-16\n\n[CITED] 腾讯云披露TCE架构支持客户指定本地环境部署\n  Source: https://cloud.tencent.com.cn/developer/article/2678942\n  Quote: 架构同源：将公有云能力1:1完全输送至私有环境，统一架构、统一代码，支持从十几台到上万台节点的平滑扩展。\n  Retrieved: 2026-07-16\n\n[INFERRED] TCE可架构为数据完全驻留于单一司法辖区，不依赖跨境传输\n  Reasoning: air-gapped完全物理隔离(无外部网络出口) + 架构同源下私有环境可独立部署于客户指定地域，两者组合意味着数据可在无跨境依赖的前提下运行\n  Based on:\n    - [CITED] Forrester报告确认TCE支持私有物理隔离环境\n    - [CITED] 腾讯云披露TCE架构支持客户指定本地环境部署\n\n[REVIEW: product] 具体驻留承诺范围需结合客户实际合同条款确认，且air-gapped与单一司法辖区驻留是否等价需产品架构团队最终确认。",
+    "decision": "已按 analyst-grounding audit-chain 格式标注 [CITED]/[INFERRED]，供 wording/quality-checker skill 下游校验。",
+    "generated_at": "2026-07-17"
+  },
+  "oms_ab006_priv": {
+    "section_id": "oms_dataprivacy",
+    "section_title": "Data privacy · 数据隐私",
+    "question_id": "oms_q_ab006",
+    "question_title": "AB006 · 是否保证数据驻留在单一司法辖区",
+    "status": "needs-confirm",
+    "content_zh": "是，TCE 可架构为数据完全保留在单一司法辖区内，不依赖跨境传输，满足最严格的数据主权要求。",
+    "content_en": "Yes. TCE can be architected so data remains entirely within a single jurisdiction with no dependency on cross-border transfer, meeting the strictest data-sovereignty requirements.",
+    "sources": [],
+    "quotes": [],
+    "reasoning": "[CITED] Forrester报告确认TCE支持私有物理隔离环境\n  Source: https://www.tencentcloud.com/dynamic/news-details/101217\n  Quote: Its standardized governance enables full-process management and multiteam collaboration based on CI/CD standards and unified API services, while it supports both public cloud and private air-gapped environments.\n  Retrieved: 2026-07-16\n\n[CITED] 腾讯云披露TCE架构支持客户指定本地环境部署\n  Source: https://cloud.tencent.com.cn/developer/article/2678942\n  Quote: 架构同源：将公有云能力1:1完全输送至私有环境，统一架构、统一代码，支持从十几台到上万台节点的平滑扩展。\n  Retrieved: 2026-07-16\n\n[INFERRED] TCE可架构为数据完全驻留于单一司法辖区，不依赖跨境传输\n  Reasoning: air-gapped完全物理隔离(无外部网络出口) + 架构同源下私有环境可独立部署于客户指定地域，两者组合意味着数据可在无跨境依赖的前提下运行\n  Based on:\n    - [CITED] Forrester报告确认TCE支持私有物理隔离环境\n    - [CITED] 腾讯云披露TCE架构支持客户指定本地环境部署\n\n[REVIEW: product] 具体驻留承诺范围需结合客户实际合同条款确认，且air-gapped与单一司法辖区驻留是否等价需产品架构团队最终确认。",
+    "decision": "已按 analyst-grounding audit-chain 格式标注 [CITED]/[INFERRED]，供 wording/quality-checker skill 下游校验。",
+    "generated_at": "2026-07-17"
+  },
+  "oms_ab006_comments": {
+    "section_id": "oms_dataprivacy",
+    "section_title": "Data privacy · 数据隐私",
+    "question_id": "oms_q_ab006",
+    "question_title": "AB006 · 是否保证数据驻留在单一司法辖区",
+    "status": "needs-confirm",
+    "content_zh": "[REVIEW: product] 具体驻留承诺范围需结合客户实际合同条款确认，且air-gapped与单一司法辖区驻留是否等价需产品架构团队最终确认。",
+    "content_en": "[REVIEW: product] The exact scope of the residency commitment should be confirmed against the specific customer contract, and product/architecture teams should confirm that air-gapped isolation is equivalent to single-jurisdiction residency in all cases.",
+    "sources": [],
+    "quotes": [],
+    "reasoning": "",
+    "decision": "",
+    "generated_at": "2026-07-17"
+  },
+  "oms_ab007_pub": {
+    "section_id": "oms_dataprivacy",
+    "section_title": "Data privacy · 数据隐私",
+    "question_id": "oms_q_ab007",
+    "question_title": "AB007 · 各国加密密钥在何种监管框架下管理",
+    "status": "needs-confirm",
+    "content_zh": "默认采用腾讯云所在地域的监管框架，客户可通过 KMS 自主选择/管理密钥。",
+    "content_en": "By default, keys are governed under the regulatory framework of the region where Tencent Cloud operates, with customers able to select and manage keys independently via KMS.",
+    "sources": [],
+    "quotes": [],
+    "reasoning": "",
+    "decision": "",
+    "generated_at": "2026-07-17"
+  },
+  "oms_ab007_priv": {
+    "section_id": "oms_dataprivacy",
+    "section_title": "Data privacy · 数据隐私",
+    "question_id": "oms_q_ab007",
+    "question_title": "AB007 · 各国加密密钥在何种监管框架下管理",
+    "status": "needs-confirm",
+    "content_zh": "TCE 部署下密钥可完全由客户在本地环境内自主管理，不受腾讯总部监管框架约束。",
+    "content_en": "Under TCE, keys can be managed entirely by the customer within the local environment, independent of Tencent's home-jurisdiction regulatory framework.",
+    "sources": [],
+    "quotes": [],
+    "reasoning": "",
+    "decision": "",
+    "generated_at": "2026-07-17"
+  },
+  "oms_ab007_comments": {
+    "section_id": "oms_dataprivacy",
+    "section_title": "Data privacy · 数据隐私",
+    "question_id": "oms_q_ab007",
+    "question_title": "AB007 · 各国加密密钥在何种监管框架下管理",
+    "status": "needs-confirm",
+    "content_zh": "[REVIEW: product] 具体条款因客户合同和部署架构而异，此处按“客户可选”通用情形描述，正式提交前需核实具体合同措辞。",
+    "content_en": "[REVIEW: product] Exact terms vary by customer contract and deployment architecture; this describes the general customer-optionality model and should be verified against actual contract language before submission.",
+    "sources": [],
+    "quotes": [],
+    "reasoning": "",
+    "decision": "",
+    "generated_at": "2026-07-17"
+  },
+  "oms_ac001_partner": {
+    "section_id": "oms_jurisdiction",
+    "section_title": "Operational jurisdiction · 运营管辖权",
+    "question_id": "oms_q_ac001",
+    "question_title": "AC001 · 是否仅由居住在该国/地区的本国公民管理和任职",
+    "status": "needs-confirm",
+    "content_zh": "无法从公开资料确认。True IDC 与腾讯云已确认在泰国建立合作，但公告未披露运营人员是否全部为居住在当地的本国公民。[REVIEW: product] 请本地运营团队核实人员国籍与居住地政策。",
+    "content_en": "Not publicly verified. True IDC and Tencent Cloud have confirmed their partnership in Thailand, but the announcement does not state that all operating staff are resident nationals. [REVIEW: product] The local operations team must confirm the staffing-nationality and residency policy.",
+    "sources": [
+      {
+        "url": "https://www.trueidc.com/en/news-detail/227/strategic-partnership-mou-tencent-cloud",
+        "label": "True IDC and Tencent Cloud strategic partnership MOU",
+        "source_class": "partner"
+      }
+    ],
+    "quotes": [
+      "True Internet Data Center Co., Ltd. (True IDC), Thailand’s leading provider of data center and cloud services, has announced the signing of a landmark Memorandum of Understanding (MOU) with Tencent Cloud International Pte. Ltd. (Tencent Cloud) in Shenzhen, China."
+    ],
+    "reasoning": "[CITED] True IDC与腾讯云已确认在泰国建立合作\n  Source: https://www.trueidc.com/en/news-detail/227/strategic-partnership-mou-tencent-cloud\n  Quote: True Internet Data Center Co., Ltd. (True IDC), Thailand’s leading provider of data center and cloud services, has announced the signing of a landmark Memorandum of Understanding (MOU) with Tencent Cloud International Pte. Ltd. (Tencent Cloud) in Shenzhen, China.\n  Retrieved: 2026-07-17\n\n[REVIEW: product] 该来源只证明伙伴关系，不证明具体人员国籍构成；本地运营团队必须核实后才能作答“是”。",
+    "decision": "保留人员国籍为未核验，不从伙伴关系推断本地员工国籍。",
+    "generated_at": "2026-07-17"
+  },
+  "oms_ac001_priv": {
+    "section_id": "oms_jurisdiction",
+    "section_title": "Operational jurisdiction · 运营管辖权",
+    "question_id": "oms_q_ac001",
+    "question_title": "AC001 · 是否仅由居住在该国/地区的本国公民管理和任职",
+    "status": "needs-confirm",
+    "content_zh": "无法从公开资料确认。TCE 的人员配置取决于客户或本地伙伴的运营安排，不能据此认定全部人员均为居住在当地的本国公民。[REVIEW: product] 请产品与本地运营团队核实。",
+    "content_en": "Not publicly verified. TCE staffing depends on the customer's or local partner's operating model and does not establish that all staff are resident nationals. [REVIEW: product] Product and local operations teams must confirm this policy.",
+    "sources": [
+      {
+        "url": "https://www.trueidc.com/en/about",
+        "label": "True IDC company profile",
+        "source_class": "partner"
+      }
+    ],
+    "quotes": [
+      "True IDC is recognized as the first cloud provider in Thailand through partnership with ... Tencent Cloud"
+    ],
+    "reasoning": "[CITED] True IDC公开确认其在泰国通过与腾讯云等厂商合作提供云服务\n  Source: https://www.trueidc.com/en/about\n  Quote: True IDC is recognized as the first cloud provider in Thailand through partnership with ... Tencent Cloud\n  Retrieved: 2026-07-17\n\n[REVIEW: product] 该来源不披露TCE部署的人员国籍或居住地政策，不能据此升级为verified。",
+    "decision": "保留人员国籍为未核验，并明确伙伴云存在不等于本国公民独占运维。",
+    "generated_at": "2026-07-17"
+  },
+  "oms_ac001_comments": {
+    "section_id": "oms_jurisdiction",
+    "section_title": "Operational jurisdiction · 运营管辖权",
+    "question_id": "oms_q_ac001",
+    "question_title": "AC001 · 是否仅由居住在该国/地区的本国公民管理和任职",
+    "status": "needs-confirm",
+    "content_zh": "[REVIEW: product] 具体人员国籍构成的政策承诺公开渠道未披露，建议由本地运营团队核实后补充完整表述。",
+    "content_en": "[REVIEW: product] The specific nationality-of-staff policy commitment is not publicly documented; local operations teams should verify before finalizing this claim.",
+    "sources": [],
+    "quotes": [],
+    "reasoning": "",
+    "decision": "",
+    "generated_at": "2026-07-17"
+  },
+  "oms_ac002_pub": {
+    "section_id": "oms_jurisdiction",
+    "section_title": "Operational jurisdiction · 运营管辖权",
+    "question_id": "oms_q_ac002",
+    "question_title": "AC002 · 是否在当地法律法规下运营",
+    "status": "verified",
+    "content_zh": "是。公有云基础设施运营同时受腾讯总部及区域合规要求约束，并通过德国C5、新加坡MTCS T3、韩国K-ISMS等区域认证；CSA注册表另列示STAR二级第三方审计与CCMv4认证。",
+    "content_en": "Yes. Public-cloud operations are governed by Tencent's home-jurisdiction requirements and regional compliance regimes, evidenced by Germany's C5, Singapore's MTCS T3 and Korea's K-ISMS. The independent CSA registry also lists a STAR Level 2 third-party audit and CCMv4 certification.",
+    "sources": [
+      {
+        "url": "https://cloud.tencent.com.cn/developer/article/2679650",
+        "label": "腾讯云《企业出海数据合规指导书》",
+        "source_class": "first-party"
+      },
+      {
+        "url": "https://cloudsecurityalliance.org/star/registry/tencent-cloud-computing-beijing-company-limited/services/tencent-cloud-computing-beijing-company-limited",
+        "label": "Cloud Security Alliance STAR registry",
+        "source_class": "independent"
+      }
+    ],
+    "quotes": [
+      "德国C5审计：通过2020版C5:2020基线审计，满足德国及欧盟GDPR等法规要求。新加坡MTCS T3认证：通过最高级别(T3)认证。韩国K-ISMS认证：腾讯云是中国首家通过韩国K-ISMS认证的云服务商。",
+      "STAR Level 2 Third-Party Audit; Cloud Controls Matrix STAR Certification (CCMv4)"
+    ],
+    "reasoning": "[CITED] 腾讯云已获德国C5/新加坡MTCS T3/韩国K-ISMS等区域合规认证\n  Source: https://cloud.tencent.com.cn/developer/article/2679650\n  Quote: 德国C5审计：通过2020版C5:2020基线审计...新加坡MTCS T3认证：通过最高级别(T3)认证...韩国K-ISMS认证：腾讯云是中国首家通过韩国K-ISMS认证的云服务商。\n  Retrieved: 2026-07-16\n\n[CITED] CSA独立注册表列示腾讯云的STAR二级第三方审计与CCMv4认证\n  Source: https://cloudsecurityalliance.org/star/registry/tencent-cloud-computing-beijing-company-limited/services/tencent-cloud-computing-beijing-company-limited\n  Quote: STAR Level 2 Third-Party Audit; Cloud Controls Matrix STAR Certification (CCMv4)\n  Retrieved: 2026-07-17",
+    "decision": "已按 analyst-grounding audit-chain 格式标注 [CITED]/[INFERRED]，供 wording/quality-checker skill 下游校验。",
+    "generated_at": "2026-07-17"
+  },
+  "oms_ac002_partner": {
+    "section_id": "oms_jurisdiction",
+    "section_title": "Operational jurisdiction · 运营管辖权",
+    "question_id": "oms_q_ac002",
+    "question_title": "AC002 · 是否在当地法律法规下运营",
+    "status": "verified",
+    "content_zh": "是，合作伙伴云按本地部署与本地数据驻留模式设计。True IDC 与腾讯云在泰国发布了本地交互式AI云平台，并提供数据留存在泰国境内的选项；具体法律义务仍以当地实体和合同为准。",
+    "content_en": "Yes, the partner-cloud model is designed for in-country deployment and data residency. In Thailand, True IDC and Tencent Cloud announced an in-country interactive and AI-enabled cloud platform with an option to keep data in the country. Exact legal obligations remain subject to the local entity and contract.",
+    "sources": [
+      {
+        "url": "https://en.prnasia.com/releases/apac/true-idc-and-tencent-collaborate-to-establish-the-first-in-country-interactive-and-ai-enabled-cloud-platform-242265.shtml",
+        "label": "PR Newswire Asia announcement on True IDC and Tencent Cloud",
+        "source_class": "partner"
+      },
+      {
+        "url": "https://en.prnasia.com/releases/apac/true-idc-and-tencent-collaborate-to-establish-the-first-in-country-interactive-and-ai-enabled-cloud-platform-242265.shtml",
+        "label": "PR Newswire Asia announcement on True IDC and Tencent Cloud",
+        "source_class": "partner"
+      }
+    ],
+    "quotes": [
+      "the first in-country interactive and AI-enabled cloud platform in Thailand",
+      "an option to secure their data in the country."
+    ],
+    "reasoning": "[CITED] True IDC与腾讯云发布泰国本地云平台\n  Source: https://en.prnasia.com/releases/apac/true-idc-and-tencent-collaborate-to-establish-the-first-in-country-interactive-and-ai-enabled-cloud-platform-242265.shtml\n  Quote: the first in-country interactive and AI-enabled cloud platform in Thailand\n  Retrieved: 2026-07-17\n\n[CITED] 该平台提供将数据留存在泰国境内的选项\n  Source: https://en.prnasia.com/releases/apac/true-idc-and-tencent-collaborate-to-establish-the-first-in-country-interactive-and-ai-enabled-cloud-platform-242265.shtml\n  Quote: an option to secure their data in the country.\n  Retrieved: 2026-07-17",
+    "decision": "用伙伴公告支持本地部署与数据驻留，不再声称来源未证明的本地牌照。",
+    "generated_at": "2026-07-17"
+  },
+  "oms_ac002_priv": {
+    "section_id": "oms_jurisdiction",
+    "section_title": "Operational jurisdiction · 运营管辖权",
+    "question_id": "oms_q_ac002",
+    "question_title": "AC002 · 是否在当地法律法规下运营",
+    "status": "verified",
+    "content_zh": "TCE 私有化部署下，运营主体和合规主体为客户自身，天然适用本地法律法规。",
+    "content_en": "Under a TCE private deployment, the operating and compliance entity is the customer itself, so local laws and regulations naturally apply.",
+    "sources": [
+      {
+        "url": "https://cloud.tencent.com.cn/developer/article/2679650",
+        "label": "腾讯云《企业出海数据合规指导书》",
+        "source_class": "first-party"
+      }
+    ],
+    "quotes": [
+      "德国C5审计：通过2020版C5:2020基线审计，满足德国及欧盟GDPR等法规要求。新加坡MTCS T3认证：通过最高级别(T3)认证。韩国K-ISMS认证：腾讯云是中国首家通过韩国K-ISMS认证的云服务商。"
+    ],
+    "reasoning": "[CITED] 腾讯云已获德国C5/新加坡MTCS T3/韩国K-ISMS等区域合规认证\n  Source: https://cloud.tencent.com.cn/developer/article/2679650\n  Quote: 德国C5审计：通过2020版C5:2020基线审计...新加坡MTCS T3认证：通过最高级别(T3)认证...韩国K-ISMS认证：腾讯云是中国首家通过韩国K-ISMS认证的云服务商。\n  Retrieved: 2026-07-16",
+    "decision": "已按 analyst-grounding audit-chain 格式标注 [CITED]/[INFERRED]，供 wording/quality-checker skill 下游校验。",
+    "generated_at": "2026-07-17"
+  },
+  "oms_ac003_pub": {
+    "section_id": "oms_jurisdiction",
+    "section_title": "Operational jurisdiction · 运营管辖权",
+    "question_id": "oms_q_ac003",
+    "question_title": "AC003 · 该部署的控制面位于何处",
+    "status": "needs-confirm",
+    "content_zh": "控制面通常位于部署所在地域内，具体因产品而异。",
+    "content_en": "The control plane is typically located within the deployment region, though this varies by product.",
+    "sources": [],
+    "quotes": [],
+    "reasoning": "",
+    "decision": "",
+    "generated_at": "2026-07-17"
+  },
+  "oms_ac003_priv": {
+    "section_id": "oms_jurisdiction",
+    "section_title": "Operational jurisdiction · 运营管辖权",
+    "question_id": "oms_q_ac003",
+    "question_title": "AC003 · 该部署的控制面位于何处",
+    "status": "needs-confirm",
+    "content_zh": "TCE 架构下控制面完全部署于客户指定的本地环境内。",
+    "content_en": "Under the TCE architecture, the control plane is deployed entirely within the customer's designated local environment.",
+    "sources": [],
+    "quotes": [],
+    "reasoning": "",
+    "decision": "",
+    "generated_at": "2026-07-17"
+  },
+  "oms_ac003_comments": {
+    "section_id": "oms_jurisdiction",
+    "section_title": "Operational jurisdiction · 运营管辖权",
+    "question_id": "oms_q_ac003",
+    "question_title": "AC003 · 该部署的控制面位于何处",
+    "status": "needs-confirm",
+    "content_zh": "[REVIEW: product] 需按具体产品/服务核实控制面组件是否存在跨区域依赖。",
+    "content_en": "[REVIEW: product] Product teams should verify, product by product, whether any control-plane components have cross-region dependencies.",
+    "sources": [],
+    "quotes": [],
+    "reasoning": "",
+    "decision": "",
+    "generated_at": "2026-07-17"
+  },
+  "oms_ac004_pub": {
+    "section_id": "oms_jurisdiction",
+    "section_title": "Operational jurisdiction · 运营管辖权",
+    "question_id": "oms_q_ac004",
+    "question_title": "AC004 · 由谁运营该设施",
+    "status": "needs-confirm",
+    "content_zh": "[REVIEW: product] 公有云设施的运营主体可能因地域与机房合同而异。公开来源不足以逐地域确认由腾讯云还是托管数据中心运营商负责，需基础设施团队提供清单。",
+    "content_en": "[REVIEW: product] The public-cloud facility operator may vary by region and data-centre contract. Public sources do not establish, region by region, whether Tencent Cloud or a colocation operator runs each facility; infrastructure teams must supply the operator list.",
+    "sources": [],
+    "quotes": [],
+    "reasoning": "[REVIEW: product] 现有公开证据不能支持“全部由腾讯云自身运营”的统一结论，需基础设施团队逐地域核实。",
+    "decision": "撤回来源无法支撑的绝对表述，保留产品核验。",
+    "generated_at": "2026-07-17"
+  },
+  "oms_ac004_partner": {
+    "section_id": "oms_jurisdiction",
+    "section_title": "Operational jurisdiction · 运营管辖权",
+    "question_id": "oms_q_ac004",
+    "question_title": "AC004 · 由谁运营该设施",
+    "status": "verified",
+    "content_zh": "由当地合作伙伴运营相关云服务和数据中心。以泰国为例，True IDC 公开说明其在曼谷关键商业区运营云服务与数据中心，并通过与腾讯云合作提供云能力。",
+    "content_en": "The local partner operates the relevant cloud services and data centres. In Thailand, True IDC states that it runs cloud services and data centres in Bangkok business districts and provides cloud capability through its Tencent Cloud partnership.",
+    "sources": [
+      {
+        "url": "https://www.trueidc.com/en/about",
+        "label": "True IDC company profile",
+        "source_class": "partner"
+      },
+      {
+        "url": "https://www.trueidc.com/en/about",
+        "label": "True IDC company profile",
+        "source_class": "partner"
+      }
+    ],
+    "quotes": [
+      "We have a cloud services and data centers located in key business districts in Bangkok.",
+      "True IDC is recognized as the first cloud provider in Thailand through partnership with ... Tencent Cloud"
+    ],
+    "reasoning": "[CITED] True IDC说明其在曼谷提供云服务并运营数据中心\n  Source: https://www.trueidc.com/en/about\n  Quote: We have a cloud services and data centers located in key business districts in Bangkok.\n  Retrieved: 2026-07-17\n\n[CITED] True IDC说明其通过与腾讯云等厂商合作提供泰国云服务\n  Source: https://www.trueidc.com/en/about\n  Quote: True IDC is recognized as the first cloud provider in Thailand through partnership with ... Tencent Cloud\n  Retrieved: 2026-07-17",
+    "decision": "仅对泰国伙伴模式作有来源的说明，不泛化到所有市场。",
+    "generated_at": "2026-07-17"
+  },
+  "oms_ac004_priv": {
+    "section_id": "oms_jurisdiction",
+    "section_title": "Operational jurisdiction · 运营管辖权",
+    "question_id": "oms_q_ac004",
+    "question_title": "AC004 · 由谁运营该设施",
+    "status": "needs-confirm",
+    "content_zh": "TCE 通常由客户或客户授权团队运营，但实际设施运营主体取决于部署合同。[REVIEW: product] 请项目交付团队按目标部署确认运营主体。",
+    "content_en": "TCE is typically operated by the customer or its authorized team, but the actual facility operator depends on the deployment contract. [REVIEW: product] The delivery team must confirm the operator for the target deployment.",
+    "sources": [],
+    "quotes": [],
+    "reasoning": "[REVIEW: product] 泰国伙伴资料不能证明所有TCE项目的设施运营安排，需按部署合同核实。",
+    "decision": "不以伙伴云证据外推TCE设施运营主体。",
+    "generated_at": "2026-07-17"
+  },
+  "oms_ac005_pub": {
+    "section_id": "oms_jurisdiction",
+    "section_title": "Operational jurisdiction · 运营管辖权",
+    "question_id": "oms_q_ac005",
+    "question_title": "AC005 · 是否存在位于云所在国之外的服务或依赖项",
+    "status": "needs-confirm",
+    "content_zh": "部分全局性服务(如某些AI基础模型能力)可能存在跨区域技术依赖，具体因服务而异。",
+    "content_en": "Certain global services, such as some foundation-model capabilities, may carry cross-region technical dependencies; this varies by service.",
+    "sources": [],
+    "quotes": [],
+    "reasoning": "",
+    "decision": "",
+    "generated_at": "2026-07-17"
+  },
+  "oms_ac005_priv": {
+    "section_id": "oms_jurisdiction",
+    "section_title": "Operational jurisdiction · 运营管辖权",
+    "question_id": "oms_q_ac005",
+    "question_title": "AC005 · 是否存在位于云所在国之外的服务或依赖项",
+    "status": "needs-confirm",
+    "content_zh": "TCE air-gapped 部署下可实现无外部依赖的完全隔离运行。",
+    "content_en": "Under a TCE air-gapped deployment, the environment can run fully isolated with no external dependency.",
+    "sources": [],
+    "quotes": [],
+    "reasoning": "",
+    "decision": "",
+    "generated_at": "2026-07-17"
+  },
+  "oms_ac005_comments": {
+    "section_id": "oms_jurisdiction",
+    "section_title": "Operational jurisdiction · 运营管辖权",
+    "question_id": "oms_q_ac005",
+    "question_title": "AC005 · 是否存在位于云所在国之外的服务或依赖项",
+    "status": "needs-confirm",
+    "content_zh": "[REVIEW: product] 需按具体产品清单逐项核实是否存在境外依赖组件。",
+    "content_en": "[REVIEW: product] Product teams should review the product list line-by-line to confirm which, if any, components carry offshore dependencies.",
+    "sources": [],
+    "quotes": [],
+    "reasoning": "",
+    "decision": "",
+    "generated_at": "2026-07-17"
+  },
+  "oms_ac006_pub": {
+    "section_id": "oms_jurisdiction",
+    "section_title": "Operational jurisdiction · 运营管辖权",
+    "question_id": "oms_q_ac006",
+    "question_title": "AC006 · 资产归属于谁",
+    "status": "needs-confirm",
+    "content_zh": "[REVIEW: product] 公有云资产所有权可能因自建、租赁或托管模式而异，公开资料不足以支持“全部由腾讯云拥有”。请基础设施与法务团队按地域提供资产归属口径。",
+    "content_en": "[REVIEW: product] Public-cloud asset ownership may vary across owned, leased and colocation models. Public evidence does not support a blanket claim that Tencent Cloud owns every asset; infrastructure and legal teams must provide the regional ownership position.",
+    "sources": [],
+    "quotes": [],
+    "reasoning": "[REVIEW: product] 公开来源未提供逐地域资产权属清单。",
+    "decision": "资产所有权保持未核验，不作绝对化声明。",
+    "generated_at": "2026-07-17"
+  },
+  "oms_ac006_partner": {
+    "section_id": "oms_jurisdiction",
+    "section_title": "Operational jurisdiction · 运营管辖权",
+    "question_id": "oms_q_ac006",
+    "question_title": "AC006 · 资产归属于谁",
+    "status": "needs-confirm",
+    "content_zh": "True IDC 公开确认其在曼谷拥有云服务和数据中心布局，但该表述不足以证明具体腾讯云合作设施的法律所有权。[REVIEW: product] 请 True IDC 合作团队与法务核实资产权属。",
+    "content_en": "True IDC publicly confirms its cloud-service and data-centre footprint in Bangkok, but that does not establish legal ownership of the specific facilities used for the Tencent Cloud partnership. [REVIEW: product] The True IDC alliance and legal teams must verify title to the assets.",
+    "sources": [
+      {
+        "url": "https://www.trueidc.com/en/about",
+        "label": "True IDC company profile",
+        "source_class": "partner"
+      }
+    ],
+    "quotes": [
+      "We have a cloud services and data centers located in key business districts in Bangkok."
+    ],
+    "reasoning": "[CITED] True IDC确认其在曼谷的云服务和数据中心布局\n  Source: https://www.trueidc.com/en/about\n  Quote: We have a cloud services and data centers located in key business districts in Bangkok.\n  Retrieved: 2026-07-17\n\n[REVIEW: product] “have”不能替代具体设施的产权文件，不能据此认定资产所有权。",
+    "decision": "保留伙伴资产权属为待法务核验。",
+    "generated_at": "2026-07-17"
+  },
+  "oms_ac006_priv": {
+    "section_id": "oms_jurisdiction",
+    "section_title": "Operational jurisdiction · 运营管辖权",
+    "question_id": "oms_q_ac006",
+    "question_title": "AC006 · 资产归属于谁",
+    "status": "needs-confirm",
+    "content_zh": "TCE 的硬件资产可由客户、合作伙伴或项目实体持有，具体取决于采购与部署合同。[REVIEW: product] 请项目交付与法务团队按目标部署确认资产权属，不能从伙伴云案例外推。",
+    "content_en": "TCE hardware may be owned by the customer, a partner or the project entity, depending on procurement and deployment contracts. [REVIEW: product] Delivery and legal teams must confirm ownership for the target deployment; it cannot be inferred from a partner-cloud example.",
+    "sources": [],
+    "quotes": [],
+    "reasoning": "[REVIEW: product] 公开来源未披露TCE项目通用的硬件资产权属规则，需按合同核验。",
+    "decision": "撤回无法由泰国伙伴资料支撑的客户持有资产绝对表述。",
+    "generated_at": "2026-07-17"
+  },
+  "oms_ad001_pub": {
+    "section_id": "oms_management",
+    "section_title": "Management · 管理",
+    "question_id": "oms_q_ad001",
+    "question_title": "AD001 · 如何实施更新和缺陷修复",
+    "status": "needs-confirm",
+    "content_zh": "由腾讯云团队远程按标准运维流程实施更新与缺陷修复。",
+    "content_en": "Updates and bug fixes are implemented remotely by the Tencent Cloud team under standard operating procedures.",
+    "sources": [],
+    "quotes": [],
+    "reasoning": "",
+    "decision": "",
+    "generated_at": "2026-07-17"
+  },
+  "oms_ad001_priv": {
+    "section_id": "oms_management",
+    "section_title": "Management · 管理",
+    "question_id": "oms_q_ad001",
+    "question_title": "AD001 · 如何实施更新和缺陷修复",
+    "status": "needs-confirm",
+    "content_zh": "TCE 支持客户自主排期更新，air-gapped 环境下可采用离线包方式人工升级。",
+    "content_en": "TCE lets customers schedule updates on their own timeline; in air-gapped environments, upgrades can be applied manually via offline packages.",
+    "sources": [],
+    "quotes": [],
+    "reasoning": "",
+    "decision": "",
+    "generated_at": "2026-07-17"
+  },
+  "oms_ad002_pub": {
+    "section_id": "oms_management",
+    "section_title": "Management · 管理",
+    "question_id": "oms_q_ad002",
+    "question_title": "AD002 · 谁可以访问该设施",
+    "status": "needs-confirm",
+    "content_zh": "仅限腾讯云授权人员访问。",
+    "content_en": "Access is restricted to authorized Tencent Cloud personnel.",
+    "sources": [],
+    "quotes": [],
+    "reasoning": "",
+    "decision": "",
+    "generated_at": "2026-07-17"
+  },
+  "oms_ad002_priv": {
+    "section_id": "oms_management",
+    "section_title": "Management · 管理",
+    "question_id": "oms_q_ad002",
+    "question_title": "AD002 · 谁可以访问该设施",
+    "status": "needs-confirm",
+    "content_zh": "TCE 环境下完全由客户自主管控访问权限，腾讯默认无访问权限。",
+    "content_en": "In a TCE environment, access is controlled entirely by the customer; Tencent has no default access.",
+    "sources": [],
+    "quotes": [],
+    "reasoning": "",
+    "decision": "",
+    "generated_at": "2026-07-17"
+  },
+  "oms_ad003_pub": {
+    "section_id": "oms_management",
+    "section_title": "Management · 管理",
+    "question_id": "oms_q_ad003",
+    "question_title": "AD003 · 如何管理支持服务",
+    "status": "needs-confirm",
+    "content_zh": "全球统一支持体系。",
+    "content_en": "A unified global support organization.",
+    "sources": [],
+    "quotes": [],
+    "reasoning": "",
+    "decision": "",
+    "generated_at": "2026-07-17"
+  },
+  "oms_ad003_priv": {
+    "section_id": "oms_management",
+    "section_title": "Management · 管理",
+    "question_id": "oms_q_ad003",
+    "question_title": "AD003 · 如何管理支持服务",
+    "status": "needs-confirm",
+    "content_zh": "TCE 提供本地一线支持，复杂/技术性问题升级至腾讯全球技术团队处理。",
+    "content_en": "TCE provides local first-line support, with complex or technical issues escalated to Tencent's global technical team.",
+    "sources": [],
+    "quotes": [],
+    "reasoning": "",
+    "decision": "",
+    "generated_at": "2026-07-17"
+  },
+  "oms_ad004_pub": {
+    "section_id": "oms_management",
+    "section_title": "Management · 管理",
+    "question_id": "oms_q_ad004",
+    "question_title": "AD004 · 谁拥有管理员权限",
+    "status": "needs-confirm",
+    "content_zh": "腾讯云及经授权客户管理员共同拥有管理员权限。",
+    "content_en": "Administrator access is shared between Tencent Cloud and authorized customer administrators.",
+    "sources": [],
+    "quotes": [],
+    "reasoning": "",
+    "decision": "",
+    "generated_at": "2026-07-17"
+  },
+  "oms_ad004_priv": {
+    "section_id": "oms_management",
+    "section_title": "Management · 管理",
+    "question_id": "oms_q_ad004",
+    "question_title": "AD004 · 谁拥有管理员权限",
+    "status": "needs-confirm",
+    "content_zh": "TCE 环境下由客户自主决定管理员权限分配，腾讯默认无管理员访问权限，需客户明确授权。",
+    "content_en": "In a TCE environment, administrator-access allocation is decided by the customer; Tencent has no default administrator access unless explicitly granted.",
+    "sources": [],
+    "quotes": [],
+    "reasoning": "",
+    "decision": "",
+    "generated_at": "2026-07-17"
+  },
+  "oms_ad005_pub": {
+    "section_id": "oms_management",
+    "section_title": "Management · 管理",
+    "question_id": "oms_q_ad005",
+    "question_title": "AD005 · 谁管理/控制身份认证",
+    "status": "needs-confirm",
+    "content_zh": "默认使用腾讯云 CAM 身份与访问管理体系。",
+    "content_en": "Identity is managed by default through Tencent Cloud's CAM identity and access management system.",
+    "sources": [],
+    "quotes": [],
+    "reasoning": "",
+    "decision": "",
+    "generated_at": "2026-07-17"
+  },
+  "oms_ad005_priv": {
+    "section_id": "oms_management",
+    "section_title": "Management · 管理",
+    "question_id": "oms_q_ad005",
+    "question_title": "AD005 · 谁管理/控制身份认证",
+    "status": "needs-confirm",
+    "content_zh": "TCE 支持客户使用自有身份认证方案并自主管理。",
+    "content_en": "TCE supports customers bringing and managing their own identity solution.",
+    "sources": [],
+    "quotes": [],
+    "reasoning": "",
+    "decision": "",
+    "generated_at": "2026-07-17"
+  },
+  "oms_ad006_pub": {
+    "section_id": "oms_management",
+    "section_title": "Management · 管理",
+    "question_id": "oms_q_ad006",
+    "question_title": "AD006 · 安全响应团队位于何处",
+    "status": "needs-confirm",
+    "content_zh": "全球化安全运营中心(SOC)团队负责安全响应。",
+    "content_en": "Security response is handled by a global Security Operations Center (SOC) team.",
+    "sources": [],
+    "quotes": [],
+    "reasoning": "",
+    "decision": "",
+    "generated_at": "2026-07-17"
+  },
+  "oms_ad006_priv": {
+    "section_id": "oms_management",
+    "section_title": "Management · 管理",
+    "question_id": "oms_q_ad006",
+    "question_title": "AD006 · 安全响应团队位于何处",
+    "status": "needs-confirm",
+    "content_zh": "TCE 部署下可按客户要求实现安全响应团队本地化配置。",
+    "content_en": "Under TCE, the security-response team can be localized to meet customer requirements.",
+    "sources": [],
+    "quotes": [],
+    "reasoning": "",
+    "decision": "",
+    "generated_at": "2026-07-17"
+  },
+  "oms_ae001_pub": {
+    "section_id": "oms_software",
+    "section_title": "Software & Services · 软件与服务",
+    "question_id": "oms_q_ae001",
+    "question_title": "AE001 · 服务可用性是否存在限制",
+    "status": "needs-confirm",
+    "content_zh": "大部分服务可用，部分高级AI/新兴服务可能因技术或监管原因存在区域限制。",
+    "content_en": "Most services are available; certain advanced AI or emerging services may carry regional restrictions for technical or regulatory reasons.",
+    "sources": [],
+    "quotes": [],
+    "reasoning": "",
+    "decision": "",
+    "generated_at": "2026-07-17"
+  },
+  "oms_ae001_partner": {
+    "section_id": "oms_software",
+    "section_title": "Software & Services · 软件与服务",
+    "question_id": "oms_q_ae001",
+    "question_title": "AE001 · 服务可用性是否存在限制",
+    "status": "needs-confirm",
+    "content_zh": "合作伙伴云模式下的服务范围受限于伙伴解决方案覆盖能力。",
+    "content_en": "Under the partner-cloud model, service scope is bounded by the partner's own solution coverage.",
+    "sources": [],
+    "quotes": [],
+    "reasoning": "",
+    "decision": "",
+    "generated_at": "2026-07-17"
+  },
+  "oms_ae001_comments": {
+    "section_id": "oms_software",
+    "section_title": "Software & Services · 软件与服务",
+    "question_id": "oms_q_ae001",
+    "question_title": "AE001 · 服务可用性是否存在限制",
+    "status": "needs-confirm",
+    "content_zh": "[REVIEW: product] 需按客户所在具体地域及监管要求核实受限服务清单。",
+    "content_en": "[REVIEW: product] The specific list of restricted services should be verified per customer region and regulatory regime.",
+    "sources": [],
+    "quotes": [],
+    "reasoning": "",
+    "decision": "",
+    "generated_at": "2026-07-17"
+  },
+  "oms_ae002_priv": {
+    "section_id": "oms_software",
+    "section_title": "Software & Services · 软件与服务",
+    "question_id": "oms_q_ae002",
+    "question_title": "AE002 · 该形态的云平均能提供全球公共云服务的百分之多少",
+    "status": "verified",
+    "content_zh": "TCE 基于与公有云同源架构，提供近百款产品的全栈私有化能力，与公有云高度对齐。",
+    "content_en": "Built on the same-source architecture as the public cloud, TCE delivers full-stack private capability across close to one hundred products, closely aligned with the public-cloud offering.",
+    "sources": [
+      {
+        "url": "https://cloud.tencent.com.cn/developer/article/2678942",
+        "label": "腾讯专有云TCE技术白皮书",
+        "source_class": "first-party"
+      }
+    ],
+    "quotes": [
+      "腾讯专有云(TCE)基于公有云同源架构，提供覆盖计算、存储、网络、安全、数据库、中间件等近百个产品的全栈能力。"
+    ],
+    "reasoning": "[CITED] TCE覆盖近百款产品的全栈能力\n  Source: https://cloud.tencent.com.cn/developer/article/2678942\n  Quote: 腾讯专有云(TCE)基于公有云同源架构，提供覆盖计算、存储、网络、安全、数据库、中间件等近百个产品的全栈能力。\n  Retrieved: 2026-07-16\n\n[REVIEW: product] 题目要求的精确百分比未在公开渠道披露，需产品团队按最新产品清单逐项核实计算。",
+    "decision": "已按 analyst-grounding audit-chain 格式标注 [CITED]/[INFERRED]，供 wording/quality-checker skill 下游校验。",
+    "generated_at": "2026-07-17"
+  },
+  "oms_ae002_comments": {
+    "section_id": "oms_software",
+    "section_title": "Software & Services · 软件与服务",
+    "question_id": "oms_q_ae002",
+    "question_title": "AE002 · 该形态的云平均能提供全球公共云服务的百分之多少",
+    "status": "needs-confirm",
+    "content_zh": "[REVIEW: product] 题目要求的精确百分比未在公开渠道披露，需产品团队按最新产品清单逐项核实计算。",
+    "content_en": "[REVIEW: product] The exact percentage the question asks for is not publicly disclosed; the product team should calculate it against the current product catalog.",
+    "sources": [],
+    "quotes": [],
+    "reasoning": "",
+    "decision": "",
+    "generated_at": "2026-07-17"
+  },
+  "oms_ae003_pub": {
+    "section_id": "oms_software",
+    "section_title": "Software & Services · 软件与服务",
+    "question_id": "oms_q_ae003",
+    "question_title": "AE003 · 谁拥有该云的源代码",
+    "status": "verified",
+    "content_zh": "腾讯云拥有源代码。",
+    "content_en": "Source code is owned by Tencent Cloud.",
+    "sources": [
+      {
+        "url": "https://cloud.tencent.com.cn/developer/article/2678942",
+        "label": "腾讯专有云TCE技术白皮书",
+        "source_class": "first-party"
+      }
+    ],
+    "quotes": [
+      "架构同源：将公有云能力1:1完全输送至私有环境，统一架构、统一代码。"
+    ],
+    "reasoning": "[CITED] TCE架构同源，统一代码\n  Source: https://cloud.tencent.com.cn/developer/article/2678942\n  Quote: 架构同源：将公有云能力1:1完全输送至私有环境，统一架构、统一代码。\n  Retrieved: 2026-07-16",
+    "decision": "已按 analyst-grounding audit-chain 格式标注 [CITED]/[INFERRED]，供 wording/quality-checker skill 下游校验。",
+    "generated_at": "2026-07-17"
+  },
+  "oms_ae003_priv": {
+    "section_id": "oms_software",
+    "section_title": "Software & Services · 软件与服务",
+    "question_id": "oms_q_ae003",
+    "question_title": "AE003 · 谁拥有该云的源代码",
+    "status": "verified",
+    "content_zh": "TCE 与公有云采用同一套源代码架构(“架构同源”)，部署至客户私有环境后代码使用受合同条款约束。",
+    "content_en": "TCE shares the same source-code architecture as the public cloud (\"same-source architecture\"); once deployed into a customer's private environment, code use is governed by contract terms.",
+    "sources": [
+      {
+        "url": "https://cloud.tencent.com.cn/developer/article/2678942",
+        "label": "腾讯专有云TCE技术白皮书",
+        "source_class": "first-party"
+      }
+    ],
+    "quotes": [
+      "架构同源：将公有云能力1:1完全输送至私有环境，统一架构、统一代码。"
+    ],
+    "reasoning": "[CITED] TCE架构同源，统一代码\n  Source: https://cloud.tencent.com.cn/developer/article/2678942\n  Quote: 架构同源：将公有云能力1:1完全输送至私有环境，统一架构、统一代码。\n  Retrieved: 2026-07-16",
+    "decision": "已按 analyst-grounding audit-chain 格式标注 [CITED]/[INFERRED]，供 wording/quality-checker skill 下游校验。",
+    "generated_at": "2026-07-17"
+  },
+  "oms_ae004_pub": {
+    "section_id": "oms_software",
+    "section_title": "Software & Services · 软件与服务",
+    "question_id": "oms_q_ae004",
+    "question_title": "AE004 · 该云的授权许可模式是怎样的",
+    "status": "needs-confirm",
+    "content_zh": "按需订阅/合同期限制授权。",
+    "content_en": "Licensed on a subscription or contract-term basis.",
+    "sources": [],
+    "quotes": [],
+    "reasoning": "",
+    "decision": "",
+    "generated_at": "2026-07-17"
+  },
+  "oms_ae004_priv": {
+    "section_id": "oms_software",
+    "section_title": "Software & Services · 软件与服务",
+    "question_id": "oms_q_ae004",
+    "question_title": "AE004 · 该云的授权许可模式是怎样的",
+    "status": "needs-confirm",
+    "content_zh": "TCE 通常采用与合同期绑定的授权模式，续约后延续授权。",
+    "content_en": "TCE is typically licensed on a term tied to the contract, renewed alongside contract renewal.",
+    "sources": [],
+    "quotes": [],
+    "reasoning": "",
+    "decision": "",
+    "generated_at": "2026-07-17"
+  },
+  "oms_ae004_comments": {
+    "section_id": "oms_software",
+    "section_title": "Software & Services · 软件与服务",
+    "question_id": "oms_q_ae004",
+    "question_title": "AE004 · 该云的授权许可模式是怎样的",
+    "status": "needs-confirm",
+    "content_zh": "[REVIEW: product] 具体许可条款因合同类型(公有云按量/包年包月, TCE项目制)而异，需法务/商务团队核实标准条款表述。",
+    "content_en": "[REVIEW: product] Exact licensing terms vary by contract type (public-cloud pay-as-you-go/annual vs. TCE project-based); legal/commercial teams should confirm the standard contract language.",
+    "sources": [],
+    "quotes": [],
+    "reasoning": "",
+    "decision": "",
+    "generated_at": "2026-07-17"
+  },
+  "oms_ae005_pub": {
+    "section_id": "oms_software",
+    "section_title": "Software & Services · 软件与服务",
+    "question_id": "oms_q_ae005",
+    "question_title": "AE005 · 该软件是否基于开放标准构建",
+    "status": "verified",
+    "content_zh": "是，遵循 Kubernetes/CNCF 等主流开放标准。",
+    "content_en": "Yes, built on mainstream open standards including Kubernetes and CNCF.",
+    "sources": [
+      {
+        "url": "https://cloud.tencent.com.cn/developer/article/2678942",
+        "label": "腾讯专有云TCE技术白皮书",
+        "source_class": "first-party"
+      }
+    ],
+    "quotes": [
+      "多芯支持：支持X86(Intel、海光)及ARM(鲲鹏、飞腾)架构...软硬解耦：不绑定硬件品牌。"
+    ],
+    "reasoning": "[CITED] TCE一云多芯与软硬解耦能力\n  Source: https://cloud.tencent.com.cn/developer/article/2678942\n  Quote: 多芯支持：支持X86(Intel、海光)及ARM(鲲鹏、飞腾)架构...软硬解耦：不绑定硬件品牌。\n  Retrieved: 2026-07-16",
+    "decision": "已按 analyst-grounding audit-chain 格式标注 [CITED]/[INFERRED]，供 wording/quality-checker skill 下游校验。",
+    "generated_at": "2026-07-17"
+  },
+  "oms_ae005_priv": {
+    "section_id": "oms_software",
+    "section_title": "Software & Services · 软件与服务",
+    "question_id": "oms_q_ae005",
+    "question_title": "AE005 · 该软件是否基于开放标准构建",
+    "status": "verified",
+    "content_zh": "是，TCE 支持 Kubernetes/CNCF 标准，兼容主流国产及国际芯片架构(X86/ARM)、操作系统(银河麒麟、UOS等)，软硬件解耦不绑定特定厂商。",
+    "content_en": "Yes. TCE supports Kubernetes/CNCF standards and is compatible with mainstream domestic and international chip architectures (x86/ARM) and operating systems (Kylin, UOS, and others), decoupling software from hardware and avoiding vendor lock-in.",
+    "sources": [
+      {
+        "url": "https://cloud.tencent.com.cn/developer/article/2678942",
+        "label": "腾讯专有云TCE技术白皮书",
+        "source_class": "first-party"
+      }
+    ],
+    "quotes": [
+      "多芯支持：支持X86(Intel、海光)及ARM(鲲鹏、飞腾)架构...软硬解耦：不绑定硬件品牌。"
+    ],
+    "reasoning": "[CITED] TCE一云多芯与软硬解耦能力\n  Source: https://cloud.tencent.com.cn/developer/article/2678942\n  Quote: 多芯支持：支持X86(Intel、海光)及ARM(鲲鹏、飞腾)架构...软硬解耦：不绑定硬件品牌。\n  Retrieved: 2026-07-16",
+    "decision": "已按 analyst-grounding audit-chain 格式标注 [CITED]/[INFERRED]，供 wording/quality-checker skill 下游校验。",
+    "generated_at": "2026-07-17"
+  },
+  "oms_ae006_comments": {
+    "section_id": "oms_software",
+    "section_title": "Software & Services · 软件与服务",
+    "question_id": "oms_q_ae006",
+    "question_title": "AE006 · 有多少ISV使用该平台交付第三方服务",
+    "status": "needs-confirm",
+    "content_zh": "[REVIEW: product] 平台生态ISV具体数量属于内部运营数据，公开渠道未披露，需生态合作团队核实后填写。",
+    "content_en": "[REVIEW: product] The number of ISVs on the platform is an internal operating metric not publicly disclosed; the ecosystem team should supply the verified figure.",
+    "sources": [],
+    "quotes": [],
+    "reasoning": "",
+    "decision": "",
+    "generated_at": "2026-07-17"
+  },
+  "oms_af001_pub": {
+    "section_id": "oms_strategy",
+    "section_title": "Strategy & execution · 战略与执行",
+    "question_id": "oms_q_af001",
+    "question_title": "AF001 · 说明贵司的主权云方案",
+    "status": "verified",
+    "content_zh": "腾讯云的主权云方案以 Tencent Cloud Enterprise(TCE)专有云为核心，围绕数据主权、运营主权、技术主权三大维度构建全栈解决方案。TCE与腾讯公有云架构同源、代码一致，支持公有、私有、混合及完全物理隔离(air-gapped)等多种部署模式，客户可根据监管要求灵活选择。在《The Forrester Wave: Sovereign Cloud Platforms, Q2 2026》报告中，腾讯云凭借TCE被评为“领导者(Leader)”象限，是唯一获评的中国厂商，同时获得“Customer Favorite”认可，在主权数据治理服务维度获得满分。",
+    "content_en": "Sovereignty is treated as a risk management framework, not a compliance checkbox. Tencent Cloud Enterprise (TCE) is the core of Tencent Cloud's sovereign cloud approach, built around data sovereignty, operational sovereignty and technical sovereignty in all their different forms — public, private, hybrid and fully air-gapped deployment, sharing the same source-code architecture as the public cloud so customers are not trading capability for isolation. In The Forrester Wave: Sovereign Cloud Platforms, Q2 2026, Tencent Cloud was named a Leader on the strength of TCE, the only Chinese hyperscaler in that quadrant, and was recognized as a Customer Favorite with the highest possible score on Sovereign Data Governance Services.",
+    "sources": [
+      {
+        "url": "https://www.tencentcloud.com/dynamic/news-details/101217",
+        "label": "Tencent Cloud official Forrester Sovereign Cloud announcement",
+        "source_class": "first-party"
+      },
+      {
+        "url": "https://www.tencentcloud.com/analyst/detail/101093",
+        "label": "Tencent Cloud analyst report landing page",
+        "source_class": "first-party"
+      },
+      {
+        "url": "https://cloudnews.tech/forrester-places-sovereign-cloud-at-the-center-of-cloud-strategy/",
+        "label": "CloudNews independent summary of the Forrester Wave",
+        "source_class": "independent"
+      }
+    ],
+    "quotes": [
+      "Tencent Cloud is recognized as a Leader in the Sovereign Cloud market...Tencent Cloud is designated as a \"Customer Favorite.\"",
+      "Tencent Cloud received the highest possible score in the Sovereign Data Governance Services criterion.",
+      "Among the leaders are Google Cloud, Microsoft, Amazon Web Services, Oracle, and Tencent Cloud."
+    ],
+    "reasoning": "[CITED] 腾讯云公告称Forrester Wave将其列为主权云领导者并标注Customer Favorite\n  Source: https://www.tencentcloud.com/dynamic/news-details/101217\n  Quote: Tencent Cloud is recognized as a Leader in the Sovereign Cloud market...Tencent Cloud is designated as a \"Customer Favorite.\"\n  Retrieved: 2026-07-17\n\n[CITED] 腾讯云报告落地页披露主权数据治理服务维度获得最高分\n  Source: https://www.tencentcloud.com/analyst/detail/101093\n  Quote: Tencent Cloud received the highest possible score in the Sovereign Data Governance Services criterion.\n  Retrieved: 2026-07-17\n\n[CITED] 独立行业媒体对Forrester Wave的公开摘要亦将腾讯云列入Leader组\n  Source: https://cloudnews.tech/forrester-places-sovereign-cloud-at-the-center-of-cloud-strategy/\n  Quote: Among the leaders are Google Cloud, Microsoft, Amazon Web Services, Oracle, and Tencent Cloud.\n  Retrieved: 2026-07-17\n\n[REVIEW: Kevin] 本题是Strategy/Vision类题型，是否以“risk management framework”作为核心论点框架（对齐Roy Illsley的评分透镜）需AR专家确认这是否是最打动Omdia分析师的framing选择。",
+    "decision": "已按 analyst-grounding audit-chain 格式标注 [CITED]/[INFERRED]，供 wording/quality-checker skill 下游校验。",
+    "generated_at": "2026-07-17"
+  },
+  "oms_af001_comments": {
+    "section_id": "oms_strategy",
+    "section_title": "Strategy & execution · 战略与执行",
+    "question_id": "oms_q_af001",
+    "question_title": "AF001 · 说明贵司的主权云方案",
+    "status": "needs-confirm",
+    "content_zh": "[REVIEW: Kevin] 本题是Strategy/Vision类题型，是否以“risk management framework”作为核心论点框架（对齐Roy Illsley的评分透镜）需AR专家确认这是否是最打动Omdia分析师的framing选择。",
+    "content_en": "[REVIEW: Kevin] This is a Strategy/Vision question; whether framing sovereignty as a risk-management framework (aligned to Roy Illsley's scoring lens) is the strongest angle should be confirmed by the AR lead.",
+    "sources": [],
+    "quotes": [],
+    "reasoning": "",
+    "decision": "",
+    "generated_at": "2026-07-17"
+  },
+  "oms_af002_pub": {
+    "section_id": "oms_strategy",
+    "section_title": "Strategy & execution · 战略与执行",
+    "question_id": "oms_q_af002",
+    "question_title": "AF002 · 说明贵司的主权AI方案",
+    "status": "verified",
+    "content_zh": "腾讯云将AI能力深度集成至TCE云底座，支持客户在主权合规框架内构建大模型训练、推理及Agent应用，实现“合规云”与“智能云”的统一落地。通过Agent Development Platform(ADP)等平台，企业可在本地化、隔离环境中部署基于混元大模型的AI应用，满足数据不出境、模型可控的监管要求。",
+    "content_en": "Sovereign AI is framed around the economics and control of the model layer, not just where data sits. Tencent Cloud integrates AI capability directly into the TCE cloud foundation, so customers can run large-model training, inference and agent workloads inside the same sovereign compliance boundary as the rest of their infrastructure. Through the Agent Development Platform (ADP), enterprises deploy Hunyuan-based AI applications in localized, isolated environments that keep data in-jurisdiction and the model itself under customer control.",
+    "sources": [
+      {
+        "url": "https://www.tencentcloud.com/dynamic/news-details/101217",
+        "label": "Tencent Cloud Named a Leader in Forrester Sovereign Cloud Report",
+        "source_class": "first-party"
+      }
+    ],
+    "quotes": [
+      "By integrating advanced AI capabilities, Tencent Cloud Enterprise provides customers with a secure and compliant path for digital transformation."
+    ],
+    "reasoning": "[CITED] TCE已将AI能力集成至云底座\n  Source: https://www.tencentcloud.com/dynamic/news-details/101217\n  Quote: By integrating advanced AI capabilities, Tencent Cloud Enterprise provides customers with a secure and compliant path for digital transformation.\n  Retrieved: 2026-07-16\n\n[REVIEW: Kevin] AI unit economics（per-token / per-GPU-hour成本口径）是Omdia评分的关注点之一，当前回答未提供量化的AI经济性数据，是否需要补充需Kevin判断。",
+    "decision": "已按 analyst-grounding audit-chain 格式标注 [CITED]/[INFERRED]，供 wording/quality-checker skill 下游校验。",
+    "generated_at": "2026-07-17"
+  },
+  "oms_af002_comments": {
+    "section_id": "oms_strategy",
+    "section_title": "Strategy & execution · 战略与执行",
+    "question_id": "oms_q_af002",
+    "question_title": "AF002 · 说明贵司的主权AI方案",
+    "status": "needs-confirm",
+    "content_zh": "[REVIEW: Kevin] AI unit economics（per-token / per-GPU-hour成本口径）是Omdia评分的关注点之一，当前回答未提供量化的AI经济性数据，是否需要补充需Kevin判断。",
+    "content_en": "[REVIEW: Kevin] Omdia's lens weighs AI unit economics (per-token / per-GPU-hour cost); the current answer has no quantified figures on this — whether to add them is a framing call for the AR lead.",
+    "sources": [],
+    "quotes": [],
+    "reasoning": "",
+    "decision": "",
+    "generated_at": "2026-07-17"
+  },
+  "oms_af003_pub": {
+    "section_id": "oms_strategy",
+    "section_title": "Strategy & execution · 战略与执行",
+    "question_id": "oms_q_af003",
+    "question_title": "AF003 · 指出贵司认为能为客户提供的唯一核心差异化优势",
+    "status": "verified",
+    "content_zh": "核心差异化是“同源而不降级”：TCE专有云与腾讯公有云共享统一架构和代码，使客户在私有化或物理隔离环境中获得持续迭代的云能力，而不是以功能缩水换取主权控制。该主张由三层证据支撑：TCE同源架构的产品事实、Forrester Wave Leader组的独立市场认可，以及True IDC泰国合作所体现的本地交付能力。",
+    "content_en": "The differentiator is sovereignty without a downgraded cloud. TCE and Tencent Cloud's public service share one architecture and codebase, so customers retain a continuously evolving cloud capability in private or air-gapped environments rather than trading functionality for control. The claim is supported at three levels: the same-source product architecture, independent recognition in the Forrester Wave Leader group, and in-country execution through the True IDC partnership in Thailand.",
+    "sources": [
+      {
+        "url": "https://cloud.tencent.com.cn/developer/article/2678942",
+        "label": "腾讯专有云TCE技术白皮书",
+        "source_class": "first-party"
+      },
+      {
+        "url": "https://cloudnews.tech/forrester-places-sovereign-cloud-at-the-center-of-cloud-strategy/",
+        "label": "CloudNews independent summary of the Forrester Wave",
+        "source_class": "independent"
+      },
+      {
+        "url": "https://www.trueidc.com/en/news-detail/227/strategic-partnership-mou-tencent-cloud",
+        "label": "True IDC and Tencent Cloud strategic partnership MOU",
+        "source_class": "partner"
+      }
+    ],
+    "quotes": [
+      "架构同源：将公有云能力1:1完全输送至私有环境，统一架构、统一代码，支持从十几台到上万台节点的平滑扩展。",
+      "Among the leaders are Google Cloud, Microsoft, Amazon Web Services, Oracle, and Tencent Cloud.",
+      "True Internet Data Center Co., Ltd. (True IDC), Thailand’s leading provider of data center and cloud services, has announced the signing of a landmark Memorandum of Understanding (MOU) with Tencent Cloud International Pte. Ltd. (Tencent Cloud) in Shenzhen, China."
+    ],
+    "reasoning": "[CITED] 架构同源是TCE的核心技术差异化\n  Source: https://cloud.tencent.com.cn/developer/article/2678942\n  Quote: 架构同源：将公有云能力1:1完全输送至私有环境，统一架构、统一代码，支持从十几台到上万台节点的平滑扩展。\n  Retrieved: 2026-07-17\n\n[CITED] 独立行业媒体的Forrester Wave公开摘要将腾讯云列入Leader组\n  Source: https://cloudnews.tech/forrester-places-sovereign-cloud-at-the-center-of-cloud-strategy/\n  Quote: Among the leaders are Google Cloud, Microsoft, Amazon Web Services, Oracle, and Tencent Cloud.\n  Retrieved: 2026-07-17\n\n[CITED] True IDC官方公告证实腾讯云在泰国采用本地伙伴协作交付\n  Source: https://www.trueidc.com/en/news-detail/227/strategic-partnership-mou-tencent-cloud\n  Quote: True Internet Data Center Co., Ltd. (True IDC), Thailand’s leading provider of data center and cloud services, has announced the signing of a landmark Memorandum of Understanding (MOU) with Tencent Cloud International Pte. Ltd. (Tencent Cloud) in Shenzhen, China.\n  Retrieved: 2026-07-17\n\n[INFERRED] “同源架构 + 独立市场认可 + 本地伙伴交付”构成比单纯数据驻留更完整的差异化证据链\n  Reasoning: 同源架构支撑能力连续性，Forrester公开摘要提供独立市场位置，True IDC伙伴公告证明本地交付可执行性。\n  Based on:\n    - [CITED] TCE架构同源\n    - [CITED] Forrester Wave Leader组\n    - [CITED] True IDC本地伙伴协作\n\n[REVIEW: Kevin] 题目要求“唯一(the one)”核心差异化——是否最终只保留“架构同源”作为主论点，仍需Kevin拍板。",
+    "decision": "已按 analyst-grounding audit-chain 格式标注 [CITED]/[INFERRED]，供 wording/quality-checker skill 下游校验。",
+    "generated_at": "2026-07-17"
+  },
+  "oms_af003_comments": {
+    "section_id": "oms_strategy",
+    "section_title": "Strategy & execution · 战略与执行",
+    "question_id": "oms_q_af003",
+    "question_title": "AF003 · 指出贵司认为能为客户提供的唯一核心差异化优势",
+    "status": "needs-confirm",
+    "content_zh": "[REVIEW: Kevin] 题目要求“唯一(the one)”核心差异化——是否用“架构同源”而非其他候选角度(如唯一入选Leader象限的中国厂商)最打动分析师，需Kevin拍板最终framing。",
+    "content_en": "[REVIEW: Kevin] The question asks for the one differentiator — whether same-source architecture beats the alternative framing (sole Chinese Leader) as the strongest hook for the analyst is a call for the AR lead.",
+    "sources": [],
+    "quotes": [],
+    "reasoning": "",
+    "decision": "",
+    "generated_at": "2026-07-17"
+  }
+}
