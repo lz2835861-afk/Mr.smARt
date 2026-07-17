@@ -1,0 +1,41 @@
+{
+  "questionnaireId": "idc-aiiaas-2026",
+  "questionId": "2.2",
+  "docId": "ATuCBDZLchKK",
+  "docUrl": "https://docs.qq.com/aio/DQVR1Q0JEWkxjaEtL",
+  "urlId": "DQVR1Q0JEWkxjaEtL",
+  "dimension": "",
+  "section": "Capabilties",
+  "subsection": "Custom AI Accelerators (First-Party Silicon)",
+  "question": "Describe your GA proprietary AI custom silicon (if any) designed specifically for AI training and/or inference, including peak FLOPS and memory bandwidth per chip.",
+  "guidance": "IDC 作答格式 (open text)",
+  "draft": "腾讯云在自研芯片领域有长期、成体系的投入，并已形成规模化量产与上线的工程能力。在视频编解码方向，腾讯自研的「沧海」系列芯片已实现规模化部署，集成了 CPU、GPU 及计算机视觉（CV）处理能力，可在底层直接对数据进行智能分析与处理；新一代「沧海 V2」已点亮并进入量产，单芯片处理能力较上一代翻倍——这证明腾讯具备从架构设计、流片到大规模商用的端到端自研硅能力。在 AI 算力供给上，腾讯云通过自研的异构计算平台整合多种芯片资源、对外提供高性价比的 AI 算力，并已全面适配主流国产芯片，从而在算子调度、互联与软硬协同层面构建面向 AI 训练/推理的差异化价/性能比，而不单纯依赖第三方商用 GPU。此外，腾讯云在最新一代高性能计算集群实例中已落地自研的 200Gbps vRDMA 网络互联，以更低成本提供面向中小规模 AI 训练与分布式推理的高性价比方案。需要说明的是，腾讯云当前对外 GA 的高端 AI 训练/推理算力仍以搭载主流商用 GPU 的高性能计算集群（HCC）为主；面向 AI 加速的专用第一方芯片仍在持续演进中。关于具体的单芯片峰值 FLOPS、显存带宽等量化指标，可在与 IDC 商定统一披露口径后，于保密框架下单独提供。",
+  "provenance": {
+    "sources": [
+      {
+        "label": "腾讯云公众号：腾讯自研「沧海芯片」夺冠！V2版本即将量产",
+        "url": "https://mp.weixin.qq.com/s/qxzcNLf0XmBBjlvelXhOsg",
+        "kind": "wechat"
+      },
+      {
+        "label": "腾讯云原生公众号：邱跃鹏——全面升级云基础设施",
+        "url": "https://mp.weixin.qq.com/s/Ncl8V6kGiDP0c7RWe2u4lg",
+        "kind": "wechat"
+      },
+      {
+        "label": "腾讯云文档：高性能计算集群 实例规格",
+        "url": "https://cloud.tencent.com/document/product/1646/81562",
+        "kind": "doc"
+      }
+    ],
+    "quotes": [
+      "沧海V2集成了CPU、GPU以及计算机视觉（CV）处理能力，能直接在底层对视频进行智能分析",
+      "新一代沧海V2芯片已成功“点亮”并进入量产周期，计划于2026年下半年全面提供服务。",
+      "依托异构计算平台整合多种芯片资源，向外界提供高性价比的 AI 算力。目前，该平台已全面适配主流国产芯片",
+      "实例间支持自研 200Gbps vRDMA 网络互联，提供高性价比产品解决方案"
+    ],
+    "reasoning": "题目要求第一方 AI 自研芯片及单芯片峰值 FLOPS、显存带宽。语料中可证实的自研硅是「沧海」编解码芯片（非 AI 训练/推理专用加速器），以及自研异构计算平台、自研 200Gbps vRDMA。没有任何第一方 AI 加速器的 FLOPS/显存带宽数据，因此严格遵守政策：用可证实事实展示自研硅能力与方向，明确区分商用 GPU 仍为高端 AI 算力主力，FLOPS/带宽等硬指标声明在保密口径下单独提供，绝不杜撰。",
+    "decision": "answered"
+  },
+  "generatedAt": "2026-06-17T01:38:36.251Z"
+}

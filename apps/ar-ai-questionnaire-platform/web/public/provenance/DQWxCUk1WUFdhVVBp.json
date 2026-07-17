@@ -1,0 +1,42 @@
+{
+  "questionnaireId": "ai-infra-2026",
+  "questionId": "3.2.1",
+  "docId": "AlBRMVPWaUPi",
+  "docUrl": "https://docs.qq.com/aio/DQWxCUk1WUFdhVVBp",
+  "urlId": "DQWxCUk1WUFdhVVBp",
+  "dimension": "创新指数",
+  "section": "通智算调度引擎",
+  "subsection": "3.2 智算集群网络与通信",
+  "question": "贵司AI集群最新的网络架构选型是什么？万卡级训练场景下的网络带宽利用率与无拥塞通信保障能力如何？",
+  "guidance": "网络是万卡集群的核心。关注：InfiniBand vs RoCE的选型考量与实测性能对比，胖树/Dragonfly+等拓扑架构的选择依据，单节点网络带宽利用率（如>80%），是否支持自适应路由/链路聚合/流控机制保障无拥塞通信。",
+  "draft": "腾讯云 AI 集群网络以以太网生态的 RoCEv2 RDMA 为主选路线，并辅以自研网络能力构建高带宽、低时延、无拥塞的通信底座。高性能计算集群（HCC）支持私有网络（VPC）及无阻塞 RoCEv2 RDMA 网络实现节点间互联，传输时延低至 2us；最新一代 HCCPNV5 实例间支持 3.2Tbps RDMA 星脉网络互联，GPU 卡间支持 400GB/s NVLink 互联；面向性价比场景的新机型则采用自研 200Gbps vRDMA 网络。在推理与训练通信优化方向，腾讯云基于 DeepEP 优化使其在 IB 网络性能提升 30%、在数据中心常用的 RoCE 网络环境中性能翻倍。万卡级场景下，我们通过自研星脉网络与无阻塞架构持续保障高带宽利用率与无拥塞通信。万卡集群单节点带宽利用率（如>80%）的实测值，以及胖树/Dragonfly+ 等具体拓扑的官方选型说明，我们按合作口径单独提供。",
+  "provenance": {
+    "sources": [
+      {
+        "label": "腾讯云文档 HCC 产品优势 (1646/81560)",
+        "url": "https://cloud.tencent.com/document/product/1646/81560",
+        "kind": "doc"
+      },
+      {
+        "label": "腾讯云文档 HCC 实例规格 (1646/81562)",
+        "url": "https://cloud.tencent.com/document/product/1646/81562",
+        "kind": "doc"
+      },
+      {
+        "label": "腾讯云原生：腾讯邱跃鹏-全面升级云基础设施 (2025-09-16)",
+        "url": "https://mp.weixin.qq.com/s/Ncl8V6kGiDP0c7RWe2u4lg",
+        "kind": "wechat"
+      }
+    ],
+    "quotes": [
+      "支持私有网络（VPC）及无阻塞 RoCEv2 RDMA 网络实现节点间互联，传输时延低至2us",
+      "实例间支持 3.2Tbps RDMA 星脉网络互联",
+      "GPU 卡间支持400GB/s NVLink 互联",
+      "支持 200Gbps 的低延迟低成本自研 vRDMA 网络",
+      "使其在 IB 网络性能提升了 30%，在数据中心常用的 RoCE 网络环境中性能更是翻倍"
+    ],
+    "reasoning": "有据(high)：RoCEv2优先+无阻塞+2us时延、3.2Tbps星脉、400GB/s NVLink、自研200Gbps vRDMA、DeepEP在IB+30%/RoCE翻倍，全部逐字引用产品文档与公众号。战略化：题目点名的‘万卡场景单节点带宽利用率>80%实测’与‘胖树/Dragonfly+拓扑官方选型说明’语料未明示，不杜撰利用率%或拓扑名，改为方向性‘持续保障高带宽利用率’+按合作口径单独提供。",
+    "decision": "网络选型RoCEv2优先/自研星脉/vRDMA、2us时延、3.2Tbps、400GB/s NVLink产品文档直接覆盖写实;万卡带宽利用率%与拓扑(胖树/Dragonfly+)做战略化"
+  },
+  "generatedAt": "2026-06-17T01:38:35.975Z"
+}

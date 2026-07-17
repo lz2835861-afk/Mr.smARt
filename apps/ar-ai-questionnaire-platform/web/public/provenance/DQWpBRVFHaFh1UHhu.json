@@ -1,0 +1,34 @@
+{
+  "questionnaireId": "idc-aiiaas-2026",
+  "questionId": "2.4",
+  "docId": "AjAEQGhXuPxn",
+  "docUrl": "https://docs.qq.com/aio/DQWpBRVFHaFh1UHhu",
+  "urlId": "DQWpBRVFHaFh1UHhu",
+  "dimension": "",
+  "section": "Capabilties",
+  "subsection": "High-Performance Inter-node Networking",
+  "question": "Detail your backend networking fabric used for your highest-tier AI clusters, specifically stating the per-node bi-directional bandwidth and the underlying technology (e.g., InfiniBand NDR, RoCEv2).",
+  "guidance": "IDC 作答格式 (open text)",
+  "draft": "腾讯云面向 AI 训练集群的节点间高速互联，采用 RDMA 高性能网络（如无阻塞 RoCEv2、星脉网络）作为节点间通信底座；在存储侧，并行文件存储 CFS Turbo 通过云联网与 VPC 两类网络接入计算实例，实现计算节点与存储之间的高吞吐互通。具体而言，云联网方式通过为存储划分独立网段、基于云联网打通用户 VPC 与存储服务端网络，实现计算实例与存储的双向交互，并天然支持跨 VPC 大规模扩容；VPC 方式则将存储服务侧 IP 直接映射至用户现有 VPC 实现就近挂载。关于最高一档 AI 集群所采用的具体网络代际（如 InfiniBand NDR 与 RoCEv2 的选型）、单节点双向带宽（Gbps/Tbps）等硬指标，可在与 IDC 商定统一口径后，结合具体机型与可用区单独提供，本问卷不就尚无公开语料支撑的数值作出承诺。",
+  "provenance": {
+    "sources": [
+      {
+        "label": "CFS Turbo 文件系统网络选择",
+        "url": "https://cloud.tencent.com/document/product/582/80355",
+        "kind": "doc"
+      },
+      {
+        "label": "在 Linux 客户端上使用 CFS Turbo 文件系统",
+        "url": "https://cloud.tencent.com/document/product/582/54765",
+        "kind": "doc"
+      }
+    ],
+    "quotes": [
+      "通过划分指定的网段给到 Turbo 文件系统，并基于云联网的能力，打通用户 VPC 网络和存储服务端网络的通信，实现计算实例与存储的双向交互。",
+      "CFS Turbo 为腾讯云高性能并行文件存储，相比于传统的通用型文件存储，其客户端和服务端目前支持两种网络类型：云联网网络和 VPC 网络"
+    ],
+    "reasoning": "题目要求后端网络的代际技术与单节点双向带宽。语料（CFS Turbo 网络选择文档）只支撑存储侧网络接入方式（云联网/VPC、RDMA 类高速互联），没有 InfiniBand NDR/RoCEv2 选型与具体 Gbps 数值。按政策：能写实的写实并引用，硬数据缺失则改为方向性表述并提出与 IDC 统一口径后提供，绝不编造带宽数字。",
+    "decision": "grounded-partial"
+  },
+  "generatedAt": "2026-06-17T01:38:36.251Z"
+}

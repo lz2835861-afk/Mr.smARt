@@ -1,0 +1,46 @@
+{
+  "questionnaireId": "idc-aiiaas-2026",
+  "questionId": "3.9",
+  "docId": "AJWIjLxZiXjT",
+  "docUrl": "https://docs.qq.com/aio/DQUpXSWpMeFppWGpU",
+  "urlId": "DQUpXSWpMeFppWGpU",
+  "dimension": "",
+  "section": "Strategies",
+  "subsection": "Hardware Supply Chain Resilience",
+  "question": "Describe your supply chain strategy for securing constrained AI hardware components. How do you insulate your customers from industry-wide hardware shortages?",
+  "guidance": "IDC 作答格式 (open text)",
+  "draft": "面对全球高端 GPU 与 HBM 供应紧张，腾讯云通过“多元供给 + 自研 + 调度优化 + 容量规划”的组合策略来保障硬件可得性并隔离客户受冲击。第一，多元化算力供给：腾讯云依托异构计算平台整合多种芯片资源，对外提供高性价比的 AI 算力，目前该平台已全面适配主流国产芯片，TI 平台亦全面适配国产主流芯片、推理性能最高提升超 100%，从而在单一供应受限时具备跨芯片切换与异构算力统一调度的能力（已在上海徐汇等政务场景实现“异构算力统一调度与多模型灵活切换”）。第二，自研降依赖：腾讯持续投入自研芯片，自研编解码系列芯片“沧海”V1 已在腾讯云及自有场景部署超 10 万片、V2 已点亮并进入量产，自研服务器星星海全球累计部署核数超 2 亿核，自研能力降低了对单一第三方供应链的依赖。第三，容量规划与确定性供给：对旗舰 AI 加速实例采用白名单/邀测 + 售前经理对接的方式，由客户提前锁定规模与时段，并提供包销计费等承诺式供给，为关键客户预留确定性容量。通过上述机制，客户的训练/推理任务可在供给波动时通过异构调度与提前规划保持连续。具体的备货周期、各代 GPU 的库存与配额口径属敏感信息，可在与 IDC 商定保密框架后单独提供。",
+  "provenance": {
+    "sources": [
+      {
+        "label": "腾讯云原生 — 邱跃鹏：面向Agent和全球化趋势，全面升级云基础设施",
+        "url": "https://mp.weixin.qq.com/s/Ncl8V6kGiDP0c7RWe2u4lg",
+        "kind": "wechat"
+      },
+      {
+        "label": "腾讯云 — 刚刚，腾讯升级了Agent国产技术底座",
+        "url": "https://mp.weixin.qq.com/s/7u4XFQsKbtK2ShF3zJ6-XQ",
+        "kind": "wechat"
+      },
+      {
+        "label": "腾讯云 — 腾讯自研「沧海芯片」夺冠！V2版本即将量产",
+        "url": "https://mp.weixin.qq.com/s/qxzcNLf0XmBBjlvelXhOsg",
+        "kind": "wechat"
+      },
+      {
+        "label": "腾讯云高性能计算集群 — 实例规格（产品文档）",
+        "url": "https://cloud.tencent.com/document/product/1646/81562",
+        "kind": "doc"
+      }
+    ],
+    "quotes": [
+      "依托异构计算平台整合多种芯片资源，向外界提供高性价比的 AI 算力。目前，该平台已全面适配主流国产芯片",
+      "实现异构算力统一调度与多模型灵活切换",
+      "目前沧海V1芯片在腾讯云及腾讯自有场景（覆盖直播点播、4K转码、云游戏等）中已部署超10万片",
+      "星星海服务器目前在全球累计部署核数超过2亿"
+    ],
+    "reasoning": "response_format 为 open text。供应链韧性有较强语料支撑：异构计算平台/国产芯片适配（公众号逐字）、异构算力统一调度（公众号逐字）、沧海 10 万片自研芯片、星星海 2 亿核（均逐字）、HCC 白名单容量规划（文档逐字）。所引数字均来自语料原文，未杜撰。备货周期/GPU 配额无依据，按政策写为可保密提供。",
+    "decision": "answer"
+  },
+  "generatedAt": "2026-06-17T01:38:36.251Z"
+}

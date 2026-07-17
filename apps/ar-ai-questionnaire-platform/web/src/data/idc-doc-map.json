@@ -1,0 +1,257 @@
+{
+  "1.1": {
+    "docId": "APwgJpHXwpJf",
+    "url": "https://docs.qq.com/aio/DQVB3Z0pwSFh3cEpm",
+    "title": "1.1 Preliminary"
+  },
+  "1.2": {
+    "docId": "AAoKzDRjrUeK",
+    "url": "https://docs.qq.com/aio/DQUFvS3pEUmpyVWVL",
+    "title": "1.2 Preliminary"
+  },
+  "1.3": {
+    "docId": "AWNQcreMQCZO",
+    "url": "https://docs.qq.com/aio/DQVdOUWNyZU1RQ1pP",
+    "title": "1.3 Preliminary"
+  },
+  "1.4": {
+    "docId": "AxwmTDwWAUwH",
+    "url": "https://docs.qq.com/aio/DQXh3bVREd1dBVXdI",
+    "title": "1.4 Preliminary"
+  },
+  "1.5.1": {
+    "docId": "AzTbkCalLaeV",
+    "url": "https://docs.qq.com/aio/DQXpUYmtDYWxMYWVW",
+    "title": "1.5.1 Preliminary"
+  },
+  "1.5.2": {
+    "docId": "ABZhOgrdFVFE",
+    "url": "https://docs.qq.com/aio/DQUJaaE9ncmRGVkZF",
+    "title": "1.5.2 Preliminary"
+  },
+  "1.5.3": {
+    "docId": "AlCEAdPsVmBG",
+    "url": "https://docs.qq.com/aio/DQWxDRUFkUHNWbUJH",
+    "title": "1.5.3 Preliminary"
+  },
+  "1.5.4": {
+    "docId": "AvWYBlqxthli",
+    "url": "https://docs.qq.com/aio/DQXZXWUJscXh0aGxp",
+    "title": "1.5.4 Preliminary"
+  },
+  "1.6.1": {
+    "docId": "AnPKjiJkxnMc",
+    "url": "https://docs.qq.com/aio/DQW5QS2ppSmt4bk1j",
+    "title": "1.6.1 Preliminary"
+  },
+  "1.6.2": {
+    "docId": "AbvsGImVnjCF",
+    "url": "https://docs.qq.com/aio/DQWJ2c0dJbVZuakNG",
+    "title": "1.6.2 Preliminary"
+  },
+  "1.6.3": {
+    "docId": "ADiZxTuWCWrr",
+    "url": "https://docs.qq.com/aio/DQURpWnhUdVdDV3Jy",
+    "title": "1.6.3 Preliminary"
+  },
+  "2.1": {
+    "docId": "AUvnMsUamNHU",
+    "url": "https://docs.qq.com/aio/DQVV2bk1zVWFtTkhV",
+    "title": "2.1 GPU Instance Variety"
+  },
+  "2.2": {
+    "docId": "ATuCBDZLchKK",
+    "url": "https://docs.qq.com/aio/DQVR1Q0JEWkxjaEtL",
+    "title": "2.2 Custom AI Accelerato"
+  },
+  "2.3": {
+    "docId": "ApAQPaWuVhZs",
+    "url": "https://docs.qq.com/aio/DQXBBUVBhV3VWaFpz",
+    "title": "2.3 Maximum Supercluster"
+  },
+  "2.4": {
+    "docId": "AjAEQGhXuPxn",
+    "url": "https://docs.qq.com/aio/DQWpBRVFHaFh1UHhu",
+    "title": "2.4 High-Performance Int"
+  },
+  "2.5": {
+    "docId": "AAwAVtbMnDCD",
+    "url": "https://docs.qq.com/aio/DQUF3QVZ0Yk1uRENE",
+    "title": "2.5 Network Latency and "
+  },
+  "2.6": {
+    "docId": "AfHoMqCcqYfP",
+    "url": "https://docs.qq.com/aio/DQWZIb01xQ2NxWWZQ",
+    "title": "2.6 AI Storage High-Thro"
+  },
+  "2.7": {
+    "docId": "AUcOEPuZMaZU",
+    "url": "https://docs.qq.com/aio/DQVVjT0VQdVpNYVpV",
+    "title": "2.7 AI Storage Data Lake"
+  },
+  "2.8": {
+    "docId": "AGFMrCNOFOoP",
+    "url": "https://docs.qq.com/aio/DQUdGTXJDTk9GT29Q",
+    "title": "2.8 AI Storage Small-Fil"
+  },
+  "2.9": {
+    "docId": "ANAubZJAbRqG",
+    "url": "https://docs.qq.com/aio/DQU5BdWJaSkFiUnFH",
+    "title": "2.9 Storage Tiering for "
+  },
+  "2.10": {
+    "docId": "ACSIDzKmiqpV",
+    "url": "https://docs.qq.com/aio/DQUNTSUR6S21pcXBW",
+    "title": "2.10 Massive Data Ingest"
+  },
+  "2.11": {
+    "docId": "AkjTPWLkoOKL",
+    "url": "https://docs.qq.com/aio/DQWtqVFBXTGtvT0tM",
+    "title": "2.11 Bare Metal AI Offer"
+  },
+  "2.12": {
+    "docId": "AtlRBkJFSQML",
+    "url": "https://docs.qq.com/aio/DQXRsUkJrSkZTUU1M",
+    "title": "2.12 Confidential AI Com"
+  },
+  "2.13": {
+    "docId": "AnCinIrFITbm",
+    "url": "https://docs.qq.com/aio/DQW5DaW5JckZJVGJt",
+    "title": "2.13 Resource Provisioni"
+  },
+  "2.14": {
+    "docId": "AClhcAVCSjvz",
+    "url": "https://docs.qq.com/aio/DQUNsaGNBVkNTanZ6",
+    "title": "2.14 Preemptible Spot AI"
+  },
+  "2.15": {
+    "docId": "ArIBxMFcNNwz",
+    "url": "https://docs.qq.com/aio/DQXJJQnhNRmNOTnd6",
+    "title": "2.15 Flexible Capacity C"
+  },
+  "2.16": {
+    "docId": "ADYCzOYcbkml",
+    "url": "https://docs.qq.com/aio/DQURZQ3pPWWNia21s",
+    "title": "2.16 Geographic Availabi"
+  },
+  "2.17": {
+    "docId": "ArgyJzZnRsjG",
+    "url": "https://docs.qq.com/aio/DQXJneUp6Wm5Sc2pH",
+    "title": "2.17 Power and Cooling I"
+  },
+  "2.18": {
+    "docId": "AEsFplXdiypU",
+    "url": "https://docs.qq.com/aio/DQUVzRnBsWGRpeXBV",
+    "title": "2.18 AI Infrastructure O"
+  },
+  "2.19": {
+    "docId": "AMJqsvkZoecC",
+    "url": "https://docs.qq.com/aio/DQU1KcXN2a1pvZWND",
+    "title": "2.19 Specialized Inferen"
+  },
+  "2.20": {
+    "docId": "AVXfgGSllTrD",
+    "url": "https://docs.qq.com/aio/DQVZYZmdHU2xsVHJE",
+    "title": "2.20 Infrastructure-as-C"
+  },
+  "3.1": {
+    "docId": "AUkJLXLAwpEG",
+    "url": "https://docs.qq.com/aio/DQVVrSkxYTEF3cEVH",
+    "title": "3.1 Next-Generation GPU "
+  },
+  "3.2": {
+    "docId": "AWZPQtoZACQk",
+    "url": "https://docs.qq.com/aio/DQVdaUFF0b1pBQ1Fr",
+    "title": "3.2 Custom Silicon R&D S"
+  },
+  "3.3": {
+    "docId": "AqXxbdGBshos",
+    "url": "https://docs.qq.com/aio/DQXFYeGJkR0JzaG9z",
+    "title": "3.3 Hardware Vendor Part"
+  },
+  "3.4": {
+    "docId": "ApdgctUxsdnP",
+    "url": "https://docs.qq.com/aio/DQXBkZ2N0VXhzZG5Q",
+    "title": "3.4 Backend Fabric Evolu"
+  },
+  "3.5": {
+    "docId": "ARzChHzhrUJZ",
+    "url": "https://docs.qq.com/aio/DQVJ6Q2hIemhyVUpa",
+    "title": "3.5 Silicon Photonics an"
+  },
+  "3.6": {
+    "docId": "AwFyjRLeaktR",
+    "url": "https://docs.qq.com/aio/DQXdGeWpSTGVha3RS",
+    "title": "3.6 Datacenter Design St"
+  },
+  "3.7": {
+    "docId": "AXKzFPDUgodY",
+    "url": "https://docs.qq.com/aio/DQVhLekZQRFVnb2RZ",
+    "title": "3.7 AI Energy & Sustaina"
+  },
+  "3.8": {
+    "docId": "ABsKOpsaxSVD",
+    "url": "https://docs.qq.com/aio/DQUJzS09wc2F4U1ZE",
+    "title": "3.8 AI Hardware Circular"
+  },
+  "3.9": {
+    "docId": "AJWIjLxZiXjT",
+    "url": "https://docs.qq.com/aio/DQUpXSWpMeFppWGpU",
+    "title": "3.9 Hardware Supply Chai"
+  },
+  "3.10": {
+    "docId": "AaqMrLzErgAm",
+    "url": "https://docs.qq.com/aio/DQWFxTXJMekVyZ0Ft",
+    "title": "3.10 Capital Expenditure"
+  },
+  "3.11": {
+    "docId": "AMHQBKDeEcob",
+    "url": "https://docs.qq.com/aio/DQU1IUUJLRGVFY29i",
+    "title": "3.11 Storage Architectur"
+  },
+  "3.12": {
+    "docId": "AjYWxiBhAInm",
+    "url": "https://docs.qq.com/aio/DQWpZV3hpQmhBSW5t",
+    "title": "3.12 Edge AI Infrastruct"
+  },
+  "3.13": {
+    "docId": "ARncSKutNLjy",
+    "url": "https://docs.qq.com/aio/DQVJuY1NLdXROTGp5",
+    "title": "3.13 AI Infrastructure P"
+  },
+  "3.14": {
+    "docId": "AOurrKTvaEHH",
+    "url": "https://docs.qq.com/aio/DQU91cnJLVHZhRUhI",
+    "title": "3.14 Security and Isolat"
+  },
+  "3.15": {
+    "docId": "ArCQBwNhUYJR",
+    "url": "https://docs.qq.com/aio/DQXJDUUJ3TmhVWUpS",
+    "title": "3.15 Open Source and Sta"
+  },
+  "3.16": {
+    "docId": "AznLUkJFOCTU",
+    "url": "https://docs.qq.com/aio/DQXpuTFVrSkZPQ1RV",
+    "title": "3.16 Architecture Suppor"
+  },
+  "3.17": {
+    "docId": "ACNwOClONIQd",
+    "url": "https://docs.qq.com/aio/DQUNOd09DbE9OSVFk",
+    "title": "3.17 Target Market and E"
+  },
+  "3.18": {
+    "docId": "AAQEAxylUFhx",
+    "url": "https://docs.qq.com/aio/DQUFRRUF4eWxVRmh4",
+    "title": "3.18 Sovereign AI Cloud "
+  },
+  "3.19": {
+    "docId": "AZEjfHjohKeo",
+    "url": "https://docs.qq.com/aio/DQVpFamZIam9oS2Vv",
+    "title": "3.19 Geographically Dist"
+  },
+  "3.20": {
+    "docId": "AhHSeMPgkhQs",
+    "url": "https://docs.qq.com/aio/DQWhIU2VNUGdraFFz",
+    "title": "3.20 AI-Driven Infrastru"
+  }
+}

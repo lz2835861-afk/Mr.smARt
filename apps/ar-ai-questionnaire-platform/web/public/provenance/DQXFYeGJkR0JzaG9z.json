@@ -1,0 +1,39 @@
+{
+  "questionnaireId": "idc-aiiaas-2026",
+  "questionId": "3.3",
+  "docId": "AqXxbdGBshos",
+  "docUrl": "https://docs.qq.com/aio/DQXFYeGJkR0JzaG9z",
+  "urlId": "DQXFYeGJkR0JzaG9z",
+  "dimension": "",
+  "section": "Strategies",
+  "subsection": "Hardware Vendor Partnership Strategy",
+  "question": "Detail your partnership strategy with major AI hardware vendors. How do you ensure strategic alignment and early access while aggressively expanding your own competitive custom silicon and storage portfolio?",
+  "guidance": "IDC 作答格式 (open text)",
+  "draft": "腾讯云在硬件厂商合作与自研存储/算力组合上采取「开放协同 + 自研补位」的双轮战略。一方面，依托异构计算平台整合多种芯片资源对外提供高性价比 AI 算力，并已全面适配主流国产芯片，以此与上游 GPU/芯片厂商保持广泛适配与协同，保障客户在多元算力间的选择权与早期可用性。另一方面，腾讯持续投入软硬协同的自研能力：在编解码领域，自研「沧海」系列芯片 V1 已规模部署超 10 万片、V2 已点亮并进入量产周期；在存储与推理 I/O 链路上，自研并开源 FlexKV 多级缓存等技术，并以 CFS Turbo 并行文件存储、COS 对象存储、GooseFS 数据加速器、CHDFS 等存储产品构成完整的 AI 存储组合。这一策略使腾讯云既能跟随主流硬件生态、获得早期接入，又能通过自研存储与缓存层在性价比和性能上形成差异化竞争力。对于与特定 GPU 厂商的早期访问条款等敏感细节，可在与 IDC 商定保密口径后单独提供。",
+  "provenance": {
+    "sources": [
+      {
+        "label": "腾讯邱跃鹏：面向Agent和全球化趋势，全面升级云基础设施",
+        "url": "https://mp.weixin.qq.com/s/Ncl8V6kGiDP0c7RWe2u4lg",
+        "kind": "wechat"
+      },
+      {
+        "label": "刚刚，腾讯自研「沧海芯片」夺冠！V2版本即将量产",
+        "url": "https://mp.weixin.qq.com/s/qxzcNLf0XmBBjlvelXhOsg",
+        "kind": "wechat"
+      },
+      {
+        "label": "CFS 存储类型及性能规格",
+        "url": "https://cloud.tencent.com/document/product/582/38112",
+        "kind": "doc"
+      }
+    ],
+    "quotes": [
+      "依托异构计算平台整合多种芯片资源，向外界提供高性价比的 AI 算力。目前，该平台已全面适配主流国产芯片。",
+      "目前沧海V1芯片在腾讯云及腾讯自有场景（覆盖直播点播、4K转码、云游戏等）中已部署超10万片。"
+    ],
+    "reasoning": "题目问与硬件厂商的合作策略，及如何在合作同时扩张自研硅与存储组合。公众号语料支撑异构平台适配主流国产芯片、沧海自研芯片规模部署、FlexKV 自研开源；存储语料支撑自研存储组合。写实引用，敏感的早期访问条款交保密口径，不编造。",
+    "decision": "grounded"
+  },
+  "generatedAt": "2026-06-17T01:38:36.251Z"
+}

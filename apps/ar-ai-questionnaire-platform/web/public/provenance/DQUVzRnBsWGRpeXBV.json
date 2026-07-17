@@ -1,0 +1,40 @@
+{
+  "questionnaireId": "idc-aiiaas-2026",
+  "questionId": "2.18",
+  "docId": "AEsFplXdiypU",
+  "docUrl": "https://docs.qq.com/aio/DQUVzRnBsWGRpeXBV",
+  "urlId": "DQUVzRnBsWGRpeXBV",
+  "dimension": "",
+  "section": "Capabilties",
+  "subsection": "AI Infrastructure Observability",
+  "question": "Detail the native infrastructure monitoring tools you provide that expose hardware-level metrics (e.g., GPU memory bandwidth utilization, tensor core activity, NVLink/fabric congestion).",
+  "guidance": "IDC 作答格式 (open text)",
+  "draft": "腾讯云高性能计算集群（HCC）的使用体验与云服务器 CVM 一致，客户既可通过控制台、API、SDK/TCCLI 进行配置与管理，也可基于腾讯云原生监控与可观测体系对算力、网络与存储进行统一观测。在 Agent 与大规模 AI 运行环境中，腾讯云已将「安全可观测」作为 Agent Runtime 的核心能力之一对外提供，并依托 TKE 算力集群在跨集群层面实时同步节点资源水位、由 QosAgent 组件实时监控干扰情况，对 CPU/GPU 等资源利用率进行精细化感知与调度。在节点内硬件层面，HCC 实例可结合 GPU 厂商原生工具链（如 NVIDIA 驱动配套的监控接口）暴露 GPU 利用率、显存占用等指标。需要说明的是，针对 GPU 显存带宽利用率、Tensor Core 活跃度、NVLink/后端 fabric 拥塞等更细粒度的硬件级指标，腾讯云正持续完善面向 AI 训练/推理的专项可观测能力；具体已 GA 的指标清单、采集粒度与暴露方式，可在与 IDC 商定统一口径后单独提供，以保证描述的准确性。",
+  "provenance": {
+    "sources": [
+      {
+        "label": "腾讯云文档：高性能计算集群 产品概述",
+        "url": "https://cloud.tencent.com/document/product/1646/81559",
+        "kind": "doc"
+      },
+      {
+        "label": "腾讯云原生公众号：邱跃鹏——全面升级云基础设施",
+        "url": "https://mp.weixin.qq.com/s/Ncl8V6kGiDP0c7RWe2u4lg",
+        "kind": "wechat"
+      },
+      {
+        "label": "腾讯云原生公众号：TKE 算力集群",
+        "url": "https://mp.weixin.qq.com/s/Ncl8V6kGiDP0c7RWe2u4lg",
+        "kind": "wechat"
+      }
+    ],
+    "quotes": [
+      "腾讯云提供如下方式进行高性能计算集群的配置和管理",
+      "它集成了执行引擎、云沙箱、上下文服务、网关、安全可观测服务等多项产品和能力",
+      "搭配 QosAgent 组件实时监控干扰情况，指标波动时自动触发资源压制或离线任务驱逐。"
+    ],
+    "reasoning": "题目要硬件级 GPU 监控指标（显存带宽利用率、Tensor Core 活跃度、NVLink 拥塞）。语料只有通用可观测能力（Agent Runtime 安全可观测、TKE QosAgent 资源水位监控、HCC 与 CVM 一致的控制台/API 管理），没有 GPU 硬件级细粒度指标产品文档。按政策：用可证实的通用可观测能力作答，对硬件级细粒度指标做方向性表述并声明统一口径下单独提供，不杜撰具体指标名/数值。注意 TKE quote 的 sourceUrl 与文章 url 字段一致性：该文 quote 取自 TKE 算力集群文 markdown，但其 url 字段在前注中。已用 QosAgent quote 对应 TKE 文件路径。",
+    "decision": "answered"
+  },
+  "generatedAt": "2026-06-17T01:38:36.251Z"
+}

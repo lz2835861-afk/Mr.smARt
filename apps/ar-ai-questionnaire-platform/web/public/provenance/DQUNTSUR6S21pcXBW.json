@@ -1,0 +1,35 @@
+{
+  "questionnaireId": "idc-aiiaas-2026",
+  "questionId": "2.10",
+  "docId": "ACSIDzKmiqpV",
+  "docUrl": "https://docs.qq.com/aio/DQUNTSUR6S21pcXBW",
+  "urlId": "DQUNTSUR6S21pcXBW",
+  "dimension": "",
+  "section": "Capabilties",
+  "subsection": "Massive Data Ingestion Options",
+  "question": "Describe your infrastructure solutions for ingesting multi-petabyte datasets, specifically highlighting direct multi-terabit network peering options and ruggedized physical transfer appliances.",
+  "guidance": "IDC 作答格式 (open text)",
+  "draft": "针对多 PB 级非结构化训练数据的摄取，腾讯云在网络与工具两个层面提供能力。网络层面，存储服务可通过专线接入、云联网、VPN 等方式打通客户 IDC 或其他平台与腾讯云的连接——CFS 文档明确，通过打通 VPN、专线接入或者云联网，客户 IDC 或其他平台的计算节点也可以访问 CFS，从而支持将本地或其他云的数据集高带宽迁入。工具层面，腾讯云提供 CFS Filetruck 等迁移工具用于将本地文件系统数据批量迁移到 CFS（迁移性能与源主机配置、存储介质、网络出口带宽及文件大小相关，大文件迁移更高效），并可结合多线程并行 rsync 等方式加速；GooseFS/CHDFS 则便于将既有 HDFS 与对象存储数据无缝接入数据湖（应用程序无需任何更改，仅通过修改相关配置项即可无缝迁移上云）。对于多 Tbit 级专线对接的具体带宽档位，以及离线大容量物理传输设备（ruggedized appliance）的型号与单批容量，可在与 IDC 商定统一口径后由对接团队补充，本问卷不就尚无公开语料支撑的硬指标作出承诺。",
+  "provenance": {
+    "sources": [
+      {
+        "label": "CFS 常见问题",
+        "url": "https://cloud.tencent.com/document/product/582/9551",
+        "kind": "doc"
+      },
+      {
+        "label": "CHDFS 产品简介",
+        "url": "https://cloud.tencent.com/document/product/1105/36355",
+        "kind": "doc"
+      }
+    ],
+    "quotes": [
+      "客户 IDC 或其他平台的计算节点也可以访问 CFS",
+      "以使用 CFS Filetruck 迁移工具为例",
+      "可以极大降低维护本地 HDFS 成本，同时应用程序无需任何更改，仅仅通过修改相关配置项即可无缝迁移上云。"
+    ],
+    "reasoning": "题目问 PB 级摄取、多 Tbit 专线对接与物理传输设备。语料支撑专线/云联网/VPN 接入、Filetruck 迁移、HDFS 无缝迁移，写实引用。多 Tbit 带宽档位与物理 appliance 无语料，方向性表述并提出统一口径后补充，不编造。",
+    "decision": "grounded-partial"
+  },
+  "generatedAt": "2026-06-17T01:38:36.251Z"
+}

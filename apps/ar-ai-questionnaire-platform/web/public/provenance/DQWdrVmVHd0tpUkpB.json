@@ -1,0 +1,37 @@
+{
+  "questionnaireId": "ai-infra-2026",
+  "questionId": "2.1.1",
+  "docId": "AgkVeGwKiRJA",
+  "docUrl": "https://docs.qq.com/aio/DQWdrVmVHd0tpUkpB",
+  "urlId": "DQWdrVmVHd0tpUkpB",
+  "dimension": "创新指数",
+  "section": "模型研发生产",
+  "subsection": "2.1 训练与推理平台",
+  "question": "贵司大规模分布式训练的实际最大交付规模（GPU卡数）与容错能力如何？MoE/超长上下文等新型架构的支持情况？",
+  "guidance": "重点关注实战规模：客户实际投入的GPU卡数（而非实验室能力），千卡训练72小时不间断的成功率，容错恢复时间；对Mixtral-style MoE、Mamba/RWKV等非Transformer架构的适配，百万级上下文窗口训练的支持。",
+  "draft": "腾讯云 TI-ONE 平台已构建面向大规模分布式训练的工程化容错体系。任务式建模将节点故障作为自动重启触发条件，在节点异常场景下实现训练任务的自动容错恢复，并支持重启时保留资源配额；当出现机器、GPU、RDMA 等可自动恢复的故障时，平台会自动重启并恢复，自动容错与健康检测已扩展至 Ray 模式训练任务，配合“热备资源组”自动替换故障节点以缩短故障恢复时间。底层依托高性能 RDMA 互联与 Ray/MPI 分布式训练模式，支撑大规模多机多卡训练。在新型架构上，平台大模型广场已一键上架 DeepSeek-V4 系列、Qwen3.5 等系列大模型，并通过 MaxSequenceLength 等超参支持超长文本训练。客户实际交付的最大 GPU 卡数、千卡级 72 小时不间断成功率与分钟级容错恢复时间等实测数据，以具体项目的实战交付为准，可在评估阶段由腾讯云按客户场景单独提供与核验。",
+  "provenance": {
+    "sources": [
+      {
+        "label": "TI-ONE 产品动态(851/42871)",
+        "url": "https://cloud.tencent.com/document/product/851/42871",
+        "kind": "doc"
+      },
+      {
+        "label": "TACO Kit 产品优势(1573/74079)",
+        "url": "https://cloud.tencent.com/document/product/1573/74079",
+        "kind": "doc"
+      }
+    ],
+    "quotes": [
+      "新增节点故障作为自动重启触发条件，实现训练任务在节点异常场景下的自动容错恢复",
+      "当节点出现机器故障、GPU 故障、RDMA 故障等可能通过自动重启解决的故障时，平台将尝试进行自动重启和故障恢复",
+      "新增“热备资源组”功能，支持自动替换故障节点，减少故障恢复时间",
+      "支持 Ray 和 MPI 分布式训练模式",
+      "支持大规模多机多卡分布式训练场景，提高加速比和模型迭代效率"
+    ],
+    "reasoning": "有据：节点故障自动重启/自动容错恢复、机器/GPU/RDMA故障自动恢复、热备资源组自动替换故障节点、Ray/MPI分布式、TACO大规模多机多卡、MoE模型(DeepSeek-V4/Qwen3.5-A系列)一键部署、MaxSequenceLength超长文本——均来自TI-ONE产品动态与TACO文档逐字引用。战略化处理(不编数字)：客户实战最大GPU卡数、千卡72h不间断成功率、分钟级容错恢复时间、百万级上下文上限、Mamba/RWKV非Transformer适配确认——语料无硬数据,改为'以项目实战交付为准、评估阶段单独提供核验'。MoE在readiness中由大模型广场一键部署间接佐证,故draft用'一键上架...MoE架构模型'的方向性表述而未声称官方架构适配清单。",
+    "decision": "训练平台容错与新型架构支持有产品级实据，实战GPU卡数/72h成功率/恢复时间做战略化处理不编数字。"
+  },
+  "generatedAt": "2026-06-17T01:38:35.975Z"
+}

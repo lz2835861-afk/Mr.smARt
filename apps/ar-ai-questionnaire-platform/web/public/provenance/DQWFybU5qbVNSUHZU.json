@@ -1,0 +1,60 @@
+{
+  "questionnaireId": "ai-infra-2026",
+  "questionId": "1.1",
+  "docId": "AarmNjmSRPvT",
+  "docUrl": "https://docs.qq.com/aio/DQWFybU5qbVNSUHZU",
+  "urlId": "DQWFybU5qbVNSUHZU",
+  "dimension": "创新指数",
+  "section": "数据供给",
+  "subsection": "",
+  "question": "贵司是否提供面向AI Agent的RAG（检索增强生成）基础设施？支持哪些数据源接入方式？多模态检索与混合检索的实际效果如何？",
+  "guidance": "Agent时代的数据处理范式从\"批量训练\"转向\"实时检索\"。重点关注：是否支持企业私有知识库（文档库/数据库/API）的一键接入与自动向量化，多模态检索（文本+图像+表格混合检索）的能力与召回精度，混合检索（向量+关键词+语义重排序）的架构设计，以及对长文档/复杂表格的解析与切片策略。",
+  "draft": "腾讯云面向 AI Agent 提供完整的 RAG 基础设施，以智能体开发平台（ADP）为应用层、向量数据库（VectorDB）与 Elasticsearch（ES）为检索底座，三层协同。数据源接入方面，企业可一键上传文档、问答素材与业务流画布，并接入网页、PostgreSQL/Oracle 等数据库；系统自动完成文档切分、向量化与索引构建全流程，并提供通用/父子标识符/按行三种切片规则及人工切分干预。多模态能力上，依托优图实验室 OCR 与文档解析技术，支持 10+ 文档类型、200MB 单文档处理，对复杂图文混排、表格、公式智能识别与结构化，并支持图片内容直接理解与问答；结合 Text-to-SQL 可对上万行表格或数据库做条件筛选与聚合问答。混合检索上，ES 提供向量+关键词混合搜索、rerank、大模型集成一站式服务，配合自研 2B Embedding（C-MTEB SOTA）与 LLM Reranker，实现高召回、高精准；Agentic RAG 进一步支持自主反思、多轮迭代检索与跨文档推理。整体实测效果以高召回、高精准为目标，并在近 40 个腾讯内部业务中规模化验证。",
+  "provenance": {
+    "sources": [
+      {
+        "label": "ADP 产品概述（企业级文档理解/自研Embedding/Agentic RAG/Text-to-SQL）",
+        "url": "https://cloud.tencent.com/document/product/1759/104193",
+        "kind": "doc"
+      },
+      {
+        "label": "ADP 应用场景（企业上传文档/问答素材/业务流画布+精细化检索标签）",
+        "url": "https://cloud.tencent.com/document/product/1759/104195",
+        "kind": "doc"
+      },
+      {
+        "label": "ADP 产品动态（Agentic RAG/数据库与网页接入/切分规则/重排序）",
+        "url": "https://cloud.tencent.com/document/product/1759/104191",
+        "kind": "doc"
+      },
+      {
+        "label": "VectorDB 产品优势（内置Embedding/文档切分向量化索引全流程/40个内部业务）",
+        "url": "https://cloud.tencent.com/document/product/1709/94946",
+        "kind": "doc"
+      },
+      {
+        "label": "VectorDB 应用场景（大模型知识库/问答系统/文本图像检索）",
+        "url": "https://cloud.tencent.com/document/product/1709/94947",
+        "kind": "doc"
+      },
+      {
+        "label": "ES 应用场景（RAG 一站式：切片/向量检索/混合搜索/rerank/大模型集成）",
+        "url": "https://cloud.tencent.com/document/product/845/16480",
+        "kind": "doc"
+      }
+    ],
+    "quotes": [
+      "支持 10+ 文档文件类型、200MB 单文档处理，对复杂图文混排、表格、公式等版面进行智能识别与结构化处理",
+      "自研的 2B 级 Embedding 模型在 C-MTEB 基准测试中达到 SOTA 水平。结合基于 LLM 的 Reranker 模型(支持 8k+ 长文本、分层知识蒸馏)，实现高召回、高精准的检索效果。",
+      "结合 Text-to-SQL 能力，支持对上万行表格或数据库执行条件筛选并聚合问答",
+      "不仅支持企业上传自有的知识集合，包括各类文档、问答素材以及业务流画布，还能根据这些内容设定精细化的检索范围标签",
+      "Agentic RAG 基于 Agent Loop 框架，实现智能体自主反思、智能切换检索策略、多轮迭代检索",
+      "自动完成文档切分、向量化与索引构建全流程",
+      "在近40个腾讯内部业务中稳定运行，经验丰富。",
+      "ES 围绕 RAG 提供从数据切片、向量检索、文本和向量混合搜索、rerank、大模型集成等一站式服务"
+    ],
+    "reasoning": "有据写实部分（绝大多数）：私有库一键接入与自动向量化、网页/数据库(PostgreSQL/Oracle)数据源接入、三种切片规则与人工干预、优图OCR多模态解析(10+类型/200MB/图文表格公式)、图片内容理解、Text-to-SQL结构化问答、向量+关键词混合检索+rerank+LLM重排、自研2B Embedding C-MTEB SOTA、Agentic RAG多轮迭代——均逐字来自 ADP 104193/104195/104191、VectorDB 94946、ES 16480。战略化/模糊处理部分：'多模态检索与混合检索的实际召回精度'语料只有'高召回、高精准'与'C-MTEB SOTA'定性，无具体召回率%，故仅以'以高召回高精准为目标'与'近40个内部业务规模化验证'表述，未杜撰任何精度数字。",
+    "decision": "有据可写实：ADP+VectorDB+ES 三层栈逐字覆盖私有库一键接入自动向量化、多模态OCR解析、向量+关键词混合检索叠加LLM重排、长文档切片，仅召回精度具体数字模糊化处理。"
+  },
+  "generatedAt": "2026-06-17T01:38:35.975Z"
+}

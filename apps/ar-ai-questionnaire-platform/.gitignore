@@ -1,0 +1,43 @@
+# State for analyst-questionnaire-runner skill (per-question grounding/wording/lint/en outputs)
+.questionnaire-state/
+
+# Submission package (auto-generated; regenerate from state files)
+# Keep this commented if you want it tracked; uncomment to ignore.
+# .questionnaire-state/submission-package.md
+
+# Node / build
+node_modules/
+dist/
+dist-ssr/
+
+# Env / secrets
+.env
+.env.local
+.env.*.local
+*.local
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Editor
+.vscode/*
+!.vscode/extensions.json
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Word / Office temp lock files
+~$*
+*.tmp
+

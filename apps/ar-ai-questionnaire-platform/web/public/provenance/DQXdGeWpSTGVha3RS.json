@@ -1,0 +1,35 @@
+{
+  "questionnaireId": "idc-aiiaas-2026",
+  "questionId": "3.6",
+  "docId": "AwFyjRLeaktR",
+  "docUrl": "https://docs.qq.com/aio/DQXdGeWpSTGVha3RS",
+  "urlId": "DQXdGeWpSTGVha3RS",
+  "dimension": "",
+  "section": "Strategies",
+  "subsection": "Datacenter Design Strategy (Thermal Management)",
+  "question": "Detail your next-generation datacenter design strategy specifically addressing thermal management for clusters expected to draw hundreds of megawatts.",
+  "guidance": "IDC 作答格式 (open text)",
+  "draft": "面向未来超大规模 AI 集群对供电与散热的极端要求，腾讯云的下一代数据中心设计战略以“软硬协同的高密度、高能效”为核心方向。在自研服务器层面，腾讯云星星海服务器从 SA5 到 SA9 持续迭代，通过硬件架构创新在有限空间内最大化提升计算密度与能效，旗舰 SA9 单机规格已从前一代的 512 核进一步提升到 768 核，这一“在有限空间内最大化提升计算密度与能效”的工程路线，正是支撑高功率密度 AI 机柜部署的基础。在 AI 集群侧，腾讯云高性能计算集群已提供搭载 NVIDIA H800/A800 等高端 GPU 的高性能计算实例，并具备全自动化生产与弹性扩缩容能力，可快速交付高密算力。面向“单集群数百兆瓦”级别的远期需求，腾讯云的方向性策略是持续演进高密机柜供电、风液结合及面向芯片级的高效散热设计，并结合自动化生产与弹性扩缩容能力快速交付。具体的单机柜最大功率密度（kW/rack）、液冷/冷板的覆盖比例及对应的 PUE 目标等量化指标，可在与 IDC 商定统一口径后由腾讯云对接团队单独/保密提供。",
+  "provenance": {
+    "sources": [
+      {
+        "label": "腾讯云原生 — 邱跃鹏：面向Agent和全球化趋势，全面升级云基础设施",
+        "url": "https://mp.weixin.qq.com/s/Ncl8V6kGiDP0c7RWe2u4lg",
+        "kind": "wechat"
+      },
+      {
+        "label": "腾讯云高性能计算集群 — 产品优势（产品文档）",
+        "url": "https://cloud.tencent.com/document/product/1646/81560",
+        "kind": "doc"
+      }
+    ],
+    "quotes": [
+      "旗舰SA9单机规格，从前一代的512核进一步提升到768核",
+      "通过硬件架构创新，在有限空间内，最大化提升计算密度与能效",
+      "支持全自动化生产及弹性扩缩容，兼具灵活弹性与高性能。"
+    ],
+    "reasoning": "response_format 为 open text。语料没有数据中心散热/功率密度/PUE 的硬数据，故按政策写成战略层面、方向性表述；能引用的实证是星星海“计算密度与能效”工程路线（公众号逐字）及 HCC 自动化生产/弹性扩缩容（文档逐字）。数百兆瓦级散热的具体量化指标无依据，写为可保密单独提供，不杜撰 kW/rack、PUE、液冷比例等数字。",
+    "decision": "answer"
+  },
+  "generatedAt": "2026-06-17T01:38:36.251Z"
+}

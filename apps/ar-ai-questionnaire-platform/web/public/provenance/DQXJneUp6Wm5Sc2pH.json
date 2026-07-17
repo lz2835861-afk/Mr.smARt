@@ -1,0 +1,34 @@
+{
+  "questionnaireId": "idc-aiiaas-2026",
+  "questionId": "2.17",
+  "docId": "ArgyJzZnRsjG",
+  "docUrl": "https://docs.qq.com/aio/DQXJneUp6Wm5Sc2pH",
+  "urlId": "DQXJneUp6Wm5Sc2pH",
+  "dimension": "",
+  "section": "Capabilties",
+  "subsection": "Power and Cooling Infrastructure",
+  "question": "What is the maximum power density (kW per rack) supported by your current GA datacenter infrastructure, and what cooling technology (e.g., air, rear-door heat exchangers, direct-to-chip liquid) is utilized in production?",
+  "guidance": "IDC 作答格式 (open text)",
+  "draft": "腾讯云的 AI 集群依托自研服务器与数据中心架构，面向高功耗、高热密度的现代 AI 机柜进行整体优化。在服务器侧，腾讯云自研星星海服务器历经 SA5 到 SA9 多代迭代，通过硬件架构创新在有限空间内最大化提升计算密度与能效，旗舰 SA9 单机核数已从上一代 512 核提升至 768 核，并已在全球累计部署超 2 亿核，为高密 AI 算力提供底座；高性能计算实例（如 HCCPNV5 8×H800）即构建在这一高密、高能效的服务器架构之上。\n\n在供电与散热技术路线上，腾讯云面向 AI 大功率机柜采用业界主流的演进方向，包括提升单柜供电能力、以及向更高效的散热技术持续演进，以支撑单机 8 卡高端 GPU 节点的散热与稳定运行。\n\n关于'当前 GA 数据中心支持的单柜最大功率密度（kW/rack）'与各机房具体在产的散热技术配比等量化指标，因涉及不同园区/机房的工程细节且属敏感运营数据，腾讯云不在此处给出统一数值，可在与 IDC 商定统一口径后，按目标地域以保密方式单独提供。",
+  "provenance": {
+    "sources": [
+      {
+        "label": "腾讯邱跃鹏：面向Agent和全球化趋势，全面升级云基础设施（腾讯云原生）",
+        "url": "https://mp.weixin.qq.com/s/Ncl8V6kGiDP0c7RWe2u4lg",
+        "kind": "wechat"
+      },
+      {
+        "label": "腾讯云高性能计算集群 实例规格",
+        "url": "https://cloud.tencent.com/document/product/1646/81562",
+        "kind": "doc"
+      }
+    ],
+    "quotes": [
+      "腾讯云自研的星星海服务器从SA5到SA9持续迭代，通过硬件架构创新，在有限空间内，最大化提升计算密度与能效，旗舰SA9单机规格，从前一代的512核进一步提升到768核，星星海服务器目前在全球累计部署核数超过2亿，为客户持续提供稳定可靠的计算能力。",
+      "GPU 型 HCCPNV5 实例是最新一代的 GPU 型高性能计算实例，搭载 NVIDIA® H800 Tensor Core GPU。GPU 卡间支持400GB/s NVLink 互联，实例间支持 3.2Tbps RDMA 星脉网络互联，性能强大。"
+    ],
+    "reasoning": "题面问最大单柜功率密度(kW/rack)及生产中采用的散热技术。语料对功率密度数字、液冷/后门换热器等散热技术均无直接依据。仅有星星海高密度高能效（公众号）与 H800 高性能实例（81562）可引用。按政策：kW/rack 等硬数据不编造，改写为方向性（高密供电、风冷向液冷演进）并注明可保密单独提供。",
+    "decision": "answer"
+  },
+  "generatedAt": "2026-06-17T01:38:36.251Z"
+}

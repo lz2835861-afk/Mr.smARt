@@ -1,0 +1,30 @@
+{
+  "questionnaireId": "idc-aiiaas-2026",
+  "questionId": "3.15",
+  "docId": "ArCQBwNhUYJR",
+  "docUrl": "https://docs.qq.com/aio/DQXJDUUJ3TmhVWUpS",
+  "urlId": "DQXJDUUJ3TmhVWUpS",
+  "dimension": "",
+  "section": "Strategies",
+  "subsection": "Open Source and Standards Contribution",
+  "question": "Describe your strategic involvement and contributions to open infrastructure consortiums (e.g., Open Compute Project (OCP), Ultra Ethernet Consortium, PyTorch Foundation) directly related to AI hardware and networking.",
+  "guidance": "IDC 作答格式 (open text)",
+  "draft": "开放与回馈开源社区是腾讯云在 AI 基础设施层面的明确战略立场，目的之一正是避免在基础设施层形成厂商锁定。在 AI 推理与通信软件栈上，腾讯云深入参与开源贡献，向 DeepSeek、vLLM、SGLang 等社区提交了多项优化技术；针对大模型推理的内存瓶颈，腾讯云自研并正式开源了 FlexKV 多级缓存技术，并在 DeepSeek 开源的 GPU 通信库 DeepEP 基础上完成优化、使其在 RoCE 网络环境中性能翻倍，相关贡献获得社区公开致谢。腾讯云持续深度参与并回馈开源社区，依托异构计算平台整合多种芯片资源对外提供高性价比 AI 算力，并已全面适配主流国产芯片，从硬件适配与软件开源两端共同推动开放生态。在数据库与云原生方向，腾讯云亦有 OpenTenBase、Crane（国内首个成本优化开源项目）、Tensile-kube、TencentDB Agent Memory 等持续的开源贡献，体现了跨层的开放参与传统。关于在 Open Compute Project（OCP）、Ultra Ethernet Consortium、PyTorch Foundation 等开放硬件/网络标准组织中的具体成员身份与贡献清单，可在与 IDC 商定统一口径后单独提供，以确保信息准确。",
+  "provenance": {
+    "sources": [
+      {
+        "label": "腾讯云原生公众号：邱跃鹏——全面升级云基础设施",
+        "url": "https://mp.weixin.qq.com/s/Ncl8V6kGiDP0c7RWe2u4lg",
+        "kind": "wechat"
+      }
+    ],
+    "quotes": [
+      "腾讯云深入参与开源贡献，向DeepSeek、vLLM、SGLang等社区提交了多项优化技术。",
+      "为了解决分布式KV Cache和多级缓存的精细管理，并建起推理引擎到云存储的桥梁，我们研发并正式开源了 FlexKV。",
+      "DeepSeek 在社区公开致谢，并用“huge speedup”形容这次贡献。"
+    ],
+    "reasoning": "题目要在开放基础设施联盟（OCP、UEC、PyTorch Foundation）的战略参与与贡献。语料强支撑软件开源贡献：DeepSeek/vLLM/SGLang、FlexKV 开源、DeepEP、公开致谢（逐字）；异构计算平台适配国产芯片。OCP/UEC/PyTorch Foundation 具体成员身份无语料，按政策声明可单独提供，不杜撰联盟成员身份。OpenTenBase/Crane/Tensile-kube 来自 TKE 文，属可证实开源项目，做方向性补充未给虚构数据。",
+    "decision": "answered"
+  },
+  "generatedAt": "2026-06-17T01:38:36.251Z"
+}

@@ -1,0 +1,134 @@
+/* ───────────────────────────────────────────────────────────────────────────
+   Product holo card — 3D tilt + holographic sheen + flip.
+   Tilt + glare positions are driven from React via the --phc-rx / --phc-ry /
+   --phc-mx / --phc-my custom properties. Sheen technique (color-dodge gradient
+   layers) adapted from the heygaia holo-card, retinted to the site palette.
+   ─────────────────────────────────────────────────────────────────────────── */
+
+@keyframes phc-drift {
+  0%,
+  100% {
+    opacity: 0.4;
+    background-position: 50% 50%;
+    filter: brightness(0.9) contrast(1.05);
+  }
+  25% {
+    opacity: 0.75;
+    background-position: 100% 0%;
+    filter: brightness(1) contrast(1.2);
+  }
+  50% {
+    opacity: 0.55;
+    background-position: 100% 100%;
+  }
+  75% {
+    opacity: 0.8;
+    background-position: 0% 100%;
+    filter: brightness(1) contrast(1.2);
+  }
+}
+
+/* Perspective wrapper — owns the mouse var state. */
+.phc-scene {
+  --phc-rx: 0deg;
+  --phc-ry: 0deg;
+  --phc-mx: 50%;
+  --phc-my: 50%;
+  perspective: 1100px;
+  cursor: pointer;
+}
+
+/* Tilt layer — reacts to the pointer. */
+.phc-tilt {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.4s cubic-bezier(0.2, 0.8, 0.2, 1);
+  transform: rotateX(var(--phc-rx)) rotateY(var(--phc-ry));
+  transform-style: preserve-3d;
+}
+.phc-scene:hover .phc-tilt {
+  transition: transform 0.08s ease-out;
+}
+
+/* Flip layer — rotates a half turn to reveal the back. */
+.phc-flip {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.6s cubic-bezier(0.4, 0.2, 0.2, 1);
+  transform-style: preserve-3d;
+}
+.phc-flip[data-flipped="true"] {
+  transform: rotateY(180deg);
+}
+
+.phc-face {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  border-radius: 1.5rem;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  box-shadow:
+    0 1px 0 0 rgba(255, 255, 255, 0.12) inset,
+    -2px -2px 10px 0 rgba(56, 189, 248, 0.25),
+    2px 2px 10px 0 rgba(139, 92, 246, 0.22),
+    0 24px 40px -18px rgba(2, 12, 40, 0.7);
+}
+.phc-face--back {
+  transform: rotateY(180deg);
+}
+
+/* Holographic sheen — color-dodge gradient that drifts when idle and snaps to
+   the pointer on hover. */
+.phc-sheen {
+  position: absolute;
+  inset: 0;
+  z-index: 3;
+  pointer-events: none;
+  mix-blend-mode: color-dodge;
+  background-size: 300% 300%;
+  background-position: var(--phc-mx) var(--phc-my);
+  background-image: linear-gradient(
+    115deg,
+    transparent 0%,
+    rgba(56, 189, 248, 0.55) 28%,
+    transparent 45%,
+    transparent 55%,
+    rgba(167, 139, 250, 0.5) 72%,
+    transparent 100%
+  );
+  opacity: 0.55;
+}
+.phc-scene:not(:hover) .phc-sheen {
+  animation: phc-drift 8s ease-in-out infinite;
+}
+
+/* Glare — a soft highlight that follows the cursor. */
+.phc-glare {
+  position: absolute;
+  inset: 0;
+  z-index: 4;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.25s ease;
+  background: radial-gradient(
+    circle at var(--phc-mx) var(--phc-my),
+    rgba(255, 255, 255, 0.35),
+    rgba(255, 255, 255, 0) 42%
+  );
+}
+.phc-scene:hover .phc-glare {
+  opacity: 1;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .phc-tilt,
+  .phc-flip {
+    transition: none;
+  }
+  .phc-scene:not(:hover) .phc-sheen {
+    animation: none;
+  }
+}

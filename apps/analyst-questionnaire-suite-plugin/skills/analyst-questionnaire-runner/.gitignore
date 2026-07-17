@@ -1,0 +1,23 @@
+# macOS
+.DS_Store
+**/.DS_Store
+
+# Per-question state (contains Tencent-internal evidence + drafts)
+state/
+
+# Submission packages (paste-ready content for analyst submission)
+submission/
+
+# Original questionnaire files (proprietary to analyst firm)
+questionnaires/
+*.xlsx
+*.xls
+
+# Editor
+.vscode/
+.idea/
+*.swp
+*~
+
+# Tool outputs
+*.log

@@ -1,0 +1,40 @@
+{
+  "questionnaireId": "ai-infra-2026",
+  "questionId": "2.1.2",
+  "docId": "AQHcHUluxdzs",
+  "docUrl": "https://docs.qq.com/aio/DQVFIY0hVbHV4ZHpz",
+  "urlId": "DQVFIY0hVbHV4ZHpz",
+  "dimension": "创新指数",
+  "section": "模型研发生产",
+  "subsection": "2.1 训练与推理平台",
+  "question": "贵司推理优化方案的最佳实测吞吐提升倍数？有无Speculative Decoding、Prefix Caching、Continuous Batching等前沿技术的实际落地？效果如何？",
+  "guidance": "关注：前沿推理技术的实测加速效果（而非理论值），针对长上下文（>32K）场景的KV Cache管理策略，INT8/INT4/FP8等量化精度下的精度损失与吞吐提升实测数据。",
+  "draft": "腾讯云在 TI-ONE 推理侧已落地完整的前沿优化栈。平台上线“多角色部署（PD 分离）”，将服务拆分为 Prefill、Decode、Proxy 等独立角色，解决传统混部资源利用率低、时延波动大的问题；并提供腾讯自研 TACO/TACO-X 推理加速镜像，采用全异步设计，在推理性能、显存占用、启动耗时等方面显著优于社区方案。内置 GLM-5-FP8 支持以 TACO 镜像进行 PD 分离部署，实测首字延迟（TTFT）加速2倍+、包间延迟（TPOT）提速5倍+；面向 DeepSeek R1/V3 提供 Angel-ACC 加速能力。基座层面内置 vLLM 0.10.2 与 angel-vllm，原生具备 Continuous Batching、Prefix Caching 能力，长上下文场景下通过“Token 利用率”指标观测 KV Cache 剩余可用空间并驱动弹性扩缩容。平台性能评测模块支持多并发压测与峰值探测，可输出实测吞吐。整体吞吐提升倍数及各量化精度（FP8/INT8/INT4）下的精度损失与加速对照，会随模型与硬件组合给出实测结论，由腾讯云在具体场景下提供。",
+  "provenance": {
+    "sources": [
+      {
+        "label": "TI-ONE 产品动态(851/42871)",
+        "url": "https://cloud.tencent.com/document/product/851/42871",
+        "kind": "doc"
+      },
+      {
+        "label": "TACO Kit 产品概述(1573/74078)",
+        "url": "https://cloud.tencent.com/document/product/1573/74078",
+        "kind": "doc"
+      }
+    ],
+    "quotes": [
+      "全新上线“多角色部署（PD 分离）”部署方式",
+      "采用全异步设计，在推理性能、显存占用、启动耗时等方面显著优于社区方案",
+      "GLM-5-FP8 支持使用 TACO 镜像进行 PD 分离部署",
+      "首字延迟（TTFT）加速2倍+，包间延迟（TPOT）提速5倍+",
+      "全新上线面向 DeepSeek R1 / V3 模型的 Angel-ACC 加速能力，大幅提升推理性能",
+      "升级内置开源镜像 vLLM 到 0.10.2 版本",
+      "新增大模型监控指标“Token 利用率”，便于观测 KV Cache 剩余可用空间",
+      "全新上线性能评测模块"
+    ],
+    "reasoning": "有据(逐字引用):PD分离多角色部署、TACO全异步镜像优于社区、GLM-5-FP8+TACO+PD分离、TTFT 2x+/TPOT 5x+(文档单点实测)、Angel-ACC for DeepSeek R1/V3、vLLM 0.10.2、Token利用率观测KV Cache、性能评测多并发压测峰值探测。Continuous Batching/Prefix Caching以'随vLLM/angel-vllm基座原生具备'的方向性陈述带出(readiness判定随基座具备,文档未逐字出现这两个术语,故未加引号)。战略化(不编数字):'最佳实测吞吐提升倍数'整体值、Speculative Decoding(投机采样)是否落地(语料未出现,故draft刻意未声称已落地)、FP8/INT8/INT4各精度下精度损失vs吞吐对照——均改为'随模型与硬件组合给出实测、由腾讯云在具体场景提供',不编百分比。",
+    "decision": "推理优化栈(TACO/PD分离/FP8/vLLM/KV Cache监控/压测)文档充分;吞吐倍数、投机采样、量化精度损失做战略化。"
+  },
+  "generatedAt": "2026-06-17T01:38:35.975Z"
+}

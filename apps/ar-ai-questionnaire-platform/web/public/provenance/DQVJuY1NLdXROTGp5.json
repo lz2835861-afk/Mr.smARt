@@ -1,0 +1,40 @@
+{
+  "questionnaireId": "idc-aiiaas-2026",
+  "questionId": "3.13",
+  "docId": "ARncSKutNLjy",
+  "docUrl": "https://docs.qq.com/aio/DQVJuY1NLdXROTGp5",
+  "urlId": "DQVJuY1NLdXROTGp5",
+  "dimension": "",
+  "section": "Strategies",
+  "subsection": "AI Infrastructure Pricing Strategy",
+  "question": "How do you plan to evolve your pricing strategies over the next 2-3 years to accommodate the bursty, highly intensive nature of AI workloads while protecting customer ROI?",
+  "guidance": "IDC 作答格式 (open text)",
+  "draft": "面向 AI 工作负载“突发、强算力密集”的特点，腾讯云在未来 2–3 年的定价策略将围绕“多模型组合、以技术降本、保护客户 ROI”三条主线持续演进。第一，丰富消费模型以匹配不同负载形态：目前 GPU 云服务器已提供包年包月、按量计费、竞价实例和包销计费四种购买方式，高性能计算集群提供包年包月与按量计费并支持时长折扣；未来将进一步增强对短期大规模算力的容量预留/容量块、以及承诺式（包销）供给与弹性峰谷（竞价/按量）之间的可组合性，让客户用确定性承诺换低价、用弹性资源吸收突发。第二，以软硬件协同的技术降本直接降低单位算力成本：通过自研并开源的 FlexKV 多级缓存（首字时延最高降低 70%）、MTP/Attention DP 等推理优化（生成速度提升 35%、吞吐量提升 30%），以及异构计算平台对外提供“高性价比的 AI 算力”，把技术红利转化为客户可感知的价格优势。第三，以可观测与智能治理保护 ROI，让客户为有效算力付费、减少资源闲置。具体的费率档位、容量块单价与折扣曲线，可在与 IDC 商定统一口径后由腾讯云对接团队单独提供。",
+  "provenance": {
+    "sources": [
+      {
+        "label": "腾讯云 GPU 云服务器 — 计费说明（产品文档）",
+        "url": "https://cloud.tencent.com/document/product/560/8025",
+        "kind": "doc"
+      },
+      {
+        "label": "腾讯云高性能计算集群 — 计费概述（产品文档）",
+        "url": "https://cloud.tencent.com/document/product/1646/81564",
+        "kind": "doc"
+      },
+      {
+        "label": "腾讯云原生 — 邱跃鹏：面向Agent和全球化趋势，全面升级云基础设施",
+        "url": "https://mp.weixin.qq.com/s/Ncl8V6kGiDP0c7RWe2u4lg",
+        "kind": "wechat"
+      }
+    ],
+    "quotes": [
+      "GPU 云服务器提供四种购买方式：包年包月、按量计费、竞价实例和包销计费，分别适用于不同场景下的用户需求",
+      "FlexKV 将首字时延最高降低 70%，对话时延降低57%",
+      "依托异构计算平台整合多种芯片资源，向外界提供高性价比的 AI 算力"
+    ],
+    "reasoning": "response_format 为 open text。定价策略可由现有四种计费模式 + 时长折扣（文档逐字）和推理降本技术（FlexKV 首字时延降 70%、异构平台高性价比算力，公众号逐字）有力支撑。生成速度 35%、吞吐 30% 等数字在 邱跃鹏 文中有原文（quotes 取了 FlexKV 一条作代表，正文表述与原文一致）。具体费率/容量块单价无依据，按政策写为可单独提供，不杜撰价格。",
+    "decision": "answer"
+  },
+  "generatedAt": "2026-06-17T01:38:36.251Z"
+}

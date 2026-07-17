@@ -1,0 +1,40 @@
+{
+  "questionnaireId": "idc-aiiaas-2026",
+  "questionId": "3.4",
+  "docId": "ApdgctUxsdnP",
+  "docUrl": "https://docs.qq.com/aio/DQXBkZ2N0VXhzZG5Q",
+  "urlId": "DQXBkZ2N0VXhzZG5Q",
+  "dimension": "",
+  "section": "Strategies",
+  "subsection": "Backend Fabric Evolution Strategy",
+  "question": "What is your strategy for scaling backend network fabrics over the next 3 years? Detail your plans regarding the adoption of InfiniBand vs. proprietary Ethernet vs. Ultra Ethernet Consortium (UEC) standards.",
+  "guidance": "IDC 作答格式 (open text)",
+  "draft": "腾讯云后端网络 fabric 的演进战略以「自研、以太网路线为主、软硬协同」为核心，面向未来三年支撑万亿参数级模型的带宽需求。在路线选择上，腾讯云高端 AI 集群采用基于以太网的无阻塞 RoCEv2 RDMA「星脉」高性能计算网络作为后端互联底座，传输时延低至 2us，能广泛支持基于以太网的应用；最新一代 HCCPNV5/HCCPNV6 实例已提供 3.2Tbps 的 RDMA 星脉网络互联，验证了以太网路线在最高带宽档位上的可行性。这一以太网优先的取向与 Ultra Ethernet 等开放以太网标准的方向高度一致，便于在保持开放生态的同时持续提升规模与带宽。在自研层面，腾讯云已落地自研 200Gbps vRDMA 网络，在中小规模训练与分布式推理场景以更低成本提供低延迟互联，体现了「以自研降低单位带宽成本」的演进思路。在软件协同层面，腾讯云深度参与开源推理通信优化，对 DeepSeek 开源的 GPU 通信库 DeepEP 进行优化，使其在数据中心常用的 RoCE 网络环境中性能翻倍，进一步释放以太网后端 fabric 的有效带宽。未来三年，腾讯云将继续沿「高带宽 RoCEv2/星脉 + 自研 vRDMA + 拥抱开放以太网标准」的方向演进；对 InfiniBand 与 Ultra Ethernet Consortium 等具体标准的采纳节奏，可结合客户场景与 IDC 进一步交流。",
+  "provenance": {
+    "sources": [
+      {
+        "label": "腾讯云文档：高性能计算集群 产品优势",
+        "url": "https://cloud.tencent.com/document/product/1646/81560",
+        "kind": "doc"
+      },
+      {
+        "label": "腾讯云文档：高性能计算集群 实例规格",
+        "url": "https://cloud.tencent.com/document/product/1646/81562",
+        "kind": "doc"
+      },
+      {
+        "label": "腾讯云原生公众号：邱跃鹏——全面升级云基础设施",
+        "url": "https://mp.weixin.qq.com/s/Ncl8V6kGiDP0c7RWe2u4lg",
+        "kind": "wechat"
+      }
+    ],
+    "quotes": [
+      "支持私有网络（VPC）及无阻塞 RoCEv2 RDMA 网络实现节点间互联，传输时延低至2us，能广泛支持基于以太网的应用。",
+      "实例间支持自研 200Gbps vRDMA 网络互联，提供高性价比产品解决方案",
+      "我们在此基础上优化了 DeepEP，使其在 IB 网络性能提升了 30%，在数据中心常用的 RoCE 网络环境中性能更是翻倍。"
+    ],
+    "reasoning": "题目要后端 fabric 3 年演进，含 InfiniBand vs 专有以太网 vs UEC。语料强支撑以太网路线：星脉无阻塞 RoCEv2、2us、3.2Tbps、自研 200Gbps vRDMA、DeepEP RoCE 翻倍（均逐字）。UEC/InfiniBand 采纳节奏无语料，按政策做方向性表述并明确以太网优先，不杜撰具体 UEC 路线图细节。",
+    "decision": "answered"
+  },
+  "generatedAt": "2026-06-17T01:38:36.251Z"
+}

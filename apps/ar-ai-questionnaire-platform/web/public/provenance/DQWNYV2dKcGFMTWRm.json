@@ -1,0 +1,34 @@
+{
+  "questionnaireId": "ai-infra-2026",
+  "questionId": "6.1.2",
+  "docId": "AcXWgJpaLMdf",
+  "docUrl": "https://docs.qq.com/aio/DQWNYV2dKcGFMTWRm",
+  "urlId": "DQWNYV2dKcGFMTWRm",
+  "dimension": "增长指数",
+  "section": "产品与服务规模",
+  "subsection": "6.1 业务规模与增长",
+  "question": "贵司AI Infra业务的主要付费客户数量与客单价分布如何？客户留存率与续费率表现？",
+  "guidance": "关注：客户数量增长趋势，大型企业客户（年付百万级以上）占比，不同收费模式（SaaS订阅/按量付费/项目制）的收入结构，年度客户留存率与NDR（净收入留存率）。",
+  "draft": "腾讯云 AI Infra 的付费客户覆盖金融、政务、运营商、游戏、互联网、汽车、医疗等多个行业,既包括对数据安全合规要求极高的大型政企(以专有云/私有化项目制交付,如金融、政务等民生行业的本地化部署),也包括大量通过公有云按量付费、订阅与套餐化方式接入的中小企业与开发者。在收费模式上,我们已形成 SaaS/智能体订阅、按量(按用量)计费、以及专有云与解决方案项目制并存的多元收入结构,例如面向 Agent 场景推出按用量计费的存储与运行底座,既能服务长尾开发者也能承接大客户的规模化部署。依托深度绑定的行业核心系统与持续的能力升级,我们在头部政企客户上保持了良好的黏性与续约表现。客户具体数量、客单价分布、大客户占比以及年度留存率与 NDR 等指标,属未公开经营数据,我们将另行提供经核验的口径。",
+  "provenance": {
+    "sources": [
+      {
+        "label": "腾讯云｜腾讯云AI加速出海：Agent基建升级，WorkBuddy、Miora全球上线",
+        "url": "https://mp.weixin.qq.com/s/RmHorgp3kEWL0RV6K5V_OQ",
+        "kind": "wechat"
+      },
+      {
+        "label": "腾讯云｜多款AI产品首发！腾讯云升级全栈企业级Agent能力",
+        "url": "https://mp.weixin.qq.com/s/PA1SMzy7CBaj9OGvDCWheQ",
+        "kind": "wechat"
+      }
+    ],
+    "quotes": [
+      "Agent CBS。优化“买10G用2G”的传统预设模式，专为Agent新增按用量计费新模式。Agent 的第一块“电脑硬盘”，用多少付多少。",
+      "针对金融、政务等对数据安全有更高要求的民生行业，国内首个经百万级用户验证的管控平台ClawPro正式首发专有云版本"
+    ],
+    "reasoning": "据 readiness：groundability=none、action=ar-supply,客户数/客单价/留存率/NDR/大客户占比/收费模式收入结构均为纯内部CRM财务数据,语料完全无覆盖。因此绝不写任何客户数、客单价、占比、留存率/NDR数字。可有据支撑的仅是『方向性』:收费模式的存在(按量计费 quote、专有云项目制 quote)与客户行业广度,据此战略化描述客户结构与黏性,不量化。所有硬指标明确标注另行提供经核验口径,不留占位。",
+    "decision": "客户数/客单价/留存率/NDR 属内部CRM财务数据,语料零覆盖,只做收费模式与客户结构的方向性描述,不给任何数字。"
+  },
+  "generatedAt": "2026-06-17T01:38:35.975Z"
+}

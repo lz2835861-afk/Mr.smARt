@@ -1,0 +1,13 @@
+# Build-script policy (pnpm 11+ reads it here, not in .npmrc / package.json).
+#
+# All three packages' install scripts are intentionally skipped (false):
+#   - @heroui-pro/react          → not needed; replaced by the local shim
+#                                  (src/shims/heroui-pro, aliased in vite.config.ts).
+#   - esbuild                    → prebuilt binary ships in @esbuild/<platform>.
+#   - @zowe/secrets-for-zowe-sdk → optional native keyring, unused.
+# Explicitly acknowledging them keeps `pnpm install` (and the pre-run deps check
+# that `pnpm dev` runs) from aborting with ERR_PNPM_IGNORED_BUILDS.
+allowBuilds:
+  '@heroui-pro/react': false
+  '@zowe/secrets-for-zowe-sdk': false
+  esbuild: false

@@ -1,0 +1,40 @@
+{
+  "questionnaireId": "idc-aiiaas-2026",
+  "questionId": "2.15",
+  "docId": "ArIBxMFcNNwz",
+  "docUrl": "https://docs.qq.com/aio/DQXJJQnhNRmNOTnd6",
+  "urlId": "DQXJJQnhNRmNOTnd6",
+  "dimension": "",
+  "section": "Capabilties",
+  "subsection": "Flexible Capacity Consumption Models",
+  "question": "Describe your pricing and consumption models for securing large-scale AI infrastructure, specifically addressing mechanisms for guaranteeing short-term massive capacity (e.g., capacity blocks).",
+  "guidance": "IDC 作答格式 (open text)",
+  "draft": "腾讯云为大规模 AI 基础设施提供多元化的计费与消费模型，客户可按业务节奏在不同模式间灵活组合。以 GPU 云服务器为例，目前提供包年包月、按量计费、竞价实例和包销计费四种购买方式，分别适用于不同场景下的用户需求；高性能计算集群（THCC）则提供包年包月和按量计费两种计费模式，并支持时长折扣，长周期承诺可获得更优单价。针对短期、集中的大规模算力保障诉求，腾讯云的旗舰级 AI 加速实例（如搭载 NVIDIA H800、A800 的高性能计算集群机型）采用白名单/邀测开放与售前经理对接的方式，由客户与售前团队就所需规模、时段和地域提前规划并锁定容量，实现类似“容量预留/容量块（capacity block）”的短期大规模算力保障；包销计费则面向有明确长期、确定性大算力需求的客户，以承诺用量换取更优价格与供给确定性。对于弹性峰谷需求，竞价实例可显著降低成本，按量计费支持即开即用、用完即释放。如需就具体的容量块时长、起售规模与对应价格制定统一口径，可在与 IDC 商定保密框架后由腾讯云对接团队单独提供。",
+  "provenance": {
+    "sources": [
+      {
+        "label": "腾讯云 GPU 云服务器 — 计费说明（产品文档）",
+        "url": "https://cloud.tencent.com/document/product/560/8025",
+        "kind": "doc"
+      },
+      {
+        "label": "腾讯云高性能计算集群 — 计费概述（产品文档）",
+        "url": "https://cloud.tencent.com/document/product/1646/81564",
+        "kind": "doc"
+      },
+      {
+        "label": "腾讯云高性能计算集群 — 实例规格（产品文档）",
+        "url": "https://cloud.tencent.com/document/product/1646/81562",
+        "kind": "doc"
+      }
+    ],
+    "quotes": [
+      "GPU 云服务器提供四种购买方式：包年包月、按量计费、竞价实例和包销计费，分别适用于不同场景下的用户需求",
+      "高性能计算集群有包年包月和按量计费两种计费模式",
+      "该实例暂时处于白名单开放状态，请联系您的售前经理开通实例购买权限。"
+    ],
+    "reasoning": "response_format 为 open text。语料对消费模型有强支撑：GPU CVM 文档明确四种购买方式（含包销计费、竞价实例），HCC 文档明确两种计费模式 + 时长折扣，HCCPNV5 等旗舰机型为白名单/邀测开放，可如实映射为容量预留/capacity block 机制。具体容量块价格/起售规模无语料数字，按政策写为可在保密框架下单独提供，不杜撰。",
+    "decision": "answer"
+  },
+  "generatedAt": "2026-06-17T01:38:36.251Z"
+}

@@ -1,0 +1,40 @@
+{
+  "questionnaireId": "idc-aiiaas-2026",
+  "questionId": "2.20",
+  "docId": "AVXfgGSllTrD",
+  "docUrl": "https://docs.qq.com/aio/DQVZYZmdHU2xsVHJE",
+  "urlId": "DQVZYZmdHU2xsVHJE",
+  "dimension": "",
+  "section": "Capabilties",
+  "subsection": "Infrastructure-as-Code (IaC) for AI",
+  "question": "Detail the extent to which your specialized AI hardware configurations (e.g., GPU placement groups, fabric routing, parallel storage attachments) can be provisioned entirely through Infrastructure-as-Code.",
+  "guidance": "IDC 作答格式 (open text)",
+  "draft": "腾讯云的 AI 存储与数据流水线配置具备较强的可编程/声明式能力，可通过 API、命令行与配置文件纳入基础设施即代码（IaC）流程。例如：CFS Turbo 的关机/销毁、扩容等操作均提供 API（如 StopInstances、DescribeInstancesStatus、TerminateInstances）可程序化编排；GooseFS 通过 goosefs-site.properties 等配置文件以声明式方式定义缓存层级、存储介质、命名空间与读写/淘汰策略，并通过 goosefs ns create 等 CLI 创建命名空间、挂载 COS/CHDFS、设置 TTL 与副本数，天然适合写入版本化的 IaC 仓库；CHDFS、COS 也均提供控制台外的 API/SDK 接入。因此并行存储挂载、命名空间与数据流转策略可以高度脚本化、可复现地下发。关于 GPU placement group、fabric routing 等专用 AI 硬件拓扑是否提供官方 Terraform Provider 资源、以及其覆盖完整度，因缺乏可直接引用的公开语料，建议由对接团队结合最新 Provider 能力清单给出准确说明，本问卷不就尚无语料支撑的覆盖范围作出承诺。",
+  "provenance": {
+    "sources": [
+      {
+        "label": "CFS Turbo 实践指南（API 编排）",
+        "url": "https://cloud.tencent.com/document/product/582/85845",
+        "kind": "doc"
+      },
+      {
+        "label": "GooseFS 独立部署快速入门（声明式配置/CLI）",
+        "url": "https://cloud.tencent.com/document/product/1424/54278",
+        "kind": "doc"
+      },
+      {
+        "label": "GooseFS 缓存能力（策略配置）",
+        "url": "https://cloud.tencent.com/document/product/1424/54279",
+        "kind": "doc"
+      }
+    ],
+    "quotes": [
+      "调用 [StopInstances](https://cloud.tencent.com/document/product/213/15743) 接口进行关机，StopType 选择 SOFT\\_FIRST。",
+      "创建一个命名空间 namespace 并挂载 COS",
+      "用户可以进入 goosefs-site.properties 文件中查看 GooseFS 缓存配置情况。"
+    ],
+    "reasoning": "题目问通过 IaC 配置 AI 硬件拓扑/并行存储挂载的深度。语料支撑 API 编排（StopInstances 等）、GooseFS 声明式配置文件与 CLI 创建命名空间/策略，写实引用。官方 Terraform Provider 对 GPU placement group/fabric routing 的覆盖无语料，方向性表述并交对接团队，不编造。",
+    "decision": "grounded-partial"
+  },
+  "generatedAt": "2026-06-17T01:38:36.251Z"
+}

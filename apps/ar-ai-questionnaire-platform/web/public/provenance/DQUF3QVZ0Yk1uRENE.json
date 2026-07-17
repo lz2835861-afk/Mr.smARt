@@ -1,0 +1,40 @@
+{
+  "questionnaireId": "idc-aiiaas-2026",
+  "questionId": "2.5",
+  "docId": "AAwAVtbMnDCD",
+  "docUrl": "https://docs.qq.com/aio/DQUF3QVZ0Yk1uRENE",
+  "urlId": "DQUF3QVZ0Yk1uRENE",
+  "dimension": "",
+  "section": "Capabilties",
+  "subsection": "Network Latency and Jitter",
+  "question": "What are your documented or SLA-backed guarantees regarding tail latency and network jitter within your highest-tier AI superclusters?",
+  "guidance": "IDC 作答格式 (open text)",
+  "draft": "在尾延迟与抖动控制方面，腾讯云的高性能并行文件存储 CFS Turbo 通过强一致架构与底层分布式锁服务，保证任意时刻数据均为一致状态，并在产品规格层面给出了确定性的时延指标：Turbo 性能型 4K 单流读时延为 0.2ms、4K 单流写为 0.8ms，Turbo 标准型 4K 单流读为 0.2ms、写为 3ms（在无干扰、基于 benchmark 工具压测条件下）。配套的可观测体系对读写延时进行分钟级实时监测，并提供预设告警（如 Turbo 型读/写延时超过 25ms 即触发告警），以及针对 IO 抖动的事件告警（TurboIOHang）与性能超限事件（TurboPerformanceLimit），帮助在抖动发生时及时介入。需要说明的是，上述为存储侧时延规格；针对最高一档 AI 超级集群在网络 fabric 维度的尾延迟与抖动 SLA 承诺，可在与 IDC 商定统一口径、明确测量方法后单独提供，本问卷不就缺乏公开语料支撑的 SLA 数值作出承诺。",
+  "provenance": {
+    "sources": [
+      {
+        "label": "CFS 存储类型及性能规格",
+        "url": "https://cloud.tencent.com/document/product/582/38112",
+        "kind": "doc"
+      },
+      {
+        "label": "CFS 文件存储监控 功能介绍",
+        "url": "https://cloud.tencent.com/document/product/582/112073",
+        "kind": "doc"
+      },
+      {
+        "label": "CFS Turbo 实践指南",
+        "url": "https://cloud.tencent.com/document/product/582/85845",
+        "kind": "doc"
+      }
+    ],
+    "quotes": [
+      "时延 | 4K单流读：0.2ms<br>4K单流写：3ms | 4K单流读：0.2ms<br>4K单流写：0.8ms",
+      "CFS Turbo 为强一致的文件系统，其后端通过一套分布式锁的服务，来实现任意时刻数据均为一致状态。",
+      "读取延时 | DataReadIoLatency | ms | 从文件系统读取数据的延迟 | 通用型：静态阈值，统计粒度1分钟，超过50ms，持续检测3个数据点，每30分钟告警一次<br>Turbo型：静态阈值，统计粒度1分钟，超过25ms，持续检测3个数据点，每30分钟告警一次"
+    ],
+    "reasoning": "题目问尾延迟/抖动的 SLA 承诺。语料对存储侧时延规格（4K 单流读 0.2ms）、监控告警阈值、IO 抖动事件均有逐字支撑，可写实引用。但网络 fabric 维度的 tail latency/jitter SLA 无语料，故方向性表述并提出统一口径后提供，不编造 SLA 数值。",
+    "decision": "grounded-partial"
+  },
+  "generatedAt": "2026-06-17T01:38:36.251Z"
+}

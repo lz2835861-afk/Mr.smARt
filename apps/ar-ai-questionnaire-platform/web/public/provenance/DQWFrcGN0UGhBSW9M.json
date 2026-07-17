@@ -1,0 +1,42 @@
+{
+  "questionnaireId": "ai-infra-2026",
+  "questionId": "5.1.2",
+  "docId": "AakpctPhAIoL",
+  "docUrl": "https://docs.qq.com/aio/DQWFrcGN0UGhBSW9M",
+  "urlId": "DQWFrcGN0UGhBSW9M",
+  "dimension": "创新指数",
+  "section": "算力资源层",
+  "subsection": "5.1 AI芯片与算力底座",
+  "question": "贵司在国产AI芯片的软件生态建设方面做了哪些工作？算子库、编译器、开发工具链的覆盖程度如何？",
+  "guidance": "国产芯片的核心瓶颈在软件生态。关注：算子库覆盖度（如PyTorch核心算子的兼容比例），是否自研编译器或参与深度适配（如MindSpore/CANN/TensorRT-LLM的国产替代），模型迁移工具的自动化程度，开发者工具链（Profiling/Debugging/性能调优）的完善程度，以及与CUDA生态的兼容策略。",
+  "draft": "腾讯云高度重视国产芯片的软件生态建设，核心策略是「异构计算平台屏蔽芯片差异 + 自研推理加速栈 + 国产芯片镜像开箱即用」。在平台层，腾讯云通过异构计算平台的软件能力整合不同类型芯片，对外统一提供高性价比AI算力，已全面适配主流国产芯片。在工具与镜像层，TI-ONE训推平台已上线适配国产芯片的内置镜像（如sglang-v0.5.6-xpu，适配HCCPK1及同类芯片），并在选择已适配国产芯片镜像后自动约束部署到对应国产芯片机型，降低迁移门槛；平台还提供TI-Profiler（集成PyTorch Profiler与Nsight Systems）等性能分析工具链。在推理加速层，腾讯云深度参与开源社区，自研并开源FlexKV多级缓存，优化DeepEP使IB网络性能提升30%、RoCE翻倍，并集成MTP、Attention DP、MoE-Chunk等技术。算子库PyTorch核心算子兼容比例、是否自研编译器及迁移工具自动化程度等量化指标可由报告方进一步补充。",
+  "provenance": {
+    "sources": [
+      {
+        "label": "TI-ONE 产品动态 国产芯片镜像 (ti-one 42871)",
+        "url": "https://cloud.tencent.com/document/product/851/42871",
+        "kind": "doc"
+      },
+      {
+        "label": "腾讯邱跃鹏：全面升级云基础设施 (腾讯云原生 2025-09-16)",
+        "url": "https://mp.weixin.qq.com/s/Ncl8V6kGiDP0c7RWe2u4lg",
+        "kind": "wechat"
+      },
+      {
+        "label": "腾讯云TokenHub上架DeepSeek-V4 (腾讯云 2026-04-24)",
+        "url": "https://mp.weixin.qq.com/s/-_UzxwK5ZYRxfcSkHI5T3A",
+        "kind": "wechat"
+      }
+    ],
+    "quotes": [
+      "新增内置镜像 sglang-v0.5.6-xpu，适用于 HCCPK1及同类芯片的 CVM 机。",
+      "优化镜像交互逻辑，当选择已适配国产芯片的镜像后，仅能部署在国产芯片机型。",
+      "全新上线 TI-Profiler，集成 PyTorch Profiler 和 Nsight Systems 分析工具，支持针对训练任务进行 CPU 和 GPU 性能分析。",
+      "我们在此基础上优化了 DeepEP，使其在 IB 网络性能提升了 30%，在数据中心常用的 RoCE 网络环境中性能更是翻倍。",
+      "通过腾讯云异构计算平台的软件能力，整合不同类型的芯片，对外提供高性价比的AI算力，目前我们已经全面适配主流的国产芯片。"
+    ],
+    "reasoning": "有据：sglang-xpu国产芯片镜像、镜像-机型自动约束、TI-Profiler工具链、FlexKV开源、DeepEP IB+30%/RoCE翻倍、MTP/Attention-DP/MoE-Chunk、异构平台软件能力整合芯片，均逐字可证。战略化：算子库PyTorch兼容百分比、是否自研编译器/CANN级深度适配、迁移工具自动化程度等明确点名为待补，未编造任何百分比，方向性陈述生态体系。",
+    "decision": "异构平台 + 国产芯片镜像 + 自研推理加速栈构建国产生态，覆盖度量化待补。"
+  },
+  "generatedAt": "2026-06-17T01:38:35.975Z"
+}

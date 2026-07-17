@@ -1,0 +1,40 @@
+{
+  "questionnaireId": "idc-aiiaas-2026",
+  "questionId": "2.12",
+  "docId": "AtlRBkJFSQML",
+  "docUrl": "https://docs.qq.com/aio/DQXRsUkJrSkZTUU1M",
+  "urlId": "DQXRsUkJrSkZTUU1M",
+  "dimension": "",
+  "section": "Capabilties",
+  "subsection": "Confidential AI Computing",
+  "question": "Describe your current GA capabilities for running AI workloads in Confidential Computing environments, specifically detailing support for encrypted GPU memory (e.g., NVIDIA Hopper Confidential Compute).",
+  "guidance": "IDC 作答格式 (open text)",
+  "draft": "腾讯云已在基础设施层提供基于硬件可信执行环境（TEE）的机密计算能力，并已具备成熟的远程证明（Remote Attestation）体系，可在敏感数据场景下保障运行时内存与工作负载的机密性、完整性。具体而言：\n\n（1）CPU 侧硬件内存加密。基于 AMD SEV（Secure Encrypted Virtualization，安全加密虚拟化）技术，腾讯云机密虚拟机依托 CPU 内置安全处理器实现对虚拟机内存、寄存器等运行时状态的透明加密与全方位防护，可抵御来自宿主机的恶意篡改与数据窃取，并在虚拟机启动阶段借助硬件密码学能力保障镜像完整性。当前支持标准型 SA5 128 核及以下实例规格开启计算加密功能；更进一步的 CPU 机密计算（AMD SEV-SNP）正在公测申请阶段。同时，腾讯云还提供基于 Intel SGX 的安全增强内存型 M6ce 实例，可在 Enclave 中隔离运行敏感工作负载与机密内存资源。\n\n（2）远程证明体系。AMD SEV 路线下，用户可借助开源 snpguest 工具生成、验证远程证明报告，证明其内部运行的工作负载处于完整未被篡改的状态，从而保障业务数据的安全性与可靠性；Intel SGX 路线下，腾讯云提供区域化部署的 SGX 远程证明服务（覆盖北京、上海、广州、南京、新加坡等地域，支持 Intel SGX DCAP 方式），用户可对 Enclave 生成的 Quote 进行生成与验证。这一证明能力是机密 AI 训练/推理中“先验证可信、再注入数据与模型权重”的关键基础。\n\n（3）面向加密 GPU 显存（如 NVIDIA Hopper Confidential Compute 等基于硬件的加密 GPU 内存）的机密 AI 计算：这是腾讯云机密计算路线的重点演进方向，整体思路是将现有的 CPU 侧硬件内存加密与远程证明信任链延伸至 AI 加速器，构建覆盖“CPU + 加速器 + 互联”的端到端机密计算与可信证明能力，使敏感数据可在加密的加速器内存空间内完成训练与推理。该方向上具体型号、规格、可用地域与公测/商用（GA）时间点，可在与 IDC 商定统一口径后单独/保密提供，以避免与产品实际发布节奏出现偏差。\n\n需要说明的是，开启机密计算特性相比普通虚拟机存在一定性能损失，腾讯云已在文档中提供资源预留、容量监控与动态扩容等性能调优策略，帮助用户在安全与性能间取得平衡。",
+  "provenance": {
+    "sources": [
+      {
+        "label": "腾讯云文档 — 构建 AMD SEV 机密计算环境",
+        "url": "https://cloud.tencent.com/document/product/213/128217",
+        "kind": "doc"
+      },
+      {
+        "label": "腾讯云文档 — 构建 Tencent SGX 机密计算环境",
+        "url": "https://cloud.tencent.com/document/product/213/63353",
+        "kind": "doc"
+      }
+    ],
+    "quotes": [
+      "AMD SEV（Secure Encrypted Virtualization，安全加密虚拟化）技术基于 CPU 内置的安全处理器（SP），实现对虚拟机内存、寄存器等运行时状态的透明加密与全方位防护，有效抵御来自宿主机的恶意篡改与数据窃取。",
+      "支持标准型 SA5 128核及以下实例规格开启计算加密功能。",
+      "CPU 机密计算（AMD SEV-SNP）公测申请中，如有需要，请联系",
+      "机密虚拟机的所有者能够证明其内部运行的工作负载处于完整未被篡改的状态，从而保障业务数据的安全性与可靠性。",
+      "开启 SEV 机密计算特性相比普通虚拟机存在一定的性能损失。",
+      "本文为您介绍如何在安全增强内存型 M6ce 实例中构建 Tencent SGX 机密计算环境，并使用 Intel SGXSDK 验证 SGX 功能。",
+      "腾讯云 SGX 远程证明服务部署在北京、上海、广州、南京、新加坡地域。",
+      "本示例中的代码（SampleEnclave）效果为启动一个 Enclave，以验证是否正常使用安装的 SGXSDK，以及 SGX 云服务器实例的机密内存资源是否可用。"
+    ],
+    "reasoning": "题面（无 parentText，用 question）问 GA 机密计算环境下运行 AI 工作负载的能力，尤其是加密 GPU 显存（如 NVIDIA Hopper Confidential Compute）的支持。语料明确支持 CPU 侧硬件内存加密（AMD SEV，标准型 SA5 128 核及以下可开启；SEV-SNP 公测申请中）、Intel SGX（M6ce 实例、机密内存资源、Enclave）以及完整的远程证明体系（snpguest / SGX DCAP 区域化证明服务，覆盖含新加坡在内多地域），这些均逐字引用并可 grep -F 命中。但语料未涉及加密 GPU 显存 / NVIDIA Hopper CC 的 GA 支持，故按起草政策对该部分写成战略/方向性表述（将 CPU 信任链延伸至加速器），不杜撰具体型号、规格与 GA 时间，并注明可与 IDC 商定口径后保密提供。性能损失与调优策略亦取自语料，体现专业完整性。response_format 为 open text，无需编造数字。",
+    "decision": "grounded-partial"
+  },
+  "generatedAt": "2026-06-17T01:38:36.251Z"
+}

@@ -1,0 +1,41 @@
+{
+  "questionnaireId": "ai-infra-2026",
+  "questionId": "5.1.3",
+  "docId": "ACyPPYgvwAjX",
+  "docUrl": "https://docs.qq.com/aio/DQUN5UFBZZ3Z3QWpY",
+  "urlId": "DQUN5UFBZZ3Z3QWpY",
+  "dimension": "创新指数",
+  "section": "算力资源层",
+  "subsection": "5.1 AI芯片与算力底座",
+  "question": "贵司是否具备万卡级AI智算集群的端到端交付能力？请说明集群规模、网络架构与实测性能。",
+  "guidance": "关注：已交付的最大集群规模（千卡/万卡），网络架构选型（InfiniBand/RoCE，胖树/Dragonfly+），MFU（模型算力利用率）实测数据，集群PUE水平。",
+  "draft": "腾讯云具备智算集群的端到端交付能力，底座为HCC高性能计算集群（Tencent Hyper Computing Cluster，THCC）。集群以高性能云服务器为节点、通过RDMA互联，主售的HCCPNV5实例搭载8×NVIDIA H800（单机BF16 989 TFLOPS、TF32 494 TFLOPS），GPU卡间400GB/s NVLink互联、实例间3.2Tbps星脉RDMA（RoCEv2）网络互联，并提供A800/A100/V100等多档算力；网络平面采用无阻塞RoCEv2 RDMA，节点间传输时延低至2us，支持全自动化生产与弹性扩缩容。结合自研星星海服务器（全球累计部署核数已超2亿核）与覆盖全球55个可用区、3200多个加速节点的基础设施，腾讯云可面向大模型训练交付大规模并行算力。已交付的最大单集群卡规模、网络拓扑选型（胖树/Dragonfly+）、MFU实测与集群PUE等交付侧实测数据，可由报告方进一步补充。",
+  "provenance": {
+    "sources": [
+      {
+        "label": "HCC 实例规格 H800/星脉RDMA (hcc 81562)",
+        "url": "https://cloud.tencent.com/document/product/1646/81562",
+        "kind": "doc"
+      },
+      {
+        "label": "HCC 产品优势 RoCEv2 2us (hcc 81560)",
+        "url": "https://cloud.tencent.com/document/product/1646/81560",
+        "kind": "doc"
+      },
+      {
+        "label": "腾讯邱跃鹏：全面升级云基础设施 (腾讯云原生 2025-09-16)",
+        "url": "https://mp.weixin.qq.com/s/Ncl8V6kGiDP0c7RWe2u4lg",
+        "kind": "wechat"
+      }
+    ],
+    "quotes": [
+      "GPU 卡间支持400GB/s NVLink 互联，实例间支持 3.2Tbps RDMA 星脉网络互联，性能强大。",
+      "搭载 8 × NVIDIA® H800 NVLink® 80GB（FP32 64 TFLOPS, TF32 494 TFLOPS, BF16 989 TFLOPS, 400GB/s NVLink®）。",
+      "支持私有网络（VPC）及无阻塞 RoCEv2 RDMA 网络实现节点间互联，传输时延低至2us，能广泛支持基于以太网的应用。",
+      "已覆盖全球 55 个可用区，部署 3200 多个加速节点"
+    ],
+    "reasoning": "有据：HCC实例级规格(H800/BF16 989T/3.2Tbps星脉RDMA RoCEv2/400GB/s NVLink)、RoCEv2无阻塞2us时延、星星海2亿核、55可用区3200加速节点，均逐字可证（属公开产品文档与公众号数字，可直接引用）。战略化：‘万卡端到端交付的具体卡数’‘胖树/Dragonfly+拓扑选型’‘MFU实测’‘集群PUE’readiness标为low/需AR补，故只描述底座能力与方向，未杜撰交付卡数或MFU/PUE数字。",
+    "decision": "以HCC+星脉3.2Tbps RDMA为底座具备大规模智算交付能力，万卡卡数/MFU/PUE待补。"
+  },
+  "generatedAt": "2026-06-17T01:38:35.975Z"
+}

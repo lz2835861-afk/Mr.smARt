@@ -1,0 +1,35 @@
+{
+  "questionnaireId": "idc-aiiaas-2026",
+  "questionId": "3.7",
+  "docId": "AXKzFPDUgodY",
+  "docUrl": "https://docs.qq.com/aio/DQVhLekZQRFVnb2RZ",
+  "urlId": "DQVhLekZQRFVnb2RZ",
+  "dimension": "",
+  "section": "Strategies",
+  "subsection": "AI Energy & Sustainability Strategy",
+  "question": "Given the extreme power consumption of AI infrastructure, outline your strategy for procuring renewable/carbon-free energy to offset these specific workloads. Do you plan to co-locate AI datacenters with dedicated energy generation?",
+  "guidance": "IDC 作答格式 (open text)",
+  "draft": "腾讯云高度重视 AI 基础设施的能耗与可持续发展，并将其作为长期战略的一部分。我们的基本思路是“从源头降耗 + 绿色供能”两端发力：一方面，通过自研星星海服务器“在有限空间内最大化提升计算密度与能效”，以及在推理侧的全栈软硬件协同优化（如自研并开源的 FlexKV 多级缓存，将首字时延最高降低 70%，以更少的算力完成同等推理负载），从根本上降低单位 AI 任务的能耗；自研沧海编解码芯片以“全链路软硬件协同”在不增加硬件复杂度的前提下持续挖掘压缩率极限，亦体现了以能效为导向的设计哲学。另一方面，在能源采购上，腾讯云的方向是持续提升绿色电力使用比例、推进与清洁能源的对接，以匹配企业级 ESG 与碳目标。关于是否将 AI 数据中心与专属能源生产设施同址（co-location）部署，目前属于前瞻性规划范畴，将结合各地域电网条件与监管要求审慎评估。具体的碳中和时间表、可再生能源采购占比、自有/绿电 PPA 规模等量化承诺，可在与 IDC 商定统一口径后由腾讯云对接团队单独/保密提供，本处不作未经核实的数字披露。",
+  "provenance": {
+    "sources": [
+      {
+        "label": "腾讯云原生 — 邱跃鹏：面向Agent和全球化趋势，全面升级云基础设施",
+        "url": "https://mp.weixin.qq.com/s/Ncl8V6kGiDP0c7RWe2u4lg",
+        "kind": "wechat"
+      },
+      {
+        "label": "腾讯云 — 腾讯自研「沧海芯片」夺冠！V2版本即将量产",
+        "url": "https://mp.weixin.qq.com/s/qxzcNLf0XmBBjlvelXhOsg",
+        "kind": "wechat"
+      }
+    ],
+    "quotes": [
+      "通过硬件架构创新，在有限空间内，最大化提升计算密度与能效",
+      "在知名SSD厂商“群联电子”的测试中，FlexKV 将首字时延最高降低 70%",
+      "就是在不增加硬件复杂度的前提下，持续挖掘压缩率的极限。"
+    ],
+    "reasoning": "response_format 为 open text。语料无可再生能源采购占比/碳中和时间表/co-location 储能等硬数据，故能源采购与同址生产部分写成方向性表态；可如实引用的是“计算密度与能效”、FlexKV 首字时延降低 70%、沧海“不增加硬件复杂度持续挖掘压缩率”等以能效为导向的实证（均逐字）。量化承诺按政策写为可保密提供，不杜撰百分比/时间表。",
+    "decision": "answer"
+  },
+  "generatedAt": "2026-06-17T01:38:36.251Z"
+}

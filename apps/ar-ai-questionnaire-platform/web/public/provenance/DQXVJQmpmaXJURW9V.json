@@ -1,0 +1,41 @@
+{
+  "questionnaireId": "ai-infra-2026",
+  "questionId": "10.1.1",
+  "docId": "AuIBjfirTEoU",
+  "docUrl": "https://docs.qq.com/aio/DQXVJQmpmaXJURW9V",
+  "urlId": "DQXVJQmpmaXJURW9V",
+  "dimension": "出海领先指数",
+  "section": "产品与服务国际化",
+  "subsection": "10.1 产品本地化与市场拓展",
+  "question": "贵司AI Infra产品的多语言/多区域适配程度如何？海外客户覆盖哪些国家与行业？",
+  "guidance": "关注：产品界面与技术文档支持的语言种类，是否针对当地开发者习惯提供了适配的SDK/API/CLI，海外客户的实际数量与行业分布。",
+  "draft": "腾讯云在全球基础设施层面已实现22个地区覆盖、64个运营可用区、3200+全球加速节点、400T带宽储备,并设立9大技术支持中心与100+全球技术支持触点,为出海客户提供低延迟、高稳定的全球网络与算力支撑。产品与文档层面,我们提供中英文等多语言界面与技术文档,全栈产品CLI统一封装为Tencent Cloud Infra Skill,便于全球开发者按本地习惯调用API/SDK。AI产品矩阵正加速全球化:CodeBuddy、DataBuddy、QClaw、WorkBuddy、Miora国际版及TokenHub陆续面向全球上线,并深度适配Slack、Telegram、Discord等国际主流IM生态。海外客户覆盖东南亚、北美、拉美等多区域,行业横跨互联网、游戏、跨境电商、文创与金融科技等;具体客户数量与按行业的分布属内部经营口径,以官方统计为准。",
+  "provenance": {
+    "sources": [
+      {
+        "label": "腾讯云出海服务 2026-03-31《AI 重构出海竞争力》",
+        "url": "https://mp.weixin.qq.com/s/6Ug6YL0F3mPJdOPQmdxAFQ",
+        "kind": "wechat"
+      },
+      {
+        "label": "腾讯云 2026-05-28《腾讯云AI加速出海:Agent基建升级,WorkBuddy、Miora全球上线》",
+        "url": "https://mp.weixin.qq.com/s/RmHorgp3kEWL0RV6K5V_OQ",
+        "kind": "wechat"
+      },
+      {
+        "label": "腾讯云出海服务 2026-04-24《海外爆火AI\"小龙虾\"背后的腾讯云底座》",
+        "url": "https://mp.weixin.qq.com/s/Mld-4B_gf7go_MHm-TgKsg",
+        "kind": "wechat"
+      }
+    ],
+    "quotes": [
+      "腾讯云已实现22个地区覆盖、64个运营可用区、3200+全球加速节点、400T带宽储备，设立9大技术支持中心与100+全球技术支持触点",
+      "WorkBuddy国际版今天正式上线，保留国内版特色的同时，深度适配Slack、Telegaram、Discord等国际主流IM生态",
+      "腾讯云全栈产品CLI完成Skill化改造，统一封装为Tencent Cloud Infra Skill",
+      "在东南亚、北美及拉美市场，一款代号「小龙虾」（AgnesClaw）的AI Agent应用正迅速走红，覆盖180多个国家，服务超800万全球用户。"
+    ],
+    "reasoning": "有据:22地区/64可用区/3200+节点/400T带宽/9大技术支持中心/100+触点(出海公众号);WorkBuddy/Miora/QClaw/TokenHub国际版上线及适配Slack/Telegram/Discord(腾讯云公众号);CLI Skill化便于开发者调用;海外覆盖东南亚/北美/拉美与行业范围(小龙虾+出海沙龙)。战略化:海外客户的实际数量与按行业的精确分布属内部CRM/经营数据,故用\"以官方统计为准\"模糊处理,未编造任何数字;多语言种类清单未给具体语种数。",
+    "decision": "全球基础设施+多语言文档+国际版产品适配有据;海外客户数量/行业分布为内部经营数据,做战略化处理"
+  },
+  "generatedAt": "2026-06-17T01:38:35.975Z"
+}

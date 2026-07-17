@@ -1,0 +1,35 @@
+{
+  "questionnaireId": "idc-aiiaas-2026",
+  "questionId": "1.5.4",
+  "docId": "AvWYBlqxthli",
+  "docUrl": "https://docs.qq.com/aio/DQXZXWUJscXh0aGxp",
+  "urlId": "DQXZXWUJscXh0aGxp",
+  "dimension": "",
+  "section": "Preliminary",
+  "subsection": "",
+  "question": "Please indicate the approximate share of your CY 2025 WW revenues for these worldwide regions: — APAC",
+  "guidance": "IDC 作答格式 (%)",
+  "draft": "Please indicate the approximate share of your CY 2025 WW revenues for these worldwide regions — APAC（亚太）：亚太是腾讯云布局密集、客户落地深入的重要区域市场。除中国大陆外，腾讯云在香港、东南亚等市场拥有数据中心与生产级客户落地——例如香港富融银行以腾讯专有云 TCE 为核心技术底座完成新一代核心系统切换，东南亚某头部运营商基于腾讯专有云 TCE 构建对外运营的行业云平台。腾讯云亦凭借专有云 TCE 入选《Forrester Wave™：主权云平台》领导者象限，是报告中唯一一家始终坚守并落地清晰主权云战略的中国超大规模云厂商，进一步巩固了其在亚太市场的地位。亚太区域占公司 2025 自然年全球收入的具体百分比，涉及内部区域营收拆分口径，建议在与 IDC 就区域划分（尤其是中国大陆是否单列）达成一致后，由腾讯云对接团队以保密方式单独提供。",
+  "provenance": {
+    "sources": [
+      {
+        "label": "腾讯云出海服务：AI 重构出海竞争力（2026-03-31）",
+        "url": "https://mp.weixin.qq.com/s/6Ug6YL0F3mPJdOPQmdxAFQ",
+        "kind": "wechat"
+      },
+      {
+        "label": "腾讯云出海服务：腾讯云入选 Forrester Wave 主权云平台领导者象限（2026-05-28）",
+        "url": "https://mp.weixin.qq.com/s/LKJAihbDwjIcz1XcopIyrQ",
+        "kind": "wechat"
+      }
+    ],
+    "quotes": [
+      "香港富融银行：以腾讯专有云TCE作为核心技术底座完成新一代银行核心系统切换",
+      "东南亚某头部运营商：基于腾讯专有云TCE构建了对外运营的行业云平台，实现自用与商业化并行的主权云运营模式。",
+      "腾讯云凭借腾讯专有云 TCE 成功入选领导者象限，是报告中唯一一家始终坚守并落地清晰主权云战略的中国超大规模云厂商"
+    ],
+    "reasoning": "要求 APAC 营收占比（%）。语料无占比数字，严禁编造。但有大量可核实的亚太客户案例（香港富融银行、东南亚运营商）与 Forrester 主权云领导者背书，用以支撑亚太为最大区域的定性表态；占比由对接团队保密提供。",
+    "decision": "draft"
+  },
+  "generatedAt": "2026-06-17T01:38:36.251Z"
+}

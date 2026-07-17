@@ -1,0 +1,40 @@
+{
+  "questionnaireId": "idc-aiiaas-2026",
+  "questionId": "3.11",
+  "docId": "AMHQBKDeEcob",
+  "docUrl": "https://docs.qq.com/aio/DQU1IUUJLRGVFY29i",
+  "urlId": "DQU1IUUJLRGVFY29i",
+  "dimension": "",
+  "section": "Strategies",
+  "subsection": "Storage Architecture Roadmap",
+  "question": "What is your strategic roadmap for advancing storage architectures to keep pace with the exponential growth in GPU compute capabilities?",
+  "guidance": "IDC 作答格式 (open text)",
+  "draft": "腾讯云存储架构路线图的核心目标，是消除 GPU 集群的「数据饥饿」，让存储吞吐与时延跟上算力的指数级增长。当前已落地的能力包括：以全 NVMe、数据/元数据节点分离的非对称并行架构构建 CFS Turbo（性能型最高可达 2TiB/s 吞吐、4K 单流读 0.2ms 亚毫秒时延、读 IOPS 最高 1000 万），以分布式元数据架构应对数十亿小文件；以 GooseFS 在 COS 数据湖底座之上提供近计算端分布式缓存，将热数据调度到计算侧、相比直接读写对象存储带来十倍以上性能提升；以 CFS 数据生命周期策略实现热（Turbo）—冷（低频/对象）自动分层降本。面向推理侧的存储演进，腾讯云已将 KV Cache 逐层缓存至内存、SSD 及云端扩展存储，充分利用整个推理集群节点上的存储资源及外置扩展资源，「以存换算」提高性价比与吞吐并降低 TTFT 等延迟，并为此研发并开源了 FlexKV 多级缓存技术。后续方向是持续强化「近计算端缓存 + 并行文件系统 + 对象数据湖 + 多级 KVCache」的协同分层体系，进一步压缩数据从冷存到 GPU 的链路时延。",
+  "provenance": {
+    "sources": [
+      {
+        "label": "腾讯邱跃鹏：面向Agent和全球化趋势，全面升级云基础设施",
+        "url": "https://mp.weixin.qq.com/s/Ncl8V6kGiDP0c7RWe2u4lg",
+        "kind": "wechat"
+      },
+      {
+        "label": "CFS 存储类型及性能规格",
+        "url": "https://cloud.tencent.com/document/product/582/38112",
+        "kind": "doc"
+      },
+      {
+        "label": "GooseFS 常见问题",
+        "url": "https://cloud.tencent.com/document/product/1424/54281",
+        "kind": "doc"
+      }
+    ],
+    "quotes": [
+      "我们将KV Cache逐层缓存至内存、SSD及云端扩展存储，充分利用整个推理集群节点上的存储资源，以及外置扩展资源，以存换算，提高性价比和系统吞吐，并极大降低TTFT等延迟指标。",
+      "为了解决分布式KV Cache和多级缓存的精细管理，并建起推理引擎到云存储的桥梁，我们研发并正式开源了 FlexKV。",
+      "相比直接读写 COS 上的数据，GooseFS 能够为上层计算应用带来十倍以上的性能提升，极大地提高生产效率。"
+    ],
+    "reasoning": "题目问存储架构路线图以跟上 GPU 算力增长。公众号语料逐字支撑 KV Cache 多级缓存与 FlexKV 自研开源、以存换算路线；存储语料支撑 Turbo 高性能、GooseFS 缓存加速、生命周期分层。全部写实引用。",
+    "decision": "grounded"
+  },
+  "generatedAt": "2026-06-17T01:38:36.251Z"
+}

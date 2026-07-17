@@ -1,0 +1,467 @@
+{
+  "DQWFybU5qbVNSUHZU": {
+    "questionId": "1.1",
+    "docId": "AarmNjmSRPvT",
+    "questionnaireId": "ai-infra-2026"
+  },
+  "DQWNmRkVXUU11RUdL": {
+    "questionId": "1.2",
+    "docId": "AcfFEWQMuEGK",
+    "questionnaireId": "ai-infra-2026"
+  },
+  "DQWdrVmVHd0tpUkpB": {
+    "questionId": "2.1.1",
+    "docId": "AgkVeGwKiRJA",
+    "questionnaireId": "ai-infra-2026"
+  },
+  "DQVFIY0hVbHV4ZHpz": {
+    "questionId": "2.1.2",
+    "docId": "AQHcHUluxdzs",
+    "questionnaireId": "ai-infra-2026"
+  },
+  "DQVhDWEFKS25rbktH": {
+    "questionId": "2.1.3",
+    "docId": "AXCXAJKnknKG",
+    "questionnaireId": "ai-infra-2026"
+  },
+  "DQW9nZFdkRFZRVmd0": {
+    "questionId": "2.2.1",
+    "docId": "AogdWdDVQVgt",
+    "questionnaireId": "ai-infra-2026"
+  },
+  "DQVFLd2RDYVNpWEpI": {
+    "questionId": "3.1.1",
+    "docId": "AQKwdCaSiXJH",
+    "questionnaireId": "ai-infra-2026"
+  },
+  "DQWdhWkx0VmJ4V3Zo": {
+    "questionId": "3.1.2",
+    "docId": "AgaZLtVbxWvh",
+    "questionnaireId": "ai-infra-2026"
+  },
+  "DQXNKQk1wU0pzdGFs": {
+    "questionId": "3.1.3",
+    "docId": "AsJBMpSJstal",
+    "questionnaireId": "ai-infra-2026"
+  },
+  "DQWxCUk1WUFdhVVBp": {
+    "questionId": "3.2.1",
+    "docId": "AlBRMVPWaUPi",
+    "questionnaireId": "ai-infra-2026"
+  },
+  "DQXpRZmRSVkRrRUFJ": {
+    "questionId": "3.2.2",
+    "docId": "AzQfdRVDkEAI",
+    "questionnaireId": "ai-infra-2026"
+  },
+  "DQUFQS1ZFSVhMbEp0": {
+    "questionId": "3.2.3",
+    "docId": "AAPKVEIXLlJt",
+    "questionnaireId": "ai-infra-2026"
+  },
+  "DQVJzU1JxS3JZd0xa": {
+    "questionId": "3.2.4",
+    "docId": "ARsSRqKrYwLZ",
+    "questionnaireId": "ai-infra-2026"
+  },
+  "DQWx4enVNVmdZRUxS": {
+    "questionId": "4.1.1",
+    "docId": "AlxzuMVgYELR",
+    "questionnaireId": "ai-infra-2026"
+  },
+  "DQVhVZUZBcmRJZHpu": {
+    "questionId": "4.1.2",
+    "docId": "AXUeFArdIdzn",
+    "questionnaireId": "ai-infra-2026"
+  },
+  "DQUxmYUpTY25paWxY": {
+    "questionId": "4.2.1",
+    "docId": "ALfaJScniilX",
+    "questionnaireId": "ai-infra-2026"
+  },
+  "DQXZXSEdCVWpSTUZ4": {
+    "questionId": "4.2.2",
+    "docId": "AvWHGBUjRMFx",
+    "questionnaireId": "ai-infra-2026"
+  },
+  "DQUxPcVpTa0dTSWNN": {
+    "questionId": "5.1.1",
+    "docId": "ALOqZSkGSIcM",
+    "questionnaireId": "ai-infra-2026"
+  },
+  "DQWFrcGN0UGhBSW9M": {
+    "questionId": "5.1.2",
+    "docId": "AakpctPhAIoL",
+    "questionnaireId": "ai-infra-2026"
+  },
+  "DQUN5UFBZZ3Z3QWpY": {
+    "questionId": "5.1.3",
+    "docId": "ACyPPYgvwAjX",
+    "questionnaireId": "ai-infra-2026"
+  },
+  "DQVJBd0VIWFFzTWx5": {
+    "questionId": "5.2.1",
+    "docId": "ARAwEHXQsMly",
+    "questionnaireId": "ai-infra-2026"
+  },
+  "DQU5NV1dBU2FKS0FL": {
+    "questionId": "5.2.2",
+    "docId": "ANMWWASaJKAK",
+    "questionnaireId": "ai-infra-2026"
+  },
+  "DQW5rTHNSSEx6Q0ph": {
+    "questionId": "6.1.1",
+    "docId": "AnkLsRHLzCJa",
+    "questionnaireId": "ai-infra-2026"
+  },
+  "DQWNYV2dKcGFMTWRm": {
+    "questionId": "6.1.2",
+    "docId": "AcXWgJpaLMdf",
+    "questionnaireId": "ai-infra-2026"
+  },
+  "DQUJUdU9BR0xJVENo": {
+    "questionId": "6.1.3",
+    "docId": "ABTuOAGLITCh",
+    "questionnaireId": "ai-infra-2026"
+  },
+  "DQXdwTUJUcFZUZ3J5": {
+    "questionId": "6.2.1",
+    "docId": "AwpMBTpVTgry",
+    "questionnaireId": "ai-infra-2026"
+  },
+  "DQXZKeHp2RVprR0tH": {
+    "questionId": "7.1.1",
+    "docId": "AvJxzvEZkGKG",
+    "questionnaireId": "ai-infra-2026"
+  },
+  "DQWVSSmFIVEhvd3ho": {
+    "questionId": "7.1.3",
+    "docId": "AeRJaHTHowxh",
+    "questionnaireId": "ai-infra-2026"
+  },
+  "DQWN4bVJpaEduSENw": {
+    "questionId": "7.2.1",
+    "docId": "AcxmRihGnHCp",
+    "questionnaireId": "ai-infra-2026"
+  },
+  "DQXNoWFBVTFJ2Um1T": {
+    "questionId": "7.2.2",
+    "docId": "AshXPULRvRmS",
+    "questionnaireId": "ai-infra-2026"
+  },
+  "DQVRRWEFZZHdIbkhv": {
+    "questionId": "8.1.1",
+    "docId": "ATQXAYdwHnHo",
+    "questionnaireId": "ai-infra-2026"
+  },
+  "DQVNqdUt3eUxBWnFu": {
+    "questionId": "8.1.2",
+    "docId": "ASjuKwyLAZqn",
+    "questionnaireId": "ai-infra-2026"
+  },
+  "DQWdBSWxrVExYdmpV": {
+    "questionId": "8.1.3",
+    "docId": "AgAIlkTLXvjU",
+    "questionnaireId": "ai-infra-2026"
+  },
+  "DQUhuaUZ4aVdEcnRm": {
+    "questionId": "9.1.1",
+    "docId": "AHniFxiWDrtf",
+    "questionnaireId": "ai-infra-2026"
+  },
+  "DQVBYWGRYV3FObXRV": {
+    "questionId": "9.1.2",
+    "docId": "APXXdXWqNmtU",
+    "questionnaireId": "ai-infra-2026"
+  },
+  "DQWxoRE1UWmRaRk1x": {
+    "questionId": "9.1.3",
+    "docId": "AlhDMTZdZFMq",
+    "questionnaireId": "ai-infra-2026"
+  },
+  "DQXpDc3NtRUZnZGV0": {
+    "questionId": "9.2.1",
+    "docId": "AzCssmEFgdet",
+    "questionnaireId": "ai-infra-2026"
+  },
+  "DQU92VVBYSWZCUGpp": {
+    "questionId": "9.2.2",
+    "docId": "AOvUPXIfBPji",
+    "questionnaireId": "ai-infra-2026"
+  },
+  "DQXVJQmpmaXJURW9V": {
+    "questionId": "10.1.1",
+    "docId": "AuIBjfirTEoU",
+    "questionnaireId": "ai-infra-2026"
+  },
+  "DQUpISFNDTXJoWGx1": {
+    "questionId": "10.1.2",
+    "docId": "AJHHSCMrhXlu",
+    "questionnaireId": "ai-infra-2026"
+  },
+  "DQXhuREhnUm9kR3RW": {
+    "questionId": "10.1.3",
+    "docId": "AxnDHgRodGtV",
+    "questionnaireId": "ai-infra-2026"
+  },
+  "DQVRmeE5KVU9sSXdL": {
+    "questionId": "10.1.4",
+    "docId": "ATfxNJUOlIwK",
+    "questionnaireId": "ai-infra-2026"
+  },
+  "DQVB3Z0pwSFh3cEpm": {
+    "questionId": "1.1",
+    "docId": "APwgJpHXwpJf",
+    "questionnaireId": "idc-aiiaas-2026"
+  },
+  "DQUFvS3pEUmpyVWVL": {
+    "questionId": "1.2",
+    "docId": "AAoKzDRjrUeK",
+    "questionnaireId": "idc-aiiaas-2026"
+  },
+  "DQVdOUWNyZU1RQ1pP": {
+    "questionId": "1.3",
+    "docId": "AWNQcreMQCZO",
+    "questionnaireId": "idc-aiiaas-2026"
+  },
+  "DQXh3bVREd1dBVXdI": {
+    "questionId": "1.4",
+    "docId": "AxwmTDwWAUwH",
+    "questionnaireId": "idc-aiiaas-2026"
+  },
+  "DQXpUYmtDYWxMYWVW": {
+    "questionId": "1.5.1",
+    "docId": "AzTbkCalLaeV",
+    "questionnaireId": "idc-aiiaas-2026"
+  },
+  "DQUJaaE9ncmRGVkZF": {
+    "questionId": "1.5.2",
+    "docId": "ABZhOgrdFVFE",
+    "questionnaireId": "idc-aiiaas-2026"
+  },
+  "DQWxDRUFkUHNWbUJH": {
+    "questionId": "1.5.3",
+    "docId": "AlCEAdPsVmBG",
+    "questionnaireId": "idc-aiiaas-2026"
+  },
+  "DQXZXWUJscXh0aGxp": {
+    "questionId": "1.5.4",
+    "docId": "AvWYBlqxthli",
+    "questionnaireId": "idc-aiiaas-2026"
+  },
+  "DQW5QS2ppSmt4bk1j": {
+    "questionId": "1.6.1",
+    "docId": "AnPKjiJkxnMc",
+    "questionnaireId": "idc-aiiaas-2026"
+  },
+  "DQWJ2c0dJbVZuakNG": {
+    "questionId": "1.6.2",
+    "docId": "AbvsGImVnjCF",
+    "questionnaireId": "idc-aiiaas-2026"
+  },
+  "DQURpWnhUdVdDV3Jy": {
+    "questionId": "1.6.3",
+    "docId": "ADiZxTuWCWrr",
+    "questionnaireId": "idc-aiiaas-2026"
+  },
+  "DQVV2bk1zVWFtTkhV": {
+    "questionId": "2.1",
+    "docId": "AUvnMsUamNHU",
+    "questionnaireId": "idc-aiiaas-2026"
+  },
+  "DQVR1Q0JEWkxjaEtL": {
+    "questionId": "2.2",
+    "docId": "ATuCBDZLchKK",
+    "questionnaireId": "idc-aiiaas-2026"
+  },
+  "DQXBBUVBhV3VWaFpz": {
+    "questionId": "2.3",
+    "docId": "ApAQPaWuVhZs",
+    "questionnaireId": "idc-aiiaas-2026"
+  },
+  "DQWpBRVFHaFh1UHhu": {
+    "questionId": "2.4",
+    "docId": "AjAEQGhXuPxn",
+    "questionnaireId": "idc-aiiaas-2026"
+  },
+  "DQUF3QVZ0Yk1uRENE": {
+    "questionId": "2.5",
+    "docId": "AAwAVtbMnDCD",
+    "questionnaireId": "idc-aiiaas-2026"
+  },
+  "DQWZIb01xQ2NxWWZQ": {
+    "questionId": "2.6",
+    "docId": "AfHoMqCcqYfP",
+    "questionnaireId": "idc-aiiaas-2026"
+  },
+  "DQVVjT0VQdVpNYVpV": {
+    "questionId": "2.7",
+    "docId": "AUcOEPuZMaZU",
+    "questionnaireId": "idc-aiiaas-2026"
+  },
+  "DQUdGTXJDTk9GT29Q": {
+    "questionId": "2.8",
+    "docId": "AGFMrCNOFOoP",
+    "questionnaireId": "idc-aiiaas-2026"
+  },
+  "DQU5BdWJaSkFiUnFH": {
+    "questionId": "2.9",
+    "docId": "ANAubZJAbRqG",
+    "questionnaireId": "idc-aiiaas-2026"
+  },
+  "DQUNTSUR6S21pcXBW": {
+    "questionId": "2.10",
+    "docId": "ACSIDzKmiqpV",
+    "questionnaireId": "idc-aiiaas-2026"
+  },
+  "DQWtqVFBXTGtvT0tM": {
+    "questionId": "2.11",
+    "docId": "AkjTPWLkoOKL",
+    "questionnaireId": "idc-aiiaas-2026"
+  },
+  "DQXRsUkJrSkZTUU1M": {
+    "questionId": "2.12",
+    "docId": "AtlRBkJFSQML",
+    "questionnaireId": "idc-aiiaas-2026"
+  },
+  "DQW5DaW5JckZJVGJt": {
+    "questionId": "2.13",
+    "docId": "AnCinIrFITbm",
+    "questionnaireId": "idc-aiiaas-2026"
+  },
+  "DQUNsaGNBVkNTanZ6": {
+    "questionId": "2.14",
+    "docId": "AClhcAVCSjvz",
+    "questionnaireId": "idc-aiiaas-2026"
+  },
+  "DQXJJQnhNRmNOTnd6": {
+    "questionId": "2.15",
+    "docId": "ArIBxMFcNNwz",
+    "questionnaireId": "idc-aiiaas-2026"
+  },
+  "DQURZQ3pPWWNia21s": {
+    "questionId": "2.16",
+    "docId": "ADYCzOYcbkml",
+    "questionnaireId": "idc-aiiaas-2026"
+  },
+  "DQXJneUp6Wm5Sc2pH": {
+    "questionId": "2.17",
+    "docId": "ArgyJzZnRsjG",
+    "questionnaireId": "idc-aiiaas-2026"
+  },
+  "DQUVzRnBsWGRpeXBV": {
+    "questionId": "2.18",
+    "docId": "AEsFplXdiypU",
+    "questionnaireId": "idc-aiiaas-2026"
+  },
+  "DQU1KcXN2a1pvZWND": {
+    "questionId": "2.19",
+    "docId": "AMJqsvkZoecC",
+    "questionnaireId": "idc-aiiaas-2026"
+  },
+  "DQVZYZmdHU2xsVHJE": {
+    "questionId": "2.20",
+    "docId": "AVXfgGSllTrD",
+    "questionnaireId": "idc-aiiaas-2026"
+  },
+  "DQVVrSkxYTEF3cEVH": {
+    "questionId": "3.1",
+    "docId": "AUkJLXLAwpEG",
+    "questionnaireId": "idc-aiiaas-2026"
+  },
+  "DQVdaUFF0b1pBQ1Fr": {
+    "questionId": "3.2",
+    "docId": "AWZPQtoZACQk",
+    "questionnaireId": "idc-aiiaas-2026"
+  },
+  "DQXFYeGJkR0JzaG9z": {
+    "questionId": "3.3",
+    "docId": "AqXxbdGBshos",
+    "questionnaireId": "idc-aiiaas-2026"
+  },
+  "DQXBkZ2N0VXhzZG5Q": {
+    "questionId": "3.4",
+    "docId": "ApdgctUxsdnP",
+    "questionnaireId": "idc-aiiaas-2026"
+  },
+  "DQVJ6Q2hIemhyVUpa": {
+    "questionId": "3.5",
+    "docId": "ARzChHzhrUJZ",
+    "questionnaireId": "idc-aiiaas-2026"
+  },
+  "DQXdGeWpSTGVha3RS": {
+    "questionId": "3.6",
+    "docId": "AwFyjRLeaktR",
+    "questionnaireId": "idc-aiiaas-2026"
+  },
+  "DQVhLekZQRFVnb2RZ": {
+    "questionId": "3.7",
+    "docId": "AXKzFPDUgodY",
+    "questionnaireId": "idc-aiiaas-2026"
+  },
+  "DQUJzS09wc2F4U1ZE": {
+    "questionId": "3.8",
+    "docId": "ABsKOpsaxSVD",
+    "questionnaireId": "idc-aiiaas-2026"
+  },
+  "DQUpXSWpMeFppWGpU": {
+    "questionId": "3.9",
+    "docId": "AJWIjLxZiXjT",
+    "questionnaireId": "idc-aiiaas-2026"
+  },
+  "DQWFxTXJMekVyZ0Ft": {
+    "questionId": "3.10",
+    "docId": "AaqMrLzErgAm",
+    "questionnaireId": "idc-aiiaas-2026"
+  },
+  "DQU1IUUJLRGVFY29i": {
+    "questionId": "3.11",
+    "docId": "AMHQBKDeEcob",
+    "questionnaireId": "idc-aiiaas-2026"
+  },
+  "DQWpZV3hpQmhBSW5t": {
+    "questionId": "3.12",
+    "docId": "AjYWxiBhAInm",
+    "questionnaireId": "idc-aiiaas-2026"
+  },
+  "DQVJuY1NLdXROTGp5": {
+    "questionId": "3.13",
+    "docId": "ARncSKutNLjy",
+    "questionnaireId": "idc-aiiaas-2026"
+  },
+  "DQU91cnJLVHZhRUhI": {
+    "questionId": "3.14",
+    "docId": "AOurrKTvaEHH",
+    "questionnaireId": "idc-aiiaas-2026"
+  },
+  "DQXJDUUJ3TmhVWUpS": {
+    "questionId": "3.15",
+    "docId": "ArCQBwNhUYJR",
+    "questionnaireId": "idc-aiiaas-2026"
+  },
+  "DQXpuTFVrSkZPQ1RV": {
+    "questionId": "3.16",
+    "docId": "AznLUkJFOCTU",
+    "questionnaireId": "idc-aiiaas-2026"
+  },
+  "DQUNOd09DbE9OSVFk": {
+    "questionId": "3.17",
+    "docId": "ACNwOClONIQd",
+    "questionnaireId": "idc-aiiaas-2026"
+  },
+  "DQUFRRUF4eWxVRmh4": {
+    "questionId": "3.18",
+    "docId": "AAQEAxylUFhx",
+    "questionnaireId": "idc-aiiaas-2026"
+  },
+  "DQVpFamZIam9oS2Vv": {
+    "questionId": "3.19",
+    "docId": "AZEjfHjohKeo",
+    "questionnaireId": "idc-aiiaas-2026"
+  },
+  "DQWhIU2VNUGdraFFz": {
+    "questionId": "3.20",
+    "docId": "AhHSeMPgkhQs",
+    "questionnaireId": "idc-aiiaas-2026"
+  }
+}

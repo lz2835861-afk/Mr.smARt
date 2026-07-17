@@ -1,0 +1,36 @@
+{
+  "questionnaireId": "idc-aiiaas-2026",
+  "questionId": "2.19",
+  "docId": "AMJqsvkZoecC",
+  "docUrl": "https://docs.qq.com/aio/DQU1KcXN2a1pvZWND",
+  "urlId": "DQU1KcXN2a1pvZWND",
+  "dimension": "",
+  "section": "Capabilties",
+  "subsection": "Specialized Inference Topologies",
+  "question": "Describe your specialized infrastructure configurations for high-throughput inference, including dedicated micro-clusters, NVLink interconnected multi-GPU serving nodes, and specialized memory caching layers.",
+  "guidance": "IDC 作答格式 (open text)",
+  "draft": "腾讯云针对高吞吐、低延迟的实时推理提供了区别于大规模训练的专用基础设施配置。在硬件实例层面，最新一代高性能计算集群实例 HCCPNV6（邀测）明确面向大模型分布式推理与广告推荐、自动驾驶等场景，GPU 卡间支持 NVLink 互联、实例间支持 3.2Tbps RDMA 星脉网络互联，可组建用于分布式推理的多 GPU 服务节点；HCCPNV6e 面向中小规模 AI 训练与大模型分布式推理，HCCPNV5b 面向中小规模 AI 训练，二者均采用自研 200Gbps 低延迟低成本 vRDMA 网络互联，提供高性价比的推理与训练算力。在软件与缓存层面，针对大模型推理的显存瓶颈，腾讯云自研并开源了 FlexKV 多级缓存技术，将 KV Cache 逐层缓存至内存、SSD 及云端扩展存储，充分利用推理集群节点的存储资源「以存换算」，在第三方测试中将首字时延最高降低 70%、对话时延降低 57%，相当于为推理服务节点提供了专门的显存/内存缓存分层。此外，腾讯云面向 Agent 与高并发推理推出了 Agent Runtime，其云沙箱基于自研技术 100 毫秒极速启动、支持数十万实例并发，可承载弹性的实时推理与 Agent 执行负载。这套「专用推理实例 + NVLink 多卡服务 + 多级 KV Cache 缓存 + 弹性沙箱」的组合，构成了腾讯云面向实时推理的差异化拓扑。",
+  "provenance": {
+    "sources": [
+      {
+        "label": "腾讯云文档：高性能计算集群 实例规格",
+        "url": "https://cloud.tencent.com/document/product/1646/81562",
+        "kind": "doc"
+      },
+      {
+        "label": "腾讯云原生公众号：邱跃鹏——全面升级云基础设施",
+        "url": "https://mp.weixin.qq.com/s/Ncl8V6kGiDP0c7RWe2u4lg",
+        "kind": "wechat"
+      }
+    ],
+    "quotes": [
+      "HCCPNV6 适用于大规模 AI 训练及推理场景",
+      "GPU 卡间支持 NVLink 互联，实例间支持自研 200Gbps vRDMA 网络互联，提供高性价比产品解决方案",
+      "将KV Cache逐层缓存至内存、SSD及云端扩展存储，充分利用整个推理集群节点上的存储资源，以及外置扩展资源，以存换算，提高性价比和系统吞吐",
+      "FlexKV 将首字时延最高降低 70%，对话时延降低57%"
+    ],
+    "reasoning": "题目要专用推理拓扑：dedicated micro-clusters、NVLink 多 GPU 服务节点、专用内存缓存层。语料强支撑：HCCPNV6/6e/5b 明确面向分布式推理、NVLink 互联、自研 vRDMA；FlexKV 多级 KV Cache（内存/SSD/云端，70%/57% 来自语料逐字）；Agent Runtime 云沙箱 100ms。全部为可证实数字与事实，符合政策。",
+    "decision": "answered"
+  },
+  "generatedAt": "2026-06-17T01:38:36.251Z"
+}

@@ -1,0 +1,35 @@
+{
+  "questionnaireId": "idc-aiiaas-2026",
+  "questionId": "3.18",
+  "docId": "AAQEAxylUFhx",
+  "docUrl": "https://docs.qq.com/aio/DQUFRRUF4eWxVRmh4",
+  "urlId": "DQUFRRUF4eWxVRmh4",
+  "dimension": "",
+  "section": "Strategies",
+  "subsection": "Sovereign AI Cloud Strategy",
+  "question": "What is your strategy for delivering top-tier AI supercomputers (IaaS) within fully isolated, sovereign cloud regions that do not share control planes with the commercial public cloud?",
+  "guidance": "IDC 作答格式 (open text)",
+  "draft": "腾讯云的主权 AI 云战略以腾讯专有云 TCE 为核心载体。TCE 围绕数据主权、运营主权、技术主权构建全栈式主权云解决方案，与腾讯公有云同源同构，涵盖计算、存储、网络、数据库、AI 能力等全栈云原生基础设施，并支持公有云、私有化、混合云及物理隔离（离线）等多种部署形态，可根据客户监管要求灵活适配——这正对应本题所述「不与商业公有云共享控制面、完全隔离的主权区域」诉求。在 AI 维度，TCE 已将 AI 能力深度集成至云底座，支持客户在主权合规框架内构建大模型训练、推理及 Agent 应用，实现「合规云」与「智能云」统一落地，后续将重点推进 GPU 硬件适配扩展与 AI 智能体能力丰富。该方案已通过生产级验证（如某头部国有大行基于 TCE 构建纳管节点超 8 万的超大规模云平台、澳门财政局「三中心两区域」双活架构、东南亚某头部运营商对外运营的行业云平台），并凭借 TCE 入选 Forrester《主权云平台》报告领导者象限。由此，腾讯云可在完全隔离、自主可控的主权区域内交付包含顶级 AI 算力与高性能存储在内的 IaaS 能力。",
+  "provenance": {
+    "sources": [
+      {
+        "label": "全球领导者｜腾讯云凭借专有云TCE跻身《Forrester Wave™：主权云平台》领导者象限",
+        "url": "https://mp.weixin.qq.com/s/LKJAihbDwjIcz1XcopIyrQ",
+        "kind": "wechat"
+      },
+      {
+        "label": "腾讯邱跃鹏：面向Agent和全球化趋势，全面升级云基础设施",
+        "url": "https://mp.weixin.qq.com/s/Ncl8V6kGiDP0c7RWe2u4lg",
+        "kind": "wechat"
+      }
+    ],
+    "quotes": [
+      "腾讯专有云TCE围绕数据主权、运营主权、技术主权构建全栈式主权云解决方案，并融合前沿AI能力，为客户提供安全合规的数字化转型路径。",
+      "支持公有云、私有化、混合云及物理隔离（离线）等多种部署形态，可根据客户监管要求灵活适配。",
+      "同时，腾讯专有云TCE已将AI能力深度集成至云底座，支持客户在主权合规框架内构建大模型训练、推理及Agent应用，实现 “合规云” 与 “智能云” 的统一落地。"
+    ],
+    "reasoning": "题目问在完全隔离、不共享控制面的主权云区域交付顶级 AI 超算 IaaS 的战略。公众号语料逐字支撑 TCE 三主权全栈方案、物理隔离/离线部署、AI 深度集成、GPU 适配扩展与 Forrester 领导者象限及生产案例。全部写实引用。",
+    "decision": "grounded"
+  },
+  "generatedAt": "2026-06-17T01:38:36.251Z"
+}

@@ -1,0 +1,36 @@
+{
+  "questionnaireId": "idc-aiiaas-2026",
+  "questionId": "3.10",
+  "docId": "AaqMrLzErgAm",
+  "docUrl": "https://docs.qq.com/aio/DQWFxTXJMekVyZ0Ft",
+  "urlId": "DQWFxTXJMekVyZ0Ft",
+  "dimension": "",
+  "section": "Strategies",
+  "subsection": "Capital Expenditure (CapEx) Strategy",
+  "question": "What is your public or directional strategy regarding capital expenditure (CapEx) allocation specifically for AI infrastructure expansion over the next 24 months?",
+  "guidance": "IDC 作答格式 (open text)",
+  "draft": "腾讯云在公有云 AI 基础设施上的资本开支策略是“持续、坚定加大投入”，并将投入聚焦在与 AI 推理/训练规模化落地最相关的方向。在 2025 腾讯全球数字生态大会上，腾讯集团副总裁、腾讯云总裁邱跃鹏明确表示，腾讯云将持续加大在技术创新和全球化布局上的投入。落到 AI 基础设施，未来的资本与研发投入将重点覆盖：高端 AI 加速算力与高性能计算集群的扩容（如搭载 NVIDIA H800/A800、3.2Tbps 星脉 RDMA 网络的新一代机型）、自研芯片与自研服务器（沧海编解码芯片 V2 已进入量产、星星海服务器全球累计部署核数超 2 亿核）、以及全球可用区与加速节点的扩建（已覆盖全球 55 个可用区、部署 3200 多个加速节点，并计划在日本大阪和沙特新建可用区）。这些已公开的实践与扩张计划，体现了腾讯云在 AI 基础设施上的持续投入方向。关于未来 24 个月以美元计的具体 AI 基础设施 CapEx 金额或占比，属于上市公司财务披露范畴，须以腾讯官方财报为准，可在与 IDC 商定统一口径后由腾讯云对接团队提供对应的公开披露引用，本处不作未经核实的数字披露。",
+  "provenance": {
+    "sources": [
+      {
+        "label": "腾讯云原生 — 邱跃鹏：面向Agent和全球化趋势，全面升级云基础设施",
+        "url": "https://mp.weixin.qq.com/s/Ncl8V6kGiDP0c7RWe2u4lg",
+        "kind": "wechat"
+      },
+      {
+        "label": "腾讯云高性能计算集群 — 实例规格（产品文档）",
+        "url": "https://cloud.tencent.com/document/product/1646/81562",
+        "kind": "doc"
+      }
+    ],
+    "quotes": [
+      "腾讯云将持续加大在技术创新和全球化布局上的投入",
+      "腾讯云基础设施已覆盖全球 55 个可用区，部署 3200 多个加速节点",
+      "并计划在日本大阪和沙特新建可用区",
+      "实例间支持 3.2Tbps RDMA 星脉网络互联，性能强大。"
+    ],
+    "reasoning": "response_format 为 open text，问的是 public/directional CapEx 策略。语料无以美元计的 CapEx 金额，故金额部分写成方向性 + 指向官方财报，不杜撰。可如实引用“持续加大投入”表态、55 可用区/3200 加速节点、大阪与沙特新建可用区、星脉 3.2Tbps（均逐字），作为投入方向的实证。",
+    "decision": "answer"
+  },
+  "generatedAt": "2026-06-17T01:38:36.251Z"
+}

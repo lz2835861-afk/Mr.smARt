@@ -1,0 +1,45 @@
+{
+  "name": "analyst-questionnaire-suite-plugin",
+  "version": "0.1.0",
+  "description": "Run analyst questionnaire workflows from evidence grounding to wording, linting, packaging, and submission readiness.",
+  "author": {
+    "name": "Lux",
+    "email": "support@example.com",
+    "url": "https://github.com/AOMJ2PMP"
+  },
+  "homepage": "https://github.com/AOMJ2PMP/analyst-questionnaire-suite-plugin",
+  "repository": "https://github.com/AOMJ2PMP/analyst-questionnaire-suite-plugin",
+  "license": "MIT",
+  "keywords": [
+    "analyst-questionnaire",
+    "gartner",
+    "forrester",
+    "idc",
+    "omdia",
+    "grounding",
+    "lint"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Analyst Questionnaire Suite",
+    "shortDescription": "Run analyst questionnaire workflows end to end.",
+    "longDescription": "A suite of skills for analyst questionnaire evidence grounding, analyst-style wording, answer quality checks, cross-question review, and submission packaging.",
+    "developerName": "Lux",
+    "category": "Productivity",
+    "capabilities": [
+      "Interactive",
+      "Read",
+      "Write"
+    ],
+    "websiteURL": "https://github.com/AOMJ2PMP/analyst-questionnaire-suite-plugin",
+    "privacyPolicyURL": "https://github.com/AOMJ2PMP/analyst-questionnaire-suite-plugin",
+    "termsOfServiceURL": "https://github.com/AOMJ2PMP/analyst-questionnaire-suite-plugin",
+    "defaultPrompt": [
+      "Run this analyst questionnaire workflow.",
+      "Ground this analyst question with evidence.",
+      "Lint this answer before submission."
+    ],
+    "brandColor": "#2563EB",
+    "screenshots": []
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "name": "ar-provenance-extension",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Chrome MV3 extension injecting a provenance sidebar into docs.qq.com.",
+  "type": "module",
+  "scripts": {
+    "build": "node build.mjs",
+    "watch": "node build.mjs --watch",
+    "icons": "node scripts/gen-icons.mjs",
+    "test": "node test/urlId.test.mjs",
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "@types/chrome": "^0.0.268",
+    "esbuild": "^0.21.5",
+    "typescript": "^5.4.5"
+  }
+}

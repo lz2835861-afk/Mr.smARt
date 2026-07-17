@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  macOS LaunchAgent template — runs the WeChat 公众号 sync daily at 18:00.
+
+  This is a TEMPLATE. Before installing, edit the absolute paths below to match
+  this checkout's location (the ProgramArguments path to sync-wechat-cron.sh and,
+  optionally, WECHAT_ARCHIVE_DIR / WECHAT_FEED_BASE). launchd does NOT expand ~,
+  $HOME, or relative paths — every path must be absolute.
+
+  INSTALL
+    # 1. make the wrapper executable
+    chmod +x "/Users/luxlu/conductor/workspaces/ar-ai-questionnaire-platform/charlottetown/web/scripts/sync-wechat-cron.sh"
+
+    # 2. copy (don't symlink) this plist into your user LaunchAgents dir
+    cp "/Users/luxlu/conductor/workspaces/ar-ai-questionnaire-platform/charlottetown/com.ar.wechat-sync.plist" \
+       ~/Library/LaunchAgents/com.ar.wechat-sync.plist
+
+    # 3. load it (modern syntax)
+    launchctl bootstrap gui/$(id -u) ~/Library/LaunchAgents/com.ar.wechat-sync.plist
+    # ...or on older macOS:  launchctl load ~/Library/LaunchAgents/com.ar.wechat-sync.plist
+
+  VERIFY / RUN NOW
+    launchctl list | grep com.ar.wechat-sync
+    launchctl kickstart -k gui/$(id -u)/com.ar.wechat-sync     # run immediately
+
+  UNLOAD
+    launchctl bootout gui/$(id -u)/com.ar.wechat-sync
+    # ...or on older macOS:  launchctl unload ~/Library/LaunchAgents/com.ar.wechat-sync.plist
+
+  Logs: stdout/stderr go to the paths in StandardOutPath/StandardErrorPath below,
+  and the sync's own log lives at "$WECHAT_ARCHIVE_DIR/sync.log".
+-->
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>Label</key>
+    <string>com.ar.wechat-sync</string>
+
+    <key>ProgramArguments</key>
+    <array>
+        <string>/bin/bash</string>
+        <string>/Users/luxlu/conductor/workspaces/ar-ai-questionnaire-platform/charlottetown/web/scripts/sync-wechat-cron.sh</string>
+    </array>
+
+    <!-- launchd starts with a minimal environment; pin what the wrapper needs. -->
+    <key>EnvironmentVariables</key>
+    <dict>
+        <key>PATH</key>
+        <string>/opt/homebrew/bin:/usr/local/bin:/usr/bin:/bin</string>
+        <key>WECHAT_FEED_BASE</key>
+        <string>https://ar-wechat.zeabur.app</string>
+        <key>WECHAT_ARCHIVE_DIR</key>
+        <string>/Users/luxlu/Desktop/Data center/微信公众号数据</string>
+    </dict>
+
+    <!-- Run every day at 18:00 local time. -->
+    <key>StartCalendarInterval</key>
+    <dict>
+        <key>Hour</key>
+        <integer>18</integer>
+        <key>Minute</key>
+        <integer>0</integer>
+    </dict>
+
+    <!-- If the Mac was asleep at 18:00, run as soon as it wakes. -->
+    <key>RunAtLoad</key>
+    <false/>
+
+    <key>StandardOutPath</key>
+    <string>/Users/luxlu/Desktop/Data center/微信公众号数据/launchd.out.log</string>
+    <key>StandardErrorPath</key>
+    <string>/Users/luxlu/Desktop/Data center/微信公众号数据/launchd.err.log</string>
+</dict>
+</plist>

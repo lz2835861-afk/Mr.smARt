@@ -1,0 +1,52 @@
+{
+  "questionnaireId": "ai-infra-2026",
+  "questionId": "6.2.1",
+  "docId": "AwpMBTpVTgry",
+  "docUrl": "https://docs.qq.com/aio/DQXdwTUJUcFZUZ3J5",
+  "urlId": "DQXdwTUJUcFZUZ3J5",
+  "dimension": "增长指数",
+  "section": "产品与服务规模",
+  "subsection": "6.2 市场地位与认证",
+  "question": "贵司AI Infra核心产品在中国市场的占有率或行业排名如何？已获得哪些行业权威评测与认证？与主要竞争对手的差异化优势是什么？",
+  "guidance": "关注：可引用第三方报告数据或提供内部估算，评测认证（信通院/等保/ISO/行业特定认证等），差异化优势应具体说明（性能/成本/行业适配/生态等维度的领先幅度）。",
+  "draft": "腾讯云 AI Infra 的核心竞争力体现在权威认证、自研技术领先与全栈生态三个维度。认证层面,腾讯专有云 TCE/TCS 通过了信通院融合创新云 IaaS 性能总体架构最高等级检验,慧眼等 AI 安全产品取得中国信通院深度合成检测最高等级『卓越级』,腾讯云累计已获 400 多项专业认证。技术层面,自研编解码芯片『沧海』在莫斯科国立大学(MSU)硬件视频编码比赛中,面向 AMD、英伟达、英特尔等超 40 款产品的赛道斩获全部评测指标第一、多项指标领先超 30%;混元 AI Infra 开源 HPC-Ops 推理核心算子库,使混元模型推理吞吐(QPM)提升 30%,体现底层软硬协同的成本与性能优势。生态层面,我们提供从芯片适配、异构算力、模型到 Agent 应用的全链路全栈能力,并已在中国银行、平安银行、上海徐汇等核心场景规模化验证。AI Infra 专项口径的中国市场占有率与行业排名,我们将引用对应第三方报告或内部估算单独提供。",
+  "provenance": {
+    "sources": [
+      {
+        "label": "腾讯云AI｜首批最高等级认证！腾讯云慧眼通过中国信通院深度合成检测评测",
+        "url": "https://mp.weixin.qq.com/s/tsXB3696uU6FSpiO1MBEVw",
+        "kind": "wechat"
+      },
+      {
+        "label": "腾讯云｜刚刚，腾讯升级了Agent国产技术底座",
+        "url": "https://mp.weixin.qq.com/s/7u4XFQsKbtK2ShF3zJ6-XQ",
+        "kind": "wechat"
+      },
+      {
+        "label": "腾讯云原生｜腾讯邱跃鹏：面向Agent和全球化趋势，全面升级云基础设施",
+        "url": "https://mp.weixin.qq.com/s/Ncl8V6kGiDP0c7RWe2u4lg",
+        "kind": "wechat"
+      },
+      {
+        "label": "腾讯云｜刚刚，腾讯自研「沧海芯片」夺冠！V2版本即将量产",
+        "url": "https://mp.weixin.qq.com/s/qxzcNLf0XmBBjlvelXhOsg",
+        "kind": "wechat"
+      },
+      {
+        "label": "腾讯混元｜腾讯混元AI Infra核心技术重磅开源：推理吞吐提升30%",
+        "url": "https://mp.weixin.qq.com/s/zyDXLiRJWhol-Uvq72efOQ",
+        "kind": "wechat"
+      }
+    ],
+    "quotes": [
+      "腾讯云慧眼人脸核身Plus版、AI人脸防护盾通过评测，并取得最高等级“卓越级”。",
+      "腾讯专有云TCE与TCS，国产主流软硬件100%适配，通过了信通院融合创新云IaaS性能总体架构最高等级检验",
+      "目前全球已经设立 9 个技术支持中心，并获得400 多项专业认证",
+      "在30—240fps所有速度档位的SSIM、PSNR、VMAF等所有评测指标上全部斩获第一，再次刷新硬件编解码的压缩率上限，在多项指标上领先超30%",
+      "在真实场景下，基于HPC-Ops，混元模型推理 QPM 提升30%，DeepSeek模型 QPM 提升17%。"
+    ],
+    "reasoning": "据 readiness：groundability=medium、action=ai-draft+ar-verify,三部分拆开处理。①评测认证=有大量一手佐证:信通院深度合成『卓越级』(quote)、信通院融合创新云IaaS最高等级(quote)、400+专业认证(quote),全部逐字引用。②差异化优势=有硬佐证:沧海芯片MSU夺冠/领先超30%(quote)、HPC-Ops推理QPM+30%(quote)、全栈能力+银行/政务客户案例,均写实。③市占率/行业排名=readiness明确现有公众号排名(五冠王=游戏云IDC、Gartner=CPaaS)口径不符,绝不套用为AI Infra数字——故不引用、不编造,明确标注AI Infra专项口径的市占率/排名单独提供。所引数字均来自语料原文,非杜撰。",
+    "decision": "评测认证+差异化优势有大量一手佐证(信通院卓越级/IaaS最高等级/400+认证/沧海MSU夺冠/HPC-Ops),但AI Infra口径的市占率与行业排名须AR补(现有排名为游戏云·CPaaS,口径不符)。"
+  },
+  "generatedAt": "2026-06-17T01:38:35.975Z"
+}

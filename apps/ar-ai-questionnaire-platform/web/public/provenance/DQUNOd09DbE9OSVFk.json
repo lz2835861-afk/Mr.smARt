@@ -1,0 +1,35 @@
+{
+  "questionnaireId": "idc-aiiaas-2026",
+  "questionId": "3.17",
+  "docId": "ACNwOClONIQd",
+  "docUrl": "https://docs.qq.com/aio/DQUNOd09DbE9OSVFk",
+  "urlId": "DQUNOd09DbE9OSVFk",
+  "dimension": "",
+  "section": "Strategies",
+  "subsection": "Target Market and Ecosystem Strategy",
+  "question": "Describe your primary target market for your highest-tier AI infrastructure over the next 3 years. Does your strategy prioritize building massive superclusters for foundation model builders, or highly distributed, smaller clusters for enterprise fine-tuning?",
+  "guidance": "IDC 作答格式 (open text)",
+  "draft": "腾讯云对最高一档 AI 基础设施采取「两端兼顾、双轮驱动」的目标市场策略，而非单押某一端。一方面服务大模型/基础模型构建方对大规模算力与高吞吐存储的需求——以 CFS Turbo（AI 训练场景、最高 2TiB/s 吞吐、千万级 IOPS）、COS 数据湖与 GooseFS 缓存构建大规模训练所需的存储底座，并通过异构计算平台整合多种芯片对外提供高性价比算力；另一方面，面向广大企业的微调、推理与 Agent 落地需求——结合产业重心从训练向推理的转移，腾讯云重点投入推理加速（FlexKV 多级缓存、KV Cache 以存换算降 TTFT）与 Agent Runtime 等基础设施，服务更分布式、更贴近业务的中小规模集群与企业精调场景。总体上，腾讯云依托覆盖全球 55 个可用区、超过 3200 个加速节点的基础设施与本地化服务能力，既能为头部模型厂商提供集中式大集群，也能为出海与产业客户提供分布式、合规的智能算力，二者共同驱动底层基础设施设计。",
+  "provenance": {
+    "sources": [
+      {
+        "label": "腾讯邱跃鹏：面向Agent和全球化趋势，全面升级云基础设施",
+        "url": "https://mp.weixin.qq.com/s/Ncl8V6kGiDP0c7RWe2u4lg",
+        "kind": "wechat"
+      },
+      {
+        "label": "CFS 存储类型及性能规格",
+        "url": "https://cloud.tencent.com/document/product/582/38112",
+        "kind": "doc"
+      }
+    ],
+    "quotes": [
+      "大模型产业重心从训练到推理的转变，已经成为行业共识。",
+      "适用场景 | 媒资非编、影像渲染、AI 推理、OLAP 业务、高性能计算 | 大规模高性能计算、AI 训练、OLTP 数据库、大数据分析、OLAP 业务",
+      "我们的服务已覆盖全球55个可用区，拥有超过3200个加速节点"
+    ],
+    "reasoning": "题目问主要目标市场（巨型超级集群 vs 企业精调分布式集群）。公众号语料支撑训练向推理迁移、Agent/推理基础设施投入、全球可用区；存储语料支撑 Turbo 同时覆盖 AI 训练与推理场景。据此给出兼顾两端的战略表述，写实引用，不编造收入/份额数字。",
+    "decision": "grounded"
+  },
+  "generatedAt": "2026-06-17T01:38:36.251Z"
+}

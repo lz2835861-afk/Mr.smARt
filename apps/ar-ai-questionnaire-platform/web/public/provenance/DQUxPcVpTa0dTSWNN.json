@@ -1,0 +1,47 @@
+{
+  "questionnaireId": "ai-infra-2026",
+  "questionId": "5.1.1",
+  "docId": "ALOqZSkGSIcM",
+  "docUrl": "https://docs.qq.com/aio/DQUxPcVpTa0dTSWNN",
+  "urlId": "DQUxPcVpTa0dTSWNN",
+  "dimension": "创新指数",
+  "section": "算力资源层",
+  "subsection": "5.1 AI芯片与算力底座",
+  "question": "贵司在AI芯片领域的布局是什么？如自研芯片请说明架构（GPU/NPU/DSA等）、算力指标、量产进度；如不自研请说明适配的国产芯片方案与深度。",
+  "guidance": "自研芯片关注：芯片架构设计（是否针对Transformer做了硬件级优化如FlashAttention硬件加速），FP16/FP8/INT8峰值算力（TFLOPS），显存容量与带宽，制程工艺（7nm/5nm等），量产规模与良率，软件栈成熟度。适配国产芯片关注：适配了哪些方案（华为昇腾910B/910C、寒武纪MLU370/590、海光DCU、壁仞、燧原、摩尔线程等），适配深度从\"可运行\"到\"性能对齐\"的等级。",
+  "draft": "腾讯云在AI芯片领域采取「自研NPU + 一云多芯适配国产芯片」的双轮布局。自研方面，腾讯云已推出紫霄系列推理NPU：NPU计算型实例PTX1搭载紫霄C100加速卡，面向CV、OCR、NLP等推理场景具备优越性价比；新一代紫霄C200已在TI-ONE平台以PTX2规格商用对外提供算力。在云游戏等渲染场景，腾讯云还自研了星星海GA01等加速卡。适配方面，腾讯云依托异构计算平台整合多类芯片资源，已全面适配主流国产芯片，HCC高性能计算集群基于「一云多芯」架构整合多家国产芯片并完成软硬件全栈优化，让客户在大模型训练推理中可直接使用国产算力、摆脱对单一供应的依赖。具体芯片的峰值算力、制程、量产规模与各厂商适配深度等级属内部芯片数据，可按报告方需要进一步补充。",
+  "provenance": {
+    "sources": [
+      {
+        "label": "GPU云服务器 应用场景 (gpu-cvm 8018)",
+        "url": "https://cloud.tencent.com/document/product/560/8018",
+        "kind": "doc"
+      },
+      {
+        "label": "TI-ONE 计费概述 紫霄C200 PTX2 (ti-one 74108)",
+        "url": "https://cloud.tencent.com/document/product/851/74108",
+        "kind": "doc"
+      },
+      {
+        "label": "腾讯邱跃鹏：全面升级云基础设施 (腾讯云原生 2025-09-16)",
+        "url": "https://mp.weixin.qq.com/s/Ncl8V6kGiDP0c7RWe2u4lg",
+        "kind": "wechat"
+      },
+      {
+        "label": "腾讯云TokenHub上架DeepSeek-V4 (腾讯云 2026-04-24)",
+        "url": "https://mp.weixin.qq.com/s/-_UzxwK5ZYRxfcSkHI5T3A",
+        "kind": "wechat"
+      }
+    ],
+    "quotes": [
+      "NPU 计算型 PTX1搭载紫霄C100加速卡，适用于 AI 推理场景，在 CV、OCR、NLP 等场景性价比优越。",
+      "GPU 渲染型 GA3 搭载腾讯云星星海 GA01，专为云游戏场景研发",
+      "紫霄C200",
+      "依托异构计算平台整合多种芯片资源，向外界提供高性价比的 AI 算力。目前，该平台已全面适配主流国产芯片。",
+      "HCC 基于“一云多芯”架构，通过腾讯云异构计算平台整合多家国产芯片，实现软硬件全栈优化，为企业提供高性价比 AI 算力。"
+    ],
+    "reasoning": "有据：自研NPU紫霄C100(PTX1)与紫霄C200(PTX2)、星星海GA01、异构计算平台全面适配主流国产芯片、HCC一云多芯整合多家国产芯片，均逐字可证。战略化：刻意不写峰值TFLOPS/制程/良率/量产规模，也不列举昇腾910B等具体厂商清单与‘可运行→性能对齐’深度等级（语料无、属内部芯片数据），用‘多类/多家国产芯片’‘全栈优化’的方向性表述收口，未杜撰任何硬指标或客户名。",
+    "decision": "自研紫霄NPU + 一云多芯全面适配国产芯片的双轮布局，硬指标留待补充。"
+  },
+  "generatedAt": "2026-06-17T01:38:35.975Z"
+}

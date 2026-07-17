@@ -1,0 +1,43 @@
+{
+  "questionnaireId": "ai-infra-2026",
+  "questionId": "4.1.1",
+  "docId": "AlxzuMVgYELR",
+  "docUrl": "https://docs.qq.com/aio/DQWx4enVNVmdZRUxS",
+  "urlId": "DQWx4enVNVmdZRUxS",
+  "dimension": "创新指数",
+  "section": "安全沙箱环境",
+  "subsection": "4.1 Agent执行沙箱",
+  "question": "贵司沙箱环境覆盖哪些Agent执行场景？请分别说明桌面沙箱、代码执行沙箱、浏览器沙箱的能力边界与隔离级别。",
+  "guidance": "重点关注沙箱的完整性：是否覆盖Agent的全链路执行环境（文件系统访问、网络请求、GUI操作等），隔离级别是进程级/容器级/VM级，沙箱逃逸的防护能力如何。",
+  "draft": "腾讯云 Agent Runtime 云沙箱面向 Agent 全链路执行场景，提供托管的多类型沙箱：代码执行沙箱支持 Python、JavaScript 等多种语言，适用于数据处理、科学计算、图表生成与 Vibe Coding；浏览器沙箱提供安全隔离的浏览器交互与测试环境，承载 Deep Research、Browser Use 等网页操作；电脑沙箱提供完整的远程虚拟机操控能力，支持对 Windows、Linux 系统进行鼠标控制、键盘输入、实时截屏；并覆盖 Mobile Use 与可定制的自定义沙箱，开发者可自由选择操作系统、预装软件与依赖。隔离级别上，我们采用自研的 Cube 轻量虚拟化技术，基于硬件虚拟化为每个任务或用户会话提供内核级强隔离环境，每个会话运行在独立的轻量虚拟机中，拥有独立的 CPU、内存和文件系统，从根本上区别于共享内核的容器；会话结束后虚拟机被彻底销毁、内存清理，从而杜绝跨会话数据泄露与沙箱逃逸风险，并配合细粒度角色权限控制 Agent 对云上资源的访问边界。",
+  "provenance": {
+    "sources": [
+      {
+        "label": "腾讯云原生 2025-09-18 腾讯云 Agent Runtime 云沙箱正式发布",
+        "url": "https://mp.weixin.qq.com/s/gwABnRQfSHdkAY_PtorfYA",
+        "kind": "wechat"
+      },
+      {
+        "label": "腾讯云原生 2025-09-29 Agent Runtime 执行引擎开放内测",
+        "url": "https://mp.weixin.qq.com/s/wXW9fSIOvmnBVB47ksftxA",
+        "kind": "wechat"
+      },
+      {
+        "label": "腾讯云文档 Agent 沙箱服务 快速入门 (1814/123816)",
+        "url": "https://cloud.tencent.com/document/product/1814/123816",
+        "kind": "doc"
+      }
+    ],
+    "quotes": [
+      "提供了 Code、Browser、Computer 等多种沙箱类型的托管服务",
+      "代码执行沙箱：支持 Python、JavaScript 等多种编程语言",
+      "浏览器沙箱：提供安全隔离的浏览器交互与测试环境",
+      "电脑沙箱：提供完整的远程虚拟机操控能力",
+      "我们采用自研的 Cube 轻量虚拟化技术，为每个任务或用户会话提供内核级强隔离环境",
+      "每个会话都在一个专用的轻量虚拟机中运行，该虚拟机具有独立的 CPU、内存和文件系统资源"
+    ],
+    "reasoning": "全段有据：五类沙箱(代码/浏览器/电脑/Mobile/自定义)及其能力边界、Cube 轻量虚拟化的内核级/VM 级强隔离、会话结束 VM 彻底销毁防逃逸防数据泄露、细粒度角色权限均逐字来自 09-18 与 09-29 两篇公众号一手发布。无需杜撰任何数字。仅 Mobile Use 在 09-18 文中以应用场景出现，措辞上以'覆盖'统括，未拔高。",
+    "decision": "能力类问题，语料完整覆盖五类沙箱场景与隔离级别，可写实带逐字引用。"
+  },
+  "generatedAt": "2026-06-17T01:38:35.975Z"
+}

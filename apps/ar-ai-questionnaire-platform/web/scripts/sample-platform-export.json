@@ -1,0 +1,58 @@
+{
+  "export_version": "1.0",
+  "questionnaire_id": "gartner-container-2026",
+  "firm": "Gartner",
+  "generated_at": "2026-06-07T10:00:00Z",
+  "_note": "样例/冒烟测试用。field_id 故意用 demo_smoke_* 废弃 id，避免 --apply 误覆盖真实字段。",
+  "questions": [
+    {
+      "question_id": "gc_q1_1",
+      "type_tag": { "macro": "产品能力", "form": "列举", "modifiers": ["量化", "近12月"] },
+      "word_limit": 500,
+      "status": "AI DRAFTED",
+      "fields": [
+        {
+          "field_id": "demo_smoke_1",
+          "content_zh": "TKE 的三大差异化：1) Serverless 容器一键弹性……2) 全球多地域调度……3) 容器供应链安全……（AI 初稿，请核对）",
+          "content_en": "",
+          "evidence": [
+            {
+              "tag": "CITED",
+              "claim": "TKE 支持 Serverless 容器",
+              "source": "https://cloud.tencent.com/document/product/457",
+              "quote": "弹性容器服务（EKS）……",
+              "retrieved": "2026-06-01",
+              "page_updated": "2025-11-03"
+            },
+            { "tag": "REVIEW", "reviewer": "product", "claim": "[X] 节点规模", "reason": "文档未披露" }
+          ],
+          "reviewer_hooks": [
+            { "reviewer": "product", "kind": "placeholder", "text": "[X] B requests/day", "reason": "需补数字" },
+            { "reviewer": "Kevin", "kind": "thesis", "text": "差异化主论点", "reason": "确认 thesis" }
+          ],
+          "lint": [
+            { "severity": "BLOCK", "rule": "placeholder", "loc": "ZH", "message": "未填 [X]", "suggest": "补数字或同意省略" }
+          ],
+          "conflicts": []
+        }
+      ]
+    },
+    {
+      "question_id": "gc_q1_2",
+      "type_tag": { "macro": "产品能力", "form": "列举", "modifiers": [] },
+      "word_limit": 500,
+      "status": "AI DRAFTED",
+      "fields": [
+        {
+          "field_id": "demo_smoke_2",
+          "content_zh": "三大竞品：阿里云 ACK、华为云 CCE、AWS EKS……（AI 初稿）",
+          "content_en": "",
+          "evidence": [],
+          "reviewer_hooks": [],
+          "lint": [],
+          "conflicts": []
+        }
+      ]
+    }
+  ]
+}

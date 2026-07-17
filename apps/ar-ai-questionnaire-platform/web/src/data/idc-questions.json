@@ -1,0 +1,520 @@
+{
+  "id": "idc-aiiaas-2026",
+  "title": "IDC MarketScape RFI — Worldwide Public Cloud AI IaaS 2026 Vendor Assessment",
+  "firm": "IDC",
+  "lang": "zh",
+  "source": "IDC MarketScape RFI - Worldwide Public Cloud AI Infrastructure2026.xlsx",
+  "count": 51,
+  "questions": [
+    {
+      "id": "1.1",
+      "section": "Preliminary",
+      "category": "",
+      "definition": "",
+      "question": "Please estimate the revenue associated with your overall IaaS business for Calendar Year (CY) 2025",
+      "response_format": "(values based in $US)",
+      "parent": "",
+      "parentText": ""
+    },
+    {
+      "id": "1.2",
+      "section": "Preliminary",
+      "category": "",
+      "definition": "",
+      "question": "Please estimate the annual growth rate of your overall IaaS business for CY 2025",
+      "response_format": "(%)",
+      "parent": "",
+      "parentText": ""
+    },
+    {
+      "id": "1.3",
+      "section": "Preliminary",
+      "category": "",
+      "definition": "",
+      "question": "Please estimate the revenue associated with your AI IaaS business for Calendar Year (CY) 2025",
+      "response_format": "(values based in $US)",
+      "parent": "",
+      "parentText": ""
+    },
+    {
+      "id": "1.4",
+      "section": "Preliminary",
+      "category": "",
+      "definition": "",
+      "question": "Please estimate the annual growth rate of your AI IaaS business for CY 2025",
+      "response_format": "(%)",
+      "parent": "",
+      "parentText": ""
+    },
+    {
+      "id": "1.5.1",
+      "section": "Preliminary",
+      "category": "",
+      "definition": "",
+      "question": "North America",
+      "response_format": "(%)",
+      "parent": "1.5",
+      "parentText": "Please indicate the approximate share of your CY 2025 WW revenues for these worldwide regions:"
+    },
+    {
+      "id": "1.5.2",
+      "section": "Preliminary",
+      "category": "",
+      "definition": "",
+      "question": "EMEA",
+      "response_format": "(%)",
+      "parent": "1.5",
+      "parentText": "Please indicate the approximate share of your CY 2025 WW revenues for these worldwide regions:"
+    },
+    {
+      "id": "1.5.3",
+      "section": "Preliminary",
+      "category": "",
+      "definition": "",
+      "question": "LATAM",
+      "response_format": "(%)",
+      "parent": "1.5",
+      "parentText": "Please indicate the approximate share of your CY 2025 WW revenues for these worldwide regions:"
+    },
+    {
+      "id": "1.5.4",
+      "section": "Preliminary",
+      "category": "",
+      "definition": "",
+      "question": "APAC",
+      "response_format": "(%)",
+      "parent": "1.5",
+      "parentText": "Please indicate the approximate share of your CY 2025 WW revenues for these worldwide regions:"
+    },
+    {
+      "id": "1.6.1",
+      "section": "Preliminary",
+      "category": "",
+      "definition": "",
+      "question": "Name",
+      "response_format": "(open text)",
+      "parent": "1.6",
+      "parentText": "Please provide a primary contact from your company for this research effort"
+    },
+    {
+      "id": "1.6.2",
+      "section": "Preliminary",
+      "category": "",
+      "definition": "",
+      "question": "Title",
+      "response_format": "(open text)",
+      "parent": "1.6",
+      "parentText": "Please provide a primary contact from your company for this research effort"
+    },
+    {
+      "id": "1.6.3",
+      "section": "Preliminary",
+      "category": "",
+      "definition": "",
+      "question": "Email address",
+      "response_format": "(open text)",
+      "parent": "1.6",
+      "parentText": "Please provide a primary contact from your company for this research effort"
+    },
+    {
+      "id": "2.1",
+      "section": "Capabilties",
+      "category": "GPU Instance Variety",
+      "definition": "Assesses the variety of GA GPU architectures available from third-party silicon vendors (e.g., NVIDIA, AMD) to support diverse workload requirements (training vs. inference, varying memory footprints).",
+      "question": "Detail the specific generations and models of merchant GPUs (e.g., NVIDIA, AMD) currently GA in your cloud.",
+      "response_format": "(open text)",
+      "parent": "",
+      "parentText": ""
+    },
+    {
+      "id": "2.2",
+      "section": "Capabilties",
+      "category": "Custom AI Accelerators (First-Party Silicon)",
+      "definition": "Evaluates the availability of proprietary, cloud-designed AI accelerators that offer alternative price/performance ratios to standard merchant GPUs.",
+      "question": "Describe your GA proprietary AI custom silicon (if any) designed specifically for AI training and/or inference, including peak FLOPS and memory bandwidth per chip.",
+      "response_format": "(open text)",
+      "parent": "",
+      "parentText": ""
+    },
+    {
+      "id": "2.3",
+      "section": "Capabilties",
+      "category": "Maximum Supercluster Scale",
+      "definition": "Measures the maximum number of high-end AI accelerators that can be clustered together on a single, non-blocking backend network fabric for massive distributed training jobs.",
+      "question": "What is the maximum number of current-generation AI accelerators you can currently string together in a single tightly coupled cluster (supercluster) in a GA region?",
+      "response_format": "(#)",
+      "parent": "",
+      "parentText": ""
+    },
+    {
+      "id": "2.4",
+      "section": "Capabilties",
+      "category": "High-Performance Inter-node Networking",
+      "definition": "Evaluates the dedicated backend network infrastructure utilized for node-to-node communication in distributed AI training (e.g., InfiniBand, proprietary Ethernet architectures).",
+      "question": "Detail your backend networking fabric used for your highest-tier AI clusters, specifically stating the per-node bi-directional bandwidth and the underlying technology (e.g., InfiniBand NDR, RoCEv2).",
+      "response_format": "(open text)",
+      "parent": "",
+      "parentText": ""
+    },
+    {
+      "id": "2.5",
+      "section": "Capabilties",
+      "category": "Network Latency and Jitter",
+      "definition": "Measures the guarantees and architectural features surrounding network latency and jitter (variance in latency), which is critical for synchronous training steps across thousands of GPUs.",
+      "question": "What are your documented or SLA-backed guarantees regarding tail latency and network jitter within your highest-tier AI superclusters?",
+      "response_format": "(open text)",
+      "parent": "",
+      "parentText": ""
+    },
+    {
+      "id": "2.6",
+      "section": "Capabilties",
+      "category": "AI Storage: High-Throughput File Systems",
+      "definition": "Assesses the cloud-native, fully managed file storage services capable of saturating GPU I/O requirements during large-scale model training.",
+      "question": "What is the maximum read throughput (in GB/s) and sub-millisecond latency capabilities of your highest-performance managed file system available for AI training clusters?",
+      "response_format": "(#)",
+      "parent": "",
+      "parentText": ""
+    },
+    {
+      "id": "2.7",
+      "section": "Capabilties",
+      "category": "AI Storage: Data Lake Object Storage",
+      "definition": "Evaluates the performance of the core object storage layer, which is critical for hosting massive multimodal AI datasets (text, image, video).",
+      "question": "Describe the architectural capabilities of your object storage service to handle high-concurrency read requests (GETs per second) and aggregate bandwidth for AI data ingestion.",
+      "response_format": "(open text)",
+      "parent": "",
+      "parentText": ""
+    },
+    {
+      "id": "2.8",
+      "section": "Capabilties",
+      "category": "AI Storage: Small-File and Metadata Performance",
+      "definition": "Evaluates the storage infrastructure's ability to handle the extreme metadata operations (millions of small reads/stats per second) typical in computer vision or multimodal training workloads.",
+      "question": "Beyond bulk throughput, describe your storage architecture's capability to sustain extreme Input/Output Operations Per Second (IOPS) and handle metadata operations for datasets consisting of billions of sub-megabyte files",
+      "response_format": "(open text)",
+      "parent": "",
+      "parentText": ""
+    },
+    {
+      "id": "2.9",
+      "section": "Capabilties",
+      "category": "Storage Tiering for AI Data Pipelines",
+      "definition": "Evaluates the infrastructure's ability to seamlessly and cost-effectively move massive datasets between cold storage (object) and hot storage (parallel file systems) during the AI lifecycle.",
+      "question": "Describe the native infrastructure services that automate the movement of training datasets from standard object storage into high-performance file systems prior to training, and the offloading of checkpoints post-training.",
+      "response_format": "(open text)",
+      "parent": "",
+      "parentText": ""
+    },
+    {
+      "id": "2.10",
+      "section": "Capabilties",
+      "category": "Massive Data Ingestion Options",
+      "definition": "Assesses the physical and networking infrastructure services available to rapidly securely move petabytes of unstructured training data from on-premises or other clouds into the provider's storage layer.",
+      "question": "Describe your infrastructure solutions for ingesting multi-petabyte datasets, specifically highlighting direct multi-terabit network peering options and ruggedized physical transfer appliances.",
+      "response_format": "(open text)",
+      "parent": "",
+      "parentText": ""
+    },
+    {
+      "id": "2.11",
+      "section": "Capabilties",
+      "category": "Bare Metal AI Offerings",
+      "definition": "Measures the availability of bare-metal deployments for AI hardware, bypassing hypervisor overhead for maximum performance and hardware-level control.",
+      "question": "Do you offer bare-metal instances for your highest-tier AI accelerators, and what level of hardware control (e.g., root access, custom hypervisor deployment) is granted to the customer?",
+      "response_format": "(open text)",
+      "parent": "",
+      "parentText": ""
+    },
+    {
+      "id": "2.12",
+      "section": "Capabilties",
+      "category": "Confidential AI Computing",
+      "definition": "Assesses the ability to train models and run inferences on sensitive data using hardware-encrypted memory spaces within the AI accelerators.",
+      "question": "Describe your current GA capabilities for running AI workloads in Confidential Computing environments, specifically detailing support for encrypted GPU memory (e.g., NVIDIA Hopper Confidential Compute).",
+      "response_format": "(open text)",
+      "parent": "",
+      "parentText": ""
+    },
+    {
+      "id": "2.13",
+      "section": "Capabilties",
+      "category": "Resource Provisioning and Elasticity",
+      "definition": "Evaluates the orchestration capabilities of the cloud platform to dynamically provision and de-provision large clusters of GPUs based on workload demand.",
+      "question": "What are the limits and average provisioning times for dynamically auto-scaling a cluster of 500+ GPUs using your native cloud orchestration tools (e.g., managed Kubernetes)?",
+      "response_format": "(open text)",
+      "parent": "",
+      "parentText": ""
+    },
+    {
+      "id": "2.14",
+      "section": "Capabilties",
+      "category": "Preemptible / Spot AI Compute Availability",
+      "definition": "Assesses the availability of excess, highly-discounted AI compute capacity (spot instances) and the infrastructure features that allow training jobs to survive instance interruptions.",
+      "question": "Do you offer preemptible/spot pricing for your highest-tier AI accelerators, and what infrastructure-level checkpointing mechanisms do you natively support to handle interruptions?",
+      "response_format": "(open text)",
+      "parent": "",
+      "parentText": ""
+    },
+    {
+      "id": "2.15",
+      "section": "Capabilties",
+      "category": "Flexible Capacity Consumption Models",
+      "definition": "Assesses the financial and scheduling mechanisms available to customers to secure highly constrained AI compute resources.",
+      "question": "Describe your pricing and consumption models for securing large-scale AI infrastructure, specifically addressing mechanisms for guaranteeing short-term massive capacity (e.g., capacity blocks).",
+      "response_format": "(open text)",
+      "parent": "",
+      "parentText": ""
+    },
+    {
+      "id": "2.16",
+      "section": "Capabilties",
+      "category": "Geographic Availability",
+      "definition": "Measures how widely distributed the provider's top-tier AI infrastructure is across global regions to satisfy data residency and localized latency requirements.",
+      "question": "In how many global regions (distinct geographic locations, not availability zones within a region) are your highest-tier AI accelerators currently GA?",
+      "response_format": "(#)",
+      "parent": "",
+      "parentText": ""
+    },
+    {
+      "id": "2.17",
+      "section": "Capabilties",
+      "category": "Power and Cooling Infrastructure",
+      "definition": "Assesses the physical datacenter infrastructure's ability to support the extreme power and thermal requirements of modern AI clusters.",
+      "question": "What is the maximum power density (kW per rack) supported by your current GA datacenter infrastructure, and what cooling technology (e.g., air, rear-door heat exchangers, direct-to-chip liquid) is utilized in production?",
+      "response_format": "(open text)",
+      "parent": "",
+      "parentText": ""
+    },
+    {
+      "id": "2.18",
+      "section": "Capabilties",
+      "category": "AI Infrastructure Observability",
+      "definition": "Evaluates the native monitoring tools provided to customers to profile GPU/accelerator utilization, memory bottlenecks, and network fabric congestion.",
+      "question": "Detail the native infrastructure monitoring tools you provide that expose hardware-level metrics (e.g., GPU memory bandwidth utilization, tensor core activity, NVLink/fabric congestion).",
+      "response_format": "(open text)",
+      "parent": "",
+      "parentText": ""
+    },
+    {
+      "id": "2.19",
+      "section": "Capabilties",
+      "category": "Specialized Inference Topologies",
+      "definition": "Assesses the availability of specialized hardware and network topologies explicitly designed to minimize latency and maximize throughput for real-time AI model inference (vs. bulk training).",
+      "question": "Describe your specialized infrastructure configurations for high-throughput inference, including dedicated micro-clusters, NVLink interconnected multi-GPU serving nodes, and specialized memory caching layers.",
+      "response_format": "(open text)",
+      "parent": "",
+      "parentText": ""
+    },
+    {
+      "id": "2.20",
+      "section": "Capabilties",
+      "category": "Infrastructure-as-Code (IaC) for AI",
+      "definition": "Evaluates the depth and maturity of APIs and IaC tools (e.g., Terraform, custom operators) specifically designed to configure and orchestrate complex AI hardware topologies.",
+      "question": "Detail the extent to which your specialized AI hardware configurations (e.g., GPU placement groups, fabric routing, parallel storage attachments) can be provisioned entirely through Infrastructure-as-Code.",
+      "response_format": "(open text)",
+      "parent": "",
+      "parentText": ""
+    },
+    {
+      "id": "3.1",
+      "section": "Strategies",
+      "category": "Next-Generation GPU Roadmap",
+      "definition": "Assesses the provider's strategic commitment to rapidly adopting and deploying the absolute latest architectures from merchant vendors (e.g., NVIDIA Blackwell, Rubin).",
+      "question": "Describe your strategy and timeline for integrating the next generation of merchant AI silicon into your infrastructure. How do you plan to reduce the time-to-market between hardware release and cloud GA?",
+      "response_format": "(open text)",
+      "parent": "",
+      "parentText": ""
+    },
+    {
+      "id": "3.2",
+      "section": "Strategies",
+      "category": "Custom Silicon R&D Strategy",
+      "definition": "Evaluates the strategic capital and R&D investment in developing proprietary, first-party AI silicon to reduce reliance on third-party vendors and lower customer costs.",
+      "question": "Outline your 3-year R&D strategy for your proprietary custom AI accelerators. What specific workload bottlenecks (e.g., memory bandwidth, specific precision formats) are your future silicon designs targeting?",
+      "response_format": "(open text)",
+      "parent": "",
+      "parentText": ""
+    },
+    {
+      "id": "3.3",
+      "section": "Strategies",
+      "category": "Hardware Vendor Partnership Strategy",
+      "definition": "Assesses how the provider balances partnerships with major hardware vendors while simultaneously developing competing first-party silicon or storage solutions.",
+      "question": "Detail your partnership strategy with major AI hardware vendors. How do you ensure strategic alignment and early access while aggressively expanding your own competitive custom silicon and storage portfolio?",
+      "response_format": "(open text)",
+      "parent": "",
+      "parentText": ""
+    },
+    {
+      "id": "3.4",
+      "section": "Strategies",
+      "category": "Backend Fabric Evolution Strategy",
+      "definition": "Assesses the strategic roadmap for evolving backend networks to support the staggering bandwidth requirements of next-generation trillion-parameter models.",
+      "question": "What is your strategy for scaling backend network fabrics over the next 3 years? Detail your plans regarding the adoption of InfiniBand vs. proprietary Ethernet vs. Ultra Ethernet Consortium (UEC) standards.",
+      "response_format": "(open text)",
+      "parent": "",
+      "parentText": ""
+    },
+    {
+      "id": "3.5",
+      "section": "Strategies",
+      "category": "Silicon Photonics and Optical Interconnect R&D",
+      "definition": "Assesses strategic investments in shifting from copper-based electrical interconnects to light-based optical interconnects at the chip/board level to reduce power draw and radically increase bandwidth.",
+      "question": "Outline your R&D strategy and timeline for integrating silicon photonics and co-packaged optics (CPO) directly into your AI compute architectures.",
+      "response_format": "(open text)",
+      "parent": "",
+      "parentText": ""
+    },
+    {
+      "id": "3.6",
+      "section": "Strategies",
+      "category": "Datacenter Design Strategy (Thermal Management)",
+      "definition": "Evaluates the strategic redesign of physical datacenter builds to accommodate the multi-megawatt requirements of future AI clusters.",
+      "question": "Detail your next-generation datacenter design strategy specifically addressing thermal management for clusters expected to draw hundreds of megawatts.",
+      "response_format": "(open text)",
+      "parent": "",
+      "parentText": ""
+    },
+    {
+      "id": "3.7",
+      "section": "Strategies",
+      "category": "AI Energy & Sustainability Strategy",
+      "definition": "Assesses the strategy to power incredibly energy-intensive AI infrastructure while adhering to corporate ESG and net-zero commitments.",
+      "question": "Given the extreme power consumption of AI infrastructure, outline your strategy for procuring renewable/carbon-free energy to offset these specific workloads. Do you plan to co-locate AI datacenters with dedicated energy generation?",
+      "response_format": "(open text)",
+      "parent": "",
+      "parentText": ""
+    },
+    {
+      "id": "3.8",
+      "section": "Strategies",
+      "category": "AI Hardware Circularity and Water Usage",
+      "definition": "Evaluates the provider's strategy for managing the ecological footprint of AI beyond just carbon, specifically focusing on Water Usage Effectiveness (WUE) and the recycling/repurposing of obsolete AI accelerators.",
+      "question": "Detail your environmental strategy regarding the reduction of water consumption (WUE) in liquid-cooled AI datacenters and your circular economy practices for retiring massive GPU fleets.",
+      "response_format": "(open text)",
+      "parent": "",
+      "parentText": ""
+    },
+    {
+      "id": "3.9",
+      "section": "Strategies",
+      "category": "Hardware Supply Chain Resilience",
+      "definition": "Evaluates the strategic mechanisms the provider uses to guarantee hardware availability amidst massive global shortages of advanced GPUs and HBM (High Bandwidth Memory).",
+      "question": "Describe your supply chain strategy for securing constrained AI hardware components. How do you insulate your customers from industry-wide hardware shortages?",
+      "response_format": "(open text)",
+      "parent": "",
+      "parentText": ""
+    },
+    {
+      "id": "3.10",
+      "section": "Strategies",
+      "category": "Capital Expenditure (CapEx) Strategy",
+      "definition": "Measures the provider's willingness to invest heavily in fixed assets specifically dedicated to public cloud AI workloads.",
+      "question": "What is your public or directional strategy regarding capital expenditure (CapEx) allocation specifically for AI infrastructure expansion over the next 24 months?",
+      "response_format": "(open text)",
+      "parent": "",
+      "parentText": ""
+    },
+    {
+      "id": "3.11",
+      "section": "Strategies",
+      "category": "Storage Architecture Roadmap",
+      "definition": "Assesses future technological investments aimed at eliminating the \"data starvation\" problem in GPU clusters.",
+      "question": "What is your strategic roadmap for advancing storage architectures to keep pace with the exponential growth in GPU compute capabilities?",
+      "response_format": "(open text)",
+      "parent": "",
+      "parentText": ""
+    },
+    {
+      "id": "3.12",
+      "section": "Strategies",
+      "category": "Edge AI Infrastructure Strategy",
+      "definition": "Evaluates the provider's strategy for deploying AI compute capabilities outside of core mega-regions to support ultra-low latency inference applications.",
+      "question": "Describe your strategy for deploying AI infrastructure (specifically inference accelerators) at the edge, including telco edge, on-premises local zones, and private 5G integrations.",
+      "response_format": "(open text)",
+      "parent": "",
+      "parentText": ""
+    },
+    {
+      "id": "3.13",
+      "section": "Strategies",
+      "category": "AI Infrastructure Pricing Strategy",
+      "definition": "Evaluates how the provider plans to innovate their financial models to help customers manage the extreme costs associated with AI infrastructure.",
+      "question": "How do you plan to evolve your pricing strategies over the next 2-3 years to accommodate the bursty, highly intensive nature of AI workloads while protecting customer ROI?",
+      "response_format": "(open text)",
+      "parent": "",
+      "parentText": ""
+    },
+    {
+      "id": "3.14",
+      "section": "Strategies",
+      "category": "Security and Isolation Roadmap",
+      "definition": "Assesses future infrastructure security designs targeting the unique attack surfaces of multi-tenant GPU clusters and highly sensitive proprietary models.",
+      "question": "Outline your 3-year security strategy for AI infrastructure. Specifically address your roadmap for mitigating side-channel attacks on shared GPUs and implementing post-quantum cryptography in backend network fabrics.",
+      "response_format": "(open text)",
+      "parent": "",
+      "parentText": ""
+    },
+    {
+      "id": "3.15",
+      "section": "Strategies",
+      "category": "Open Source and Standards Contribution",
+      "definition": "Evaluates the provider's strategic commitment to contributing to open hardware and infrastructure standards, preventing vendor lock-in at the infrastructure layer.",
+      "question": "Describe your strategic involvement and contributions to open infrastructure consortiums (e.g., Open Compute Project (OCP), Ultra Ethernet Consortium, PyTorch Foundation) directly related to AI hardware and networking.",
+      "response_format": "(open text)",
+      "parent": "",
+      "parentText": ""
+    },
+    {
+      "id": "3.16",
+      "section": "Strategies",
+      "category": "Architecture Support & Customer Success",
+      "definition": "Assesses the provider's strategy for investing in highly specialized human capital (engineers/architects) to assist customers in optimizing deep learning hardware utilization.",
+      "question": "What is your strategy for scaling customer support and architectural guidance specifically for low-level AI infrastructure optimization (e.g., optimizing CUDA kernels, tuning network topologies)?",
+      "response_format": "(open text)",
+      "parent": "",
+      "parentText": ""
+    },
+    {
+      "id": "3.17",
+      "section": "Strategies",
+      "category": "Target Market and Ecosystem Strategy",
+      "definition": "Evaluates the provider's strategic focus regarding which market segment (e.g., massive AI labs vs. traditional enterprise) drives their foundational infrastructure design.",
+      "question": "Describe your primary target market for your highest-tier AI infrastructure over the next 3 years. Does your strategy prioritize building massive superclusters for foundation model builders, or highly distributed, smaller clusters for enterprise fine-tuning?",
+      "response_format": "(open text)",
+      "parent": "",
+      "parentText": ""
+    },
+    {
+      "id": "3.18",
+      "section": "Strategies",
+      "category": "Sovereign AI Cloud Strategy",
+      "definition": "Evaluates the strategy for deploying highly classified, fully air-gapped public cloud infrastructure to satisfy strict governmental data sovereignty and AI nationalism requirements.",
+      "question": "What is your strategy for delivering top-tier AI supercomputers (IaaS) within fully isolated, sovereign cloud regions that do not share control planes with the commercial public cloud?",
+      "response_format": "(open text)",
+      "parent": "",
+      "parentText": ""
+    },
+    {
+      "id": "3.19",
+      "section": "Strategies",
+      "category": "Geographically Distributed Training Architectures",
+      "definition": "Assesses the R&D strategy aimed at allowing single foundational AI models to be trained synchronously across multiple disparate physical datacenters or geographic regions, bypassing local power constraints.",
+      "question": "What is your strategy for enabling highly efficient distributed training runs that span across multiple geographically separated datacenters (e.g., spanning hundreds of miles)?",
+      "response_format": "(open text)",
+      "parent": "",
+      "parentText": ""
+    },
+    {
+      "id": "3.20",
+      "section": "Strategies",
+      "category": "AI-Driven Infrastructure Operations (AIOps for AI)",
+      "definition": "Evaluates the strategy of utilizing AI models to manage the AI infrastructure itself, specifically for predicting hardware failures (e.g., a dying GPU) before they crash a massive, expensive training job.",
+      "question": "Describe your strategy for implementing AI/ML to autonomously manage your AI infrastructure fleets, specifically regarding predictive hardware failure detection and automated job migration.",
+      "response_format": "(open text)",
+      "parent": "",
+      "parentText": ""
+    }
+  ]
+}

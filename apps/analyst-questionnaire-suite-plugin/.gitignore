@@ -1,0 +1,25 @@
+# macOS
+.DS_Store
+**/.DS_Store
+
+# Local runtime state and outputs
+state/
+submission/
+questionnaires/
+lint-report/
+evidence-output/
+.cache/
+.local/
+
+# Secrets
+.env
+.envrc
+*.token
+config/credentials.*
+
+# Generated artifacts and local tooling
+__pycache__/
+*.pyc
+*.log
+.vscode/
+.idea/

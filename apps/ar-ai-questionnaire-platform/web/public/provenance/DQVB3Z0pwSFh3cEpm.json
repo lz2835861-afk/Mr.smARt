@@ -1,0 +1,20 @@
+{
+  "questionnaireId": "idc-aiiaas-2026",
+  "questionId": "1.1",
+  "docId": "APwgJpHXwpJf",
+  "docUrl": "https://docs.qq.com/aio/DQVB3Z0pwSFh3cEpm",
+  "urlId": "DQVB3Z0pwSFh3cEpm",
+  "dimension": "",
+  "section": "Preliminary",
+  "subsection": "",
+  "question": "Please estimate the revenue associated with your overall IaaS business for Calendar Year (CY) 2025",
+  "guidance": "IDC 作答格式 (values based in $US)",
+  "draft": "腾讯云作为腾讯集团旗下的公有云与 AI IaaS 厂商，已构建起覆盖全球的云基础设施与算力底座，IaaS 整体业务是腾讯云的核心增长引擎之一，并保持稳健的规模扩张。考虑到 IDC 本次评估对口径一致性的要求，腾讯云的 2025 自然年 IaaS 整体业务收入涉及上市公司分部财务披露与内部统计口径，建议在与 IDC 就 IaaS 收入的范围界定（是否含 PaaS、是否含中国大陆与国际站合并口径、汇率折算等）达成统一定义后，由腾讯云财务/对接团队以保密方式单独提供精确的美元口径数值。腾讯云愿意配合 IDC 的 MarketScape 方法论，确保所提交数据可比、可核。",
+  "provenance": {
+    "sources": [],
+    "quotes": [],
+    "reasoning": "题目要求 IaaS 整体业务 CY2025 收入（$US 具体数字）。语料中没有腾讯云 IaaS 收入的任何美元数字，按起草政策严禁杜撰收入数据。改写为战略层面表态并专业地说明可在与 IDC 商定统一口径后保密提供。response_format 虽要求 $US，但无依据不编。",
+    "decision": "draft"
+  },
+  "generatedAt": "2026-06-17T01:38:36.251Z"
+}

@@ -1,0 +1,41 @@
+{
+  "questionnaireId": "ai-infra-2026",
+  "questionId": "3.2.4",
+  "docId": "ARsSRqKrYwLZ",
+  "docUrl": "https://docs.qq.com/aio/DQVJzU1JxS3JZd0xa",
+  "urlId": "DQVJzU1JxS3JZd0xa",
+  "dimension": "创新指数",
+  "section": "通智算调度引擎",
+  "subsection": "3.2 智算集群网络与通信",
+  "question": "不同团队/部门在共享算力池中的资源隔离与抢占策略如何？",
+  "guidance": "关注：企业内部多团队共享算力池是普遍场景。是否支持GPU级别的硬隔离/软隔离，不同租户的优先级策略与抢占机制，租户间的性能干扰隔离效果（如噪声邻居问题），以及资源使用量统计与成本分摊。",
+  "draft": "面向多团队、多业务域共享算力池的场景，腾讯云提供从优先级、抢占、配额到干扰隔离与成本分摊的完整治理能力。在优先级与抢占上，算力集群基于 RUE 内核的 QoS 优先级与抢占机制，确保在线业务拥有绝对资源优先使用权，并搭配 QosAgent 组件实时监控干扰情况，指标波动时自动触发资源压制或离线任务驱逐，缓解“噪声邻居”问题。在配额约束上，通过自定义 CRD（ResourceLeasingPolicy）实现精细化管控，可限制某集群最多抽取的 CPU 比例、限定可抽取的时间窗与节点型号。在多租户策略上，PlacementPolicy 支持按命名空间、工作负载类型、Pod 标签分层关联，为不同业务域（如支付、搜索、内容）提供差异化资源保障。在成本分摊上，可结合集群资源的项目属性进行分项目财务核算。GPU 级硬隔离/软隔离的具体技术实现与租户间性能干扰的量化隔离效果，我们按合作场景单独提供。",
+  "provenance": {
+    "sources": [
+      {
+        "label": "腾讯云原生：TKE 算力集群-新一代跨集群混部资源引擎 (2025-10-22)",
+        "url": "https://mp.weixin.qq.com/s/JaRScaFPT58j_mnRb5REqA",
+        "kind": "wechat"
+      },
+      {
+        "label": "腾讯云原生：业务有诉求，资源会响应-TKE智能调度实践 (2025-07-11)",
+        "url": "https://mp.weixin.qq.com/s/DLy-fDyzE8tzhXm-996cug",
+        "kind": "wechat"
+      },
+      {
+        "label": "腾讯云文档 TKE 集群新增资源所属项目说明 (457/11185)",
+        "url": "https://cloud.tencent.com/document/product/457/11185",
+        "kind": "doc"
+      }
+    ],
+    "quotes": [
+      "基于 RUE 内核的 QoS 优先级与抢占机制，确保在线业务拥有绝对资源优先使用权。搭配 QosAgent 组件实时监控干扰情况",
+      "通过自定义 CRD（ResourceLeasingPolicy）实现 “精细化管控”",
+      "为不同业务域（如支付、搜索、内容）提供差异化资源保障",
+      "集群内云服务器、负载均衡器等资源有项目属性"
+    ],
+    "reasoning": "有据(high)：RUE内核QoS优先级与抢占/QosAgent干扰监控与离线驱逐、ResourceLeasingPolicy配额约束、PlacementPolicy按业务域分层差异化保障、集群资源项目属性分项目核算，均逐字引用。战略化：题目点名的‘GPU级硬隔离/软隔离具体技术名(qGPU/MIG)’本批语料未命中(grep确认无qGPU/MIG)，且‘噪声邻居性能干扰隔离的量化效果’无数字——故只写QosAgent缓解噪声邻居的能力，不编造qGPU/MIG技术名或隔离百分比，硬软隔离技术实现与量化效果改为‘按合作场景单独提供’。",
+    "decision": "多团队共享池隔离/优先级/抢占/配额/成本分摊语料很全(RUE内核QoS抢占、QosAgent干扰监控、ResourceLeasingPolicy配额、分项目核算);qGPU/MIG硬软隔离技术名与噪声邻居量化做战略化"
+  },
+  "generatedAt": "2026-06-17T01:38:35.975Z"
+}

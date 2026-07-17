@@ -1,0 +1,36 @@
+{
+  "questionnaireId": "ai-infra-2026",
+  "questionId": "3.2.2",
+  "docId": "AzQfdRVDkEAI",
+  "docUrl": "https://docs.qq.com/aio/DQXpRZmRSVkRrRUFJ",
+  "urlId": "DQXpRZmRSVkRrRUFJ",
+  "dimension": "创新指数",
+  "section": "通智算调度引擎",
+  "subsection": "3.2 智算集群网络与通信",
+  "question": "贵司是否具备自研分布式通信库或通信优化能力？对NCCL/RCCL等通信库的定制优化深度如何？",
+  "guidance": "关注：是否自研通信库（如字节BytePS/阿里ACCL等），还是基于NCCL/RCCL做定制优化，优化方向包括：拓扑感知的通信算法选择、通信与计算的重叠（Overlap）、梯度压缩/稀疏化通信，实测通信效率提升比例。",
+  "draft": "腾讯具备成体系、且已开源的分布式通信与算子优化能力。腾讯混元 AI Infra 团队开源并长期维护工业级高性能的大模型推理底层算子库 HPC-Ops，其中 Fused AllReduce+Norm 算子由团队联合腾讯网络平台部，深度融合跨 GPU 通信、残差叠加与归一化计算，相较 NCCL、FlashInfer 主流方案实现 1.04x～1.68x 提速；其优化路线正是通信与计算的深度重叠融合、拓扑感知与 P2P 同步机制协同打磨。在 GPU 通信库层面，腾讯云在自研 TRMT 技术方向基础上优化 DeepEP，使其在 IB 网络性能提升 30%、在 RoCE 网络环境中性能翻倍，并获 DeepSeek 社区公开致谢。这些成果均沉淀自长期线上生产实践、并对社区开放共建。是否对外以“完整自研分布式通信库”口径对标业界同类方案，以及训练侧整体通信提升的系统化清单，我们可按合作需要进一步明确。",
+  "provenance": {
+    "sources": [
+      {
+        "label": "腾讯技术工程：腾讯混元AI Infra进化-HPC-Ops推理核心算子全面升级 (2026-06-11)",
+        "url": "https://mp.weixin.qq.com/s/qwvaDL0vsY5MwMGCtSHd2g",
+        "kind": "wechat"
+      },
+      {
+        "label": "腾讯云原生：腾讯邱跃鹏-全面升级云基础设施 (2025-09-16)",
+        "url": "https://mp.weixin.qq.com/s/Ncl8V6kGiDP0c7RWe2u4lg",
+        "kind": "wechat"
+      }
+    ],
+    "quotes": [
+      "HPC-Ops 是腾讯混元 AI Infra 团队开源并长期维护的一套工业级、高性能的大模型推理底层算子库",
+      "对比NCCL、FlashInfer主流方案，性能实现1.04x～1.68x提速",
+      "HPC-Ops 联合腾讯网络平台部，创新实现AllReduce通信、残差相加、RMSNorm归一化的全链路融合计算",
+      "使其在 IB 网络性能提升了 30%，在数据中心常用的 RoCE 网络环境中性能更是翻倍"
+    ],
+    "reasoning": "有据(high)：HPC-Ops自研开源算子库、Fused AllReduce vs NCCL 1.04x~1.68x、通信计算融合/联合网络平台部、DeepEP在IB+30%/RoCE翻倍+DeepSeek致谢，均逐字引用一手佐证(注意这些偏推理侧通信)。战略化：是否对外宣称‘完整自研分布式通信库对标BytePS/ACCL’的官方口径与训练侧整体提升清单语料无定论，改为‘可按合作需要进一步明确’，不编造对标结论或训练侧提升比例。",
+    "decision": "对NCCL定制优化深度极实:HPC-Ops自研算子库Fused AllReduce vs NCCL 1.04x~1.68x、DeepEP RoCE翻倍逐字引用;‘完整自研通信库对标BytePS/ACCL’口径做战略化"
+  },
+  "generatedAt": "2026-06-17T01:38:35.975Z"
+}

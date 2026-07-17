@@ -1,0 +1,16 @@
+# macOS
+.DS_Store
+**/.DS_Store
+
+# Local lint report outputs (contain Tencent-specific content)
+lint-report/
+*.lint-report.txt
+
+# Editor
+.vscode/
+.idea/
+*.swp
+*~
+
+# Tool outputs
+*.log

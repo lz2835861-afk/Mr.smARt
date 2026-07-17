@@ -1,0 +1,34 @@
+{
+  "questionnaireId": "idc-aiiaas-2026",
+  "questionId": "2.11",
+  "docId": "AkjTPWLkoOKL",
+  "docUrl": "https://docs.qq.com/aio/DQWtqVFBXTGtvT0tM",
+  "urlId": "DQWtqVFBXTGtvT0tM",
+  "dimension": "",
+  "section": "Capabilties",
+  "subsection": "Bare Metal AI Offerings",
+  "question": "Do you offer bare-metal instances for your highest-tier AI accelerators, and what level of hardware control (e.g., root access, custom hypervisor deployment) is granted to the customer?",
+  "guidance": "IDC 作答格式 (open text)",
+  "draft": "腾讯云具备裸金属（物理服务器）形态的计算供给，并已在存储侧打通对裸金属实例的支持——CFS 文档明确支持在裸金属实例等客户端上挂载使用文件系统，CHDFS 亦可在 CVM、CPM 2.0（黑石物理机）或容器等计算资源内通过 HDFS 协议访问。这意味着面向 AI 的高性能加速器在裸金属部署下，可直接对接 CFS Turbo 并行文件存储与 COS/GooseFS 数据湖，绕过虚拟化开销获得更接近硬件的性能。关于最高一档 AI 加速器是否提供裸金属机型、以及向客户开放的硬件控制层级（如 root 权限、是否允许自定义 hypervisor 部署）等具体条款，因缺乏可直接引用的公开语料，建议由腾讯云对接团队结合具体 GPU 机型与可用区给出准确说明，本问卷不就此作出超出语料支撑范围的承诺。",
+  "provenance": {
+    "sources": [
+      {
+        "label": "CFS 常见问题",
+        "url": "https://cloud.tencent.com/document/product/582/9551",
+        "kind": "doc"
+      },
+      {
+        "label": "CHDFS 产品简介",
+        "url": "https://cloud.tencent.com/document/product/1105/36355",
+        "kind": "doc"
+      }
+    ],
+    "quotes": [
+      "支持在腾讯云内网使用，例如云服务器的 Linux 、 Unix、 Windows 等客户端、容器、云函数、批量计算、裸金属实例等",
+      "通过在腾讯云平台创建 CHDFS，即可在腾讯云多个 CVM、CPM 2.0或者容器等计算资源内通过 HDFS 协议接口访问 CHDFS"
+    ],
+    "reasoning": "题目问最高档 AI 加速器的裸金属与硬件控制层级。存储语料能佐证腾讯云存储支持裸金属/CPM 2.0 对接，但 GPU 裸金属机型与 root/hypervisor 控制权细节无语料。按政策写实部分引用，缺数据部分方向性并交由对接团队，不编造。",
+    "decision": "grounded-partial"
+  },
+  "generatedAt": "2026-06-17T01:38:36.251Z"
+}

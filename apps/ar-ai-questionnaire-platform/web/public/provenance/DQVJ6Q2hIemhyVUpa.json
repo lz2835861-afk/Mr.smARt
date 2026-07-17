@@ -1,0 +1,34 @@
+{
+  "questionnaireId": "idc-aiiaas-2026",
+  "questionId": "3.5",
+  "docId": "ARzChHzhrUJZ",
+  "docUrl": "https://docs.qq.com/aio/DQVJ6Q2hIemhyVUpa",
+  "urlId": "DQVJ6Q2hIemhyVUpa",
+  "dimension": "",
+  "section": "Strategies",
+  "subsection": "Silicon Photonics and Optical Interconnect R&D",
+  "question": "Outline your R&D strategy and timeline for integrating silicon photonics and co-packaged optics (CPO) directly into your AI compute architectures.",
+  "guidance": "IDC 作答格式 (open text)",
+  "draft": "硅光与共封装光学（CPO）是面向下一代 AI 算力、降低互联功耗并大幅提升带宽密度的关键方向，腾讯云对此保持持续关注与前瞻性投入，并将其纳入「软硬件协同全栈优化」的长期战略框架之内。从现状看，腾讯云已在后端互联上构建了以 3.2Tbps RDMA 星脉网络、自研 200Gbps vRDMA 为代表的高带宽、低时延 fabric，这为后续从铜缆电气互联向光互联演进提供了清晰的工程演进基础与规模化部署经验。在演进思路上，腾讯云将延续「以自研降低单位带宽成本、以软硬协同释放有效带宽」的方法论，结合机柜功率密度、散热与能效的同步升级，逐步评估在 AI 计算架构中引入硅光与 CPO 的可行路径与导入节奏。需要客观说明的是，硅光/CPO 直接集成进 AI 计算架构属于跨产业链协同的长周期课题，腾讯云尚未对外披露具体的 CPO 集成产品时间表。关于该方向的研发路线与时间节点，可在与 IDC 商定统一口径后，于保密框架下做进一步沟通，避免给出尚未确定的承诺性数字。",
+  "provenance": {
+    "sources": [
+      {
+        "label": "腾讯云文档：高性能计算集群 实例规格",
+        "url": "https://cloud.tencent.com/document/product/1646/81562",
+        "kind": "doc"
+      },
+      {
+        "label": "腾讯云原生公众号：邱跃鹏——全面升级云基础设施",
+        "url": "https://mp.weixin.qq.com/s/Ncl8V6kGiDP0c7RWe2u4lg",
+        "kind": "wechat"
+      }
+    ],
+    "quotes": [
+      "实例间支持 3.2Tbps RDMA 星脉网络互联，性能强大",
+      "这些成果背后，是腾讯软硬件协同全栈优化的长期战略投入"
+    ],
+    "reasoning": "题目要硅光/CPO R&D 战略与时间表。语料完全没有硅光/CPO 内容。按政策做纯战略/方向性表述，以现有高带宽 fabric（3.2Tbps 星脉、软硬协同长期投入，逐字引用）作为演进基础，明确未披露 CPO 集成时间表、可保密沟通，绝不杜撰时间节点或指标。",
+    "decision": "answered"
+  },
+  "generatedAt": "2026-06-17T01:38:36.251Z"
+}

@@ -1,0 +1,46 @@
+{
+  "questionnaireId": "ai-infra-2026",
+  "questionId": "6.1.3",
+  "docId": "ABTuOAGLITCh",
+  "docUrl": "https://docs.qq.com/aio/DQUJUdU9BR0xJVENo",
+  "urlId": "DQUJUdU9BR0xJVENo",
+  "dimension": "增长指数",
+  "section": "产品与服务规模",
+  "subsection": "6.1 业务规模与增长",
+  "question": "贵司AI Infra产品覆盖哪些部署模式？公有云/私有云/混合云/边缘的客户分布比例？",
+  "guidance": "关注：不同部署模式下的产品能力是否一致（而非公有云功能丰富、私有云功能阉割），边缘侧AI Infra能力（模型推理/轻量训练）的落地情况。",
+  "draft": "腾讯云 AI Infra 提供公有云、专有云(私有化)、混合云与边缘协同的全场景部署能力,且坚持各部署形态下产品能力的一致性而非『公有云全功能、私有云阉割』。公有云侧以异构算力平台整合多种芯片资源对外提供高性价比 AI 算力,并已全面适配主流国产芯片;专有云侧,腾讯专有云 TCE 与 TCS 实现国产主流软硬件 100% 适配,ClawPro 专有云版可在企业本地把大模型与调度能力完整部署,实现『运维+办公』双场景的私有化落地;混合与跨集群侧,TKE 算力集群以在离线混部与跨集群调度整合全局算力;边缘侧依托 TKE Edge/边缘节点支撑模型推理与轻量训练下沉。同一套 Agent Runtime、TI 平台与模型服务可贯穿公有云与专有云,保证能力对齐。各部署模式下的客户分布比例属内部经营数据,我们将另行提供经核验的占比口径。",
+  "provenance": {
+    "sources": [
+      {
+        "label": "腾讯云｜刚刚，腾讯升级了Agent国产技术底座",
+        "url": "https://mp.weixin.qq.com/s/7u4XFQsKbtK2ShF3zJ6-XQ",
+        "kind": "wechat"
+      },
+      {
+        "label": "腾讯云原生｜腾讯邱跃鹏：面向Agent和全球化趋势，全面升级云基础设施",
+        "url": "https://mp.weixin.qq.com/s/Ncl8V6kGiDP0c7RWe2u4lg",
+        "kind": "wechat"
+      },
+      {
+        "label": "腾讯云｜多款AI产品首发！腾讯云升级全栈企业级Agent能力",
+        "url": "https://mp.weixin.qq.com/s/PA1SMzy7CBaj9OGvDCWheQ",
+        "kind": "wechat"
+      },
+      {
+        "label": "腾讯云原生｜TKE 算力集群：新一代跨集群混部资源引擎",
+        "url": "https://mp.weixin.qq.com/s/JaRScaFPT58j_mnRb5REqA",
+        "kind": "wechat"
+      }
+    ],
+    "quotes": [
+      "腾讯专有云TCE与TCS，国产主流软硬件100%适配，通过了信通院融合创新云IaaS性能总体架构最高等级检验",
+      "国内首个经百万级用户验证的管控平台ClawPro正式首发专有云版本。它实现了「运维+办公」双场景联动，将大模型与调度能力严密、完整地部署在企业本地。",
+      "依托异构计算平台整合多种芯片资源，向外界提供高性价比的 AI 算力。目前，该平台已全面适配主流国产芯片",
+      "通过整合“在离线混部（深度利用）” 与 “跨集群调度（广度扩展）” 两大技术支柱"
+    ],
+    "reasoning": "据 readiness：groundability=medium、action=ai-draft+ar-verify。部署模式『能力覆盖』可由产品/公众号佐证:专有云TCE/TCS 100%适配+信通院最高等级(quote)、ClawPro专有云本地部署(quote)、异构算力公有云底座+国产芯片适配(quote)、TKE算力集群跨集群混部(quote);边缘侧 readiness 指向 TKE Edge产品文档,本答案以方向性能力描述。能力一致性(非阉割)为战略承诺。唯独『四模式客户分布比例』属内部数据——绝不编造百分比,明确标注另行提供经核验占比。",
+    "decision": "部署模式『能力覆盖』有产品/公众号一手佐证(公有云/专有云/混合/边缘全覆盖、能力对齐),但四模式『客户分布比例』属内部数据须AR补。"
+  },
+  "generatedAt": "2026-06-17T01:38:35.975Z"
+}

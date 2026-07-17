@@ -1,0 +1,40 @@
+{
+  "questionnaireId": "idc-aiiaas-2026",
+  "questionId": "2.3",
+  "docId": "ApAQPaWuVhZs",
+  "docUrl": "https://docs.qq.com/aio/DQXBBUVBhV3VWaFpz",
+  "urlId": "DQXBBUVBhV3VWaFpz",
+  "dimension": "",
+  "section": "Capabilties",
+  "subsection": "Maximum Supercluster Scale",
+  "question": "What is the maximum number of current-generation AI accelerators you can currently string together in a single tightly coupled cluster (supercluster) in a GA region?",
+  "guidance": "IDC 作答格式 (#)",
+  "draft": "腾讯云通过自研的「星脉」高性能计算网络与高性能计算集群（HCC）为大规模分布式训练提供紧耦合的后端网络底座。在单实例层面，最新一代 HCCPNV5/HCCPNV6 实例已支持 3.2Tbps 的低延迟 RDMA 星脉网络互联，并采用无阻塞 RoCEv2 网络实现节点间互联、传输时延低至 2us，专用于高性能计算集群内通信；GPU 卡间则通过 NVLink 高速互联。这一无阻塞、高带宽、超低时延的后端 fabric 正是支撑数千至更大规模加速器同步训练的关键。关于单一紧耦合集群（supercluster）可串联的当前一代 AI 加速器最大卡数，会随地域、机型代次与客户项目而动态变化，且属于按项目交付的能力上限。我们可在与 IDC 商定统一统计口径（如同一非阻塞后端 fabric、同一 GA 地域）后，于保密框架下提供经核实的具体数值，避免给出不可比的数字。",
+  "provenance": {
+    "sources": [
+      {
+        "label": "腾讯云文档：高性能计算集群 实例规格",
+        "url": "https://cloud.tencent.com/document/product/1646/81562",
+        "kind": "doc"
+      },
+      {
+        "label": "腾讯云文档：高性能计算集群 产品优势",
+        "url": "https://cloud.tencent.com/document/product/1646/81560",
+        "kind": "doc"
+      },
+      {
+        "label": "腾讯云出海服务公众号：腾讯云全栈能力构建出海底座",
+        "url": "https://mp.weixin.qq.com/s/6Ug6YL0F3mPJdOPQmdxAFQ",
+        "kind": "wechat"
+      }
+    ],
+    "quotes": [
+      "GPU 卡间支持400GB/s NVLink 互联，实例间支持 3.2Tbps RDMA 星脉网络互联，性能强大。",
+      "支持私有网络（VPC）及无阻塞 RoCEv2 RDMA 网络实现节点间互联，传输时延低至2us，能广泛支持基于以太网的应用。",
+      "腾讯云以星脉高性能计算网络、高性能计算集群HCC等为底层算力支撑"
+    ],
+    "reasoning": "题目 response_format 为 (#)，要单一紧耦合集群最大加速器卡数。语料只有单实例级 3.2Tbps RDMA、2us 时延、NVLink，没有集群规模最大卡数。按政策不得杜撰最大卡数，转为说明后端 fabric 能力并声明统一口径下保密提供。",
+    "decision": "answered"
+  },
+  "generatedAt": "2026-06-17T01:38:36.251Z"
+}

@@ -1,0 +1,41 @@
+{
+  "questionnaireId": "idc-aiiaas-2026",
+  "questionId": "2.13",
+  "docId": "AnCinIrFITbm",
+  "docUrl": "https://docs.qq.com/aio/DQW5DaW5JckZJVGJt",
+  "urlId": "DQW5DaW5JckZJVGJt",
+  "dimension": "",
+  "section": "Capabilties",
+  "subsection": "Resource Provisioning and Elasticity",
+  "question": "What are the limits and average provisioning times for dynamically auto-scaling a cluster of 500+ GPUs using your native cloud orchestration tools (e.g., managed Kubernetes)?",
+  "guidance": "IDC 作答格式 (open text)",
+  "draft": "腾讯云为大规模 GPU 集群提供从底层算力供给到上层容器编排的弹性伸缩能力，支撑动态扩缩 500+ 卡级别的训练/推理集群：\n\n- 算力供给层：GPU 云服务器与高性能计算集群（THCC）支持全自动化生产与弹性扩缩容，兼具灵活弹性与高性能；相较自建集群，仅需几分钟即可获取一个或若干高性能计算实例，并可一键升级实例规格实现快速、平滑扩容。\n- 编排与调度层：基于容器服务 TKE 的'算力集群'方案，可穿透集群边界，将分散在各业务集群中的闲置 CPU/GPU 节点抽象为虚拟节点（vNode）形成全局算力池统一调度，闲置资源不足时自动扩容 Serverless 弹性算力兜底，并支持 Gang Scheduling 批调度以保证多卡分布式任务'全调度成功或全不调度'。控制面通过自研 Hyper Master 方案突破原生 etcd 瓶颈，单集群可稳定支撑 5 万+节点、可实现 99.95% 的集群稳定性，足以承载数百至数千卡级别的弹性编排。\n\n关于'500+ GPU 自动扩缩的硬性上限与平均开通时长'，受地域库存、实例代次、配额及网络拓扑（如同一星脉集群内非阻塞组网）等因素影响，腾讯云不以单一固定数值对外承诺；对于大规模、确定交付时间窗口的算力，建议通过包销/容量预留方式锁定。具体的上限与端到端开通时长，可在与 IDC 商定统一口径并结合目标地域、卡型后单独提供。",
+  "provenance": {
+    "sources": [
+      {
+        "label": "腾讯云高性能计算集群 产品优势",
+        "url": "https://cloud.tencent.com/document/product/1646/81560",
+        "kind": "doc"
+      },
+      {
+        "label": "腾讯云 GPU 云服务器 产品概述",
+        "url": "https://cloud.tencent.com/document/product/560/8015",
+        "kind": "doc"
+      },
+      {
+        "label": "TKE 算力集群：新一代跨集群混部资源引擎（腾讯云原生）",
+        "url": "https://mp.weixin.qq.com/s/JaRScaFPT58j_mnRb5REqA",
+        "kind": "wechat"
+      }
+    ],
+    "quotes": [
+      "支持全自动化生产及弹性扩缩容，兼具灵活弹性与高性能。",
+      "只需几分钟时间即可轻松获取一个或若干个高性能计算实例。",
+      "单集群可支撑 5万+节点的稳定运行，将控制面吞吐量提升10倍以上，API 响应延迟降低至毫秒级，可实现 99.95% 的集群稳定性。",
+      "支持 Gang Scheduling（批调度），比如 Spark 任务需要 10 个 Executor，要么全调度成功，要么全不调度，避免资源浪费。"
+    ],
+    "reasoning": "题面问 500+ GPU 集群动态自动扩缩的上限与平均开通时长。语料支持弹性扩缩容能力（81560）、几分钟获取实例（8015）、TKE 算力集群 vNode 池化+Serverless 兜底+批调度+Hyper Master 5万+节点/99.95%（公众号），均可引用写实。但'500+ GPU 的硬上限'与'平均开通时长'语料无对应数字，按政策不编造，改写为方向性表述并说明可单独提供。",
+    "decision": "answer"
+  },
+  "generatedAt": "2026-06-17T01:38:36.251Z"
+}

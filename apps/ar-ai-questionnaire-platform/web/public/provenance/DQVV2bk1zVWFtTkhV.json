@@ -1,0 +1,47 @@
+{
+  "questionnaireId": "idc-aiiaas-2026",
+  "questionId": "2.1",
+  "docId": "AUvnMsUamNHU",
+  "docUrl": "https://docs.qq.com/aio/DQVV2bk1zVWFtTkhV",
+  "urlId": "DQVV2bk1zVWFtTkhV",
+  "dimension": "",
+  "section": "Capabilties",
+  "subsection": "GPU Instance Variety",
+  "question": "Detail the specific generations and models of merchant GPUs (e.g., NVIDIA, AMD) currently GA in your cloud.",
+  "guidance": "IDC 作答格式 (open text)",
+  "draft": "腾讯云在公有云上已正式商用（GA）一系列第三方主流厂商 GPU，覆盖训练与推理的不同算力与显存需求，主要以 NVIDIA 加速卡为主：\n\n- 训练/大规模并行：高性能计算集群（THCC）GPU 型实例搭载 NVIDIA H800（HCCPNV5/HCCPNV5v，8×H800 NVLink 80GB）、NVIDIA A800（HCCPNV4sne/HCCPNV4sn，8×A800 NVLink 80GB）、NVIDIA A100（HCCPNV4h，8×A100 NVLink 40GB）、NVIDIA V100（HCCG5vm/HCCG5v）。这些实例 GPU 卡间通过 NVLink 互联（A100 达 600GB/s，H800/A800 为 400GB/s），实例间通过自研星脉 RDMA 网络互联（最高 3.2Tbps）。\n- 推理与图形/通用计算：GPU 云服务器（CVM）提供搭载 A10（PNV4、GNV4v）、T4（GN7、GN7vw、GN7vi）等机型；裸金属服务器（CBM）提供 BMGNV4（16×A10）、BMG5t（4×T4）、BMG5v（8×V100 NVLink 32GB）等型号，可用于在线/离线推理与小规模训练。\n\n除第三方 GPU 外，腾讯云亦提供自研异构算力（如紫霄 C100 NPU 推理卡、星星海 GA01 渲染卡），并通过异构计算平台整合多种芯片资源。最新一代 GPU 型实例（如 HCCPNV6）目前处于邀测/白名单阶段，将随商用化逐步开放。各机型实际可售卖地域与配额以购买页及与客户经理确认为准；如 IDC 需要按代次/卡数统一口径的清单，腾讯云可在商定口径后单独提供。\n\n说明：本回复中 AMD 等其他第三方 GPU 在腾讯云的商用情况，以双方核对后的统一口径为准，此处不做超出现有公开材料的列举。",
+  "provenance": {
+    "sources": [
+      {
+        "label": "腾讯云高性能计算集群 实例规格",
+        "url": "https://cloud.tencent.com/document/product/1646/81562",
+        "kind": "doc"
+      },
+      {
+        "label": "腾讯云高性能计算集群 实例售卖地域",
+        "url": "https://cloud.tencent.com/document/product/1646/81565",
+        "kind": "doc"
+      },
+      {
+        "label": "腾讯云 GPU 云服务器 应用场景",
+        "url": "https://cloud.tencent.com/document/product/560/8018",
+        "kind": "doc"
+      },
+      {
+        "label": "腾讯云 裸金属云服务器 实例规格",
+        "url": "https://cloud.tencent.com/document/product/386/63404",
+        "kind": "doc"
+      }
+    ],
+    "quotes": [
+      "搭载 8 × NVIDIA® H800 NVLink® 80GB（FP32 64 TFLOPS, TF32 494 TFLOPS, BF16 989 TFLOPS, 400GB/s NVLink®）",
+      "搭载 8 × NVIDIA® A100 NVLink® 40GB（FP64 9.7 TFLOPS, TF32 156 TFLOPS, BF16 312 TFLOPS, 600GB/s NVLink®）",
+      "| 高性能计算集群 | GPU 型 | HCCPNV5 | NVIDIA H800 | 上海 |",
+      "NPU 计算型 PTX1搭载紫霄C100加速卡，适用于 AI 推理场景，在 CV、OCR、NLP 等场景性价比优越。",
+      "**GPU**：搭载 8 × NVIDIA® Tesla® V100 GPU（15.7TFLOPS 单精度浮点计算，7.8TFLOPS 双精度浮点计算，125TFLOPS Tensor Core 深度学习加速，300GB/s NVLink®）。"
+    ],
+    "reasoning": "题面问当前 GA 的第三方 GPU 代次与型号。语料中 HCC 实例规格(81562)与售卖地域(81565)逐字给出 H800/A800/A100/V100 机型、NVLink/星脉带宽、显存与地域；CBM(63404)给出 BMG 系列 A10/T4/V100；CVM(8018)给出 A10/T4 及自研紫霄 C100、星星海 GA01。这些是写实并可引用的硬数据。AMD GPU 在语料中无依据，按政策不杜撰，改写为'以核对后统一口径为准'。最新代次 HCCPNV6 语料标注为邀测，如实表述为邀测阶段。",
+    "decision": "answer"
+  },
+  "generatedAt": "2026-06-17T01:38:36.251Z"
+}

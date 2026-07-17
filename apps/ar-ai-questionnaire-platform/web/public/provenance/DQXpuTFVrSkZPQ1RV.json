@@ -1,0 +1,30 @@
+{
+  "questionnaireId": "idc-aiiaas-2026",
+  "questionId": "3.16",
+  "docId": "AznLUkJFOCTU",
+  "docUrl": "https://docs.qq.com/aio/DQXpuTFVrSkZPQ1RV",
+  "urlId": "DQXpuTFVrSkZPQ1RV",
+  "dimension": "",
+  "section": "Strategies",
+  "subsection": "Architecture Support & Customer Success",
+  "question": "What is your strategy for scaling customer support and architectural guidance specifically for low-level AI infrastructure optimization (e.g., optimizing CUDA kernels, tuning network topologies)?",
+  "guidance": "IDC 作答格式 (open text)",
+  "draft": "面向 AI 基础设施底层优化的客户支持，腾讯云采取「专家智能体 + 全栈软硬件协同团队 + 全球技术支持网络」三位一体的扩容战略。在自动化专家能力上，腾讯云将 Agent 技术应用于云基础设施，推出专家服务智能体 Cloud Mate，由凝聚各云上领域经验的子 Agent 构成，可可视化治理云上架构、前置拦截风险并大幅提升问题处理效率；在内部实践中其对风险 SQL 的拦截率达 95%，并将平均排障时间从 30 小时以上缩短至最快 3 分钟，这套能力可迁移到 AI 基础设施的架构治理与故障定位场景。在底层性能优化上，腾讯云具备软硬件协同全栈优化的工程团队，长期在推理加速、GPU 通信（如对 DeepEP 的优化使 RoCE 网络性能翻倍）、KV Cache 多级缓存、推理框架 MTP/Attention DP/MoE-Chunk 等方向积累深厚，能够为客户在算子级、通信库级与网络拓扑级提供深度调优支持；同时依托异构计算平台帮助客户在不同芯片间获得高性价比算力。在服务网络上，腾讯云已在全球设立 9 个技术支持中心、并通过 400 多项专业认证，为客户在不同地域提供本地化的架构指导与支持。随着 AI 负载规模扩大，腾讯云将持续以「智能体提效 + 专家深度调优 + 全球本地化支持」的方式扩展面向低层 AI 基础设施优化的客户成功能力。",
+  "provenance": {
+    "sources": [
+      {
+        "label": "腾讯云原生公众号：邱跃鹏——全面升级云基础设施",
+        "url": "https://mp.weixin.qq.com/s/Ncl8V6kGiDP0c7RWe2u4lg",
+        "kind": "wechat"
+      }
+    ],
+    "quotes": [
+      "Cloud Mate对风险SQL的拦截率高达95%",
+      "将平均排障时间，从小时级缩短至分钟级，最快仅需3分钟",
+      "已在全球范围内设立9个技术支持中心，持续为本地客户提供卓越服务。同时，我们通过了400多项专业认证"
+    ],
+    "reasoning": "题目要为低层 AI 基础设施优化（CUDA kernel、网络拓扑调优）扩展客户支持/架构指导的战略。语料强支撑：Cloud Mate（95% 拦截率、3 分钟排障，逐字）、软硬件协同团队/DeepEP/推理框架优化体现底层调优能力、9 个技术支持中心+400 多项认证（逐字）体现全球支持网络。全部可证实，符合政策。",
+    "decision": "answered"
+  },
+  "generatedAt": "2026-06-17T01:38:36.251Z"
+}

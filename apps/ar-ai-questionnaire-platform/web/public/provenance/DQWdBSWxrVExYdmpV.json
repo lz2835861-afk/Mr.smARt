@@ -1,0 +1,48 @@
+{
+  "questionnaireId": "ai-infra-2026",
+  "questionId": "8.1.3",
+  "docId": "AgAIlkTLXvjU",
+  "docUrl": "https://docs.qq.com/aio/DQWdBSWxrVExYdmpV",
+  "urlId": "DQWdBSWxrVExYdmpV",
+  "dimension": "增长指数",
+  "section": "专业服务与生态",
+  "subsection": "8.1 服务与生态",
+  "question": "贵司AI Infra的开源贡献与开发者生态活跃度如何？",
+  "guidance": "关注：是否开源了核心AI Infra组件（调度器/推理框架/训练框架等），开源项目的Star数/贡献者数量/下载量，开发者社区的活跃用户数与技术问答响应速度。",
+  "draft": "腾讯云在 AI Infra 核心组件上有持续且体系化的开源贡献。Agent 执行底座方面，『今天，腾讯云宣布正式开源 Cube Sandbox』，原生兼容 E2B 接口标准，并在 GitHub 提供贡献指南、issues 与 discussions，明确『我们欢迎任何形式的贡献，无论是提交 Bug、改进文档，还是为一个新的 AI 框架编写接入插件』。推理算子方面，『腾讯混元AI Infra团队正式推出开源生产级高性能LLM推理核心算子库 HPC-Ops』并长期维护、持续升级，可无缝对接 vLLM、SGLang 等主流框架。在上游社区贡献上，『腾讯云深入参与开源贡献，向DeepSeek、vLLM、SGLang等社区提交了多项优化技术』，自研并开源 FlexKV 多级缓存，并基于 DeepEP 优化使 DeepSeek 在社区公开致谢、以『huge speedup』形容。我们以开源回馈社区为长期战略，配套文档、示例与共建机制，持续提升开发者生态活跃度。",
+  "provenance": {
+    "sources": [
+      {
+        "label": "公众号/腾讯云/2026-04-21 腾讯云开源OpenAI、Manus同款Agent底座（开源 Cube Sandbox，github.com/TencentCloud/CubeSandbox，兼容 E2B，含贡献指南/issues/discussions）",
+        "url": "https://mp.weixin.qq.com/s/5rWKipAQdibiBmmQBHXVWg",
+        "kind": "wechat"
+      },
+      {
+        "label": "公众号/腾讯混元/2026-02-04 腾讯混元AI Infra核心技术重磅开源（开源推理算子库 HPC-Ops，github.com/Tencent/hpc-ops，QPM+30%/+17%）",
+        "url": "https://mp.weixin.qq.com/s/zyDXLiRJWhol-Uvq72efOQ",
+        "kind": "wechat"
+      },
+      {
+        "label": "公众号/腾讯混元/2026-06-11 HPC-Ops 推理核心算子全面升级（团队长期维护、五大算子升级、全面开源面向社区）",
+        "url": "https://mp.weixin.qq.com/s/y0vd1cpvWXLSssL1kXxguw",
+        "kind": "wechat"
+      },
+      {
+        "label": "公众号/腾讯云原生/2025-09-16 腾讯邱跃鹏：全面升级云基础设施（开源 FlexKV，向 DeepSeek/vLLM/SGLang 提交优化，DeepSeek 公开致谢 huge speedup）",
+        "url": "https://mp.weixin.qq.com/s/Ncl8V6kGiDP0c7RWe2u4lg",
+        "kind": "wechat"
+      }
+    ],
+    "quotes": [
+      "今天，腾讯云宣布正式开源 Cube Sandbox。",
+      "我们欢迎任何形式的贡献，无论是提交 Bug、改进文档，还是为一个新的 AI 框架编写接入插件。",
+      "腾讯混元AI Infra团队正式推出开源生产级高性能LLM推理核心算子库 HPC-Ops。",
+      "HPC-Ops 是腾讯混元 AI Infra 团队开源并长期维护的一套工业级、高性能的大模型推理底层算子库。",
+      "在推理加速方面，腾讯云深入参与开源贡献，向DeepSeek、vLLM、SGLang等社区提交了多项优化技术。针对大模型推理面临的内存瓶颈，腾讯云自研并开源FlexKV 多级缓存技术，大幅降低KVCache的占用，将首字时延降低多达70%。",
+      "我们在此基础上优化了 DeepEP，使其在 IB 网络性能提升了 30%，在数据中心常用的 RoCE 网络环境中性能更是翻倍。DeepSeek 在社区公开致谢，并用“huge speedup”形容这次贡献。"
+    ],
+    "reasoning": "readiness 判定 groundability=high / action=ai-draft+ar-verify。开源核心 AI Infra 组件这一点佐证最充分：Cube Sandbox（Agent 沙箱/调度底座，github.com/TencentCloud/CubeSandbox，含贡献指南/issues/discussions）、HPC-Ops（推理算子库，github.com/Tencent/hpc-ops，长期维护并持续升级）、FlexKV（多级缓存开源），以及向 DeepSeek/vLLM/SGLang 上游社区提交优化、DeepSeek 公开致谢『huge speedup』，均逐字可引。按 missing_for_ar，唯一缺口是各开源项目 GitHub Star 数/贡献者数/累计下载调用量、社区 DAU/MAU 与问答响应时长——这些量化生态指标我一律未编造，仅以『持续提升开发者生态活跃度、配套文档示例与共建机制』作方向性收尾，留待 AR 补数核实。",
+    "decision": "开源核心 AI Infra 组件一手佐证充分（Cube Sandbox、HPC-Ops、FlexKV，及对 DeepSeek/vLLM/SGLang 上游贡献），带逐字引用；仅 Star/贡献者/下载量/社区活跃度等量化数字留方向性。"
+  },
+  "generatedAt": "2026-06-17T01:38:35.975Z"
+}

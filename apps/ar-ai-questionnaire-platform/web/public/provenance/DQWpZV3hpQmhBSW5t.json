@@ -1,0 +1,30 @@
+{
+  "questionnaireId": "idc-aiiaas-2026",
+  "questionId": "3.12",
+  "docId": "AjYWxiBhAInm",
+  "docUrl": "https://docs.qq.com/aio/DQWpZV3hpQmhBSW5t",
+  "urlId": "DQWpZV3hpQmhBSW5t",
+  "dimension": "",
+  "section": "Strategies",
+  "subsection": "Edge AI Infrastructure Strategy",
+  "question": "Describe your strategy for deploying AI infrastructure (specifically inference accelerators) at the edge, including telco edge, on-premises local zones, and private 5G integrations.",
+  "guidance": "IDC 作答格式 (open text)",
+  "draft": "腾讯云的边缘 AI 基础设施策略，核心是把算力从核心大区向贴近用户的边缘节点下沉，以满足低时延的实时接入与推理需求：\n\n- 全球分布式加速底座：腾讯云基础设施已覆盖全球 55 个可用区并部署 3200 多个加速节点，构成贴近终端用户的分布式接入与加速网络，为就近、低时延的服务接入提供入口。\n- 边缘加速与安全产品：面向国际市场的下一代安全加速产品 EdgeOne 提供边缘节点上的加速与安全能力；其中 EdgeOne Pages 进一步将大模型与 MCP Server 结合，支撑低门槛的应用部署，是腾讯云在边缘侧的重要产品载体。\n- 异构算力下沉与就近部署：依托异构计算平台整合多种芯片资源对外提供高性价比 AI 算力，可将算力按需部署到更靠近业务的位置；对于企业本地化诉求，腾讯云具备专有云（TCE）等可在客户侧/本地交付的能力，支撑'边+端'一体的就近部署。\n\n关于电信运营商边缘（telco edge）、本地专区（local zone）与专用 5G 集成等具体部署形态及其覆盖清单，腾讯云会结合区域市场与客户需求逐步推进；详细的边缘节点能力、可用区域与 5G 集成方案，可在与 IDC 商定统一口径后，按目标市场单独提供。",
+  "provenance": {
+    "sources": [
+      {
+        "label": "腾讯邱跃鹏：面向Agent和全球化趋势，全面升级云基础设施（腾讯云原生）",
+        "url": "https://mp.weixin.qq.com/s/Ncl8V6kGiDP0c7RWe2u4lg",
+        "kind": "wechat"
+      }
+    ],
+    "quotes": [
+      "腾讯云基础设施已覆盖全球 55 个可用区，部署 3200 多个加速节点",
+      "EdgeOne是我们面向国际市场推出的下一代安全加速产品",
+      "依托异构计算平台整合多种芯片资源，向外界提供高性价比的 AI 算力。目前，该平台已全面适配主流国产芯片。"
+    ],
+    "reasoning": "题面问边缘 AI（含 telco edge、本地专区、私有 5G）推理部署策略。语料支持：55 可用区/3200+ 加速节点、EdgeOne 边缘加速、异构计算平台、专有云本地交付（公众号）。telco edge/local zone/5G 具体清单无依据，按政策方向性表述并注明可单独提供，不编造覆盖数字或客户名。",
+    "decision": "answer"
+  },
+  "generatedAt": "2026-06-17T01:38:36.251Z"
+}

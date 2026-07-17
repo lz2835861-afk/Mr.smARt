@@ -1,0 +1,40 @@
+{
+  "questionnaireId": "ai-infra-2026",
+  "questionId": "4.2.1",
+  "docId": "ALfaJScniilX",
+  "docUrl": "https://docs.qq.com/aio/DQUxmYUpTY25paWxY",
+  "urlId": "DQUxmYUpTY25paWxY",
+  "dimension": "创新指数",
+  "section": "安全沙箱环境",
+  "subsection": "4.2 沙箱统一管理",
+  "question": "贵司是否提供多类型沙箱的统一策略管理与集中审计平台？与企业现有安全体系（SIEM/零信任等）的集成能力如何？",
+  "guidance": "关注：不同沙箱类型（代码/浏览器/桌面/手机）的策略是否可统一编排与下发，审计日志是否可对接企业SIEM系统，是否支持零信任网络架构（ZTNA）集成。",
+  "draft": "在多类型沙箱的统一管理与集中审计上，腾讯云 Agent Runtime 提供完整的沙箱生命周期管理与细粒度角色权限控制，可灵活配置沙箱对云上资源的访问范围，并内置监控、审计和日志能力，确保整个执行过程透明、可控、可追溯。面向企业内成百上千个 Agent 与多类沙箱(代码/浏览器/电脑/手机)散落难管的问题，我们上线了 ADP Agent Portal 作为统一调度枢纽，实现全链路的统一入口与可观测治理，把分散的 Agent 与执行环境统一收编、精细化排班并全程监督运行结果；配合 AI Agent 安全中心的行为层面审计、对话与工具审计及网络管控，形成跨沙箱类型可统一编排、集中审计的管理面。在与企业既有安全体系的衔接上，腾讯云以开放的审计日志与标准化接口为基础，规划并持续推进与企业 SIEM、零信任网络(ZTNA)等安全架构的对接与集成，使沙箱审计与策略下发能够纳入企业统一的安全运营与访问控制体系，具体集成范围以与客户安全架构的对接方案为准。",
+  "provenance": {
+    "sources": [
+      {
+        "label": "腾讯云原生 2025-09-18 Agent Runtime 云沙箱 (生命周期管理/细粒度角色权限/内置监控审计日志)",
+        "url": "https://mp.weixin.qq.com/s/gwABnRQfSHdkAY_PtorfYA",
+        "kind": "wechat"
+      },
+      {
+        "label": "腾讯云 2026-04-28 升级全栈企业级Agent能力 (ADP Agent Portal 统一入口与可观测治理)",
+        "url": "https://mp.weixin.qq.com/s/PA1SMzy7CBaj9OGvDCWheQ",
+        "kind": "wechat"
+      },
+      {
+        "label": "腾讯云出海服务 2026-03-11 龙虾安全中心 (行为审计/对话与工具审计/网络管控/合规溯源)",
+        "url": "https://mp.weixin.qq.com/s/Uo1XIrvG65BeKbyMIONUvA",
+        "kind": "wechat"
+      }
+    ],
+    "quotes": [
+      "提供内置的监控、审计和日志能力，确保整个执行过程透明、可控、可追溯",
+      "实现全链路的统一入口与可观测治理",
+      "对话与工具审计：系统会审计提示词与工具（Tools/MCP）调用行为"
+    ],
+    "reasoning": "有据：沙箱生命周期管理+细粒度角色权限+内置监控审计日志(09-18)、ADP Agent Portal '全链路的统一入口与可观测治理'(04-28)、对话与工具审计/网络管控/合规溯源(03-11)。战略化:题目核心的'多沙箱类型统一策略编排下发''审计日志对接 SIEM(Splunk/QRadar)''零信任 ZTNA 集成'语料无明确佐证(readiness 标为 ar-supply)，故用'以开放审计日志与标准化接口为基础，规划并持续推进与 SIEM/ZTNA 对接''具体集成范围以对接方案为准'的方向性、能力体系表述收口，不编造任何对接产品清单。",
+    "decision": "弱有据：统一入口/可观测治理与审计、权限、网络管控有据；SIEM/零信任集成做战略化方向表述，不编造对接清单。"
+  },
+  "generatedAt": "2026-06-17T01:38:35.975Z"
+}

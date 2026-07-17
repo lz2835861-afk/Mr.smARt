@@ -1,0 +1,28 @@
+{
+  "questionnaireId": "idc-aiiaas-2026",
+  "questionId": "1.5.3",
+  "docId": "AlCEAdPsVmBG",
+  "docUrl": "https://docs.qq.com/aio/DQWxDRUFkUHNWbUJH",
+  "urlId": "DQWxDRUFkUHNWbUJH",
+  "dimension": "",
+  "section": "Preliminary",
+  "subsection": "",
+  "question": "Please indicate the approximate share of your CY 2025 WW revenues for these worldwide regions: — LATAM",
+  "guidance": "IDC 作答格式 (%)",
+  "draft": "Please indicate the approximate share of your CY 2025 WW revenues for these worldwide regions — LATAM（拉丁美洲）：依托全球 22 个地区、3200+ 加速节点的基础设施覆盖，腾讯云在拉美地区为游戏、内容、电商及金融科技等出海客户提供低延迟接入与本地化服务。拉美区域占公司 2025 自然年全球收入的具体百分比，涉及内部区域营收拆分口径，建议在与 IDC 商定统一区域划分后，由腾讯云对接团队以保密方式单独提供。",
+  "provenance": {
+    "sources": [
+      {
+        "label": "腾讯云出海服务：AI 重构出海竞争力（2026-03-31）",
+        "url": "https://mp.weixin.qq.com/s/6Ug6YL0F3mPJdOPQmdxAFQ",
+        "kind": "wechat"
+      }
+    ],
+    "quotes": [
+      "在全球基础设施层面，腾讯云已实现22个地区覆盖、64个运营可用区、3200+全球加速节点、400T带宽储备"
+    ],
+    "reasoning": "要求 LATAM 营收占比（%）。语料无占比数字，严禁编造。引用可核实的全球覆盖事实说明拉美有布局，占比由对接团队保密提供。",
+    "decision": "draft"
+  },
+  "generatedAt": "2026-06-17T01:38:36.251Z"
+}

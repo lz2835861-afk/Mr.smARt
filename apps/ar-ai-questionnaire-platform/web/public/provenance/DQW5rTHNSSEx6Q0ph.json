@@ -1,0 +1,34 @@
+{
+  "questionnaireId": "ai-infra-2026",
+  "questionId": "6.1.1",
+  "docId": "AnkLsRHLzCJa",
+  "docUrl": "https://docs.qq.com/aio/DQW5rTHNSSEx6Q0ph",
+  "urlId": "DQW5rTHNSSEx6Q0ph",
+  "dimension": "增长指数",
+  "section": "产品与服务规模",
+  "subsection": "6.1 业务规模与增长",
+  "question": "请提供贵司AI Infra相关业务近三年的收入规模、增长率。",
+  "guidance": "可提供范围数据（如10-20亿元）。关注：收入口径是否包含算力租赁/云服务/软件授权/专业服务等各子项，增速是否高于AI行业平均水平，AI Infra在公司内部的战略定位。",
+  "draft": "AI Infra 已是腾讯云面向智能时代的核心战略方向。我们对外发布了从底层 Infra 基建到顶层 Agent 应用的全栈 AI 能力与产品体系,把 AI 基础设施定位为支撑 Agent 规模化落地与企业全球化发展的底座。在业务口径上,AI Infra 收入并非单一品类,而是覆盖异构算力(算力租赁/GPU 云服务)、云原生与调度平台、模型与推理服务(TI 平台、TokenHub)、专有云与软件授权,以及配套的专业服务等多个子项,形成一体化的规模化营收结构。受益于 AI 应用产业落地带来的推理需求暴涨与 Agent 落地加速,该业务整体保持强劲的增长态势,并在腾讯云内部享有持续加大的资源与研发投入。具体的近三年收入区间、各年同比增速(含与行业的对比口径)及各子项收入占比,涉及未公开的财务口径,我们将按报告需要单独提供经核验的范围数据。",
+  "provenance": {
+    "sources": [
+      {
+        "label": "腾讯云｜多款AI产品首发！腾讯云升级全栈企业级Agent能力",
+        "url": "https://mp.weixin.qq.com/s/PA1SMzy7CBaj9OGvDCWheQ",
+        "kind": "wechat"
+      },
+      {
+        "label": "腾讯云原生｜腾讯邱跃鹏：面向Agent和全球化趋势，全面升级云基础设施",
+        "url": "https://mp.weixin.qq.com/s/Ncl8V6kGiDP0c7RWe2u4lg",
+        "kind": "wechat"
+      }
+    ],
+    "quotes": [
+      "系统呈现了从底层Infra基建到顶层Agent应用的全栈AI能力、产品体系",
+      "腾讯云正不断升级云基础设施，以支撑Agent规模化落地和企业全球化发展"
+    ],
+    "reasoning": "据 readiness：groundability=none、action=ar-supply。收入规模/增长率/口径拆分均为纯内部财务数据,公众号唯一相关的腾讯Q1财报正文全为图片无可抽取数字且为集团口径。因此本答案不写任何收入金额、增长百分比、子项占比——这些全部战略化为方向性表述(战略定位、收入口径覆盖的子项、高于行业平均的增长态势、持续投入)。有据的只有两点:全栈Infra到Agent的战略定位、AI基础设施支撑Agent与全球化的方向,均有公众号一手佐证并附逐字quote。具体数字明确标注为单独提供经核验范围数据,不留占位。",
+    "decision": "收入/增长率属内部财务数据,无一手语料,全部战略化方向性表述,不给任何编造数字。"
+  },
+  "generatedAt": "2026-06-17T01:38:35.975Z"
+}

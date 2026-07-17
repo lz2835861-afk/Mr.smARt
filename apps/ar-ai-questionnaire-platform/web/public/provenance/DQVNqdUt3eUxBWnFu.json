@@ -1,0 +1,52 @@
+{
+  "questionnaireId": "ai-infra-2026",
+  "questionId": "8.1.2",
+  "docId": "ASjuKwyLAZqn",
+  "docUrl": "https://docs.qq.com/aio/DQVNqdUt3eUxBWnFu",
+  "urlId": "DQVNqdUt3eUxBWnFu",
+  "dimension": "增长指数",
+  "section": "专业服务与生态",
+  "subsection": "8.1 服务与生态",
+  "question": "贵司AI Infra的合作伙伴生态规模如何？ISV/SI/渠道伙伴的数量及合作深度。",
+  "guidance": "关注：合作伙伴不仅看数量，更关注是否有深度集成的ISV（如与主流大模型厂商/数据厂商的预集成方案），是否有区域性行业SI的联合解决方案。",
+  "draft": "腾讯云 AI Infra 的合作伙伴生态强调『深度集成』而非单纯规模。在大模型与数据厂商侧，我们与 MiniMax 同台共谈下一代 Agent 基础设施、围绕 Agent 规模化落地交流共建，混元 AI Infra 团队还与 NVIDIA 联合优化推理核心算子；在终端与硬件侧，与华硕签署战略合作、共建 AI PC 云空间底座。在行业侧，我们以全栈智能体能力开放生态——『在AI深度合作方面，腾讯已与长安、上汽、广汽等40多家车企展开联合探索』，并通过标准协议、Agent 编排、Skill 扩展接入三方生态形成联合解决方案。在渠道与区域生态上，『截至目前，腾讯云已携手近2000家合作伙伴，服务了西南地区超过9万家客户』，并发布『出海生态启航计划』完善全球化伙伴体系。总体上，我们的 ISV/SI/渠道伙伴覆盖大模型、数据库、行业 SI 等多个维度，并保持持续扩张态势。",
+  "provenance": {
+    "sources": [
+      {
+        "label": "公众号/腾讯云/2026-04-28 多款AI产品首发！腾讯云升级全栈企业级Agent能力（近2000家合作伙伴、西南超9万家客户、出海生态启航计划）",
+        "url": "https://mp.weixin.qq.com/s/PA1SMzy7CBaj9OGvDCWheQ",
+        "kind": "wechat"
+      },
+      {
+        "label": "公众号/腾讯云/2026-04-23 腾讯面向汽车行业，开放全栈智能体能力（与长安/上汽/广汽等40+车企联合探索；标准协议/Agent编排/Skill扩展接入三方生态）",
+        "url": "https://mp.weixin.qq.com/s/oVPQyVHNOiAJtpMpr2HvoA",
+        "kind": "wechat"
+      },
+      {
+        "label": "公众号/腾讯混元/2026-06-11 HPC-Ops 推理核心算子全面升级（混元 AI Infra 团队与 NVIDIA 联合优化打磨）",
+        "url": "https://mp.weixin.qq.com/s/y0vd1cpvWXLSssL1kXxguw",
+        "kind": "wechat"
+      },
+      {
+        "label": "公众号/腾讯云/2026-06-10 腾讯云×华硕：携手打造更好用的 AI PC（战略合作、共建 AI PC 云空间底座）",
+        "url": "https://mp.weixin.qq.com/s/COqOUFz8jmr9kCPssWbAYw",
+        "kind": "wechat"
+      },
+      {
+        "label": "公众号/腾讯云原生/2026-04-01 腾讯云 X MiniMax（与大模型厂商共谈下一代 Agent 基础设施）",
+        "url": "https://mp.weixin.qq.com/s/Q6e3rglAMvmxFCUTd6T94w",
+        "kind": "wechat"
+      }
+    ],
+    "quotes": [
+      "截至目前，腾讯云已携手近2000家合作伙伴，服务了西南地区超过9万家客户。",
+      "在AI深度合作方面，腾讯已与长安、上汽、广汽等40多家车企展开联合探索，共同推动智能体技术在具体场景中的落地应用。",
+      "通过标准协议、Agent编排、Skill扩展等平台能力，车企和开发者可以快速将丰富的腾讯及三方生态服务，高效转化为可运营的座舱Agent，无需再从零开始搭建。",
+      "本能力由腾讯混元AI Infra团队与NVIDIA联合优化打磨",
+      "6月9日，腾讯云与全球领先的3C解决方案提供商华硕电脑正式签署战略合作协议："
+    ],
+    "reasoning": "readiness 判定 groundability=medium / action=ai-draft+ar-verify。生态深度叙事有充分一手佐证：40+车企联合探索、标准协议/Agent编排/Skill扩展接入三方生态、与 NVIDIA 联合优化算子、与华硕战略签约、与 MiniMax 共建 Agent 基础设施，均逐字可引。关键风险点是『近2000家合作伙伴、西南超9万家客户』为西南区域全云口径、非 AI Infra 专项数量——我直接引用原文但在行文中标注为『渠道与区域生态』，未把它包装成 AI Infra 专项 ISV/SI 数。AI-Infra 口径下的 ISV/SI/渠道伙伴具体数量与预集成清单按 missing_for_ar 提示留作方向性表述（『覆盖多个维度、持续扩张』），未编造任何专项数字或客户名单。",
+    "decision": "用一手案例支撑『生态深度』叙事（车企40+、华硕/MiniMax/NVIDIA 深度共建、出海生态启航计划），ISV/SI/渠道的 AI-Infra 专项数量保持方向性、不杜撰。"
+  },
+  "generatedAt": "2026-06-17T01:38:35.975Z"
+}

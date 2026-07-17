@@ -1,0 +1,81 @@
+/*
+ * Local stand-in for `@heroui-pro/react/css` (aliased in vite.config.ts).
+ *
+ * The real Pro stylesheet shipped two things this app depends on:
+ *   1. Pro base design tokens (chart palette, the `default` gray scale, the
+ *      `overlay` elevation shadow).
+ *   2. A Tailwind v4 `@theme` bridge that maps HeroUI's semantic *runtime*
+ *      variables (--accent, --muted, --border, --surface …, defined by
+ *      `@heroui/styles`) onto `--color-*` theme keys. Without this bridge the
+ *      app's own Tailwind compiler never emits utilities like `bg-accent`,
+ *      `text-muted`, `bg-surface`, `border-separator`, etc. — every such class
+ *      in the source would silently produce no style.
+ *
+ * Values recovered from the HeroUI MCP (`get_theme_variables`, default theme).
+ */
+
+/* 1 · Pro base tokens (runtime CSS vars consumed by the @theme bridge below) */
+:root {
+  /* Accent-derived chart series — HeroUI Pro default palette */
+  --chart-1: oklch(from var(--accent) calc(l - 0.24) c h);
+  --chart-2: oklch(from var(--accent) calc(l - 0.12) c h);
+  --chart-3: var(--accent);
+  --chart-4: oklch(from var(--accent) calc(l + 0.12) c h);
+  --chart-5: oklch(from var(--accent) calc(l + 0.24) c h);
+
+  /* `default` gray scale (subtle chip / badge backgrounds) */
+  --default-100: oklch(0.967 0.001 286.375);
+  --default-200: oklch(0.92 0.004 286.32);
+  --default-300: oklch(0.871 0.006 286.286);
+}
+
+/* 2 · Tailwind theme bridge: semantic runtime vars → --color-* utility keys.
+ *     Lets the app's Tailwind generate every custom color utility it uses. */
+@theme {
+  --color-background: var(--background);
+  --color-background-secondary: var(--background-secondary);
+  --color-background-tertiary: var(--background-tertiary);
+  --color-foreground: var(--foreground);
+
+  --color-surface: var(--surface);
+  --color-surface-foreground: var(--surface-foreground);
+  --color-surface-secondary: var(--surface-secondary);
+  --color-surface-tertiary: var(--surface-tertiary);
+  --color-surface-hover: var(--surface-hover);
+
+  --color-overlay: var(--overlay);
+  --color-overlay-foreground: var(--overlay-foreground);
+
+  --color-muted: var(--muted);
+
+  --color-default: var(--default);
+  --color-default-foreground: var(--default-foreground);
+  --color-default-100: var(--default-100);
+  --color-default-200: var(--default-200);
+  --color-default-300: var(--default-300);
+
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-accent-soft: var(--accent-soft);
+
+  --color-success: var(--success);
+  --color-success-foreground: var(--success-foreground);
+  --color-warning: var(--warning);
+  --color-warning-foreground: var(--warning-foreground);
+  --color-danger: var(--danger);
+  --color-danger-foreground: var(--danger-foreground);
+
+  --color-border: var(--border);
+  --color-separator: var(--separator);
+  --color-focus: var(--focus);
+  --color-link: var(--link);
+
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
+
+  /* Elevation shadow used by floating affordances (`shadow-overlay`) */
+  --shadow-overlay: 0 8px 30px rgba(0, 0, 0, 0.12);
+}

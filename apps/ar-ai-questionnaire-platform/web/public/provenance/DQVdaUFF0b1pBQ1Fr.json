@@ -1,0 +1,40 @@
+{
+  "questionnaireId": "idc-aiiaas-2026",
+  "questionId": "3.2",
+  "docId": "AWZPQtoZACQk",
+  "docUrl": "https://docs.qq.com/aio/DQVdaUFF0b1pBQ1Fr",
+  "urlId": "DQVdaUFF0b1pBQ1Fr",
+  "dimension": "",
+  "section": "Strategies",
+  "subsection": "Custom Silicon R&D Strategy",
+  "question": "Outline your 3-year R&D strategy for your proprietary custom AI accelerators. What specific workload bottlenecks (e.g., memory bandwidth, specific precision formats) are your future silicon designs targeting?",
+  "guidance": "IDC 作答格式 (open text)",
+  "draft": "腾讯在自研芯片上坚持「软硬件协同全栈优化」的长期战略投入，未来三年将沿两条主线持续推进，以缓解 AI 负载的关键瓶颈、并降低对单一第三方供应的依赖。其一是延续已被验证的自研硅工程能力：腾讯自研编解码系列芯片「沧海」自 2019 年启动研发、2023 年量产，V1 已规模化部署超 10 万片，新一代 V2 实现单芯片处理能力翻倍并集成 CPU、GPU 与 CV 处理能力——这套从架构、流片到大规模商用的闭环能力，是腾讯将自研硅向 AI 加速场景延伸的基础。其二是以自研异构计算平台为抓手，整合多种芯片资源、对外提供高性价比 AI 算力，并全面适配主流国产芯片，从而在「算力供给多元化、降低成本」这一核心目标上持续发力。在具体瓶颈靶向上，腾讯云的工程重点与行业一致地聚焦于内存/显存瓶颈与互联带宽：一方面通过 FlexKV 等「以存换算」技术缓解大模型推理的显存瓶颈，另一方面通过自研 200Gbps vRDMA 等互联技术降低分布式训练/推理的网络成本与时延。关于未来三年具体的芯片代次、目标精度格式（如 FP8/INT8 等）与量化性能目标，可在与 IDC 商定统一口径后于保密框架下进一步说明。",
+  "provenance": {
+    "sources": [
+      {
+        "label": "腾讯云公众号：腾讯自研「沧海芯片」夺冠！V2版本即将量产",
+        "url": "https://mp.weixin.qq.com/s/qxzcNLf0XmBBjlvelXhOsg",
+        "kind": "wechat"
+      },
+      {
+        "label": "腾讯云原生公众号：邱跃鹏——全面升级云基础设施",
+        "url": "https://mp.weixin.qq.com/s/Ncl8V6kGiDP0c7RWe2u4lg",
+        "kind": "wechat"
+      },
+      {
+        "label": "腾讯云文档：高性能计算集群 实例规格",
+        "url": "https://cloud.tencent.com/document/product/1646/81562",
+        "kind": "doc"
+      }
+    ],
+    "quotes": [
+      "从2019年启动研发到2023年量产，目前沧海V1芯片在腾讯云及腾讯自有场景（覆盖直播点播、4K转码、云游戏等）中已部署超10万片。",
+      "这些成果背后，是腾讯软硬件协同全栈优化的长期战略投入",
+      "依托异构计算平台整合多种芯片资源，向外界提供高性价比的 AI 算力。目前，该平台已全面适配主流国产芯片"
+    ],
+    "reasoning": "题目要 3 年自研 AI 加速器 R&D 战略与瓶颈靶向。语料支撑：沧海自研硅（2019→2023 量产、超10万片、V2 翻倍）证明自研能力；异构计算平台高性价比算力、适配国产芯片证明战略方向；FlexKV、自研 vRDMA 证明内存/互联瓶颈靶向。未来三年具体芯片代次/精度格式无语料，按政策写战略层并声明保密提供，未杜撰量化目标。",
+    "decision": "answered"
+  },
+  "generatedAt": "2026-06-17T01:38:36.251Z"
+}

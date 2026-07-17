@@ -1,0 +1,36 @@
+{
+  "questionnaireId": "idc-aiiaas-2026",
+  "questionId": "3.20",
+  "docId": "AhHSeMPgkhQs",
+  "docUrl": "https://docs.qq.com/aio/DQWhIU2VNUGdraFFz",
+  "urlId": "DQWhIU2VNUGdraFFz",
+  "dimension": "",
+  "section": "Strategies",
+  "subsection": "AI-Driven Infrastructure Operations (AIOps for AI)",
+  "question": "Describe your strategy for implementing AI/ML to autonomously manage your AI infrastructure fleets, specifically regarding predictive hardware failure detection and automated job migration.",
+  "guidance": "IDC 作答格式 (open text)",
+  "draft": "腾讯云正系统性地用 AI/ML 自动化管理自身的基础设施（含 AI 算力集群），核心载体是专家服务智能体 Cloud Mate 及一系列云上运维智能体。在故障预测与自动诊断方面，Cloud Mate 由凝聚各云上领域经验的子 Agent 构成，能够可视化治理云上架构、前置拦截风险并大幅提升问题处理效率；在内部实践中，其对风险 SQL 的拦截率高达 95%，并能将平均排障时间从过去的 30 小时以上缩短至分钟级、最快仅需 3 分钟——这套“自动执行诊断工具链、并行编排处理”的能力，正是将 AIOps 应用于大规模集群、在故障扩散前定位并处置异常节点的基础。在面向 AI 训练的具体场景中，腾讯云的策略是把这类自动化诊断与预测性运维能力与高性能计算集群结合，对算力、网络与存储进行持续观测与异常识别，在隐患影响长时训练任务前及早发现，并结合实例的弹性扩缩容与自动化生产能力实现任务的快速迁移与恢复，从而降低大规模训练因单点硬件故障而整体崩溃的风险。后续我们将持续把混元等大模型能力进一步引入基础设施运维闭环，提升预测性硬件故障检测与自动作业迁移的自治程度。面向 AI 训练集群的具体预测准确率、故障预警提前量与自动迁移成功率等量化指标，可在与 IDC 商定统一口径后单独提供。",
+  "provenance": {
+    "sources": [
+      {
+        "label": "腾讯云原生 — 邱跃鹏：面向Agent和全球化趋势，全面升级云基础设施",
+        "url": "https://mp.weixin.qq.com/s/Ncl8V6kGiDP0c7RWe2u4lg",
+        "kind": "wechat"
+      },
+      {
+        "label": "腾讯云高性能计算集群 — 产品优势（产品文档）",
+        "url": "https://cloud.tencent.com/document/product/1646/81560",
+        "kind": "doc"
+      }
+    ],
+    "quotes": [
+      "Cloud Mate对风险SQL的拦截率高达95%，累计检测了超过770万行代码",
+      "我们能够将平均排障时间，从小时级缩短至分钟级，最快仅需3分钟",
+      "Cloud Mate 能够自动执行诊断工具链，并行处理多个任务，极大地提升了运维效率",
+      "支持全自动化生产及弹性扩缩容，兼具灵活弹性与高性能。"
+    ],
+    "reasoning": "response_format 为 open text。AIOps 有较强语料支撑：Cloud Mate 自动诊断、风险拦截率 95%、排障 30 小时→3 分钟、自动执行诊断工具链/并行编排（均公众号逐字），加 HCC 自动化生产/弹性扩缩容（文档逐字）支撑作业迁移与恢复。所引数字均为原文。但语料无“GPU 故障预测准确率/提前量/迁移成功率”，故针对 AI 训练集群的具体指标按政策写为可单独提供，不杜撰。",
+    "decision": "answer"
+  },
+  "generatedAt": "2026-06-17T01:38:36.251Z"
+}

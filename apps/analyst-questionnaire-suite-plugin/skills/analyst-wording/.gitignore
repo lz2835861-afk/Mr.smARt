@@ -1,0 +1,26 @@
+# macOS
+.DS_Store
+**/.DS_Store
+
+# Local-only research corpus (not part of the public skill).
+# Contains:
+#   - Copyrighted analyst PDFs (Gartner Magic Quadrants, Forrester guides)
+#   - Internal questionnaire analysis with vendor-specific context
+#   - Long-form scrapes of analyst blogs (copyrighted)
+# The skill works fine without ref/ — it's optional reference material.
+ref/
+
+# Python (any helper scripts)
+__pycache__/
+*.pyc
+*.pyo
+
+# Editors
+.vscode/
+.idea/
+*.swp
+*~
+
+# Tool outputs
+/tmp/
+*.log

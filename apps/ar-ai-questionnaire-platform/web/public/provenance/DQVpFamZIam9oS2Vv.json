@@ -1,0 +1,46 @@
+{
+  "questionnaireId": "idc-aiiaas-2026",
+  "questionId": "3.19",
+  "docId": "AZEjfHjohKeo",
+  "docUrl": "https://docs.qq.com/aio/DQVpFamZIam9oS2Vv",
+  "urlId": "DQVpFamZIam9oS2Vv",
+  "dimension": "",
+  "section": "Strategies",
+  "subsection": "Geographically Distributed Training Architectures",
+  "question": "What is your strategy for enabling highly efficient distributed training runs that span across multiple geographically separated datacenters (e.g., spanning hundreds of miles)?",
+  "guidance": "IDC 作答格式 (open text)",
+  "draft": "腾讯云对跨地理位置分布式训练的总体判断是：在保证训练效率的前提下，绝大多数大规模同步训练仍应优先在单一可用区/单一超大集群内、通过高带宽低时延的后端网络紧耦合完成，以避免跨数据中心长距离链路带来的同步开销。为此，腾讯云在高性能计算集群内提供基于 RDMA 的 RoCEv2 无阻塞网络，最新一代机型实例间支持 3.2Tbps 星脉 RDMA 网络互联、传输时延低至 2us，并通过智能网卡 VPC 网络将算力与文件存储等服务组成云原生高性能计算应用，这是实现高效分布式训练的基础。在“跨地域”维度，腾讯云已覆盖全球 55 个可用区并部署 3200 多个加速节点，处于相同地域不同可用区且同一私有网络下的实例可通过内网互通，为跨可用区的数据并行、检查点同步与容灾切换提供了网络底座；对于真正跨越数百公里、横跨多个物理数据中心的单一模型同步训练（用于规避局部电力约束），目前业界与腾讯云均将其作为前瞻性研发方向，技术路线聚焦于通信压缩、异步/分层同步、拓扑感知调度与跨域 RDMA/光互联等，腾讯云会结合自身骨干网与星脉网络能力持续探索。具体的跨数据中心训练拓扑、可承受的最远距离与对应的吞吐损耗指标，可在与 IDC 商定统一口径后单独提供。",
+  "provenance": {
+    "sources": [
+      {
+        "label": "腾讯云高性能计算集群 — 产品优势（产品文档）",
+        "url": "https://cloud.tencent.com/document/product/1646/81560",
+        "kind": "doc"
+      },
+      {
+        "label": "腾讯云高性能计算集群 — 实例规格（产品文档）",
+        "url": "https://cloud.tencent.com/document/product/1646/81562",
+        "kind": "doc"
+      },
+      {
+        "label": "腾讯云高性能计算集群 — 产品概述（地域和可用区，产品文档）",
+        "url": "https://cloud.tencent.com/document/product/1646/81559",
+        "kind": "doc"
+      },
+      {
+        "label": "腾讯云原生 — 邱跃鹏：面向Agent和全球化趋势，全面升级云基础设施",
+        "url": "https://mp.weixin.qq.com/s/Ncl8V6kGiDP0c7RWe2u4lg",
+        "kind": "wechat"
+      }
+    ],
+    "quotes": [
+      "支持私有网络（VPC）及无阻塞 RoCEv2 RDMA 网络实现节点间互联，传输时延低至2us",
+      "实例间支持 3.2Tbps RDMA 星脉网络互联，性能强大。",
+      "处于相同地域不同可用区，但在同一个私有网络下的高性能云服务器实例均可通过内网互通，可直接使用内网 IP 访问。",
+      "腾讯云基础设施已覆盖全球 55 个可用区，部署 3200 多个加速节点"
+    ],
+    "reasoning": "response_format 为 open text，问跨地理位置（数百公里）分布式训练策略。语料无“跨数据中心同步训练”的直接产品证据，故诚实地写成：单集群紧耦合优先 + 跨可用区内网互通 + 跨数百公里为前瞻研发方向。可如实引用 RoCEv2/2us 时延、3.2Tbps 星脉、跨可用区内网互通、55 可用区（均逐字）。最远距离/吞吐损耗无依据，按政策写为可单独提供，不杜撰。",
+    "decision": "answer"
+  },
+  "generatedAt": "2026-06-17T01:38:36.251Z"
+}

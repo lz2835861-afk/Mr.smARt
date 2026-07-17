@@ -1,0 +1,35 @@
+{
+  "questionnaireId": "idc-aiiaas-2026",
+  "questionId": "2.6",
+  "docId": "AfHoMqCcqYfP",
+  "docUrl": "https://docs.qq.com/aio/DQWZIb01xQ2NxWWZQ",
+  "urlId": "DQWZIb01xQ2NxWWZQ",
+  "dimension": "",
+  "section": "Capabilties",
+  "subsection": "AI Storage: High-Throughput File Systems",
+  "question": "What is the maximum read throughput (in GB/s) and sub-millisecond latency capabilities of your highest-performance managed file system available for AI training clusters?",
+  "guidance": "IDC 作答格式 (#)",
+  "draft": "腾讯云面向 AI 训练集群的最高性能托管文件系统为并行文件存储 CFS Turbo（性能型），基于全 NVMe 介质、数据节点与元数据节点独立部署的非对称并行架构，提供 POSIX/MPI 协议，单客户端性能可达存储集群性能。在吞吐方面，Turbo 性能型吞吐随集群容量线性扩展，单文件系统最高可达 2TiB/s（即约 2048 GB/s 量级）的吞吐能力，可满足大规模 GPU 集群的 I/O 喂数需求；在延迟方面，Turbo 性能型 4K 单流读时延为 0.2ms、写为 0.8ms，已达到亚毫秒级。其典型适用场景明确包含「大规模高性能计算、AI 训练、OLTP 数据库、大数据分析、OLAP 业务」。综上，针对本题 (#) 口径：最高读吞吐参考值为 2TiB/s 量级，并具备亚毫秒级（0.2ms）的访问时延；如需进一步压测口径下的端到端数值，可在与 IDC 约定测试方法后提供。",
+  "provenance": {
+    "sources": [
+      {
+        "label": "CFS 存储类型及性能规格",
+        "url": "https://cloud.tencent.com/document/product/582/38112",
+        "kind": "doc"
+      },
+      {
+        "label": "CFS 产品优势",
+        "url": "https://cloud.tencent.com/document/product/582/9128",
+        "kind": "doc"
+      }
+    ],
+    "quotes": [
+      "吞吐（MiB/S） | Min{0.1 × 容量(GiB) , 10万} | Min{0.2 × 容量(GiB) , 10万}<br>最高可达2TiB/s吞吐，如需要可",
+      "适用场景 | 媒资非编、影像渲染、AI 推理、OLAP 业务、高性能计算 | 大规模高性能计算、AI 训练、OLTP 数据库、大数据分析、OLAP 业务",
+      "时延 | 4K单流读：0.2ms<br>4K单流写：3ms | 4K单流读：0.2ms<br>4K单流写：0.8ms"
+    ],
+    "reasoning": "题目要 (#) 最高读吞吐 GB/s 与亚毫秒延迟。语料 CFS 规格页逐字给出 Turbo 性能型『最高可达2TiB/s吞吐』及 4K 单流读 0.2ms，均有支撑可直接引用并换算为 ~2048GB/s。属语料真有该数字的情形，按政策给出并引用。",
+    "decision": "grounded"
+  },
+  "generatedAt": "2026-06-17T01:38:36.251Z"
+}

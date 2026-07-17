@@ -1,0 +1,39 @@
+{
+  "questionnaireId": "idc-aiiaas-2026",
+  "questionId": "2.16",
+  "docId": "ADYCzOYcbkml",
+  "docUrl": "https://docs.qq.com/aio/DQURZQ3pPWWNia21s",
+  "urlId": "DQURZQ3pPWWNia21s",
+  "dimension": "",
+  "section": "Capabilties",
+  "subsection": "Geographic Availability",
+  "question": "In how many global regions (distinct geographic locations, not availability zones within a region) are your highest-tier AI accelerators currently GA?",
+  "guidance": "IDC 作答格式 (#)",
+  "draft": "腾讯云的存储与基础设施已具备广泛的全球地域分布。以对象存储 COS 的公有云地域为例，覆盖成都、重庆、北京、北京一、上海、南京、广州、中国香港、新加坡、首尔、曼谷、雅加达、东京、硅谷、弗吉尼亚、法兰克福、圣保罗等地域，横跨中国内地、亚太、北美、欧洲与南美多个大区；数据加速器 GooseFS 亦在北京、上海、广州、南京、重庆及新加坡、弗吉尼亚、法兰克福等境内外地域可用，并行文件存储 CFS Turbo 同样提供多地域可用。从整体云基础设施看，腾讯云已覆盖全球 55 个可用区、拥有超过 3200 个加速节点。需要说明的是，本题计数口径是「最高一档 AI 加速器 GA 的地理区域数（distinct geographic locations）」，与存储地域数并不等同；该精确数字会随机型上线节奏动态变化，建议在与 IDC 商定统一口径（区域定义、GA 标准）后由对接团队提供准确的 (#)，本问卷不就该专项口径给出可能产生歧义的数值。",
+  "provenance": {
+    "sources": [
+      {
+        "label": "COS 免费额度（公有云地域列表）",
+        "url": "https://cloud.tencent.com/document/product/436/6240",
+        "kind": "doc"
+      },
+      {
+        "label": "GooseFS 计费概述（地域）",
+        "url": "https://cloud.tencent.com/document/product/1424/54277",
+        "kind": "doc"
+      },
+      {
+        "label": "腾讯邱跃鹏：面向Agent和全球化趋势，全面升级云基础设施",
+        "url": "https://mp.weixin.qq.com/s/Ncl8V6kGiDP0c7RWe2u4lg",
+        "kind": "wechat"
+      }
+    ],
+    "quotes": [
+      "公有云地域**包括成都、重庆、北京、北京一、上海、南京、广州、中国香港、新加坡、首尔、曼谷、雅加达、东京、硅谷、弗吉尼亚、法兰克福、圣保罗。",
+      "我们的服务已覆盖全球55个可用区，拥有超过3200个加速节点"
+    ],
+    "reasoning": "题目要 (#) 最高档 AI 加速器 GA 的地理区域数。该精确数无语料。存储地域（COS 17 个公有云地域、55 个可用区）有逐字支撑，可写实佐证全球分布广度，但不能等同 AI 加速器区域数，故明确口径差异并交统一口径后提供，不编造 AI 加速器区域数字。",
+    "decision": "grounded-partial"
+  },
+  "generatedAt": "2026-06-17T01:38:36.251Z"
+}

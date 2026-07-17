@@ -1,0 +1,35 @@
+{
+  "questionnaireId": "idc-aiiaas-2026",
+  "questionId": "2.9",
+  "docId": "ANAubZJAbRqG",
+  "docUrl": "https://docs.qq.com/aio/DQU5BdWJaSkFiUnFH",
+  "urlId": "DQU5BdWJaSkFiUnFH",
+  "dimension": "",
+  "section": "Capabilties",
+  "subsection": "Storage Tiering for AI Data Pipelines",
+  "question": "Describe the native infrastructure services that automate the movement of training datasets from standard object storage into high-performance file systems prior to training, and the offloading of checkpoints post-training.",
+  "guidance": "IDC 作答格式 (open text)",
+  "draft": "腾讯云为 AI 数据流水线中冷热数据的自动流转提供了原生能力。其一，CFS 的数据生命周期策略可在并行文件存储 Turbo（热）与低频存储/外置对象存储（冷）之间自动分层：满足触发条件后系统自动将冷数据沉降到单位成本更低的低频存储介质或外置存储（腾讯云、阿里云、华为云等对象存储），并在业务需要访问时自动将数据拉取到文件存储里，整个过程业务无感知，部分场景可使单位成本降幅达 70% 以上——非常契合自动驾驶、AI 训练、离线分析等冷热分明的场景，可用于训练前将数据拉热、训练后将 checkpoint 沉降归档。其二，数据加速器 GooseFS 以 COS 为底座提供命名空间与缓存编排，通过 load 指令将 UFS（对象存储）中对应目录/文件的数据预加载到近计算端缓存实现「冷数据转热」、通过 persist 将结果持久化回 UFS、通过 free 释放缓存空间，并支持 Table 级别预热，从而在训练前把对象存储中的数据集自动搬运到高性能缓存层、训练后把产物回写对象存储。",
+  "provenance": {
+    "sources": [
+      {
+        "label": "CFS 数据生命周期策略 功能介绍",
+        "url": "https://cloud.tencent.com/document/product/582/88670",
+        "kind": "doc"
+      },
+      {
+        "label": "GooseFS 缓存能力",
+        "url": "https://cloud.tencent.com/document/product/1424/54279",
+        "kind": "doc"
+      }
+    ],
+    "quotes": [
+      "文件系统可根据此策略，自动将冷数据沉降到单位成本更低的低频存储介质或外置存储（腾讯云、阿里云、华为云等对象存储）上，并在业务需要访问时自动将数据拉取到文件存储里，整个过程业务无感知",
+      "基于数据生命周期策略功能，将冷热数据分层存储，部分场景可使单位成本降幅达70%以上。",
+      "load：此操作用于将 UFS 对应目录或者文件的数据加载到 GooseFS 中，此类操作主要用于冷数据转热，从而提高 I/O 性能。"
+    ],
+    "reasoning": "题目问自动在对象存储与高性能文件系统之间搬运训练数据集及 checkpoint 卸载。CFS 生命周期策略（自动沉降/拉取、降本70%）与 GooseFS load/persist/free 均有逐字语料支撑，全部写实引用。",
+    "decision": "grounded"
+  },
+  "generatedAt": "2026-06-17T01:38:36.251Z"
+}

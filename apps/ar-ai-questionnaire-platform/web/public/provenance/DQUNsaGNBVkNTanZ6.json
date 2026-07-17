@@ -1,0 +1,34 @@
+{
+  "questionnaireId": "idc-aiiaas-2026",
+  "questionId": "2.14",
+  "docId": "AClhcAVCSjvz",
+  "docUrl": "https://docs.qq.com/aio/DQUNsaGNBVkNTanZ6",
+  "urlId": "DQUNsaGNBVkNTanZ6",
+  "dimension": "",
+  "section": "Capabilties",
+  "subsection": "Preemptible / Spot AI Compute Availability",
+  "question": "Do you offer preemptible/spot pricing for your highest-tier AI accelerators, and what infrastructure-level checkpointing mechanisms do you natively support to handle interruptions?",
+  "guidance": "IDC 作答格式 (open text)",
+  "draft": "在抢占式/竞价容量与中断容错方面，腾讯云在存储侧已提供面向训练中断恢复的基础能力：CFS Turbo 并行文件存储为强一致文件系统，支持 checkpoint 文件的写入与读取，并提供同步（sync，机器重启不丢数据）与非同步两种挂载模式以平衡性能与持久化；客户可将训练 checkpoint 高频写入 Turbo，并通过数据生命周期策略自动将历史 checkpoint 沉降到低频/对象存储，从而在实例被回收/中断后从最近检查点快速恢复。对于最高一档 AI 加速器是否提供 spot/竞价计价、以及计算实例级别原生中断信号与自动续训机制的具体条款，因缺乏可直接引用的公开语料，建议由腾讯云对接团队结合具体机型与可用区给出准确口径，本问卷不就此编造尚无语料支撑的产品承诺。",
+  "provenance": {
+    "sources": [
+      {
+        "label": "在 Linux 客户端上使用 CFS Turbo 文件系统",
+        "url": "https://cloud.tencent.com/document/product/582/54765",
+        "kind": "doc"
+      },
+      {
+        "label": "CFS 数据生命周期策略 功能介绍",
+        "url": "https://cloud.tencent.com/document/product/582/88670",
+        "kind": "doc"
+      }
+    ],
+    "quotes": [
+      "如果您希望支持扩展属性且所有操作默认为同步执行（机器重启不会丢数据，但性能会有损耗），请复制和执行如下命令",
+      "数据沉降对应着数据从 Turbo 文件系统到低频存储或外置存储的流动。"
+    ],
+    "reasoning": "题目问 spot 计价与基础设施级 checkpoint 机制。语料能支撑存储侧 checkpoint 能力（Turbo sync 挂载不丢数据、生命周期沉降）。spot/竞价定价及实例级中断信号无语料，方向性表述并交对接团队，不编造。",
+    "decision": "grounded-partial"
+  },
+  "generatedAt": "2026-06-17T01:38:36.251Z"
+}

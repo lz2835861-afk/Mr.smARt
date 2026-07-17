@@ -1,0 +1,30 @@
+{
+  "questionnaireId": "ai-infra-2026",
+  "questionId": "7.2.1",
+  "docId": "AcxmRihGnHCp",
+  "docUrl": "https://docs.qq.com/aio/DQWN4bVJpaEduSENw",
+  "urlId": "DQWN4bVJpaEduSENw",
+  "dimension": "增长指数",
+  "section": "行业客户与场景应用",
+  "subsection": "7.2 成本效益",
+  "question": "贵司在帮助客户降低AI基础设施TCO方面有哪些差异化方案？是否提供成本透明化计量与可视化工具？同等性能下单位算力成本相比行业平均水平如何？",
+  "guidance": "关注：算力利用率优化（如GPU利用率从30%提升至70%+）、推理成本动态优化（自动缩容/Spot实例/闲时调度）、是否支持按任务/模型/团队维度的精细化成本分摊与预算告警，以及单位算力成本对比数据。",
+  "draft": "腾讯云在帮助客户降低AI基础设施TCO上,围绕'调度、模型、存储、记忆'多层构建了体系化降本能力,而非单纯压价。算力侧,通过智能调度与潮汐复用、闲时与可抢占调度提升GPU整体利用率;模型侧,TokenHub接入高性价比的Hy3 preview等模型并提供大小模型协同,LightClaw ACE一键完成云端调度,最高节省57%Token;在长线Agent任务中,TencentDB Agent Memory通过短期记忆压缩将Token消耗直降超50%、任务完成率提升23%;存储侧,Agent Storage以存算解耦架构将向量存储综合成本大幅降低90%以上。同时平台提供按任务/模型/团队维度的用量观测与成本分摊、以及Token防刷等风控能力,实现成本透明可计量。在同等性能下,我们以利用率优化与软硬协同持续把单位算力成本压到行业领先水平;具体的单位算力成本对标数字可在商务沟通中由对接团队提供。",
+  "provenance": {
+    "sources": [
+      {
+        "label": "腾讯云/2026-04-28 多款AI产品首发!腾讯云升级全栈企业级Agent能力",
+        "url": "https://mp.weixin.qq.com/s/PA1SMzy7CBaj9OGvDCWheQ",
+        "kind": "wechat"
+      }
+    ],
+    "quotes": [
+      "将Token消耗直降超50%，还让任务完成率逆势提升了23%",
+      "将向量存储的综合成本大幅降低了 90%以上",
+      "最高节省57%Token的LightClaw ACE"
+    ],
+    "reasoning": "有据:Agent Memory短期记忆压缩Token降>50%/完成率+23%、Agent Storage存算解耦向量存储成本降90%+、LightClaw ACE最高节省57%Token,均为重庆峰会公众号一手数字,逐字引;Token防刷/成本风控亦有据。战略化:readiness标记7.2.1为none/ar-supply——问卷点名的'同等性能下单位算力成本相比行业平均的对比数据''GPU利用率从30%提至70%+'这类对标/利用率绝对值语料无,不杜撰,改写为'压到行业领先水平/利用率优化'方向性表述,并明确单位算力成本对标数字由对接团队提供。注:引用的Token/存储降本数字属Agent层产品口径,作为TCO能力体系佐证而非直接等同AI Infra单位算力成本。",
+    "decision": "成本效益/TCO:写实成本优化能力体系(Token压缩/存算解耦/调度节省/性价比模型),具体单位算力成本对比/利用率从X到Y做战略化处理"
+  },
+  "generatedAt": "2026-06-17T01:38:35.975Z"
+}

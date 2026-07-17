@@ -1,0 +1,28 @@
+{
+  "questionnaireId": "idc-aiiaas-2026",
+  "questionId": "1.5.2",
+  "docId": "ABZhOgrdFVFE",
+  "docUrl": "https://docs.qq.com/aio/DQUJaaE9ncmRGVkZF",
+  "urlId": "DQUJaaE9ncmRGVkZF",
+  "dimension": "",
+  "section": "Preliminary",
+  "subsection": "",
+  "question": "Please indicate the approximate share of your CY 2025 WW revenues for these worldwide regions: — EMEA",
+  "guidance": "IDC 作答格式 (%)",
+  "draft": "Please indicate the approximate share of your CY 2025 WW revenues for these worldwide regions — EMEA（欧洲、中东与非洲）：腾讯云在 EMEA 设有数据中心与加速节点，并全面适配 GDPR、ISO、SOC 等全球主流合规标准，重点支撑中国企业出海欧洲、中东市场的合规化、本地化部署。该区域在公司全球收入中的具体占比涉及内部营收拆分，建议在与 IDC 就区域口径达成一致后，由腾讯云对接团队以保密方式单独提供精确百分比。",
+  "provenance": {
+    "sources": [
+      {
+        "label": "腾讯云出海服务：AI 重构出海竞争力（2026-03-31）",
+        "url": "https://mp.weixin.qq.com/s/6Ug6YL0F3mPJdOPQmdxAFQ",
+        "kind": "wechat"
+      }
+    ],
+    "quotes": [
+      "全面适配GDPR、ISO、SOC等全球主流合规标准，为企业提供低延迟、高稳定、高安全的全球网络与算力支撑"
+    ],
+    "reasoning": "要求 EMEA 营收占比（%）。语料无占比数字，严禁编造。可引用可核实的 GDPR/ISO/SOC 合规适配事实说明 EMEA 布局与合规能力，占比由对接团队保密提供。",
+    "decision": "draft"
+  },
+  "generatedAt": "2026-06-17T01:38:36.251Z"
+}

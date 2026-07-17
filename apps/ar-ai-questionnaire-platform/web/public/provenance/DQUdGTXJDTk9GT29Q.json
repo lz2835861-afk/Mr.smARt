@@ -1,0 +1,41 @@
+{
+  "questionnaireId": "idc-aiiaas-2026",
+  "questionId": "2.8",
+  "docId": "AGFMrCNOFOoP",
+  "docUrl": "https://docs.qq.com/aio/DQUdGTXJDTk9GT29Q",
+  "urlId": "DQUdGTXJDTk9GT29Q",
+  "dimension": "",
+  "section": "Capabilties",
+  "subsection": "AI Storage: Small-File and Metadata Performance",
+  "question": "Beyond bulk throughput, describe your storage architecture's capability to sustain extreme Input/Output Operations Per Second (IOPS) and handle metadata operations for datasets consisting of billions of sub-megabyte files",
+  "guidance": "IDC 作答格式 (open text)",
+  "draft": "针对计算机视觉/多模态训练中数十亿级小文件带来的极端 IOPS 与元数据压力，腾讯云并行文件存储 CFS Turbo 在架构上做了专门设计：其底层元数据采用分布式架构，每个目录下文件的元数据被打散到内部多个对象上，并通过强一致的分布式锁服务保证一致性；性能型读 IOPS 随容量扩展最高可达 1000 万、写 IOPS 最高 300 万，元数据 OPS 上限读/写为 30 万/2 万。配合最佳实践（按哈希/时间对文件分层、控制单目录文件数、单实例目录总数控制在 1500 万以内）可将海量小文件均匀打散——例如一个 64 字符的哈希码串按前两段（各 2 个字符）构成两级子目录，可将文件均匀分布到 65536 个目录，文件规模 12 亿时每目录平均约 2 万个文件，从而避免超大目录下 VFS 串行锁导致的延时放大。整体上 CFS 可提供「千万级的 OPS、千万级的 IOPS」与亚毫秒级时延，支撑小文件密集型的元数据高频访问。",
+  "provenance": {
+    "sources": [
+      {
+        "label": "CFS 存储类型及性能规格",
+        "url": "https://cloud.tencent.com/document/product/582/38112",
+        "kind": "doc"
+      },
+      {
+        "label": "CFS Turbo 实践指南",
+        "url": "https://cloud.tencent.com/document/product/582/85845",
+        "kind": "doc"
+      },
+      {
+        "label": "CFS 产品优势",
+        "url": "https://cloud.tencent.com/document/product/582/9128",
+        "kind": "doc"
+      }
+    ],
+    "quotes": [
+      "CFS Turbo 底层的元数据是分布式的架构，每一个目录下的文件的元数据都是打散在内部多个对象上。",
+      "读 IOPS | Min{2 × 容量(GiB) , 200万} | Min{20 × 容量(GiB) , 1000万}",
+      "文件系统文件规模为6亿时，每一个目录平均1万个文件；文件系统文件规模为12亿时，每一个目录平均2万个文件。",
+      "CFS 能提供百 TB 级的吞吐、千万级的 OPS、千万级的 IOPS，能支持您在各类苛刻性能挑战下的数据存储"
+    ],
+    "reasoning": "题目问海量小文件的极端 IOPS 与元数据能力。语料对分布式元数据架构、读 IOPS 1000 万、OPS 30 万、12 亿文件目录打散、千万级 OPS/IOPS 均有逐字支撑，全部写实并引用。",
+    "decision": "grounded"
+  },
+  "generatedAt": "2026-06-17T01:38:36.251Z"
+}

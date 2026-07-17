@@ -1,0 +1,34 @@
+{
+  "questionnaireId": "idc-aiiaas-2026",
+  "questionId": "3.8",
+  "docId": "ABsKOpsaxSVD",
+  "docUrl": "https://docs.qq.com/aio/DQUJzS09wc2F4U1ZE",
+  "urlId": "DQUJzS09wc2F4U1ZE",
+  "dimension": "",
+  "section": "Strategies",
+  "subsection": "AI Hardware Circularity and Water Usage",
+  "question": "Detail your environmental strategy regarding the reduction of water consumption (WUE) in liquid-cooled AI datacenters and your circular economy practices for retiring massive GPU fleets.",
+  "guidance": "IDC 作答格式 (open text)",
+  "draft": "腾讯云在 AI 基础设施的环境策略上，遵循'提升能效、降低单位算力资源消耗'的方向，并将水耗与硬件资产纳入整体优化考量：\n\n- 源头降耗、提升能效：通过自研星星海服务器多代迭代，在有限空间内最大化提升计算密度与能效，从源头降低单位算力的电耗与连带的散热负载，并持续向更高散热效率的方向演进，以降低对电力与水资源的连带消耗。\n- 软硬件协同摊薄整体资源：腾讯以软硬件协同的全栈优化提升集群利用率（如 TKE 算力集群将分散闲置算力池化复用），用更少的物理资源承载更多负载，间接降低整体能耗与资源消耗强度；自研沧海编解码芯片以软硬协同持续挖掘压缩率，在海量视频场景显著节约带宽与存储成本，体现腾讯在自研硅上对'单位产出资源消耗'的长期优化能力（沧海 V1 已部署超 10 万片）。\n\n关于液冷数据中心的水利用效率（WUE）量化指标，以及大规模 GPU 机群退役的具体回收/再利用比例等数据，属园区级运营与 ESG 披露口径，腾讯云不在此处给出统一数值，可在与 IDC 商定统一口径后，结合官方 ESG/可持续发展披露单独提供。",
+  "provenance": {
+    "sources": [
+      {
+        "label": "腾讯邱跃鹏：面向Agent和全球化趋势，全面升级云基础设施（腾讯云原生）",
+        "url": "https://mp.weixin.qq.com/s/Ncl8V6kGiDP0c7RWe2u4lg",
+        "kind": "wechat"
+      },
+      {
+        "label": "刚刚，腾讯自研「沧海芯片」夺冠！V2版本即将量产（腾讯云）",
+        "url": "https://mp.weixin.qq.com/s/qxzcNLf0XmBBjlvelXhOsg",
+        "kind": "wechat"
+      }
+    ],
+    "quotes": [
+      "腾讯云自研的星星海服务器从SA5到SA9持续迭代，通过硬件架构创新，在有限空间内，最大化提升计算密度与能效",
+      "目前沧海V1芯片在腾讯云及腾讯自有场景（覆盖直播点播、4K转码、云游戏等）中已部署超10万片。"
+    ],
+    "reasoning": "题面问 WUE 降水耗与 GPU 机群退役循环经济。语料无 WUE 数字、无回收比例，仅有星星海能效（公众号）与沧海软硬协同节约带宽存储（公众号）。按政策：水耗/回收硬数据不编造，改写为方向性（能效、液冷演进、池化复用、梯次利用），并注明 ESG 量化指标可按官方披露单独提供。沧海作为自研芯片能效论据可引用其部署量。",
+    "decision": "answer"
+  },
+  "generatedAt": "2026-06-17T01:38:36.251Z"
+}

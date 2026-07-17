@@ -1,0 +1,138 @@
+  0| Omdia RFI
+  1| Market Radar: Cloud for Chinese Enterprise Going Global, 2026
+  2| 
+  3| This RFI evaluates cloud service providers' core capabilities in the "Chinese Enterprises Going Global" scenario. Please provide professional, detailed responses based on your company's actual operations. All information is strictly confidential and used solely for capability assessment.
+  4| Indicators for vendor assessment
+  5| Indicators
+  6| Description
+  7| Global Infrastructure Layout
+  8| 全球基础设施布局能力
+  9| Breadth and depth of backbone network and data center coverage in target overseas markets.
+ 10| 骨干网与数据中心在目标海外市场的覆盖广度与深度。
+ 11| Global Full-stack AI Capabilities 
+ 12| 全球AI全站能力
+ 13| One-stop Gen-AI enablement globally, spanning from underlying compute power and large model hosting to AI applications.
+ 14| 在全球范围内，能够提供从底层算力、大模型托管到上层AI应用的一站式生成式AI赋能。
+ 15| Global Ecosystem
+ 16| 全球生态伙伴体系能力
+ 17| A third-party joint service network built around the cloud platform. Such as ISV, SaaS, consulting groups
+ 18| 围绕云平台构建的咨询、ISV、SaaS等第三方联合服务网络。
+ 19| Global Operational Capabilities
+ 20| 全球运营服务保障能力
+ 21| Deliver factory-level technical support and commercial alignment in overseas markets with zero time lag.
+ 22| 在海外目标市场提供原厂级别、无时差的技术支持与商业对接。
+ 23| Global Security & Compliance Assurance
+ 24| 全球安全与合规保障能力
+ 25| Technical and service capabilities to address data security, compliance, and privacy regulations across global regions.
+ 26| 应对全球各区域的数据安全、数据合规、数据隐私法规的技术与服务能力。
+ 27| Global Vertical Solution capabilities
+ 28| 全球垂直行业方案能力
+ 29| Deep integration into specific industry business logic, delivering a matrix of out-of-the-box scenario-based solutions.
+ 30| 深入特定行业业务逻辑，提供开箱即用的场景化解决方案矩阵。
+ 31| 
+ 32| Questionnaire
+ 33| I. Global Infrastructure Layout
+ 34| Coverage Breadth:List your backbone network and data center deployment in key target markets (Southeast Asia, Middle East, Europe/Americas, Latin America):
+ 35| Number of data centers and covered countries/regions
+ 36| Network latency (ms) and availability zone distribution
+ 37| Partnership models with local telecom operators
+ 38| Coverage Depth:How do you achieve "deep localization" in target markets? (Specify concrete measures)[ ] Localized deployment options [ ] Edge computing nodes [ ] Localized teams [ ] Other: ________
+ 39| Key Challenges:What is the biggest challenge in expanding overseas infrastructure? How was it resolved?
+ 40| 
+ 41| II. Global Full-stack AI Capabilities
+ 42| Capability Spectrum:Describe your generative AI stack globally (from underlying compute → large model hosting → upper-layer applications):
+ 43| Supported large model frameworks?
+ 44| How is localized AI inference/training ensured?
+ 45| One real-world client case study (industry, challenge, solution, outcome)
+ 46| Cross-Regional Consistency:How do you ensure consistent AI performance across regions (e.g., latency, throughput, model accuracy)?
+ 47| Differentiation:What are your core advantages in full-stack AI capabilities versus competitors? (1-2 sentences)
+ 48| 
+ 49| III. Global Ecosystem & 
+ 50| Ecosystem Network:Describe your third-party service network in target markets:
+ 51| Partner count (consulting/ISVs/SaaS)
+ 52| Localized operations team size
+ 53| Typical collaboration models (e.g., joint solutions, co-marketing)
+ 54| Please describe a complex project delivered jointly by "cloud platform + ecosystem partners" (e.g., multinational manufacturing digital transformation), focusing on partner roles and collaboration mechanisms.
+ 55| 
+ 56| IV Global Operational Capabilities
+ 57| Technical Support:How do you deliver "factory-level, zero-latency" support? Provide:
+ 58| 7×24 SLA response time？
+ 59| Localized technical team configuration？
+ 60| multilingual ticketing systems？
+ 61| Resolution time for critical severity (P1) issues
+ 62| For cultural differences causing communication barriers (e.g., Western clients emphasizing process compliance, Middle Eastern clients valuing relationship trust), what standardized service processes and localization adaptation strategies does your company employ?
+ 63| Success Case:Share one case where ecosystem collaboration successfully served Chinese enterprises going global (industry, challenge, solution, results)
+ 64| 
+ 65| V. Global Security & Compliance Assurance
+ 66| Compliance Coverage:List major regional compliance certifications achieved:
+ 67| Southeast Asia: ________
+ 68| Europe/Americas: ________
+ 69| Middle East: ________
+ 70| Latin America: ________
+ 71| Regulatory Agility:What is your process when regulations change (e.g., GDPR updates, China data export rules)?
+ 72| Client Value:How do you help clients reduce compliance risks? Specify services (e.g., compliance consulting, data encryption)
+ 73| 
+ 74| VI. Global Vertical Solution Capabilities
+ 75| Industry Depth:Which industry-specific solutions do you offer? (Check and specify)
+ 76| E-commerce: [ ] Localized payments [ ] Multilingual support [ ] Others: ________
+ 77| Gaming: [ ] Low-latency architecture [ ] Localized operations [ ] Others: ________
+ 78| Finance: [ ] Compliance risk control [ ] Cross-border payments [ ] Others: ________
+ 79| Out-of-the-Box Solutions:Describe one "out-of-the-box" industry solution (scenario, core features, client benefits)
+ 80| 
+ 81| VII. Open Questions
+ 82| Future Roadmap:What capabilities will you prioritize for "Chinese Enterprises Going Global" in the next 12 months?
+ 83| Critical Improvement:What is the most urgent gap in current cloud services for Chinese enterprises going global?
+ 84| 
+ 85| 2.问卷内容-Chinese Version
+ 86| Section 1 全球基础设施布局 (Global Infrastructure Layout)
+ 87| 覆盖广度：请列出贵司在以下关键目标市场（东南亚、中东、欧美、拉美）的骨干网络与数据中心具体布局：
+ 88| 数据中心数量及覆盖国家/地区
+ 89| 网络延迟数据（ms）与可用区分布
+ 90| 与当地电信运营商的合作模式
+ 91| 覆盖深度：在目标市场，贵司如何实现"深度本地化"？（请提供具体措施）□ 本地化部署选项 □ 边缘计算节点 □ 本地化团队 □ 其他：________
+ 92| 关键挑战：在拓展海外基础设施时，遇到的最大挑战是什么？如何解决？
+ 93| 
+ 94| Section 2 全球全栈AI能力 (Global Full-stack AI Capabilities)
+ 95| 能力全景：请描述贵司在全球范围内提供的生成式AI技术栈（从底层算力→大模型托管→上层应用）：
+ 96| 支持哪些大模型框架？
+ 97| 本地化AI推理/训练能力如何保障？
+ 98| 典型客户场景案例（请提供1个）
+ 99| 跨区域一致性：如何确保AI服务在全球不同区域的性能一致性？（例如：控制台、模型延迟、模型精度或其他）
+100| 差异化优势：与竞争对手相比，贵司在全栈AI能力方面的核心优势是什么？（请用1-2句话概括）
+101| 
+102| Section 3 全球生态(Global Ecosystem)
+103| 生态网络：请描述贵司在目标市场的第三方服务网络建设：
+104| 合作伙伴数量（咨询/ISV/SaaS）
+105| 自有的本地化运营团队规模
+106| 典型合作模式（如：联合解决方案、联合营销）
+107| 请举例说明一个“云平台+生态伙伴”联合交付的复杂项目（如跨国制造业数字化转型），重点描述伙伴角色与协作机制。
+108| 
+109| Section 4 全球运营能力 (Global Operational Capabilities)
+110| 技术支持：如何实现"原厂级别、无时差"的技术支持？请提供：
+111| 7×24小时响应SLA？
+112| 本地化技术团队配置？
+113| 多语言工单系统？
+114| 典型问题解决时效（如：P1级问题）
+115| 针对文化差异导致的沟通障碍（如欧美客户强调流程合规、中东客户重视关系信任），贵公司有哪些标准化服务流程与本地化适配策略？
+116| 成功案例：请分享一个通过生态协同成功服务中企出海的案例（客户行业、挑战、解决方案、成果）
+117| 
+118| Section 5 全球安全合规保障 (Global Security & Compliance Assurance)
+119| 合规覆盖：请列出贵司已通过的全球主要区域合规认证：
+120| 东南亚：________
+121| 欧美：________
+122| 中东：________
+123| 拉美：________
+124| 动态应对：当目标市场法规更新时（如：GDPR修订、中国数据出境新规），贵司的应对流程是什么？
+125| 客户价值：贵司如何帮助客户降低合规风险？请提供具体服务内容（如：合规咨询、数据加密方案）
+126| 
+127| Section 6 全球垂直解决方案能力 (Global Vertical Solution capabilities)
+128| 行业深度：贵司在以下行业提供哪些场景化解决方案？（请勾选并补充说明）
+129| 电商出海：□ 本地化支付 □ 多语言支持 □ 请补充：________
+130| 游戏出海：□ 低延迟架构 □ 本地化运营 □ 请补充：________
+131| 金融出海：□ 合规风控 □ 跨境支付 □ 请补充：________
+132| 开箱即用：请描述一个"开箱即用"的行业解决方案（包含：业务场景、核心功能、客户收益）
+133| 
+134| Section 7 开放性问题
+135| 未来规划：针对"中企出海"需求，贵司未来12个月将重点提升哪些能力？
+136| 核心建议：您认为当前云服务商在服务中企出海时最需要改进的环节是什么？
+137| 

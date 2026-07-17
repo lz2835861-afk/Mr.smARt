@@ -1,0 +1,70 @@
+@import "tailwindcss";
+@import "@heroui/styles";
+@import "@heroui-pro/react/css";
+
+/* Force light mode regardless of system preference */
+:root,
+html,
+body {
+  color-scheme: light;
+}
+
+html, body, #root { height: 100%; margin: 0; }
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "PingFang SC", "Helvetica Neue", Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: var(--background);
+  color: var(--foreground);
+}
+
+/* HeroUI v3 uses [data-theme=default] for light + [data-theme=dark] for dark.
+   We force light by setting data-theme="default" on <html>. */
+
+/* Textareas grow to fit content — no internal scrollbars, no truncation.
+   field-sizing: content is supported in all modern browsers (Chrome/Safari/Firefox 2024+). */
+textarea {
+  field-sizing: content;
+  resize: none;
+  overflow: hidden;
+  /* CJK-friendly typography for long mixed Chinese/English answer bodies */
+  font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "PingFang SC",
+    "Hiragino Sans GB", "Microsoft YaHei", "Helvetica Neue", Arial, sans-serif;
+  word-break: normal;
+  overflow-wrap: anywhere;
+}
+
+/* Make resize handle visible on hover/drag (the AppLayout default is a 1px hairline) */
+.resizable__handle--horizontal.resizable__handle--line {
+  background-color: var(--separator);
+  transition: background-color 0.15s ease;
+}
+.resizable__handle--horizontal.resizable__handle--line:hover,
+.resizable__handle--horizontal.resizable__handle--line[data-resize-handle-active] {
+  background-color: var(--accent);
+}
+
+/* Right workspace panel resize handle (react-resizable-panels v4).
+   Do NOT set width / flex-grow / flex-shrink — the library owns hit-target sizing. */
+.workspace-resize-handle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: color-mix(in srgb, var(--separator) 70%, transparent);
+  transition: background-color 0.15s ease;
+}
+.workspace-resize-handle:hover,
+.workspace-resize-handle:active,
+.workspace-resize-handle[data-separator]:hover {
+  background-color: color-mix(in srgb, #00bbff 35%, var(--separator));
+}
+
+/* Main fill column: only answer textareas are selectable (for AI excerpt). */
+.main-fill-column {
+  user-select: none;
+  -webkit-user-select: none;
+}
+.main-fill-column textarea {
+  user-select: text;
+  -webkit-user-select: text;
+}

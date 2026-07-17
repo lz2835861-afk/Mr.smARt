@@ -1,0 +1,212 @@
+{
+  "1.1": {
+    "docId": "AarmNjmSRPvT",
+    "url": "https://docs.qq.com/aio/DQWFybU5qbVNSUHZU",
+    "title": "1.1 数据供给"
+  },
+  "1.2": {
+    "docId": "AcfFEWQMuEGK",
+    "url": "https://docs.qq.com/aio/DQWNmRkVXUU11RUdL",
+    "title": "1.2 数据供给"
+  },
+  "2.1.1": {
+    "docId": "AgkVeGwKiRJA",
+    "url": "https://docs.qq.com/aio/DQWdrVmVHd0tpUkpB",
+    "title": "2.1.1 模型研发生产"
+  },
+  "2.1.2": {
+    "docId": "AQHcHUluxdzs",
+    "url": "https://docs.qq.com/aio/DQVFIY0hVbHV4ZHpz",
+    "title": "2.1.2 模型研发生产"
+  },
+  "2.1.3": {
+    "docId": "AXCXAJKnknKG",
+    "url": "https://docs.qq.com/aio/DQVhDWEFKS25rbktH",
+    "title": "2.1.3 模型研发生产"
+  },
+  "2.2.1": {
+    "docId": "AogdWdDVQVgt",
+    "url": "https://docs.qq.com/aio/DQW9nZFdkRFZRVmd0",
+    "title": "2.2.1 模型研发生产"
+  },
+  "3.1.1": {
+    "docId": "AQKwdCaSiXJH",
+    "url": "https://docs.qq.com/aio/DQVFLd2RDYVNpWEpI",
+    "title": "3.1.1 通智算调度引擎"
+  },
+  "3.1.2": {
+    "docId": "AgaZLtVbxWvh",
+    "url": "https://docs.qq.com/aio/DQWdhWkx0VmJ4V3Zo",
+    "title": "3.1.2 通智算调度引擎"
+  },
+  "3.1.3": {
+    "docId": "AsJBMpSJstal",
+    "url": "https://docs.qq.com/aio/DQXNKQk1wU0pzdGFs",
+    "title": "3.1.3 通智算调度引擎"
+  },
+  "3.2.1": {
+    "docId": "AlBRMVPWaUPi",
+    "url": "https://docs.qq.com/aio/DQWxCUk1WUFdhVVBp",
+    "title": "3.2.1 通智算调度引擎"
+  },
+  "3.2.2": {
+    "docId": "AzQfdRVDkEAI",
+    "url": "https://docs.qq.com/aio/DQXpRZmRSVkRrRUFJ",
+    "title": "3.2.2 通智算调度引擎"
+  },
+  "3.2.3": {
+    "docId": "AAPKVEIXLlJt",
+    "url": "https://docs.qq.com/aio/DQUFQS1ZFSVhMbEp0",
+    "title": "3.2.3 通智算调度引擎"
+  },
+  "3.2.4": {
+    "docId": "ARsSRqKrYwLZ",
+    "url": "https://docs.qq.com/aio/DQVJzU1JxS3JZd0xa",
+    "title": "3.2.4 通智算调度引擎"
+  },
+  "4.1.1": {
+    "docId": "AlxzuMVgYELR",
+    "url": "https://docs.qq.com/aio/DQWx4enVNVmdZRUxS",
+    "title": "4.1.1 安全沙箱环境"
+  },
+  "4.1.2": {
+    "docId": "AXUeFArdIdzn",
+    "url": "https://docs.qq.com/aio/DQVhVZUZBcmRJZHpu",
+    "title": "4.1.2 安全沙箱环境"
+  },
+  "4.2.1": {
+    "docId": "ALfaJScniilX",
+    "url": "https://docs.qq.com/aio/DQUxmYUpTY25paWxY",
+    "title": "4.2.1 安全沙箱环境"
+  },
+  "4.2.2": {
+    "docId": "AvWHGBUjRMFx",
+    "url": "https://docs.qq.com/aio/DQXZXSEdCVWpSTUZ4",
+    "title": "4.2.2 安全沙箱环境"
+  },
+  "5.1.1": {
+    "docId": "ALOqZSkGSIcM",
+    "url": "https://docs.qq.com/aio/DQUxPcVpTa0dTSWNN",
+    "title": "5.1.1 算力资源层"
+  },
+  "5.1.2": {
+    "docId": "AakpctPhAIoL",
+    "url": "https://docs.qq.com/aio/DQWFrcGN0UGhBSW9M",
+    "title": "5.1.2 算力资源层"
+  },
+  "5.1.3": {
+    "docId": "ACyPPYgvwAjX",
+    "url": "https://docs.qq.com/aio/DQUN5UFBZZ3Z3QWpY",
+    "title": "5.1.3 算力资源层"
+  },
+  "5.2.1": {
+    "docId": "ARAwEHXQsMly",
+    "url": "https://docs.qq.com/aio/DQVJBd0VIWFFzTWx5",
+    "title": "5.2.1 算力资源层"
+  },
+  "5.2.2": {
+    "docId": "ANMWWASaJKAK",
+    "url": "https://docs.qq.com/aio/DQU5NV1dBU2FKS0FL",
+    "title": "5.2.2 算力资源层"
+  },
+  "6.1.1": {
+    "docId": "AnkLsRHLzCJa",
+    "url": "https://docs.qq.com/aio/DQW5rTHNSSEx6Q0ph",
+    "title": "6.1.1 产品与服务规模"
+  },
+  "6.1.2": {
+    "docId": "AcXWgJpaLMdf",
+    "url": "https://docs.qq.com/aio/DQWNYV2dKcGFMTWRm",
+    "title": "6.1.2 产品与服务规模"
+  },
+  "6.1.3": {
+    "docId": "ABTuOAGLITCh",
+    "url": "https://docs.qq.com/aio/DQUJUdU9BR0xJVENo",
+    "title": "6.1.3 产品与服务规模"
+  },
+  "6.2.1": {
+    "docId": "AwpMBTpVTgry",
+    "url": "https://docs.qq.com/aio/DQXdwTUJUcFZUZ3J5",
+    "title": "6.2.1 产品与服务规模"
+  },
+  "7.1.1": {
+    "docId": "AvJxzvEZkGKG",
+    "url": "https://docs.qq.com/aio/DQXZKeHp2RVprR0tH",
+    "title": "7.1.1 行业客户与场景应用"
+  },
+  "7.1.3": {
+    "docId": "AeRJaHTHowxh",
+    "url": "https://docs.qq.com/aio/DQWVSSmFIVEhvd3ho",
+    "title": "7.1.3 行业客户与场景应用"
+  },
+  "7.2.1": {
+    "docId": "AcxmRihGnHCp",
+    "url": "https://docs.qq.com/aio/DQWN4bVJpaEduSENw",
+    "title": "7.2.1 行业客户与场景应用"
+  },
+  "7.2.2": {
+    "docId": "AshXPULRvRmS",
+    "url": "https://docs.qq.com/aio/DQXNoWFBVTFJ2Um1T",
+    "title": "7.2.2 行业客户与场景应用"
+  },
+  "8.1.1": {
+    "docId": "ATQXAYdwHnHo",
+    "url": "https://docs.qq.com/aio/DQVRRWEFZZHdIbkhv",
+    "title": "8.1.1 专业服务与生态"
+  },
+  "8.1.2": {
+    "docId": "ASjuKwyLAZqn",
+    "url": "https://docs.qq.com/aio/DQVNqdUt3eUxBWnFu",
+    "title": "8.1.2 专业服务与生态"
+  },
+  "8.1.3": {
+    "docId": "AgAIlkTLXvjU",
+    "url": "https://docs.qq.com/aio/DQWdBSWxrVExYdmpV",
+    "title": "8.1.3 专业服务与生态"
+  },
+  "9.1.1": {
+    "docId": "AHniFxiWDrtf",
+    "url": "https://docs.qq.com/aio/DQUhuaUZ4aVdEcnRm",
+    "title": "9.1.1 全球基础设施布局"
+  },
+  "9.1.2": {
+    "docId": "APXXdXWqNmtU",
+    "url": "https://docs.qq.com/aio/DQVBYWGRYV3FObXRV",
+    "title": "9.1.2 全球基础设施布局"
+  },
+  "9.1.3": {
+    "docId": "AlhDMTZdZFMq",
+    "url": "https://docs.qq.com/aio/DQWxoRE1UWmRaRk1x",
+    "title": "9.1.3 全球基础设施布局"
+  },
+  "9.2.1": {
+    "docId": "AzCssmEFgdet",
+    "url": "https://docs.qq.com/aio/DQXpDc3NtRUZnZGV0",
+    "title": "9.2.1 全球基础设施布局"
+  },
+  "9.2.2": {
+    "docId": "AOvUPXIfBPji",
+    "url": "https://docs.qq.com/aio/DQU92VVBYSWZCUGpp",
+    "title": "9.2.2 全球基础设施布局"
+  },
+  "10.1.1": {
+    "docId": "AuIBjfirTEoU",
+    "url": "https://docs.qq.com/aio/DQXVJQmpmaXJURW9V",
+    "title": "10.1.1 产品与服务国际化"
+  },
+  "10.1.2": {
+    "docId": "AJHHSCMrhXlu",
+    "url": "https://docs.qq.com/aio/DQUpISFNDTXJoWGx1",
+    "title": "10.1.2 产品与服务国际化"
+  },
+  "10.1.3": {
+    "docId": "AxnDHgRodGtV",
+    "url": "https://docs.qq.com/aio/DQXhuREhnUm9kR3RW",
+    "title": "10.1.3 产品与服务国际化"
+  },
+  "10.1.4": {
+    "docId": "ATfxNJUOlIwK",
+    "url": "https://docs.qq.com/aio/DQVRmeE5KVU9sSXdL",
+    "title": "10.1.4 产品与服务国际化"
+  }
+}

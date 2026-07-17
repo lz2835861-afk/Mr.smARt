@@ -1,0 +1,34 @@
+{
+  "questionnaireId": "idc-aiiaas-2026",
+  "questionId": "3.1",
+  "docId": "AUkJLXLAwpEG",
+  "docUrl": "https://docs.qq.com/aio/DQVVrSkxYTEF3cEVH",
+  "urlId": "DQVVrSkxYTEF3cEVH",
+  "dimension": "",
+  "section": "Strategies",
+  "subsection": "Next-Generation GPU Roadmap",
+  "question": "Describe your strategy and timeline for integrating the next generation of merchant AI silicon into your infrastructure. How do you plan to reduce the time-to-market between hardware release and cloud GA?",
+  "guidance": "IDC 作答格式 (open text)",
+  "draft": "腾讯云对第三方主流 AI 芯片采取'快速跟进、紧密协同、分层放量'的引入策略，目标是持续缩短硬件发布到云上 GA 的时间差：\n\n1. 紧跟代次迭代：高性能计算集群已形成 V100→A100/A800→H800 的清晰代次梯队，并以邀测/白名单方式先行验证最新一代实例（如 HCCPNV6），在大规模放量前完成软硬件适配与稳定性验证，再逐步转入正式商用，从而压缩从硬件到云上可用的窗口期。\n2. 软硬件协同与早期适配：腾讯坚持软硬件协同的全栈优化长期投入，在新硬件进入前即完成驱动、网络（自研星脉 RDMA，最高 3.2Tbps）、调度与推理框架的预适配，降低新卡上线后的工程化时间。\n3. 多元芯片对冲单一依赖：腾讯云依托异构计算平台整合多种芯片资源对外提供高性价比 AI 算力，并已全面适配主流国产芯片，在第三方旗舰 GPU 之外保留多条供给路径，进一步保障代次切换期间的算力连续性。\n\n关于具体某一代次新硅（如新一代旗舰 GPU）的精确 GA 时间表，受供应、合规与产能等多重因素影响，腾讯云以官方发布与购买页为准；如 IDC 需要按里程碑的统一时间口径，可在商定后单独提供。",
+  "provenance": {
+    "sources": [
+      {
+        "label": "腾讯云高性能计算集群 实例规格",
+        "url": "https://cloud.tencent.com/document/product/1646/81562",
+        "kind": "doc"
+      },
+      {
+        "label": "腾讯邱跃鹏：面向Agent和全球化趋势，全面升级云基础设施（腾讯云原生）",
+        "url": "https://mp.weixin.qq.com/s/Ncl8V6kGiDP0c7RWe2u4lg",
+        "kind": "wechat"
+      }
+    ],
+    "quotes": [
+      "GPU 型 HCCPNV6 实例是最新一代的 GPU 型高性能计算实例，GPU 卡间支持 NVLink 互联，实例间支持 3.2Tbps RDMA 星脉网络互联，性能强大。",
+      "邱跃鹏表示，腾讯云持续深度参与并回馈开源社区，同时依托异构计算平台整合多种芯片资源，向外界提供高性价比的 AI 算力。目前，该平台已全面适配主流国产芯片。"
+    ],
+    "reasoning": "题面问引入新代次第三方 AI 硅的策略与缩短 time-to-market 的方法。语料支持：HCC 清晰代次梯队与 HCCPNV6 邀测最新一代（81562）、异构计算平台+国产芯片多元供给（公众号）。据此给出策略性、方向性回答，符合 open text。具体 GA 时间表无依据，不编造，注明以官方发布为准/可单独提供。",
+    "decision": "answer"
+  },
+  "generatedAt": "2026-06-17T01:38:36.251Z"
+}

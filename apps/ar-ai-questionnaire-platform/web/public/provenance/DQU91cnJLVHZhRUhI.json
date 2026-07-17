@@ -1,0 +1,38 @@
+{
+  "questionnaireId": "idc-aiiaas-2026",
+  "questionId": "3.14",
+  "docId": "AOurrKTvaEHH",
+  "docUrl": "https://docs.qq.com/aio/DQU91cnJLVHZhRUhI",
+  "urlId": "DQU91cnJLVHZhRUhI",
+  "dimension": "",
+  "section": "Strategies",
+  "subsection": "Security and Isolation Roadmap",
+  "question": "Outline your 3-year security strategy for AI infrastructure. Specifically address your roadmap for mitigating side-channel attacks on shared GPUs and implementing post-quantum cryptography in backend network fabrics.",
+  "guidance": "IDC 作答格式 (open text)",
+  "draft": "腾讯云面向 AI 基础设施的安全战略，总体目标是把“硬件级机密计算 + 可验证可信”作为多租户 AI 集群安全的基座，并在未来三年沿“运行时机密性、可信证明、抗侧信道、抗量子”四条主线持续演进。\n\n（1）以硬件可信执行环境（TEE）收敛攻击面。腾讯云已在 CPU 侧落地基于硬件的运行时内存加密：AMD SEV 透明加密虚拟机内存、寄存器等运行时状态，可抵御来自宿主机的恶意篡改与数据窃取，更高安全等级的 AMD SEV-SNP 正在公测推进；同时提供基于 Intel SGX 的安全增强内存实例，将敏感工作负载隔离运行于 Enclave 机密内存资源中。未来三年的方向，是把这一“运行时内存机密化”能力从 CPU 持续延伸到 AI 加速器与高速互联，构建覆盖计算、内存与节点间通信的端到端机密计算信任域，从架构层面缩小共享 GPU 多租户环境的可攻击面。\n\n（2）可验证的远程证明信任链。腾讯云已具备成熟的远程证明能力（AMD SEV 路线的 snpguest 报告生成与验证、Intel SGX 路线的区域化 DCAP 远程证明服务），可证明工作负载处于完整未被篡改的状态。后续战略是把证明信任链贯穿到 AI 训练/推理全流程，做到“先验证环境可信、再下发数据与模型权重”，为模型资产与敏感数据提供机密性与完整性的可验证保障。\n\n（3）共享 GPU 侧信道攻击缓解。针对多租户 AI 集群中共享加速器的独特攻击面，腾讯云的方向性策略是以强隔离为优先：通过硬件级内存加密与隔离、严格的租户/实例边界与资源清零（含显存等运行时状态的可信清理）、以及对加速器内部状态的最小化共享，降低跨租户侧信道与残留数据泄露风险；对最高安全等级场景，结合裸金属与单租户独占部署进一步消除共享面。相关具体技术实现与缓解清单，可在与 IDC 商定统一口径后单独/保密提供。\n\n（4）后量子密码（PQC）演进。腾讯云的方向是在后端网络与数据保护链路上逐步引入抗量子能力，遵循国际/国内权威标准化进展，规划在密钥协商、传输加密与证书体系等环节支持后量子算法与混合（经典+后量子）部署，并优先覆盖长周期敏感数据与跨数据中心的后端网络互联，以应对“先窃取、后解密”的长期威胁。鉴于 PQC 标准与硬件适配仍在持续演进，具体算法选型、上线节奏与覆盖范围属于方向性规划，可在与 IDC 对齐统一口径后单独/保密提供，不在此预先承诺确定时间点。\n\n需要说明的是，机密计算等安全增强特性相比普通环境会带来一定性能开销，腾讯云在落地中同步提供资源预留、容量监控与动态调优手段，确保安全增强与 AI 工作负载性能之间的可控平衡。",
+  "provenance": {
+    "sources": [
+      {
+        "label": "腾讯云文档 — 构建 AMD SEV 机密计算环境",
+        "url": "https://cloud.tencent.com/document/product/213/128217",
+        "kind": "doc"
+      },
+      {
+        "label": "腾讯云文档 — 构建 Tencent SGX 机密计算环境",
+        "url": "https://cloud.tencent.com/document/product/213/63353",
+        "kind": "doc"
+      }
+    ],
+    "quotes": [
+      "AMD SEV（Secure Encrypted Virtualization，安全加密虚拟化）技术基于 CPU 内置的安全处理器（SP），实现对虚拟机内存、寄存器等运行时状态的透明加密与全方位防护，有效抵御来自宿主机的恶意篡改与数据窃取。",
+      "CPU 机密计算（AMD SEV-SNP）公测申请中，如有需要，请联系",
+      "机密虚拟机的所有者能够证明其内部运行的工作负载处于完整未被篡改的状态，从而保障业务数据的安全性与可靠性。",
+      "本示例中的代码（SampleEnclave）效果为启动一个 Enclave，以验证是否正常使用安装的 SGXSDK，以及 SGX 云服务器实例的机密内存资源是否可用。",
+      "Intel Ice Lake 仅支持基于 Intel SGX DCAP 远程证明方式，不支持 Intel EPID 远程证明方式。",
+      "开启 SEV 机密计算特性相比普通虚拟机存在一定的性能损失。"
+    ],
+    "reasoning": "题面（无 parentText，用 question）要求 3 年安全战略，重点是共享 GPU 侧信道攻击缓解与后端网络后量子密码。语料仅覆盖 CPU 侧硬件内存加密（AMD SEV/SEV-SNP）、Intel SGX Enclave 机密内存与远程证明，这些作为安全基座可逐字引用并 grep -F 命中。但语料完全未涉及侧信道攻击缓解的具体机制、加密 GPU 显存、以及后量子密码（PQC），按起草政策将这两部分写成战略/方向性、模糊表述，不杜撰任何具体算法选型、上线时间、数字或客户名，并注明可与 IDC 商定口径后保密提供。性能开销引自语料以体现专业平衡。response_format 为 open text，无需数字。",
+    "decision": "grounded-partial"
+  },
+  "generatedAt": "2026-06-17T01:38:36.251Z"
+}

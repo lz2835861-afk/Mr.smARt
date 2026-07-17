@@ -1,0 +1,39 @@
+# Secrets
+.auth
+.auth_*
+*.auth
+
+# Output (potentially large + may contain copyrighted material)
+output/
+output_*/
+
+# Logs
+*.log
+*.log.*
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+.uv/
+*.egg-info/
+.pytest_cache/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.idea/
+.vscode/
+*.swp
+
+# Camoufox cache (also lives at ~/Library/Caches/camoufox)
+camoufox/
+
+# tmp / probe artifacts
+/tmp/
+feed.json
+*.tmp.json
+backfill.log

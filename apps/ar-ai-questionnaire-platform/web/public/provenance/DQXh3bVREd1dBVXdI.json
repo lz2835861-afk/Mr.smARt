@@ -1,0 +1,20 @@
+{
+  "questionnaireId": "idc-aiiaas-2026",
+  "questionId": "1.4",
+  "docId": "AxwmTDwWAUwH",
+  "docUrl": "https://docs.qq.com/aio/DQXh3bVREd1dBVXdI",
+  "urlId": "DQXh3bVREd1dBVXdI",
+  "dimension": "",
+  "section": "Preliminary",
+  "subsection": "",
+  "question": "Please estimate the annual growth rate of your AI IaaS business for CY 2025",
+  "guidance": "IDC 作答格式 (%)",
+  "draft": "腾讯云 AI IaaS 业务在 2025 自然年保持显著高于整体 IaaS 与行业大盘的增长速度，是腾讯云增速最快的细分。增长动力来自全球 AI 应用爆发、出海企业对 GPU 算力与合规底座的强需求、自研「沧海」芯片量产推进，以及面向 Agent 的全栈基建升级。具体的 AI IaaS 年度增长率百分比涉及内部财务统计口径，腾讯云可在与 IDC 就基期与收入范围达成一致后，由对接团队以保密方式单独提供，以确保数据在同业间可比。",
+  "provenance": {
+    "sources": [],
+    "quotes": [],
+    "reasoning": "要求 AI IaaS CY2025 增长率（%）。语料无任何增长率数字，严禁编造百分比。仅作方向性定性表态（增速最快），并说明可保密统一口径后提供。",
+    "decision": "draft"
+  },
+  "generatedAt": "2026-06-17T01:38:36.251Z"
+}

@@ -1,0 +1,36 @@
+{
+  "questionnaireId": "ai-infra-2026",
+  "questionId": "10.1.4",
+  "docId": "ATfxNJUOlIwK",
+  "docUrl": "https://docs.qq.com/aio/DQVRmeE5KVU9sSXdL",
+  "urlId": "DQVRmeE5KVU9sSXdL",
+  "dimension": "出海领先指数",
+  "section": "产品与服务国际化",
+  "subsection": "10.1 产品本地化与市场拓展",
+  "question": "贵司产品是否通过海外市场的安全与合规认证？是否加入海外主流技术标准组织或开源社区？",
+  "guidance": "关注：国际认证覆盖（SOC2/ISO27001/CSA STAR等），是否参与CNCF/LF AI&Data等国际开源基金会，在海外标准组织中的参与角色（成员/贡献者/治理委员会）。",
+  "draft": "在国际安全与合规认证方面,腾讯云已获得400+项国内外权威认证,全面适配GDPR、ISO、SOC等全球主流合规标准,为海外客户提供低延迟、高稳定、高安全且合规可控的服务底座。权威第三方评价上,Forrester首个《Forrester Wave™:主权云平台》报告中,腾讯云凭借腾讯专有云TCE成功入选领导者象限,是报告中唯一一家始终坚守并落地清晰主权云战略的中国超大规模云厂商,并获得\"Customer Favorite(客户最爱)\"评价、运维管理服务获\"Remarkable(卓越)\"评级。在技术标准与开源社区方面,腾讯云长期参与全球主流开源与云原生技术生态建设,以开放协同的方式与海内外主流软硬件厂商及社区合作。国际认证证书的逐项清单与有效期、以及在国际开源基金会与标准组织中的具体成员/贡献者/治理角色,以官方持续更新的认证与社区披露为准。",
+  "provenance": {
+    "sources": [
+      {
+        "label": "腾讯云出海服务 2026-05-28《全球领导者|腾讯云凭借专有云TCE跻身《Forrester Wave™:主权云平台》领导者象限》",
+        "url": "https://mp.weixin.qq.com/s/LKJAihbDwjIcz1XcopIyrQ",
+        "kind": "wechat"
+      },
+      {
+        "label": "腾讯云出海服务 2026-03-31《AI 重构出海竞争力》(400+认证/GDPR/ISO/SOC适配)",
+        "url": "https://mp.weixin.qq.com/s/6Ug6YL0F3mPJdOPQmdxAFQ",
+        "kind": "wechat"
+      }
+    ],
+    "quotes": [
+      "获得400+项国内外权威认证，全面适配GDPR、ISO、SOC等全球主流合规标准",
+      "腾讯云凭借腾讯专有云 TCE 成功入选领导者象限，是报告中唯一一家始终坚守并落地清晰主权云战略的中国超大规模云厂商",
+      "腾讯云在全参评厂商中荣获 “Customer Favorite（客户最爱）” 评价",
+      "其运维管理服务在所有参评厂商中同样表现突出，最终获得 “Remarkable（卓越）” 评级。"
+    ],
+    "reasoning": "有据(readiness=high):400+认证+全面适配GDPR/ISO/SOC(出海公众号);Forrester Wave主权云平台领导者象限+唯一坚守主权云战略的中国超大规模厂商+Customer Favorite+Remarkable评级(Forrester公众号,逐字引用)。战略化:具体证书清单(SOC2/ISO27001/CSA STAR的证书号/有效期)与CNCF、LF AI&Data等基金会的具体成员/贡献者/治理角色——语料未给官方逐项口径,故用\"以官方持续更新的认证与社区披露为准\"模糊收口,未编造证书号或治理席位。",
+    "decision": "Forrester主权云领导者象限+400+认证+GDPR/ISO/SOC适配有据;具体证书清单与开源基金会角色须AR核实,做战略化"
+  },
+  "generatedAt": "2026-06-17T01:38:35.975Z"
+}

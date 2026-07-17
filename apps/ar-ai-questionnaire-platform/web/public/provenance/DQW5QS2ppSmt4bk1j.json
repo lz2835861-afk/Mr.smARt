@@ -1,0 +1,20 @@
+{
+  "questionnaireId": "idc-aiiaas-2026",
+  "questionId": "1.6.1",
+  "docId": "AnPKjiJkxnMc",
+  "docUrl": "https://docs.qq.com/aio/DQW5QS2ppSmt4bk1j",
+  "urlId": "DQW5QS2ppSmt4bk1j",
+  "dimension": "",
+  "section": "Preliminary",
+  "subsection": "",
+  "question": "Please provide a primary contact from your company for this research effort — Name",
+  "guidance": "IDC 作答格式 (open text)",
+  "draft": "Please provide a primary contact from your company for this research effort — Name（姓名）：该项为本次 IDC MarketScape 研究的主要对接联系人信息，将由腾讯云对接团队/接口人统一填写并确认后提供。",
+  "provenance": {
+    "sources": [],
+    "quotes": [],
+    "reasoning": "联系人类题，按政策无需 grounding，写明由腾讯云对接团队/接口人填写。",
+    "decision": "draft"
+  },
+  "generatedAt": "2026-06-17T01:38:36.251Z"
+}
