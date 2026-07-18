@@ -12,6 +12,7 @@ import { WaveSpinner } from "@/components/ui/wave-spinner";
 import { UnicornBackground } from "@/components/landing/unicorn-background";
 import { WordingShowcase } from "@/components/landing/wording-showcase";
 import { UpvoteWall } from "@/components/landing/upvote-wall";
+import { WorkspaceHub } from "@/components/landing/workspace-hub";
 import { ProvenanceTimeline, type Reasoning } from "@/components/provenance-timeline";
 import { ProductHoloCard } from "@/components/product-holo-card";
 import { getLeaderboard } from "@/lib/reports-in-progress";
@@ -159,8 +160,18 @@ export default function Landing() {
         </div>
       </section>
 
-      {/* --------------------------- 3 · leaderboard ----------------------- */}
-      <section id="board" className="scroll-mt-20 border-t border-zinc-200/70 bg-white">
+      {/* ------------------------- 3 · unified workspace ------------------- */}
+      <section id="board" className="scroll-mt-20 border-t border-zinc-200/70 bg-zinc-50">
+        <div className="mx-auto w-full max-w-7xl px-4 py-20 sm:px-6">
+          <SectionHead center eyebrow={t.workspace.eyebrow} title={t.workspace.title} desc={t.workspace.desc} />
+          <div className="mt-10">
+            <WorkspaceHub />
+          </div>
+        </div>
+      </section>
+
+      {/* --------------------------- 4 · leaderboard ----------------------- */}
+      <section id="rankings" className="scroll-mt-20 border-t border-zinc-200/70 bg-white">
         <div className="mx-auto w-full max-w-6xl px-4 py-20 sm:px-6">
           <SectionHead center eyebrow={t.board.eyebrow} title={t.board.title} desc={t.board.desc} />
           <div className="mt-12 flex flex-col items-center gap-6 sm:flex-row sm:items-end sm:justify-center sm:gap-5">

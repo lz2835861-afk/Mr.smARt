@@ -3,6 +3,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import {
+  Bot,
   Clock3,
   Contact,
   FileText,
@@ -30,7 +31,7 @@ export function SiteNavbar() {
   const navSections: NavbarMenuSection[] = [
     {
       id: "product",
-      gridLayout: "grid w-full grid-cols-3 grid-rows-[5.5rem_5.5rem] gap-3",
+      gridLayout: "grid w-full grid-cols-4 grid-rows-[5.5rem_5.5rem] gap-3",
       links: [
         {
           label: t.nav.productLinks.workspace.label,
@@ -42,10 +43,16 @@ export function SiteNavbar() {
           icon: <Sparkles className="h-5 w-5" />,
         },
         {
+          label: t.nav.productLinks.assistant.label,
+          href: "/#board",
+          description: t.nav.productLinks.assistant.desc,
+          rowSpan: 2,
+          icon: <Bot className="h-5 w-5" />,
+        },
+        {
           label: t.nav.productLinks.features.label,
           href: "#",
           description: t.nav.productLinks.features.desc,
-          rowSpan: 2,
           backgroundImage: "/nav-ar-crm.png",
           icon: <Contact className="h-5 w-5" />,
         },

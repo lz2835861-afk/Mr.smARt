@@ -17,6 +17,7 @@ const en = {
     requestAccess: "Request access",
     productLinks: {
       workspace: { label: "AI questionnaire", desc: "Draft, cite & sign off MQ answers in one flow" },
+      assistant: { label: "Questionnaire Agent", desc: "Research, discover sources and draft answers with an AI agent" },
       features: { label: "AR CRM", desc: "Track firms, contacts, briefings & submission cycles" },
       marketInsight: { label: "Market Insight", desc: "Analyst coverage, narratives & competitive signals" },
       rankingMonitor: { label: "Ranking monitor", desc: "Watch Magic Quadrant & Wave position changes" },
@@ -180,6 +181,24 @@ const en = {
     desc: "Open any answer and see exactly how it was built — the sources it cited, the verbatim quotes, the reasoning, and the final call. Nothing is made up.",
     fieldLabel: "生成式 AI 能力栈",
     badge: "Traceable",
+  },
+  workspace: {
+    eyebrow: "Unified workspace",
+    title: "Two AI workspaces, one AR desk",
+    desc: "Use the questionnaire agent for research, knowledge discovery and drafting, then switch to the collaboration workspace for evidence review, product sign-off and submission.",
+    live: "Live",
+    reload: "Reload",
+    openNew: "Open in new tab",
+    security: "The embedded app runs in its own isolated origin.",
+    fallback: "If embedding is blocked by your browser, use Open in new tab.",
+    assistant: {
+      title: "Questionnaire Agent",
+      desc: "Research, source discovery, knowledge base and answer drafting",
+    },
+    questionnaire: {
+      title: "AI Questionnaire Workspace",
+      desc: "Question management, evidence audit, team review and submission",
+    },
   },
   board: {
     eyebrow: "Reports in progress",
@@ -461,6 +480,7 @@ const zh: Dict = {
     requestAccess: "立即使用",
     productLinks: {
       workspace: { label: "AI 填问卷", desc: "起草、引用、协作 —— 一套 AI 问卷作答平台" },
+      assistant: { label: "问卷智能体", desc: "用 AI 智能体检索资料、发现来源并起草答案" },
       features: { label: "AR CRM", desc: "沉淀分析师洞察，精准经营关键关系" },
       marketInsight: { label: "Market Insight", desc: "追踪报告排位，掌握友商竞争动态" },
       rankingMonitor: { label: "排名监控", desc: "给市场部前台用的一线洞察——分析师叙事、竞争信号" },
@@ -611,6 +631,24 @@ const zh: Dict = {
     desc: "点开任意一条答案，就能看到它是怎么来的——引用了哪些来源、原文怎么说、怎么一步步推理、最后怎么定。没有一句是编的。",
     fieldLabel: "生成式 AI 能力栈",
     badge: "可追溯",
+  },
+  workspace: {
+    eyebrow: "统一工作台",
+    title: "两个 AI 应用，一个 AR 工作台",
+    desc: "先用问卷智能体检索资料、发现证据并起草答案，再切换到协作台完成证据审计、产品确认和最终提交。",
+    live: "在线",
+    reload: "重新加载",
+    openNew: "新窗口打开",
+    security: "嵌入应用在独立域名的隔离环境中运行。",
+    fallback: "若浏览器阻止嵌入，请点击“新窗口打开”。",
+    assistant: {
+      title: "问卷智能体",
+      desc: "资料检索、来源发现、知识库与答案起草",
+    },
+    questionnaire: {
+      title: "AI 填问卷协作台",
+      desc: "问卷管理、证据审计、团队评审与提交",
+    },
   },
   board: {
     eyebrow: "进行中的报告",
