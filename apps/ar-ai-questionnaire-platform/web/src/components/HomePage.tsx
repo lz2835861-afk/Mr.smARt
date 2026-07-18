@@ -3,12 +3,14 @@ import { useNavigate } from "react-router-dom";
 import { Button } from "@heroui/react";
 import { Icon } from "@iconify/react";
 import {
-  QUESTIONNAIRES,
+  deleteImportedQuestionnaire,
+  getAllQuestionnaires,
   type Questionnaire,
   type QuestionnaireProduct,
 } from "../data/questionnaires";
 import { exportQuestionnaireXlsx, loadAnswersForExport, localAnswers, questionProgress } from "../lib/exportXlsx";
 import { SiteNavbar } from "./SiteNavbar";
+import { QuestionnaireUpload } from "./QuestionnaireUpload";
 import {
   AI_INFRA_FIRM,
   AI_INFRA_QUESTIONS,
@@ -49,7 +51,7 @@ function daysLabel(date: string): string | null {
   }
 }
 
-function QuestionnaireCard({ q }: { q: Questionnaire }) {
+function QuestionnaireCard({ q, onDeleted }: { q: Questionnaire; onDeleted: () => void }) {
   const navigate = useNavigate();
   const [exporting, setExporting] = useState(false);
 
@@ -73,6 +75,14 @@ function QuestionnaireCard({ q }: { q: Questionnaire }) {
     }
   };
 
+  const onDelete = () => {
+    if (!q.imported) return;
+    const confirmed = window.confirm(`确定删除本机导入问卷“${q.titleZh}”吗？填写内容也会一并删除。`);
+    if (!confirmed) return;
+    deleteImportedQuestionnaire(q.id);
+    onDeleted();
+  };
+
   return (
     <div className="flex flex-col rounded-2xl border border-border bg-surface p-5 transition-all hover:border-accent/40 hover:shadow-overlay">
       {/* Top: participating products + firm badge */}
@@ -82,9 +92,16 @@ function QuestionnaireCard({ q }: { q: Questionnaire }) {
             <ProductChip key={p.abbr} product={p} />
           ))}
         </div>
-        <span className="shrink-0 rounded-md bg-accent/10 px-2 py-0.5 text-[11px] font-semibold text-accent">
-          {q.firm}
-        </span>
+        <div className="flex shrink-0 flex-wrap justify-end gap-1.5">
+          {q.imported && (
+            <span className="rounded-md bg-warning/10 px-2 py-0.5 text-[11px] font-semibold text-warning">
+              本机导入
+            </span>
+          )}
+          <span className="rounded-md bg-accent/10 px-2 py-0.5 text-[11px] font-semibold text-accent">
+            {q.firm}
+          </span>
+        </div>
       </div>
 
       {/* Title (Chinese only) */}
@@ -92,6 +109,11 @@ function QuestionnaireCard({ q }: { q: Questionnaire }) {
       <p className="mt-1 text-xs text-muted">
         {q.vendor} · {questionCount} 题
       </p>
+      {q.imported && q.sourceName && (
+        <p className="mt-1 truncate text-[11px] text-muted" title={q.sourceName}>
+          来源文件：{q.sourceName}
+        </p>
+      )}
 
       {/* Meta: progress + current activity + next milestone */}
       <div className="mt-4 space-y-2.5">
@@ -124,11 +146,19 @@ function QuestionnaireCard({ q }: { q: Questionnaire }) {
       </div>
 
       {/* Footer actions */}
-      <div className="mt-5 flex items-center justify-between gap-2 border-t border-border pt-4">
-        <Button variant="outline" size="sm" isDisabled={exporting} onPress={onExport}>
-          <Icon icon="gravity-ui:arrow-down-to-line" className="size-3.5" />
-          {exporting ? "导出中…" : "导出 Excel"}
-        </Button>
+      <div className="mt-5 flex flex-wrap items-center justify-between gap-2 border-t border-border pt-4">
+        <div className="flex flex-wrap items-center gap-2">
+          <Button variant="outline" size="sm" isDisabled={exporting} onPress={onExport}>
+            <Icon icon="gravity-ui:arrow-down-to-line" className="size-3.5" />
+            {exporting ? "导出中…" : "导出 Excel"}
+          </Button>
+          {q.imported && (
+            <Button variant="ghost" size="sm" onPress={onDelete} aria-label={`删除 ${q.titleZh}`}>
+              <Icon icon="gravity-ui:trash-bin" className="size-3.5" />
+              删除
+            </Button>
+          )}
+        </div>
         <Button variant="primary" size="sm" onPress={() => navigate(`/q/${q.slug}`)}>
           进入编辑
           <Icon icon="gravity-ui:arrow-right" className="size-3.5" />
@@ -200,6 +230,9 @@ function AiInfraCard() {
 
 /** Landing page — a launcher listing the in-progress questionnaires. */
 export function HomePage() {
+  const [questionnaires, setQuestionnaires] = useState<Questionnaire[]>(getAllQuestionnaires);
+  const refreshQuestionnaires = () => setQuestionnaires(getAllQuestionnaires());
+
   return (
     <div className="min-h-dvh bg-background">
       <SiteNavbar />
@@ -211,10 +244,12 @@ export function HomePage() {
           </p>
         </header>
 
+        <QuestionnaireUpload onImported={refreshQuestionnaires} />
+
         <div className="grid gap-4 sm:grid-cols-2">
           <AiInfraCard />
-          {QUESTIONNAIRES.map((q) => (
-            <QuestionnaireCard key={q.id} q={q} />
+          {questionnaires.map((q) => (
+            <QuestionnaireCard key={q.id} q={q} onDeleted={refreshQuestionnaires} />
           ))}
         </div>
       </main>

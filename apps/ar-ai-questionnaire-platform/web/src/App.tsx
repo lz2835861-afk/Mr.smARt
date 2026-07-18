@@ -5,7 +5,7 @@ import { AppLayout, Sidebar } from "@heroui-pro/react";
 import { Icon } from "@iconify/react";
 import { Toaster, toast } from "sonner";
 import {
-  QUESTIONNAIRES,
+  getAllQuestionnaires,
   getQuestionnaireBySlug,
   type Questionnaire,
 } from "./data/questionnaires";
@@ -55,7 +55,8 @@ function AppInner({ auth, questionnaire }: InnerProps) {
   const navigate = useNavigate();
   const { questionId: routeQuestionId } = useParams();
   const [searchParams, setSearchParams] = useSearchParams();
-  const remote = auth.status === "signed-in";
+  const remote = auth.status === "signed-in" && !questionnaire.imported;
+  const questionnaires = getAllQuestionnaires();
   const q = useRemoteAnswers({ remote, questionnaire });
   const meta = useAnswerMeta({ remote, questionnaire });
   const displayName = auth.user?.user_metadata?.display_name as string | undefined;
@@ -194,7 +195,7 @@ function AppInner({ auth, questionnaire }: InnerProps) {
               aria-label="切换问卷"
               className="w-full bg-transparent text-sm font-semibold text-foreground truncate outline-none cursor-[var(--cursor-interactive)] -ml-0.5"
             >
-              {QUESTIONNAIRES.map((qq) => (
+              {questionnaires.map((qq) => (
                 <option key={qq.id} value={qq.slug}>
                   {qq.label}
                 </option>

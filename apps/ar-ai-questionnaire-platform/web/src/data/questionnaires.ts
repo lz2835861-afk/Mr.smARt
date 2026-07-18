@@ -54,10 +54,16 @@ export interface Questionnaire {
   nextMilestone: QuestionnaireMilestone;
   /** localStorage key for this questionnaire's answer set. */
   storageKey: string;
+  /** True for questionnaire definitions imported in this browser only. */
+  imported?: boolean;
+  /** Original local file name for a browser-imported questionnaire. */
+  sourceName?: string;
+  /** ISO timestamp for a browser-imported questionnaire. */
+  importedAt?: string;
   sections: Section[];
 }
 
-export const QUESTIONNAIRES: Questionnaire[] = [
+export const BUILT_IN_QUESTIONNAIRES: Questionnaire[] = [
   {
     id: "omdia-cloud-china-2026",
     slug: "omdia-cloud-china",
@@ -116,21 +122,75 @@ export const QUESTIONNAIRES: Questionnaire[] = [
   },
 ];
 
+/** Compatibility export for code that only needs the built-in registry. */
+export const QUESTIONNAIRES = BUILT_IN_QUESTIONNAIRES;
+
 export const DEFAULT_QUESTIONNAIRE_ID = "gartner-container-2026";
 
 export const ACTIVE_QUESTIONNAIRE_STORAGE_KEY = "active_questionnaire_id";
+export const IMPORTED_QUESTIONNAIRES_STORAGE_KEY = "imported_questionnaires_v1";
+
+function isQuestionnaire(value: unknown): value is Questionnaire {
+  if (!value || typeof value !== "object") return false;
+  const q = value as Partial<Questionnaire>;
+  return (
+    typeof q.id === "string" &&
+    typeof q.slug === "string" &&
+    typeof q.label === "string" &&
+    typeof q.titleZh === "string" &&
+    typeof q.storageKey === "string" &&
+    Array.isArray(q.sections)
+  );
+}
+
+export function getImportedQuestionnaires(): Questionnaire[] {
+  if (typeof window === "undefined") return [];
+  try {
+    const raw = window.localStorage.getItem(IMPORTED_QUESTIONNAIRES_STORAGE_KEY);
+    if (!raw) return [];
+    const parsed: unknown = JSON.parse(raw);
+    if (!Array.isArray(parsed) || !parsed.every(isQuestionnaire)) return [];
+    return parsed;
+  } catch {
+    return [];
+  }
+}
+
+export function getAllQuestionnaires(): Questionnaire[] {
+  return [...BUILT_IN_QUESTIONNAIRES, ...getImportedQuestionnaires()];
+}
+
+export function saveImportedQuestionnaire(questionnaire: Questionnaire): void {
+  if (typeof window === "undefined") return;
+  const imported = getImportedQuestionnaires();
+  const next = [
+    questionnaire,
+    ...imported.filter((q) => q.id !== questionnaire.id && q.slug !== questionnaire.slug),
+  ];
+  window.localStorage.setItem(IMPORTED_QUESTIONNAIRES_STORAGE_KEY, JSON.stringify(next));
+}
+
+export function deleteImportedQuestionnaire(id: string): void {
+  if (typeof window === "undefined") return;
+  const imported = getImportedQuestionnaires();
+  const target = imported.find((q) => q.id === id);
+  const next = imported.filter((q) => q.id !== id);
+  window.localStorage.setItem(IMPORTED_QUESTIONNAIRES_STORAGE_KEY, JSON.stringify(next));
+  if (target) window.localStorage.removeItem(target.storageKey);
+}
 
 /** Look up by stable id (storage scope, registry default). */
 export function getQuestionnaire(id: string | null | undefined): Questionnaire {
+  const questionnaires = getAllQuestionnaires();
   return (
-    QUESTIONNAIRES.find((q) => q.id === id) ??
-    QUESTIONNAIRES.find((q) => q.id === DEFAULT_QUESTIONNAIRE_ID) ??
-    QUESTIONNAIRES[0]
+    questionnaires.find((q) => q.id === id) ??
+    questionnaires.find((q) => q.id === DEFAULT_QUESTIONNAIRE_ID) ??
+    questionnaires[0]
   );
 }
 
 /** Look up by URL slug. Returns undefined for an unknown slug so the route can
  *  redirect home instead of silently falling back to a default. */
 export function getQuestionnaireBySlug(slug: string | null | undefined): Questionnaire | undefined {
-  return QUESTIONNAIRES.find((q) => q.slug === slug);
+  return getAllQuestionnaires().find((q) => q.slug === slug);
 }
