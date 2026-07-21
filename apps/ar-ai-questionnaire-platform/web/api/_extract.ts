@@ -9,8 +9,8 @@
  */
 import type { ExtractRequest, ExtractResponse } from "../src/lib/aiTypes";
 
-// The Vercel function is pinned to Hong Kong for the mainland Kimi endpoint.
-const BASE = "https://api.moonshot.cn/v1";
+// Use the international endpoint with a platform.moonshot.ai API key.
+const BASE = "https://api.moonshot.ai/v1";
 
 /** Char cap so the extracted text fits a small chat context (moonshot-v1-8k). */
 const MAX_CHARS = 6000;

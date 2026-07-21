@@ -9,27 +9,16 @@
  */
 import type { AiRequest, AiResponse } from "../src/lib/aiTypes";
 
-// This project uses a mainland-China Kimi API account. The Vercel function is
-// pinned to Hong Kong in vercel.json so it can reach the official .cn endpoint.
-const BASE = "https://api.moonshot.cn/v1";
-const DEFAULT_MODEL = "moonshot-v1-8k";
+// Vercel cannot reach the mainland .cn API even from hkg1. Use Kimi's official
+// international endpoint and an API key created on platform.moonshot.ai.
+const BASE = "https://api.moonshot.ai/v1";
+const DEFAULT_MODEL = "kimi-k2.6";
 
 /**
- * Moonshot returns a transient HTTP 429 `engine_overloaded_error` under load,
- * and which model is overloaded rotates minute to minute (8k may be free while
- * 128k is throttled, and vice-versa). So on overload we retry with backoff AND
- * fall back down this chain. The moonshot-v1 family takes temperature 0.3
- * (better for restrained factual writing) and goes first; kimi-k2.6 is a
- * separate, healthier capacity pool kept as the last-resort safety net (it only
- * accepts temperature 1, so it's least preferred for this task but rarely down).
- * A real error (bad request / auth) is thrown immediately — only 429/5xx retry.
+ * Retry transient HTTP 429/5xx failures. Kimi K2.6 is the general-purpose model
+ * used by this questionnaire assistant and accepts temperature 1.
  */
-const FALLBACK_MODELS = [
-  "moonshot-v1-8k",
-  "moonshot-v1-32k",
-  "moonshot-v1-128k",
-  "kimi-k2.6",
-];
+const FALLBACK_MODELS = ["kimi-k2.6"];
 const RETRIES_PER_MODEL = 2;
 const sleep = (ms: number) => new Promise((r) => setTimeout(r, ms));
 /** kimi-k2.* only accept temperature 1; everything else uses 0.3. */
@@ -152,10 +141,11 @@ export async function handleAi(
         const detail = [cause?.code, cause?.message || (error as Error).message]
           .filter(Boolean)
           .join(": ");
-        throw new Error(
+        const wrapped = new Error(
           `Kimi API 网络连接失败（${new URL(BASE).hostname}）：${detail}`,
-          { cause: error },
-        );
+        ) as Error & { cause?: unknown };
+        wrapped.cause = error;
+        throw wrapped;
       }
 
       const json = (await resp.json().catch(() => ({}))) as MoonshotResponse;
