@@ -9,10 +9,9 @@
  */
 import type { AiRequest, AiResponse } from "../src/lib/aiTypes";
 
-// Vercel runs this function outside mainland China (currently iad1). Kimi's
-// official troubleshooting guide directs international callers to the .ai
-// endpoint; the .cn endpoint can fail at the network layer with `fetch failed`.
-const BASE = "https://api.moonshot.ai/v1";
+// This project uses a mainland-China Kimi API account. The Vercel function is
+// pinned to Hong Kong in vercel.json so it can reach the official .cn endpoint.
+const BASE = "https://api.moonshot.cn/v1";
 const DEFAULT_MODEL = "moonshot-v1-8k";
 
 /**
