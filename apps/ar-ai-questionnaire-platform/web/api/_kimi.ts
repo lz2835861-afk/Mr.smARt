@@ -131,18 +131,32 @@ export async function handleAi(
   let lastError = "Kimi 调用失败";
   for (const usedModel of models) {
     for (let attempt = 1; attempt <= RETRIES_PER_MODEL; attempt++) {
-      const resp = await fetch(`${BASE}/chat/completions`, {
-        method: "POST",
-        headers: {
-          "content-type": "application/json",
-          authorization: `Bearer ${apiKey}`,
-        },
-        body: JSON.stringify({
-          model: usedModel,
-          temperature: tempFor(usedModel),
-          messages,
-        }),
-      });
+      let resp: Response;
+      try {
+        resp = await fetch(`${BASE}/chat/completions`, {
+          method: "POST",
+          headers: {
+            "content-type": "application/json",
+            authorization: `Bearer ${apiKey}`,
+          },
+          body: JSON.stringify({
+            model: usedModel,
+            temperature: tempFor(usedModel),
+            messages,
+          }),
+        });
+      } catch (error) {
+        const cause = (error as Error & {
+          cause?: { code?: string; message?: string };
+        }).cause;
+        const detail = [cause?.code, cause?.message || (error as Error).message]
+          .filter(Boolean)
+          .join(": ");
+        throw new Error(
+          `Kimi API 网络连接失败（${new URL(BASE).hostname}）：${detail}`,
+          { cause: error },
+        );
+      }
 
       const json = (await resp.json().catch(() => ({}))) as MoonshotResponse;
 
