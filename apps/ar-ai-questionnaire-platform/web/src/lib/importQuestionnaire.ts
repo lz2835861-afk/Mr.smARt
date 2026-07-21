@@ -38,12 +38,12 @@ function cellText(value: unknown): string {
 }
 
 function normalizeHeader(value: string): string {
-  return value.toLowerCase().replace(/[\s._:：()（）\-\/\\|·]+/g, "");
+  return value.toLowerCase().replace(/[\s._:：()（）\-/\\|·]+/g, "");
 }
 
 function headerParts(value: string): string[] {
   return value
-    .split(/[\n\/\\|·]+/)
+    .split(/[\n/\\|·]+/)
     .map(normalizeHeader)
     .filter(Boolean);
 }
