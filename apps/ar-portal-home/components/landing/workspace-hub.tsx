@@ -11,7 +11,7 @@ type WorkspaceId = "assistant" | "questionnaire";
 
 export function WorkspaceHub() {
   const t = useT();
-  const [active, setActive] = useState<WorkspaceId>("assistant");
+  const [active, setActive] = useState<WorkspaceId>("questionnaire");
   const [reloadKey, setReloadKey] = useState(0);
 
   const applications = useMemo(

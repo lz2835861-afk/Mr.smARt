@@ -22,7 +22,7 @@ const nextConfig: NextConfig = {
           {
             key: "Content-Security-Policy",
             value:
-              "frame-src https://ai.ar-tencent.cloud https://ar-questionnaire-assistant.vercel.app;",
+              "frame-src https://ai.ar-tencent.cloud https://web-one-sooty-82.vercel.app https://ar-questionnaire-assistant.vercel.app;",
           },
         ],
       },
