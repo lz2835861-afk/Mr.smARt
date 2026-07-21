@@ -9,7 +9,10 @@
  */
 import type { AiRequest, AiResponse } from "../src/lib/aiTypes";
 
-const BASE = "https://api.moonshot.cn/v1";
+// Vercel runs this function outside mainland China (currently iad1). Kimi's
+// official troubleshooting guide directs international callers to the .ai
+// endpoint; the .cn endpoint can fail at the network layer with `fetch failed`.
+const BASE = "https://api.moonshot.ai/v1";
 const DEFAULT_MODEL = "moonshot-v1-8k";
 
 /**

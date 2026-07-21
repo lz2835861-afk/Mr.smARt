@@ -9,7 +9,8 @@
  */
 import type { ExtractRequest, ExtractResponse } from "../src/lib/aiTypes";
 
-const BASE = "https://api.moonshot.cn/v1";
+// Use Kimi's official international endpoint from Vercel's overseas runtime.
+const BASE = "https://api.moonshot.ai/v1";
 
 /** Char cap so the extracted text fits a small chat context (moonshot-v1-8k). */
 const MAX_CHARS = 6000;
