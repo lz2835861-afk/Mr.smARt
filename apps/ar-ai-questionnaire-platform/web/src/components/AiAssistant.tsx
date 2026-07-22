@@ -135,9 +135,27 @@ const LOADING_LINES = [
   "动动脑子，给你写得更稳一点…",
 ];
 const SELECTION_LOADING_LINE = "正在改你圈出来的那一段…";
+const MATERIAL_FILE_INPUT_ID = "ai-assistant-material-file";
 
 function pickLoadingLine(): string {
   return LOADING_LINES[Math.floor(Math.random() * LOADING_LINES.length)];
+}
+
+/**
+ * Users often type "改得更详细：<the selected text>" even though the selected
+ * text is already sent separately. Strip that duplicate tail so the model sees
+ * a clear editing instruction instead of interpreting the excerpt as the task.
+ */
+function normalizeSelectionInstruction(instruction: string, selection?: string): string {
+  const trimmed = instruction.trim();
+  const excerpt = selection?.trim();
+  if (!trimmed || !excerpt || !trimmed.includes(excerpt)) return trimmed;
+
+  const withoutExcerpt = trimmed
+    .replace(excerpt, "")
+    .replace(/[：:，,；;\s-]+$/g, "")
+    .trim();
+  return withoutExcerpt && withoutExcerpt.length <= 80 ? withoutExcerpt : trimmed;
 }
 
 export function AiAssistant({
@@ -194,8 +212,6 @@ export function AiAssistant({
     setExtracting(false);
     setMode(null);
   }, [question.id, onClearSelection]);
-
-  const fileInputRef = useRef<HTMLInputElement>(null);
 
   /** Upload a file → server extracts its text (Moonshot Files API) → use as material. */
   const onPickFile = useCallback(async (file: File) => {
@@ -261,14 +277,15 @@ export function AiAssistant({
   }, []);
 
   const contextOptions = useMemo((): ComposerContextOption[] => {
-    const opts: ComposerContextOption[] = [];
-    opts.push({
-      id: "upload-file",
-      label: "上传文件",
-      description: "PDF / Word / PPT / 文本 — 解析后作为材料",
-      icon: <Icon icon="gravity-ui:paperclip" className="size-[18px]" />,
-      onClick: () => fileInputRef.current?.click(),
-    });
+    const opts: ComposerContextOption[] = [
+      {
+        id: "upload-file",
+        label: "上传文件",
+        description: "PDF / Word / PPT / 文本 — 解析后作为材料",
+        icon: <Icon icon="gravity-ui:paperclip" className="size-[18px]" />,
+        onClick: () => document.getElementById(MATERIAL_FILE_INPUT_ID)?.click(),
+      },
+    ];
     if (meta?.fact_notes?.trim()) {
       opts.push({
         id: "fact-notes",
@@ -286,11 +303,12 @@ export function AiAssistant({
       onClick: () => addMaterialSnippet("中文草稿", zh),
     });
     return opts;
-  }, [addMaterialSnippet, meta?.fact_notes, zh]);
+  }, [addMaterialSnippet, meta, zh]);
 
   const onSubmit = async (message: string) => {
-    const instruction = message.trim();
+    const rawInstruction = message.trim();
     const excerpt = textareaSelection?.text.trim();
+    const instruction = normalizeSelectionInstruction(rawInstruction, excerpt);
     if (effectiveMode === "ask" && !instruction) {
       toast.message("写下你的问题，Enter 发送");
       return;
@@ -315,7 +333,7 @@ export function AiAssistant({
         : undefined;
 
     const modeLabel = mode ? MODE_LABEL[mode] : "处理";
-    const userLabel = instruction || modeLabel;
+    const userLabel = rawInstruction || modeLabel;
     setTurns((prev) => [
       ...prev,
       {
@@ -527,7 +545,7 @@ export function AiAssistant({
             </div>
           )}
           <input
-            ref={fileInputRef}
+            id={MATERIAL_FILE_INPUT_ID}
             type="file"
             className="hidden"
             accept=".pdf,.doc,.docx,.ppt,.pptx,.xls,.xlsx,.txt,.md,.csv"

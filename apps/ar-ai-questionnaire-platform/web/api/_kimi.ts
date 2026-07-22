@@ -23,6 +23,9 @@ const RETRIES_PER_MODEL = 2;
 const sleep = (ms: number) => new Promise((r) => setTimeout(r, ms));
 /** kimi-k2.* only accept temperature 1; everything else uses 0.3. */
 const tempFor = (m: string) => (/^kimi-k2/.test(m) ? 1 : 0.3);
+const EXPANSION_RE = /更详细|扩写|展开|丰富|补充细节|写长|增加细节/i;
+const compactText = (value: string) =>
+  value.replace(/\s+/g, "").replace(/[，。；：、,.!?！？()[\]【】]/g, "");
 
 const SYSTEM = `你是腾讯云分析师关系（AR）团队的中文写作助手，帮助产品同学把事实要点写成分析师（Gartner/Forrester/IDC/Omdia）认可的问卷答案。
 原则：
@@ -46,6 +49,9 @@ function buildUserPrompt(r: AiRequest): string {
 
   const selectionBlock = r.selection
     ? `\n\n【用户选中的段落（请优先处理这段）】\n${r.selection}`
+    : "";
+  const expansionRule = EXPANSION_RE.test(r.instruction ?? "")
+    ? `\n\n【扩写要求】必须产出比原文更具体、结构更完整且有实质变化的版本，不得原样返回。只能展开给定事实的含义、范围和组织方式，不得新增材料中没有的数字、客户、产品能力或承诺；若事实不足以支持用户期待的细节，仍先完成安全范围内的扩写，并按信心闸门输出 [[need-reference]]。`
     : "";
 
   switch (r.mode) {
@@ -81,11 +87,11 @@ function buildUserPrompt(r: AiRequest): string {
       if (r.selection) {
         return `${header}用户在中栏选中了下面这段文字，并给出一条指令。请只按指令修改这段【选中文字】，其余未选中的内容一律保持不变、不要重写整段答案。只输出修改后的选中段落本身（不要附带未选中的内容，不要加引号或解释）。保留所有 [占位符]。\n\n【指令】\n${r.instruction ?? ""}${selectionBlock}${
           r.zh ? `\n\n【完整草稿（仅供理解上下文，请勿整体改写）】\n${r.zh}` : ""
-        }${r.material ? `\n\n【补充材料】\n${r.material}` : ""}`;
+        }${r.material ? `\n\n【补充材料】\n${r.material}` : ""}${expansionRule}`;
       }
       return `${header}请按下面的指令处理这段中文草稿，输出处理后的完整中文答案。保留所有 [占位符]。\n\n【指令】\n${r.instruction ?? ""}\n\n【当前中文草稿】\n${r.zh ?? ""}${
         r.material ? `\n\n【补充材料】\n${r.material}` : ""
-      }`;
+      }${expansionRule}`;
     default:
       return r.zh ?? "";
   }
@@ -111,6 +117,8 @@ export async function handleAi(
     { role: "system", content: SYSTEM },
     { role: "user", content: buildUserPrompt(body) },
   ];
+  const expansionRequested = EXPANSION_RE.test(body.instruction ?? "");
+  const originalText = body.selection || body.zh || "";
 
   // Try the configured model first, then fall back across the family. Each
   // model gets a couple of retries with backoff before moving on.
@@ -152,7 +160,21 @@ export async function handleAi(
 
       if (resp.ok) {
         const text = json.choices?.[0]?.message?.content?.trim() ?? "";
-        if (text) return { text, model: usedModel };
+        if (text) {
+          const unchangedExpansion =
+            expansionRequested &&
+            originalText &&
+            compactText(text.replace(/\[\[need-reference\]\]/gi, "")) ===
+              compactText(originalText);
+          if (!unchangedExpansion) return { text, model: usedModel };
+
+          lastError = "Kimi 未产生实质扩写，请补充事实材料或换一个更具体的指令";
+          if (attempt < RETRIES_PER_MODEL) {
+            await sleep(500 * attempt);
+            continue;
+          }
+          break;
+        }
         lastError = "Kimi 返回空内容";
         break; // empty body — try the next model
       }
