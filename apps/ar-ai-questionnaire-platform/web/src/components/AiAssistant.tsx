@@ -388,6 +388,11 @@ export function AiAssistant({
           askText: instruction || question.title,
         },
       ]);
+      if (appliable) {
+        toast.message(
+          snap ? "AI 结果尚未写入：请点击“替换选中片段”" : "AI 结果尚未写入：请点击“应用到中文草稿”",
+        );
+      }
     }
   };
 
@@ -446,7 +451,7 @@ export function AiAssistant({
           </span>
           <div className="leading-tight">
             <div className="text-sm font-semibold text-foreground">AI 助手 · Kimi</div>
-            <div className="text-[10px] text-muted">产出只进草稿，需你确认</div>
+            <div className="text-[10px] text-muted">AI 结果仅预览，点击下方应用按钮才保存</div>
           </div>
         </div>
       </div>
@@ -510,11 +515,17 @@ export function AiAssistant({
             )}
 
             {lastResult && !loading && lastAppliable && (
-              <div className="flex flex-wrap gap-1.5">
-                <Button variant="primary" size="sm" onPress={onApply}>
-                  <Icon icon="gravity-ui:check" className="size-3.5" />
-                  {pendingApplySelection ? "替换选中片段" : "应用到中文草稿"}
-                </Button>
+              <div className="rounded-xl border border-warning/30 bg-warning/5 p-2.5">
+                <div className="mb-2 flex items-center gap-1.5 text-[11px] text-warning">
+                  <Icon icon="gravity-ui:circle-exclamation" className="size-3.5" />
+                  当前只是 AI 预览，离开本题前请确认是否写入答案
+                </div>
+                <div className="flex flex-wrap gap-1.5">
+                  <Button variant="primary" size="sm" onPress={onApply}>
+                    <Icon icon="gravity-ui:check" className="size-3.5" />
+                    {pendingApplySelection ? "替换选中片段" : "应用到中文草稿"}
+                  </Button>
+                </div>
               </div>
             )}
           </>
