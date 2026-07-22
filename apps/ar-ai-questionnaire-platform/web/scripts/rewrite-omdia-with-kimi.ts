@@ -134,7 +134,7 @@ async function rewrite(item: WorkItem): Promise<void> {
         method: "POST",
         headers: { "content-type": "application/json" },
         body: JSON.stringify(body),
-        signal: AbortSignal.timeout(150_000),
+        signal: AbortSignal.timeout(300_000),
       });
       const json = (await response.json().catch(() => ({}))) as Partial<AiResponse> & { error?: string };
       if (!response.ok || !json.text) throw new Error(json.error || `HTTP ${response.status}`);

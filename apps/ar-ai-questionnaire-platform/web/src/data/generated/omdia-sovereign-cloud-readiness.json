@@ -1,12 +1,12 @@
 {
-  "generated": "2026-07-17",
+  "generated": "2026-07-22",
   "by": "build-omdia-sovereign-pipeline",
   "summary": {
     "section_count": 6,
     "question_count": 33,
     "field_count": 70,
     "source_count": 33,
-    "review_count": 54,
+    "review_count": 62,
     "high": 9,
     "medium": 0,
     "low": 24
@@ -36,8 +36,8 @@
       "groundability": "low",
       "action": "ai-draft+ar-supply",
       "missing_for_ar": [
-        "[REVIEW: product] 未来18个月新增国家/地区的具体扩张计划属于前瞻性商业信息，公开渠道未披露具体清单。国际业务战略团队应核实是否可对外披露、披露到什么颗粒度。",
-        "[REVIEW: product] Forward-looking market-expansion plans for the next 18 months are not disclosed publicly. The international strategy team should confirm whether, and at what granularity, this can be shared externally."
+        "[REVIEW: product] 截至当前，腾讯云未公开披露未来18个月计划新增国家/地区的具体数量或名单。该信息属于前瞻性商业规划，需由国际业务战略团队确认是否可对外提供，以及可披露的颗粒度（如具体数量、区域或国家名称）。",
+        "[REVIEW: product] Tencent Cloud has not publicly disclosed the specific number or list of new countries and regions planned for the next 18 months. This forward-looking commercial planning requires confirmation from the international business strategy team on whether it can be shared externally and at what granularity (e.g., specific count, region, or country names)."
       ],
       "note": "1 fields, 0 sources, 2 review items; groundability low."
     },
@@ -78,8 +78,8 @@
       "groundability": "low",
       "action": "ai-draft+ar-supply",
       "missing_for_ar": [
-        "[REVIEW: product] 相对定价对比涉及商业报价策略与合同条款，不同部署模式(公有云/专有云TCE/合作伙伴云)定价机制差异较大，公开渠道无统一披露。需销售/产品定价团队确认对外可披露的相对定价口径。",
-        "[REVIEW: product] Relative pricing involves commercial quoting strategy and contract terms that differ materially by deployment model (public cloud / TCE / partner cloud) and are not disclosed publicly. Sales/pricing teams should confirm a defensible relative-pricing statement."
+        "[REVIEW: product] 相对定价水平取决于具体部署模式（公有云、专有云TCE、合作伙伴云）及合同条款，公开渠道无统一价格披露。已知事实为：不同模式下定价机制差异显著，目前无可对外发布的标准化相对定价基准。需销售/产品定价团队确认可对外披露的竞争性定价定位及可比维度（如TCO、按需计费等）。",
+        "[REVIEW: product] Relative pricing depends on the deployment model (public cloud, TCE, partner cloud) and contract terms, with no unified public price disclosure. Known facts: pricing mechanisms differ significantly across deployment models, and no externally publishable standardized relative-pricing benchmark is currently available. Confirmation from the sales/pricing team is required on defensible competitive pricing positioning and comparable dimensions (e.g., TCO, on-demand rates)."
       ],
       "note": "1 fields, 0 sources, 2 review items; groundability low."
     },
@@ -120,8 +120,8 @@
       "groundability": "low",
       "action": "ai-draft+ar-supply",
       "missing_for_ar": [
-        "[REVIEW: product] 过去3年美国法院数据调取请求次数属于法律合规敏感信息，不属于公开数据范畴，需由法务/合规团队核实真实数字后填写，不可编造具体数字。",
-        "[REVIEW: product] The count of U.S. court data-access requests over the past three years is legally sensitive and not publicly disclosed. Legal/compliance must supply the verified figure; it cannot be estimated."
+        "[REVIEW: product] 过去3年美国法院向腾讯云提出的数据访问请求次数并无公开记录。已知事实：该类信息属于法律合规敏感数据，不对外公开。缺失信息：经核实的具体请求次数。需法务/合规团队确认准确数字后方可填写，当前不可估算或编造。",
+        "[REVIEW: product] There is no public record of the number of U.S. court data-access requests directed at Tencent Cloud in the past three years. Known fact: such information is legally sensitive and not publicly disclosed. Missing information: a verified count. Legal/Compliance must confirm the exact figure before it can be provided; we cannot estimate or fabricate a number."
       ],
       "note": "1 fields, 0 sources, 2 review items; groundability low."
     },
@@ -136,8 +136,8 @@
       "groundability": "low",
       "action": "ai-draft+ar-supply",
       "missing_for_ar": [
-        "[REVIEW: product] 过去3年其他国家法院数据调取请求次数同样属于法务合规敏感信息，需法务团队核实提供真实数字，不可编造。",
-        "[REVIEW: product] The equivalent count for non-U.S. court requests is likewise legally sensitive and requires verified figures from legal/compliance."
+        "[REVIEW: product] 过去3年其他国家法院向腾讯云提出的数据访问请求次数属于法务合规敏感信息，目前缺乏公开来源及经核实的内部统计数据，无法提供确切数字。该信息必须由法务/合规团队核实确认并获得正式授权后方可披露，在确认前不可编造或预估，以确保问卷答复的准确性与合规性。",
+        "[REVIEW: product] The number of non-U.S. court data access requests received by Tencent Cloud over the past three years is legally sensitive. No publicly available sources or verified internal figures are currently available for disclosure. The exact count must be validated and authorized by Tencent Cloud’s legal and compliance team and cannot be fabricated or estimated prior to confirmation."
       ],
       "note": "1 fields, 0 sources, 2 review items; groundability low."
     },
@@ -161,14 +161,17 @@
       "question_title": "AB006 · 是否保证数据驻留在单一司法辖区",
       "field_count": 3,
       "source_count": 0,
-      "review_count": 2,
+      "review_count": 5,
       "groundability": "low",
       "action": "ai-draft+ar-supply",
       "missing_for_ar": [
+        "腾讯云公有云默认将客户数据存储于所选Region内，不主动进行跨Region传输。现有引用证据主要覆盖腾讯云专有云平台（TCE）：其支持物理隔离的air-gapped环境，并可在客户指定的本地部署，从而实现数据不依赖跨境传输。关于公共云单一司法辖区的驻留保证，[REVIEW: product] 具体承诺范围需结合客户实际合同条款确认，且air-gapped部署与单一司法辖区驻留是否等价需产品架构团队最终确认。",
+        "Tencent Cloud public cloud stores customer data within the selected Region by default and does not proactively transfer it across Regions. The available cited evidence primarily covers Tencent Cloud Enterprise (TCE), which supports physically air-gapped environments and can be deployed on customer-specified premises to eliminate cross-border data dependency. Regarding the public cloud guarantee, [REVIEW: product] the precise residency commitment scope must be verified against individual contract terms, and whether air-gapped deployment equates to single-jurisdiction residency requires final confirmation from the product architecture team.",
         "[REVIEW: product] 具体驻留承诺范围需结合客户实际合同条款确认，且air-gapped与单一司法辖区驻留是否等价需产品架构团队最终确认。",
-        "[REVIEW: product] The exact scope of the residency commitment should be confirmed against the specific customer contract, and product/architecture teams should confirm that air-gapped isolation is equivalent to single-jurisdiction residency in all cases."
+        "[REVIEW: product] 目前无公开文档可验证腾讯云是否对所有客户普遍提供单一司法辖区数据驻留保证。具体驻留承诺的范围与边界需依据客户实际签署的合同条款确定。此外，air-gapped隔离部署在技术与法律层面是否等同于单一司法辖区驻留，尚需产品架构团队与合规团队最终确认。需补充的素材包括：可覆盖的司法辖区清单、对应合同条款模板，以及架构层面实现物理与逻辑隔离的技术说明。",
+        "[REVIEW: product] No publicly available documentation currently verifies whether Tencent Cloud universally guarantees single-jurisdiction data residency for all customers. The scope and boundaries of any residency commitment must be defined by the specific customer contract. Additionally, product architecture and compliance teams should confirm whether air-gapped isolation is legally and technically equivalent to single-jurisdiction residency in all cases. Supplementary inputs required include a covered jurisdictions list, applicable contract clause templates, and technical documentation on physical and logical isolation."
       ],
-      "note": "3 fields, 0 sources, 2 review items; groundability low."
+      "note": "3 fields, 0 sources, 5 review items; groundability low."
     },
     {
       "section_id": "oms_dataprivacy",
@@ -181,8 +184,8 @@
       "groundability": "low",
       "action": "ai-draft+ar-supply",
       "missing_for_ar": [
-        "[REVIEW: product] 具体条款因客户合同和部署架构而异，此处按“客户可选”通用情形描述，正式提交前需核实具体合同措辞。",
-        "[REVIEW: product] Exact terms vary by customer contract and deployment architecture; this describes the general customer-optionality model and should be verified against actual contract language before submission."
+        "[REVIEW: product] 现有资料未提供各国加密密钥监管框架的具体公开来源或原文引文。已知密钥管理的具体条款因客户合同与部署架构而异，通常遵循客户可选模式，但各司法辖区适用的具体监管框架、合规要求及合同措辞细节尚不明确。正式提交前需由产品、法务或合规团队核实各国家/地区的密钥托管与主权控制要求及对应合同条款。",
+        "[REVIEW: product] The evidence pack contains no public sources or verbatim references on country-specific regulatory frameworks for encryption-key management. What is known is that key-management terms vary by customer contract and deployment architecture, generally following a customer-optionality model; however, the specific jurisdictions, applicable sovereign-control requirements, and contract language remain unverified. Product, legal, or compliance teams must confirm these details before submission."
       ],
       "note": "3 fields, 0 sources, 2 review items; groundability low."
     },
@@ -197,14 +200,14 @@
       "groundability": "low",
       "action": "ai-draft+ar-verify",
       "missing_for_ar": [
-        "无法从公开资料确认。True IDC 与腾讯云已确认在泰国建立合作，但公告未披露运营人员是否全部为居住在当地的本国公民。[REVIEW: product] 请本地运营团队核实人员国籍与居住地政策。",
-        "Not publicly verified. True IDC and Tencent Cloud have confirmed their partnership in Thailand, but the announcement does not state that all operating staff are resident nationals. [REVIEW: product] The local operations team must confirm the staffing-nationality and residency policy.",
+        "腾讯云与泰国 True IDC 签署战略合作备忘录，由 True IDC 作为本地合作伙伴提供数据中心及云服务。然而，公开披露文件未说明该合作伙伴云的管理与运营岗位是否仅限居住在泰国的本国公民担任。[REVIEW: product] 需本地运营团队核实具体人员国籍与居住地政策，方可确认是否完全符合该项要求。",
+        "Tencent Cloud has signed a strategic MOU with True IDC to offer data center and cloud services in Thailand through this local partner. Publicly available disclosures do not state whether management and operational roles within the partner cloud are restricted exclusively to Thai citizens residing in the country. [REVIEW: product] Local operations must verify the specific staffing-nationality and residency policy before confirming full compliance with this requirement.",
         "[REVIEW: product] 该来源只证明伙伴关系，不证明具体人员国籍构成；本地运营团队必须核实后才能作答“是”。",
-        "无法从公开资料确认。TCE 的人员配置取决于客户或本地伙伴的运营安排，不能据此认定全部人员均为居住在当地的本国公民。[REVIEW: product] 请产品与本地运营团队核实。",
-        "Not publicly verified. TCE staffing depends on the customer's or local partner's operating model and does not establish that all staff are resident nationals. [REVIEW: product] Product and local operations teams must confirm this policy.",
+        "[REVIEW: product] 腾讯云TCE专有云在部分海外市场（如泰国）通过本地合作伙伴（例如True IDC）提供服务。公开资料仅可证实合作伙伴具备本地云服务运营资质，并未披露TCE部署中管理和运维人员的国籍或居住地政策。实际人员配置取决于客户或本地合作伙伴的运营安排，因此无法从公开渠道认定全部人员均为居住在当地的本国公民。请产品与本地运营团队核实特定国家/地区的人员国籍与居住地政策。",
+        "[REVIEW: product] Tencent Cloud TCE private cloud is delivered in certain overseas markets, such as Thailand, through local partners like True IDC. Publicly available sources only verify the partner's local cloud operating qualifications and do not disclose the nationality or residency requirements for TCE management and operations staff. Actual staffing depends on the customer's or local partner's operating model, so public information cannot establish that all personnel are resident nationals. Product and local operations teams must confirm the specific nationality and residency policies for each country/region.",
         "[REVIEW: product] 该来源不披露TCE部署的人员国籍或居住地政策，不能据此升级为verified。",
-        "[REVIEW: product] 具体人员国籍构成的政策承诺公开渠道未披露，建议由本地运营团队核实后补充完整表述。",
-        "[REVIEW: product] The specific nationality-of-staff policy commitment is not publicly documented; local operations teams should verify before finalizing this claim."
+        "[REVIEW: product] 腾讯云目前未在公开渠道披露该主权云节点的人员国籍构成及居住地管理政策，因此无法验证其是否仅由居住于该国的本国公民进行管理和任职。现有草稿已明确该信息需由本地运营团队核实后方可补充准确表述。在获得内部确认前，此字段应保留为待确认状态。",
+        "[REVIEW: product] Tencent Cloud does not currently disclose publicly the nationality and residency policies for personnel managing and staffing this sovereign cloud node, so we cannot verify whether it is exclusively managed and staffed by citizens of the country/region living there. The existing draft notes that this information must be verified by local operations teams before a definitive response can be finalized. This field should remain under review until internal confirmation is obtained."
       ],
       "note": "3 fields, 2 sources, 8 review items; groundability low."
     },
@@ -232,8 +235,8 @@
       "groundability": "low",
       "action": "ai-draft+ar-supply",
       "missing_for_ar": [
-        "[REVIEW: product] 需按具体产品/服务核实控制面组件是否存在跨区域依赖。",
-        "[REVIEW: product] Product teams should verify, product by product, whether any control-plane components have cross-region dependencies."
+        "[REVIEW: product] 目前缺乏各产品控制面部署位置的具体公开来源。需按具体产品/服务逐一核实控制面组件是否存在跨区域依赖，并补充控制面实际部署的拓扑信息（如是否完全位于客户指定区域内、是否涉及其他可用区或地域）。请各产品团队提供技术架构文档。",
+        "[REVIEW: product] No public source currently specifies the control-plane deployment location for each product. Product teams should verify, product by product, whether any control-plane components have cross-region dependencies, and supplement deployment topology details (e.g., whether fully located within the customer-designated region or spanning other AZs/regions). Technical architecture documentation is required."
       ],
       "note": "3 fields, 0 sources, 2 review items; groundability low."
     },
@@ -248,11 +251,11 @@
       "groundability": "low",
       "action": "ai-draft+ar-verify",
       "missing_for_ar": [
-        "[REVIEW: product] 公有云设施的运营主体可能因地域与机房合同而异。公开来源不足以逐地域确认由腾讯云还是托管数据中心运营商负责，需基础设施团队提供清单。",
-        "[REVIEW: product] The public-cloud facility operator may vary by region and data-centre contract. Public sources do not establish, region by region, whether Tencent Cloud or a colocation operator runs each facility; infrastructure teams must supply the operator list.",
+        "[REVIEW: product] 腾讯云公有云设施的运营主体因地域及机房合同模式而异。现有公开信息不足以逐地域确认各设施是由腾讯云直接运营还是由托管数据中心运营商负责。准确回答需基础设施团队提供逐地域的运营主体清单，以明确腾讯云与第三方运营商各自的责任范围。",
+        "[REVIEW: product] The operator of Tencent Cloud's public cloud facilities varies by region and data centre contract model. Publicly available information is insufficient to confirm, on a region-by-region basis, whether each facility is operated directly by Tencent Cloud or by a colocation operator. Infrastructure teams must supply a per-region operator list to clarify the respective responsibilities of Tencent Cloud and any third-party operators.",
         "[REVIEW: product] 现有公开证据不能支持“全部由腾讯云自身运营”的统一结论，需基础设施团队逐地域核实。",
-        "TCE 通常由客户或客户授权团队运营，但实际设施运营主体取决于部署合同。[REVIEW: product] 请项目交付团队按目标部署确认运营主体。",
-        "TCE is typically operated by the customer or its authorized team, but the actual facility operator depends on the deployment contract. [REVIEW: product] The delivery team must confirm the operator for the target deployment.",
+        "TCE专有云通常由客户或其授权团队负责日常运营，但具体设施的运营主体需依据实际部署合同确定。[REVIEW: product] 针对目标部署，需由项目交付团队根据合同条款核实最终运营主体，现有资料不支持以伙伴云等单一模式推定所有TCE项目的设施运营安排。",
+        "The TCE private cloud is typically operated by the customer or its authorized team; however, the actual facility operator is determined by the specific deployment contract. [REVIEW: product] For each target deployment, the delivery team must verify the final operating entity against the contractual terms, as existing evidence does not support generalizing the facility operator arrangement from partner cloud models to all TCE deployments.",
         "[REVIEW: product] 泰国伙伴资料不能证明所有TCE项目的设施运营安排，需按部署合同核实。"
       ],
       "note": "3 fields, 2 sources, 6 review items; groundability low."
@@ -268,8 +271,8 @@
       "groundability": "low",
       "action": "ai-draft+ar-supply",
       "missing_for_ar": [
-        "[REVIEW: product] 需按具体产品清单逐项核实是否存在境外依赖组件。",
-        "[REVIEW: product] Product teams should review the product list line-by-line to confirm which, if any, components carry offshore dependencies."
+        "[REVIEW: product] 目前无公开来源可证实全局部署架构。需由产品团队逐项核对各产品组件，确认是否存在境外数据中心、跨境CDN节点、第三方托管服务或上游软件供应链依赖。在完成逐项核查前，无法就主权云边界给出确定性结论。",
+        "[REVIEW: product] No public source currently exists to verify the global deployment architecture. Product teams must review each product component line-by-line to confirm whether offshore data centers, cross-border CDN nodes, third-party hosted services, or upstream software supply-chain dependencies are present. A definitive sovereign-cloud boundary cannot be stated until this item-by-item review is completed."
       ],
       "note": "3 fields, 0 sources, 2 review items; groundability low."
     },
@@ -284,14 +287,14 @@
       "groundability": "low",
       "action": "ai-draft+ar-verify",
       "missing_for_ar": [
-        "[REVIEW: product] 公有云资产所有权可能因自建、租赁或托管模式而异，公开资料不足以支持“全部由腾讯云拥有”。请基础设施与法务团队按地域提供资产归属口径。",
-        "[REVIEW: product] Public-cloud asset ownership may vary across owned, leased and colocation models. Public evidence does not support a blanket claim that Tencent Cloud owns every asset; infrastructure and legal teams must provide the regional ownership position.",
+        "[REVIEW: product] 腾讯云公共云资产的所有权结构因自建、租赁或托管等交付模式而异，现有公开信息及内部已披露资料均不足以支持“全部资产由腾讯云自有”的绝对化声明。由于公开来源尚未提供逐地域的资产权属清单，我们无法给出覆盖所有区域的统一所有权口径。为确保对外陈述准确合规，已提请基础设施与法务团队按地域提供经核实的资产归属结论。在获得正式确认前，本字段保持未核验状态，不对外作概括性所有权陈述。",
+        "[REVIEW: product] Ownership of Tencent Cloud public cloud assets varies by delivery model—encompassing owned, leased, and colocation arrangements—and publicly available information does not support an absolute claim that all assets are wholly owned by Tencent Cloud. No region-by-region asset ownership breakdown has been disclosed, preventing a unified ownership position across all regions. To ensure accuracy and compliance in external disclosures, we have escalated to the infrastructure and legal teams to provide verified regional ownership positions. Until formal confirmation is received, this field remains unverified and no blanket ownership assertion is made.",
         "[REVIEW: product] 公开来源未提供逐地域资产权属清单。",
-        "True IDC 公开确认其在曼谷拥有云服务和数据中心布局，但该表述不足以证明具体腾讯云合作设施的法律所有权。[REVIEW: product] 请 True IDC 合作团队与法务核实资产权属。",
-        "True IDC publicly confirms its cloud-service and data-centre footprint in Bangkok, but that does not establish legal ownership of the specific facilities used for the Tencent Cloud partnership. [REVIEW: product] The True IDC alliance and legal teams must verify title to the assets.",
+        "就合作伙伴云而言，True IDC公开资料称其云服务和数据中心位于曼谷核心商务区，但这仅为其基础设施布局的陈述。现有公开信息无法证明用于腾讯云合作的具体设施之法律所有权归属，亦无法区分该等资产为自有、租赁或以其他模式持有。[REVIEW: product] 须由True IDC合作团队及法务部门提供产权文件或合同依据，以确认资产权属。",
+        "For the partner cloud, True IDC publicly states that its cloud services and data centres are located in Bangkok's prime business districts, yet this merely describes infrastructure presence. Publicly available information does not establish legal ownership of the specific facilities used for the Tencent Cloud partnership, nor does it indicate whether the assets are owned, leased or otherwise held. [REVIEW: product] Confirmation from the True IDC alliance and legal teams—via title documentation or contractual evidence—is required to determine asset ownership.",
         "[REVIEW: product] “have”不能替代具体设施的产权文件，不能据此认定资产所有权。",
-        "TCE 的硬件资产可由客户、合作伙伴或项目实体持有，具体取决于采购与部署合同。[REVIEW: product] 请项目交付与法务团队按目标部署确认资产权属，不能从伙伴云案例外推。",
-        "TCE hardware may be owned by the customer, a partner or the project entity, depending on procurement and deployment contracts. [REVIEW: product] Delivery and legal teams must confirm ownership for the target deployment; it cannot be inferred from a partner-cloud example.",
+        "[REVIEW: product] TCE 专有云场景下的硬件资产归属取决于具体的采购与部署合同，可能由客户、合作伙伴或项目实体持有。公开来源未披露适用于所有 TCE 项目的通用资产权属规则，亦无法从单一伙伴云案例外推至其他部署。目标场景的资产权属须由项目交付与法务团队依据实际合同逐单确认。",
+        "[REVIEW: product] Hardware asset ownership in TCE private cloud deployments is governed by the specific procurement and deployment contract, and may reside with the customer, a partner, or the project entity. No publicly available universal ownership rule applies to all TCE engagements, and a partner-cloud example cannot be generalized. Delivery and legal teams must verify ownership against the actual contract for each target deployment.",
         "[REVIEW: product] 公开来源未披露TCE项目通用的硬件资产权属规则，需按合同核验。"
       ],
       "note": "3 fields, 1 sources, 9 review items; groundability low."
@@ -385,8 +388,8 @@
       "groundability": "low",
       "action": "ai-draft+ar-supply",
       "missing_for_ar": [
-        "[REVIEW: product] 需按客户所在具体地域及监管要求核实受限服务清单。",
-        "[REVIEW: product] The specific list of restricted services should be verified per customer region and regulatory regime."
+        "[REVIEW: product] 服务可用性是否存在限制及具体受限服务清单，需按客户所在具体地域及适用的监管要求，由产品团队逐单核实。当前无公开来源提供统一的受限范围说明，建议结合目标可用区与合规框架确认最终可交付边界。",
+        "[REVIEW: product] Whether any restrictions on service availability exist, and the specific list of restricted services, must be verified by the product team on a per-customer basis according to the customer's region and applicable regulatory requirements. No public source currently provides a unified statement on restricted scope; confirmation against the target availability zone and compliance framework is recommended to establish final deliverable boundaries."
       ],
       "note": "3 fields, 0 sources, 2 review items; groundability low."
     },
@@ -397,14 +400,15 @@
       "question_title": "AE002 · 该形态的云平均能提供全球公共云服务的百分之多少",
       "field_count": 2,
       "source_count": 1,
-      "review_count": 2,
+      "review_count": 3,
       "groundability": "low",
       "action": "ai-draft+ar-verify",
       "missing_for_ar": [
         "[REVIEW: product] 题目要求的精确百分比未在公开渠道披露，需产品团队按最新产品清单逐项核实计算。",
-        "[REVIEW: product] The exact percentage the question asks for is not publicly disclosed; the product team should calculate it against the current product catalog."
+        "[REVIEW: product] 截至当前，该形态的云所能提供的全球公共云服务精确占比尚无公开披露数据。需产品团队基于最新产品目录，对照全球公共云服务完整清单逐项核算，以确定可落地的服务范围与相应比例。目前无法提供经核实的具体百分比，建议在明确统计口径与服务边界后补充该数值。",
+        "[REVIEW: product] As of now, the exact percentage of global public cloud services available in this cloud model has not been publicly disclosed. The product team needs to calculate this by mapping the current service catalog against the complete inventory of global public cloud offerings to determine the available service coverage and corresponding ratio. A validated percentage cannot be provided at this time; we recommend completing this calculation once the counting methodology and service scope are confirmed."
       ],
-      "note": "2 fields, 1 sources, 2 review items; groundability low."
+      "note": "2 fields, 1 sources, 3 review items; groundability low."
     },
     {
       "section_id": "oms_software",
@@ -430,8 +434,8 @@
       "groundability": "low",
       "action": "ai-draft+ar-supply",
       "missing_for_ar": [
-        "[REVIEW: product] 具体许可条款因合同类型(公有云按量/包年包月, TCE项目制)而异，需法务/商务团队核实标准条款表述。",
-        "[REVIEW: product] Exact licensing terms vary by contract type (public-cloud pay-as-you-go/annual vs. TCE project-based); legal/commercial teams should confirm the standard contract language."
+        "[REVIEW: product] 腾讯云公有云采用按量计费与包年包月两种订阅模式，专有云（TCE）采用项目制商业合同。具体授权许可条款、SLA 及计费细则因合同类型与客户场景而异，目前缺乏经法务/商务团队确认的标准条款文本，需由相关团队核实后补充正式表述。",
+        "[REVIEW: product] Tencent Cloud public cloud offers pay-as-you-go and annual/monthly subscription models, while Tencent Cloud Enterprise (TCE) operates under project-based commercial contracts. Exact licensing terms, SLAs, and pricing details vary by contract type and customer scenario. A legally and commercially validated standard contract statement is not yet available and requires confirmation from the relevant teams."
       ],
       "note": "3 fields, 0 sources, 2 review items; groundability low."
     },
@@ -459,8 +463,8 @@
       "groundability": "low",
       "action": "ai-draft+ar-supply",
       "missing_for_ar": [
-        "[REVIEW: product] 平台生态ISV具体数量属于内部运营数据，公开渠道未披露，需生态合作团队核实后填写。",
-        "[REVIEW: product] The number of ISVs on the platform is an internal operating metric not publicly disclosed; the ecosystem team should supply the verified figure."
+        "[REVIEW: product] 腾讯云未公开披露平台生态中ISV（独立软件开发商）的具体数量，该数据属于内部运营指标。当前公开渠道无权威数据可查，需由生态合作团队核实并提供经确认的数字后，方可填写最终答案。",
+        "[REVIEW: product] Tencent Cloud does not publicly disclose the specific number of ISVs within its platform ecosystem; this figure is treated as an internal operating metric. No authoritative data is currently available through public channels, and the ecosystem team must verify and supply the confirmed number before the final answer can be completed."
       ],
       "note": "1 fields, 0 sources, 2 review items; groundability low."
     },
@@ -471,14 +475,15 @@
       "question_title": "AF001 · 说明贵司的主权云方案",
       "field_count": 2,
       "source_count": 3,
-      "review_count": 2,
+      "review_count": 3,
       "groundability": "low",
       "action": "ai-draft+ar-verify",
       "missing_for_ar": [
         "[REVIEW: Kevin] 本题是Strategy/Vision类题型，是否以“risk management framework”作为核心论点框架（对齐Roy Illsley的评分透镜）需AR专家确认这是否是最打动Omdia分析师的framing选择。",
-        "[REVIEW: Kevin] This is a Strategy/Vision question; whether framing sovereignty as a risk-management framework (aligned to Roy Illsley's scoring lens) is the strongest angle should be confirmed by the AR lead."
+        "[REVIEW: Kevin] 本题属于战略/愿景类设问，尚未形成可对外提交的确定方案。已知讨论倾向于将主权云定位为风险治理框架，以匹配Omdia Roy Illsley的评分透镜，但该叙事角度是否最能体现腾讯云差异化能力，需AR负责人Kevin确认。当前证据包缺乏可引用的主权云细节，包括[数据驻留与本地化架构]、[合规认证清单]、[运营主体与管辖边界]、[已服务行业或区域]等，需产品团队补充后方可作答。",
+        "[REVIEW: Kevin] This is a Strategy/Vision question and no finalized, externally submitable approach is yet available. Internal discussion tentatively positions our sovereign cloud narrative within a risk-management framework to align with Omdia’s Roy Illsley scoring lens, but the AR lead must confirm whether this framing best captures Tencent Cloud’s differentiation. The evidence pack currently lacks attributable sovereign cloud specifics, including [data residency and local deployment architecture], [compliance certifications], [operating entity and jurisdictional boundaries], and [industries or regions served], all of which require input from the product team before a substantive response can be drafted."
       ],
-      "note": "2 fields, 3 sources, 2 review items; groundability low."
+      "note": "2 fields, 3 sources, 3 review items; groundability low."
     },
     {
       "section_id": "oms_strategy",
@@ -487,14 +492,15 @@
       "question_title": "AF002 · 说明贵司的主权AI方案",
       "field_count": 2,
       "source_count": 1,
-      "review_count": 2,
+      "review_count": 3,
       "groundability": "low",
       "action": "ai-draft+ar-verify",
       "missing_for_ar": [
         "[REVIEW: Kevin] AI unit economics（per-token / per-GPU-hour成本口径）是Omdia评分的关注点之一，当前回答未提供量化的AI经济性数据，是否需要补充需Kevin判断。",
-        "[REVIEW: Kevin] Omdia's lens weighs AI unit economics (per-token / per-GPU-hour cost); the current answer has no quantified figures on this — whether to add them is a framing call for the AR lead."
+        "[REVIEW: Kevin] 我司当前资料库中无主权AI方案的公开来源或实证细节，暂无法向Omdia提供本题所需的完整回答。现有草稿仅提示Omdia关注AI unit economics（per-token / per-GPU-hour成本口径），且当前缺乏量化数据，是否补充由Kevin判断。待补充验证事实后再行完善。",
+        "[REVIEW: Kevin] Our current repository contains no public sources or verified facts regarding our sovereign AI approach, so we cannot yet provide Omdia with a complete answer to this question. The existing draft only notes that Omdia weighs AI unit economics (per-token / per-GPU-hour cost) and that quantified figures are currently unavailable; whether to add them is a framing call for Kevin. We will complete this response once validated factual details are provided."
       ],
-      "note": "2 fields, 1 sources, 2 review items; groundability low."
+      "note": "2 fields, 1 sources, 3 review items; groundability low."
     },
     {
       "section_id": "oms_strategy",
@@ -503,15 +509,17 @@
       "question_title": "AF003 · 指出贵司认为能为客户提供的唯一核心差异化优势",
       "field_count": 2,
       "source_count": 3,
-      "review_count": 3,
+      "review_count": 5,
       "groundability": "low",
       "action": "ai-draft+ar-verify",
       "missing_for_ar": [
+        "[REVIEW: Kevin] 我们认为能为客户提供的核心差异化优势是“同源而不降级”。腾讯专有云TCE与公有云采用统一架构与统一代码，可将公有云能力1:1输送至私有化或物理隔离环境，支持从十几台到上万台节点扩展，使客户在获得主权可控性的同时无需牺牲功能与迭代速度。该主张的已知证据包括：TCE同源架构的产品事实、Forrester Wave公开摘要将腾讯云列入Leader组的独立市场认可，以及True IDC泰国合作所体现的本地交付能力。题目要求指出“唯一(the one)”核心差异化，目前以“架构同源”为主论点，但是否最终仅保留此项，仍需Kevin确认。",
+        "[REVIEW: Kevin] Our proposed key differentiator is sovereignty without a downgraded cloud. Tencent Cloud Enterprise (TCE) shares one architecture and codebase with our public cloud, delivering equivalent public-cloud capabilities 1:1 into private or air-gapped environments and scaling from tens to tens of thousands of nodes. This allows customers to maintain sovereignty without sacrificing functionality or the pace of innovation. The claim is supported by: the same-source product architecture, independent recognition of Tencent Cloud in the Forrester Wave Leader group, and in-country execution demonstrated by the True IDC partnership in Thailand. The questionnaire asks for the one key differentiator; while we currently anchor on the same-source architecture, final confirmation from Kevin is required on whether this should remain the sole focus.",
         "[REVIEW: Kevin] 题目要求“唯一(the one)”核心差异化——是否最终只保留“架构同源”作为主论点，仍需Kevin拍板。",
-        "[REVIEW: Kevin] 题目要求“唯一(the one)”核心差异化——是否用“架构同源”而非其他候选角度(如唯一入选Leader象限的中国厂商)最打动分析师，需Kevin拍板最终framing。",
-        "[REVIEW: Kevin] The question asks for the one differentiator — whether same-source architecture beats the alternative framing (sole Chinese Leader) as the strongest hook for the analyst is a call for the AR lead."
+        "[REVIEW: Kevin] 题目要求明确唯一核心差异化优势。现有材料显示，团队正在评估两个候选方向：一是架构同源，二是作为唯一入选 Leader 象限的中国厂商。但当前无任何公开来源、客户案例或第三方数据可对任一角度进行直接验证，且哪种 framing 最能打动分析师需由 AR lead 最终拍板。请 Kevin 确认：1）最终选用的核心差异化角度；2）支撑该角度的具体证据边界，如产品能力、客户场景、第三方认证等。",
+        "[REVIEW: Kevin] The question requires us to identify the one key differentiator. Our team is currently evaluating two candidate angles: same-source architecture, and being the sole Chinese vendor positioned in the Leader quadrant. However, neither angle is substantiated by public sources, customer evidence, or third-party validation in the provided materials. Which framing most effectively resonates with analysts remains a decision for the AR lead. Please confirm: (1) the final differentiator to lead with; (2) the specific evidence boundaries, such as product capabilities, customer scenarios, or third-party citations, required to support it."
       ],
-      "note": "2 fields, 3 sources, 3 review items; groundability low."
+      "note": "2 fields, 3 sources, 5 review items; groundability low."
     }
   ]
 }

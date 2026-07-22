@@ -115,9 +115,9 @@ export const BUILT_IN_QUESTIONNAIRES: Questionnaire[] = [
       { name: "腾讯云国际", abbr: "腾讯云" },
       { name: "腾讯混元", abbr: "混元" },
     ],
-    status: "证据管线 v3 已生成，待产品/法务解锁敏感项",
+    status: "Kimi 专家团 v4 已逐字段改写，待产品/法务终审",
     nextMilestone: { label: "厂商问卷提交", date: "2026-09-28" },
-    storageKey: "omdia_sovereign_cloud_2026_v3",
+    storageKey: "omdia_sovereign_cloud_2026_v4",
     sections: OMDIA_SOVEREIGN_CLOUD_SECTIONS,
   },
 ];

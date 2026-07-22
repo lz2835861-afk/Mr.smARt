@@ -1,0 +1,715 @@
+{
+  "generated_at": "2026-07-22T06:10:49.543Z",
+  "source_version": "omdia-sovereign-cloud-v3",
+  "endpoint": "https://web-one-sooty-82.vercel.app/api/ai",
+  "summary": {
+    "total": 70,
+    "completed": 70,
+    "ready": 15,
+    "needs_review": 55,
+    "failed": 0
+  },
+  "fields": {
+    "oms_aa001_pub": {
+      "zh": "腾讯云在全球运营22个地理区域、64个可用区，海外覆盖东南亚、东北亚、欧洲、北美、南美及中东等市场。然而，现有资料未明确披露这些基础设施所在的不同国家/地区总数，无法直接确认在多少个不同国家/地区运营，需补充官方地理分布明细。",
+      "en": "Tencent Cloud operates 22 geographic regions and 64 availability zones globally, with international coverage across Southeast Asia, Northeast Asia, Europe, North America, South America and the Middle East. However, the provided materials do not disclose the total number of distinct countries or territories where these regions are located, and this figure cannot be confirmed without an official geographic breakdown.",
+      "status": "NEEDS_REVIEW",
+      "note": "证据包与现有草稿仅确认22个地理区域及64个可用区，未提供区域所对应的具体国家/地区数量，无法直接回答该数值。",
+      "model": "kimi-k2.6",
+      "question_id": "oms_q_aa001",
+      "question_title": "AA001 · 在多少个不同的国家/地区运营",
+      "field_label": "Public cloud · 公共云"
+    },
+    "oms_aa004_pub": {
+      "zh": "腾讯云依托自建全球骨干网络为公共云工作负载提供网络连接。该基础设施拥有200T以上的全球带宽储备，并在全球部署超过3200个加速节点，构建起规模化的网络加速与数据传输体系。通过整合带宽资源与边缘节点能力，腾讯云可实现高效的数据传输，为客户提供低延迟、高稳定性的全球连接体验。上述网络规模与能力来源于腾讯云全球数字生态大会的公开披露材料。",
+      "en": "Tencent Cloud provides network connectivity for public cloud workloads through its self-built global backbone network. The infrastructure maintains over 200T of global bandwidth reserves and operates more than 3,200 global acceleration nodes, forming a large-scale network acceleration and data transmission system. By integrating bandwidth resources with edge node capacity, Tencent Cloud enables efficient data transfer and delivers low-latency, high-stability connectivity worldwide. These network capabilities and scale are disclosed in publicly available materials from the Tencent Cloud Global Digital Ecosystem Summit.",
+      "status": "READY",
+      "note": "所有数字与能力描述均来源于腾讯云全球数字生态大会公开材料，未引入额外技术架构或客户案例。",
+      "model": "kimi-k2.6",
+      "question_id": "oms_q_aa004",
+      "question_title": "AA004 · 如何提供网络连接",
+      "field_label": "Public cloud · 公共云"
+    },
+    "oms_aa003_priv": {
+      "zh": "TCE专有云支持在客户主权环境内部署双活/多活数据中心架构，帮助客户自建同城及异地容灾体系。通过“两地三中心”式跨中心部署，客户可在自有数据中心之间实现业务流量调度与故障切换，确保单数据中心故障时核心业务不中断。该架构已在公开客户案例中得到落地验证，适用于需要在本地自主可控环境中满足高可用与韧性要求的主权云场景。",
+      "en": "Tencent Cloud Enterprise (TCE) supports active-active and multi-active data-center architectures within a customer's sovereign environment, enabling customers to build same-city and geo-redundant disaster recovery. Through a two-city, three-center deployment, workloads can be distributed and failed over across the customer's own data centers, ensuring business continuity during a site-level failure. This capability has been validated by a publicly available customer implementation, offering verified high availability for sovereign cloud scenarios that require local control and resilience.",
+      "status": "READY",
+      "note": "基于单一公开客户案例及现有草稿，证实TCE支持双活/多活数据中心架构与同城/异地容灾部署。",
+      "model": "kimi-k2.6",
+      "question_id": "oms_q_aa003",
+      "question_title": "AA003 · 如何提供容灾能力",
+      "field_label": "Private cloud · 私有云(TCE专有云)"
+    },
+    "oms_aa002_comments": {
+      "zh": "[REVIEW: product] 截至当前，腾讯云未公开披露未来18个月计划新增国家/地区的具体数量或名单。该信息属于前瞻性商业规划，需由国际业务战略团队确认是否可对外提供，以及可披露的颗粒度（如具体数量、区域或国家名称）。",
+      "en": "[REVIEW: product] Tencent Cloud has not publicly disclosed the specific number or list of new countries and regions planned for the next 18 months. This forward-looking commercial planning requires confirmation from the international business strategy team on whether it can be shared externally and at what granularity (e.g., specific count, region, or country names).",
+      "status": "NEEDS_REVIEW",
+      "note": "无公开来源可证实未来18个月新增国家/地区的具体数量或名单；当前为待确认的前瞻性信息。",
+      "model": "kimi-k2.6",
+      "question_id": "oms_q_aa002",
+      "question_title": "AA002 · 未来18个月计划新增多少个国家/地区",
+      "field_label": "Comments · 来源说明 / Review hooks"
+    },
+    "oms_aa004_priv": {
+      "zh": "TCE专有云在私有化部署模式下，网络连接提供两种核心路径：一是由客户基于本地安全与合规要求完全自建网络；二是通过专线或VPN与腾讯云中心云实现安全互通，构建云边协同架构。在跨地域互联场景中，可依托腾讯云全球网络基础设施，包括200T以上的全球带宽储备与3200余个全球加速节点，以保障数据传输效率与连接稳定性，从而在满足数据主权要求的同时延伸中心云能力。",
+      "en": "For TCE private cloud deployments, network connectivity is provided through two primary paths: customers may fully build and operate their own on-premises networks to meet local security and compliance requirements, or interconnect with Tencent Cloud's central cloud via dedicated lines or VPN to establish a cloud-edge collaborative architecture. In cross-regional scenarios, this interconnection can leverage Tencent Cloud's global network infrastructure, cited at over 200 Tbps of worldwide bandwidth reserves and more than 3,200 global acceleration nodes, to enable efficient and stable data transfer. This allows organizations to satisfy data-sovereignty requirements while extending into central-cloud capabilities as needed.",
+      "status": "READY",
+      "note": "全球带宽与加速节点数据引用自腾讯云全球数字生态大会公开材料；TCE网络连接方式基于现有已验证草稿，与中心云互通时依托腾讯云全球基础设施属于基于草稿的合理推断。",
+      "model": "kimi-k2.6",
+      "question_id": "oms_q_aa004",
+      "question_title": "AA004 · 如何提供网络连接",
+      "field_label": "Private cloud · 私有云(TCE专有云)"
+    },
+    "oms_aa005_comments": {
+      "zh": "[REVIEW: product] 相对定价水平取决于具体部署模式（公有云、专有云TCE、合作伙伴云）及合同条款，公开渠道无统一价格披露。已知事实为：不同模式下定价机制差异显著，目前无可对外发布的标准化相对定价基准。需销售/产品定价团队确认可对外披露的竞争性定价定位及可比维度（如TCO、按需计费等）。",
+      "en": "[REVIEW: product] Relative pricing depends on the deployment model (public cloud, TCE, partner cloud) and contract terms, with no unified public price disclosure. Known facts: pricing mechanisms differ significantly across deployment models, and no externally publishable standardized relative-pricing benchmark is currently available. Confirmation from the sales/pricing team is required on defensible competitive pricing positioning and comparable dimensions (e.g., TCO, on-demand rates).",
+      "status": "NEEDS_REVIEW",
+      "note": "无公开定价来源，需销售与产品定价团队确认可对外披露的相对定价口径",
+      "model": "kimi-k2.6",
+      "question_id": "oms_q_aa005",
+      "question_title": "AA005 · 相对定价水平如何",
+      "field_label": "Comments · 来源说明 / Review hooks"
+    },
+    "oms_ab001_priv": {
+      "zh": "是。TCE专有云方案具备集成机密计算能力。腾讯云在公有云环境已提供基于Intel SGX的机密计算服务及远程证明能力。面向专有云交付，TCE可按照客户实际的部署架构、硬件选型与安全合规需求，集成同等级别的SGX机密计算功能，为敏感数据处理提供硬件级可信执行环境保护。具体覆盖范围需根据客户服务器配置、集群架构及网络环境在交付阶段确认。",
+      "en": "Yes. The TCE private-cloud solution supports integration of confidential-computing capabilities. Tencent Cloud already provides Intel SGX-based confidential-computing services and remote attestation in its public cloud environment. For private-cloud delivery, TCE can integrate equivalent SGX capabilities according to the customer’s actual deployment architecture, hardware selection, and security and compliance requirements, providing hardware-level trusted execution environment protection for sensitive data processing. The exact coverage is confirmed during delivery based on the customer’s server configuration, cluster architecture, and network environment.",
+      "status": "READY",
+      "note": "基于现有草稿确认TCE可集成同等机密计算能力，并以证据包中腾讯云SGX及远程证明服务作为技术支撑，具体交付范围取决于客户部署架构。",
+      "model": "kimi-k2.6",
+      "question_id": "oms_q_ab001",
+      "question_title": "AB001 · 方案是否使用机密计算",
+      "field_label": "Private cloud · 私有云(TCE专有云)"
+    },
+    "oms_ab002_pub": {
+      "zh": "是。腾讯云在公共云环境中通过密钥管理系统（KMS）为静态数据提供全生命周期密钥管理及信封加密，覆盖密钥的生成、存储、使用与终止；传输中数据则采用 TLS 加密保护。该方案旨在确保核心数据安全。",
+      "en": "Yes. In the public cloud environment, Tencent Cloud secures data at rest through KMS-based full lifecycle key management and envelope encryption, covering key generation, storage, usage, and termination; data in transit is protected via TLS. This approach is designed to ensure core data security.",
+      "status": "READY",
+      "note": "证据边界：静态数据加密引自《企业出海数据合规指导书》对KMS密钥全生命周期及信封加密的描述，传输加密依据现有草稿。",
+      "model": "kimi-k2.6",
+      "question_id": "oms_q_ab002",
+      "question_title": "AB002 · 方案是否对静态与传输中数据完全加密",
+      "field_label": "Public cloud · 公共云"
+    },
+    "oms_ab001_pub": {
+      "zh": "是。腾讯云公共云方案通过 Tencent Cloud SGX 提供可选的机密计算能力，其 SGX 远程证明服务已部署于北京、上海、广州、南京及新加坡地域，支持客户在硬件隔离环境中处理敏感工作负载，保障运行态代码与数据的机密性。",
+      "en": "Yes. Tencent Cloud's public cloud solution offers confidential computing through an optional Tencent Cloud SGX capability. Its SGX remote attestation service is deployed in Beijing, Shanghai, Guangzhou, Nanjing and Singapore, enabling customers to process sensitive workloads in hardware-isolated environments that protect the confidentiality of runtime code and data.",
+      "status": "READY",
+      "note": "基于公开产品文档对 Tencent Cloud SGX 远程证明服务部署地域及能力描述的明确陈述。",
+      "model": "kimi-k2.6",
+      "question_id": "oms_q_ab001",
+      "question_title": "AB001 · 方案是否使用机密计算",
+      "field_label": "Public cloud · 公共云"
+    },
+    "oms_ab006_pub": {
+      "zh": "腾讯云公有云默认将客户数据存储于所选Region内，不主动进行跨Region传输。现有引用证据主要覆盖腾讯云专有云平台（TCE）：其支持物理隔离的air-gapped环境，并可在客户指定的本地部署，从而实现数据不依赖跨境传输。关于公共云单一司法辖区的驻留保证，[REVIEW: product] 具体承诺范围需结合客户实际合同条款确认，且air-gapped部署与单一司法辖区驻留是否等价需产品架构团队最终确认。",
+      "en": "Tencent Cloud public cloud stores customer data within the selected Region by default and does not proactively transfer it across Regions. The available cited evidence primarily covers Tencent Cloud Enterprise (TCE), which supports physically air-gapped environments and can be deployed on customer-specified premises to eliminate cross-border data dependency. Regarding the public cloud guarantee, [REVIEW: product] the precise residency commitment scope must be verified against individual contract terms, and whether air-gapped deployment equates to single-jurisdiction residency requires final confirmation from the product architecture team.",
+      "status": "NEEDS_REVIEW",
+      "note": "证据包主要引用TCE私有云能力，公共云单一司法辖区驻留保证缺乏直接文献支撑，需合同及架构团队确认",
+      "model": "kimi-k2.6",
+      "question_id": "oms_q_ab006",
+      "question_title": "AB006 · 是否保证数据驻留在单一司法辖区",
+      "field_label": "Public cloud · 公共云"
+    },
+    "oms_ab005_priv": {
+      "zh": "是。TCE专有云支持完全物理隔离（air-gapped）的私有云部署模式，确保与公网及外部网络在物理层面彻底断开。客户可借助标准化治理框架，在隔离环境内实现基于CI/CD标准与统一API服务的全流程管理及多团队协作，满足主权云场景下对数据本地化、合规及网络隔离的严格要求。该能力已获Forrester主权云报告明确验证，确认腾讯云同时支持公有云与私有air-gapped环境。",
+      "en": "Yes. TCE's private cloud supports a fully air-gapped deployment model, ensuring physical disconnection from the public internet and external networks. Customers can leverage standardized governance to achieve full-process management and multi-team collaboration through CI/CD standards and unified API services within the isolated environment, meeting strict sovereignty, compliance, and network-segregation requirements. This capability is explicitly cited in a Forrester sovereign cloud report, which states that Tencent Cloud supports both public cloud and private air-gapped environments.",
+      "status": "READY",
+      "note": "引述Forrester主权云报告原文确认支持private air-gapped environments，未扩展具体部署规格或客户案例",
+      "model": "kimi-k2.6",
+      "question_id": "oms_q_ab005",
+      "question_title": "AB005 · 云是否完全物理隔离(air-gapped)",
+      "field_label": "Private cloud · 私有云(TCE专有云)"
+    },
+    "oms_ab003_comments": {
+      "zh": "[REVIEW: product] 过去3年美国法院向腾讯云提出的数据访问请求次数并无公开记录。已知事实：该类信息属于法律合规敏感数据，不对外公开。缺失信息：经核实的具体请求次数。需法务/合规团队确认准确数字后方可填写，当前不可估算或编造。",
+      "en": "[REVIEW: product] There is no public record of the number of U.S. court data-access requests directed at Tencent Cloud in the past three years. Known fact: such information is legally sensitive and not publicly disclosed. Missing information: a verified count. Legal/Compliance must confirm the exact figure before it can be provided; we cannot estimate or fabricate a number.",
+      "status": "NEEDS_REVIEW",
+      "note": "证据包未提供任何公开来源或具体数字，当前状态为needs-confirm，需法务/合规团队核实具体次数。",
+      "model": "kimi-k2.6",
+      "question_id": "oms_q_ab003",
+      "question_title": "AB003 · 过去3年美国法院提出的数据访问请求有多少次",
+      "field_label": "Comments · 来源说明 / Review hooks"
+    },
+    "oms_ab004_comments": {
+      "zh": "[REVIEW: product] 过去3年其他国家法院向腾讯云提出的数据访问请求次数属于法务合规敏感信息，目前缺乏公开来源及经核实的内部统计数据，无法提供确切数字。该信息必须由法务/合规团队核实确认并获得正式授权后方可披露，在确认前不可编造或预估，以确保问卷答复的准确性与合规性。",
+      "en": "[REVIEW: product] The number of non-U.S. court data access requests received by Tencent Cloud over the past three years is legally sensitive. No publicly available sources or verified internal figures are currently available for disclosure. The exact count must be validated and authorized by Tencent Cloud’s legal and compliance team and cannot be fabricated or estimated prior to confirmation.",
+      "status": "NEEDS_REVIEW",
+      "note": "[[need-reference]] 证据包及现有草稿均未提供该敏感法务数据的具体数字，仅表明需法务/合规团队核实，无法独立验证或编造。",
+      "model": "kimi-k2.6",
+      "question_id": "oms_q_ab004",
+      "question_title": "AB004 · 过去3年其他国家法院提出的数据访问请求有多少次",
+      "field_label": "Comments · 来源说明 / Review hooks"
+    },
+    "oms_ab007_pub": {
+      "zh": "腾讯云在各国/地域的加密密钥管理遵循当地适用的监管框架。客户可通过腾讯云密钥管理系统（KMS）自主选择并管理其加密密钥，以支撑在不同市场的数据保护与合规要求。",
+      "en": "Encryption keys in each country/region are managed under the applicable local regulatory framework where Tencent Cloud operates. Customers can select and manage their encryption keys through Tencent Cloud Key Management Service (KMS) to support data protection and compliance requirements in respective markets.",
+      "status": "NEEDS_REVIEW",
+      "note": "事实包中无公开来源及原文引文，当前状态为needs-confirm，各国具体监管框架与密钥管理属地规则待内部确认",
+      "model": "kimi-k2.6",
+      "question_id": "oms_q_ab007",
+      "question_title": "AB007 · 各国加密密钥在何种监管框架下管理",
+      "field_label": "Public cloud · 公共云"
+    },
+    "oms_aa003_pub": {
+      "zh": "腾讯云公共云采用同地域多可用区（AZ）部署与跨地域容灾相结合的方式提供韧性。在同一地域内，多个可用区通过低延迟专用网络互联，各可用区具备物理独立的供电与网络设施，实现故障隔离。该架构支持用户将工作负载分布于同地域多个可用区以提升可用性、降低单点故障影响，并可进一步扩展至跨地域容灾，在更广地理范围内分散风险并保障业务连续性。",
+      "en": "Tencent Cloud provides public-cloud resiliency through a combination of intra-region multi-AZ deployment and cross-region disaster recovery. Within a region, multiple Availability Zones are interconnected via low-latency dedicated networks, with physically independent power and networking facilities in each AZ to achieve fault isolation. This architecture allows customers to distribute workloads across AZs in the same region to improve availability and mitigate single-point-of-failure risks, and further extend to cross-region disaster recovery for broader geographic risk distribution and business continuity.",
+      "status": "READY",
+      "note": "基于现有草稿中已验证的公共云架构描述扩展；证据包内具体客户案例属于专有云TCE，与Public cloud字段不直接关联，未予采用。",
+      "model": "kimi-k2.6",
+      "question_id": "oms_q_aa003",
+      "question_title": "AA003 · 如何提供容灾能力",
+      "field_label": "Public cloud · 公共云"
+    },
+    "oms_ab006_priv": {
+      "zh": "腾讯云TCE专有云可架构为数据驻留于单一司法辖区。基于与公有云同源的技术栈，TCE支持在客户指定的本地环境进行私有化部署，并可配置为完全物理隔离的air-gapped环境，从而在不依赖跨境传输的条件下运行。然而，问题所问的\"保证\"数据驻留单一司法辖区的完整范围取决于具体合同条款及部署配置，air-gapped环境与单一司法辖区驻留的完全等价性仍需产品架构团队最终确认。\n[[need-reference]]",
+      "en": "Tencent Cloud Enterprise (TCE) can be architected to keep data resident within a single jurisdiction. It supports customer-designated local deployments and fully air-gapped, physically isolated environments using an architecture homogenous with Tencent Cloud’s public cloud, eliminating reliance on cross-border data transfer. Nevertheless, a binding guarantee of single-jurisdiction residency is governed by specific contractual terms and deployment configurations, and the product architecture team must still confirm whether air-gapped isolation fully equates to single-jurisdiction data residency.\n[[need-reference]]",
+      "status": "NEEDS_REVIEW",
+      "note": "现有资料证实TCE支持客户指定本地部署及air-gapped物理隔离，可推导出单一司法辖区驻留能力，但问题中的\"保证\"承诺及air-gapped与司法辖区驻留的等价性未在现有资料中完全证实，需合同与架构团队确认",
+      "model": "kimi-k2.6",
+      "question_id": "oms_q_ab006",
+      "question_title": "AB006 · 是否保证数据驻留在单一司法辖区",
+      "field_label": "Private cloud · 私有云(TCE专有云)"
+    },
+    "oms_ab006_comments": {
+      "zh": "[REVIEW: product] 目前无公开文档可验证腾讯云是否对所有客户普遍提供单一司法辖区数据驻留保证。具体驻留承诺的范围与边界需依据客户实际签署的合同条款确定。此外，air-gapped隔离部署在技术与法律层面是否等同于单一司法辖区驻留，尚需产品架构团队与合规团队最终确认。需补充的素材包括：可覆盖的司法辖区清单、对应合同条款模板，以及架构层面实现物理与逻辑隔离的技术说明。",
+      "en": "[REVIEW: product] No publicly available documentation currently verifies whether Tencent Cloud universally guarantees single-jurisdiction data residency for all customers. The scope and boundaries of any residency commitment must be defined by the specific customer contract. Additionally, product architecture and compliance teams should confirm whether air-gapped isolation is legally and technically equivalent to single-jurisdiction residency in all cases. Supplementary inputs required include a covered jurisdictions list, applicable contract clause templates, and technical documentation on physical and logical isolation.",
+      "status": "NEEDS_REVIEW",
+      "note": "无公开来源或已验证产品能力声明；当前仅基于待确认草稿整理，需产品、架构及合规团队补充具体合同边界与技术实现细节。",
+      "model": "kimi-k2.6",
+      "question_id": "oms_q_ab006",
+      "question_title": "AB006 · 是否保证数据驻留在单一司法辖区",
+      "field_label": "Comments · 来源说明 / Review hooks"
+    },
+    "oms_ab007_priv": {
+      "zh": "TCE 专有云部署于客户本地环境，加密密钥由客户在本地自主管理。密钥的整个生命周期——包括创建、存储、使用及销毁——均在客户侧完成，腾讯云总部不介入管理，因此密钥不受腾讯总部所在司法管辖区监管框架的约束。该模式使客户能够将密钥治理纳入其本地合规体系，满足数据驻留及主权合规要求。",
+      "en": "TCE is deployed within the customer's local environment, where encryption keys are managed entirely by the customer on-premises. The full key lifecycle—including creation, storage, usage, and destruction—occurs on the customer side without Tencent Cloud headquarters' involvement. Consequently, the keys are not subject to the regulatory framework of Tencent's home jurisdiction, enabling customers to align key governance with local compliance, data-residency, and sovereignty requirements.",
+      "status": "NEEDS_REVIEW",
+      "note": "当前内容基于未确认的内部草稿，尚无公开来源或技术白皮书直接佐证，需 TCE 产品团队复核后定稿。",
+      "model": "kimi-k2.6",
+      "question_id": "oms_q_ab007",
+      "question_title": "AB007 · 各国加密密钥在何种监管框架下管理",
+      "field_label": "Private cloud · 私有云(TCE专有云)"
+    },
+    "oms_aa001_partner": {
+      "zh": "腾讯云合作伙伴云已确认覆盖泰国。我们已与泰国领先的数据中心及云服务商 True IDC 签署战略合作备忘录，共同推进泰国本地云服务。由于目前可验证的公开资料仅披露了泰国市场，暂时无法确认合作伙伴云覆盖的不同国家/地区总数；需由国际业务与伙伴团队补充完整清单后再对外披露。",
+      "en": "Tencent Cloud partner cloud is confirmed to cover Thailand. We have signed a strategic MOU with True IDC, a leading Thai data center and cloud services provider, to advance in-country cloud services. As currently verifiable disclosures only reference Thailand, the total number of distinct countries or regions served by the partner-cloud model cannot yet be confirmed; the international business and partner teams must provide the complete coverage list before external disclosure.",
+      "status": "NEEDS_REVIEW",
+      "note": "仅有泰国合作经True IDC公告验证，缺乏合作伙伴云覆盖国家/地区总数的官方来源。",
+      "model": "kimi-k2.6",
+      "question_id": "oms_q_aa001",
+      "question_title": "AA001 · 在多少个不同的国家/地区运营",
+      "field_label": "Partner cloud · 合作伙伴云"
+    },
+    "oms_ac002_pub": {
+      "zh": "是。腾讯云公有云基础设施的运营同时受总部所在司法管辖区及业务运营地当地法律法规约束，并通过多项区域合规认证满足属地要求：在德国通过C5:2020基线审计，符合德国及欧盟GDPR要求；在新加坡通过最高级别MTCS T3认证；在韩国通过K-ISMS认证，是中国首家获此认证的云服务商。Cloud Security Alliance独立注册表另列示STAR二级第三方审计及CCMv4认证，可作为补充验证。",
+      "en": "Yes. Tencent Cloud public-cloud operations are subject to both home-jurisdiction requirements and the local laws and regulations of the markets where services are delivered. This is evidenced by regional certifications: Germany’s C5:2020 baseline audit (meeting German and EU GDPR requirements); Singapore MTCS Level 3 (the highest tier); and Korea K-ISMS (Tencent Cloud was the first Chinese cloud provider to obtain it). The Cloud Security Alliance STAR registry independently lists a STAR Level 2 third-party audit and CCMv4 certification for additional assurance.",
+      "status": "READY",
+      "note": "基于腾讯云出海合规指导书及CSA STAR注册表公开信息，覆盖德、新、韩三地认证及CSA独立审计。",
+      "model": "kimi-k2.6",
+      "question_id": "oms_q_ac002",
+      "question_title": "AC002 · 是否在当地法律法规下运营",
+      "field_label": "Public cloud · 公共云"
+    },
+    "oms_ab007_comments": {
+      "zh": "[REVIEW: product] 现有资料未提供各国加密密钥监管框架的具体公开来源或原文引文。已知密钥管理的具体条款因客户合同与部署架构而异，通常遵循客户可选模式，但各司法辖区适用的具体监管框架、合规要求及合同措辞细节尚不明确。正式提交前需由产品、法务或合规团队核实各国家/地区的密钥托管与主权控制要求及对应合同条款。",
+      "en": "[REVIEW: product] The evidence pack contains no public sources or verbatim references on country-specific regulatory frameworks for encryption-key management. What is known is that key-management terms vary by customer contract and deployment architecture, generally following a customer-optionality model; however, the specific jurisdictions, applicable sovereign-control requirements, and contract language remain unverified. Product, legal, or compliance teams must confirm these details before submission.",
+      "status": "NEEDS_REVIEW",
+      "note": "无公开来源，现有草稿仅提及客户合同与部署架构差异，缺乏各国具体监管框架与密钥主权控制的事实支撑。",
+      "model": "kimi-k2.6",
+      "question_id": "oms_q_ab007",
+      "question_title": "AB007 · 各国加密密钥在何种监管框架下管理",
+      "field_label": "Comments · 来源说明 / Review hooks"
+    },
+    "oms_ab002_priv": {
+      "zh": "TCE 专有云基于与公有云同源架构，具备同等加密能力。在静态数据层面，平台集成腾讯云 KMS，支持信封加密及客户自主托管密钥（CMEK），实现存储层数据加密。当前给定资料未直接提供传输中数据加密的具体机制与覆盖范围，该部分需进一步补充验证。",
+      "en": "TCE dedicated private cloud is built on the same-source architecture as Tencent Cloud public cloud, offering equivalent encryption capabilities. For data at rest, the platform integrates Tencent Cloud KMS to support envelope encryption and customer-managed encryption keys (CMEK), ensuring storage-layer encryption. The provided materials do not directly substantiate specific mechanisms or coverage for data-in-transit encryption, which requires further verification.",
+      "status": "NEEDS_REVIEW",
+      "note": "资料仅明确覆盖KMS信封加密与CMEK（静态数据），未直接提供传输中加密证据。",
+      "model": "kimi-k2.6",
+      "question_id": "oms_q_ab002",
+      "question_title": "AB002 · 方案是否对静态与传输中数据完全加密",
+      "field_label": "Private cloud · 私有云(TCE专有云)"
+    },
+    "oms_ac001_partner": {
+      "zh": "腾讯云与泰国 True IDC 签署战略合作备忘录，由 True IDC 作为本地合作伙伴提供数据中心及云服务。然而，公开披露文件未说明该合作伙伴云的管理与运营岗位是否仅限居住在泰国的本国公民担任。[REVIEW: product] 需本地运营团队核实具体人员国籍与居住地政策，方可确认是否完全符合该项要求。",
+      "en": "Tencent Cloud has signed a strategic MOU with True IDC to offer data center and cloud services in Thailand through this local partner. Publicly available disclosures do not state whether management and operational roles within the partner cloud are restricted exclusively to Thai citizens residing in the country. [REVIEW: product] Local operations must verify the specific staffing-nationality and residency policy before confirming full compliance with this requirement.",
+      "status": "NEEDS_REVIEW",
+      "note": "公开MOU仅证实泰国合作伙伴关系，未披露人员国籍与居住地构成，需本地团队核实。",
+      "model": "kimi-k2.6",
+      "question_id": "oms_q_ac001",
+      "question_title": "AC001 · 是否仅由居住在该国/地区的本国公民管理和任职",
+      "field_label": "Partner cloud · 合作伙伴云"
+    },
+    "oms_ac001_priv": {
+      "zh": "[REVIEW: product] 腾讯云TCE专有云在部分海外市场（如泰国）通过本地合作伙伴（例如True IDC）提供服务。公开资料仅可证实合作伙伴具备本地云服务运营资质，并未披露TCE部署中管理和运维人员的国籍或居住地政策。实际人员配置取决于客户或本地合作伙伴的运营安排，因此无法从公开渠道认定全部人员均为居住在当地的本国公民。请产品与本地运营团队核实特定国家/地区的人员国籍与居住地政策。",
+      "en": "[REVIEW: product] Tencent Cloud TCE private cloud is delivered in certain overseas markets, such as Thailand, through local partners like True IDC. Publicly available sources only verify the partner's local cloud operating qualifications and do not disclose the nationality or residency requirements for TCE management and operations staff. Actual staffing depends on the customer's or local partner's operating model, so public information cannot establish that all personnel are resident nationals. Product and local operations teams must confirm the specific nationality and residency policies for each country/region.",
+      "status": "NEEDS_REVIEW",
+      "note": "公开资料仅证实泰国本地合作伙伴关系及运营资质，未披露TCE运维人员国籍与居住地政策。",
+      "model": "kimi-k2.6",
+      "question_id": "oms_q_ac001",
+      "question_title": "AC001 · 是否仅由居住在该国/地区的本国公民管理和任职",
+      "field_label": "Private cloud · 私有云(TCE专有云)"
+    },
+    "oms_ac004_partner": {
+      "zh": "由当地合作伙伴运营相关设施及云服务。以泰国为例，True IDC 在其位于曼谷关键商业区的数据中心内运营云服务，并通过与腾讯云的合作向本地客户交付云能力。该模式下，合作伙伴负责本地数据中心与基础设施的运营，腾讯云提供云平台能力。当前可验证的公开信息仅覆盖泰国市场，不涉及其他区域的合作伙伴运营细节。",
+      "en": "The facilities and associated cloud services are operated by local partners. In Thailand, True IDC operates cloud services from its data centers in key business districts in Bangkok and delivers cloud capabilities through its partnership with Tencent Cloud. Under this model, the partner manages local data center and infrastructure operations while Tencent Cloud provides the cloud platform capabilities. Verified public information currently covers only the Thailand market and does not extend to partner-operated facilities in other regions.",
+      "status": "READY",
+      "note": "仅基于 True IDC 泰国官网公开信息，当前仅覆盖泰国市场。",
+      "model": "kimi-k2.6",
+      "question_id": "oms_q_ac004",
+      "question_title": "AC004 · 由谁运营该设施",
+      "field_label": "Partner cloud · 合作伙伴云"
+    },
+    "oms_ac004_priv": {
+      "zh": "TCE专有云通常由客户或其授权团队负责日常运营，但具体设施的运营主体需依据实际部署合同确定。[REVIEW: product] 针对目标部署，需由项目交付团队根据合同条款核实最终运营主体，现有资料不支持以伙伴云等单一模式推定所有TCE项目的设施运营安排。",
+      "en": "The TCE private cloud is typically operated by the customer or its authorized team; however, the actual facility operator is determined by the specific deployment contract. [REVIEW: product] For each target deployment, the delivery team must verify the final operating entity against the contractual terms, as existing evidence does not support generalizing the facility operator arrangement from partner cloud models to all TCE deployments.",
+      "status": "NEEDS_REVIEW",
+      "note": "现有资料仅确认运营主体取决于部署合同，泰国伙伴云证据被明确排除用于外推，需交付团队按具体合同核实。",
+      "model": "kimi-k2.6",
+      "question_id": "oms_q_ac004",
+      "question_title": "AC004 · 由谁运营该设施",
+      "field_label": "Private cloud · 私有云(TCE专有云)"
+    },
+    "oms_ac002_priv": {
+      "zh": "TCE专有云采用私有化部署模式，基础设施部署于客户本地或指定数据中心，由客户自身作为运营与合规主体，因此直接在客户所在司法辖区的法律法规框架下运营。该模式保障客户对数据主权、基础设施及合规治理的完全控制权，可满足数据驻留与本地监管要求。腾讯云已通过德国C5:2020基线审计、新加坡MTCS最高级别（T3）及韩国K-ISMS等区域合规认证，具备支撑客户满足属地法规要求的技术与合规实践基础。",
+      "en": "TCE is delivered as a private-cloud deployment running on the customer's premises or designated data center. The customer serves as the operating and compliance entity, so operations naturally fall under local laws and regulations. This model ensures full customer control over data sovereignty, infrastructure, and compliance governance to satisfy data-residency and local regulatory requirements. Tencent Cloud holds regional certifications including Germany's C5:2020 baseline audit, Singapore MTCS Level T3, and Korea's K-ISMS, offering a technical and compliance foundation to support customers in meeting local statutory requirements.",
+      "status": "READY",
+      "note": "基于现有草稿及腾讯云企业出海合规指导书所述区域认证撰写，认证主体为腾讯云，TCE专有云由客户作为运营与合规主体在当地法律下运行。",
+      "model": "kimi-k2.6",
+      "question_id": "oms_q_ac002",
+      "question_title": "AC002 · 是否在当地法律法规下运营",
+      "field_label": "Private cloud · 私有云(TCE专有云)"
+    },
+    "oms_ac005_priv": {
+      "zh": "TCE专有云在 air-gapped 部署模式下支持与外部网络完全隔离运行，此形态下不存在位于云所在国之外的服务或依赖项。其他部署配置是否存在跨境依赖需结合具体架构另行确认。",
+      "en": "In an air-gapped deployment, TCE private cloud operates in complete network isolation with no services or dependencies located outside the country where the cloud is based. Whether cross-border dependencies exist in other deployment configurations requires case-by-case verification.",
+      "status": "NEEDS_REVIEW",
+      "note": "当前仅依据现有草稿中关于 air-gapped 隔离的单条陈述，缺乏公开架构文档或合同条款佐证，且未覆盖非 air-gapped 部署形态。",
+      "model": "kimi-k2.6",
+      "question_id": "oms_q_ac005",
+      "question_title": "AC005 · 是否存在位于云所在国之外的服务或依赖项",
+      "field_label": "Private cloud · 私有云(TCE专有云)"
+    },
+    "oms_ac003_comments": {
+      "zh": "[REVIEW: product] 目前缺乏各产品控制面部署位置的具体公开来源。需按具体产品/服务逐一核实控制面组件是否存在跨区域依赖，并补充控制面实际部署的拓扑信息（如是否完全位于客户指定区域内、是否涉及其他可用区或地域）。请各产品团队提供技术架构文档。",
+      "en": "[REVIEW: product] No public source currently specifies the control-plane deployment location for each product. Product teams should verify, product by product, whether any control-plane components have cross-region dependencies, and supplement deployment topology details (e.g., whether fully located within the customer-designated region or spanning other AZs/regions). Technical architecture documentation is required.",
+      "status": "NEEDS_REVIEW",
+      "note": "无公开来源或已有推理，需各产品团队提供控制面部署拓扑及跨区域依赖说明",
+      "model": "kimi-k2.6",
+      "question_id": "oms_q_ac003",
+      "question_title": "AC003 · 该部署的控制面位于何处",
+      "field_label": "Comments · 来源说明 / Review hooks"
+    },
+    "oms_ac004_pub": {
+      "zh": "[REVIEW: product] 腾讯云公有云设施的运营主体因地域及机房合同模式而异。现有公开信息不足以逐地域确认各设施是由腾讯云直接运营还是由托管数据中心运营商负责。准确回答需基础设施团队提供逐地域的运营主体清单，以明确腾讯云与第三方运营商各自的责任范围。",
+      "en": "[REVIEW: product] The operator of Tencent Cloud's public cloud facilities varies by region and data centre contract model. Publicly available information is insufficient to confirm, on a region-by-region basis, whether each facility is operated directly by Tencent Cloud or by a colocation operator. Infrastructure teams must supply a per-region operator list to clarify the respective responsibilities of Tencent Cloud and any third-party operators.",
+      "status": "NEEDS_REVIEW",
+      "note": "公开证据无法逐地域确认运营主体，需基础设施团队补充清单",
+      "model": "kimi-k2.6",
+      "question_id": "oms_q_ac004",
+      "question_title": "AC004 · 由谁运营该设施",
+      "field_label": "Public cloud · 公共云"
+    },
+    "oms_ac003_priv": {
+      "zh": "TCE 专有云架构下，控制面完全部署于客户指定的本地环境内。",
+      "en": "Under the TCE private cloud architecture, the control plane is deployed entirely within the customer's designated local environment.",
+      "status": "NEEDS_REVIEW",
+      "note": "唯一信息来源为现有待确认草稿，无公开来源、原文引文或内部决策边界佐证。 [[need-reference]]",
+      "model": "kimi-k2.6",
+      "question_id": "oms_q_ac003",
+      "question_title": "AC003 · 该部署的控制面位于何处",
+      "field_label": "Private cloud · 私有云(TCE专有云)"
+    },
+    "oms_ac003_pub": {
+      "zh": "腾讯云公共云部署的控制面通常位于客户所选地域（Region）内，具体位置因产品而异。当前给定资料未披露各产品控制面在可用区或数据中心层级的更细粒度分布细节，该信息需产品团队进一步确认。",
+      "en": "For Tencent Cloud public cloud deployments, the control plane is typically located within the customer-selected region, though exact placement varies by product. The provided materials do not disclose finer-grained distribution details at the availability zone or data center level, and this information requires confirmation from the product team.",
+      "status": "NEEDS_REVIEW",
+      "note": "无公开来源或原文引文佐证，现有陈述基于状态为needs-confirm的概括性草稿，需产品团队补充各产品控制面具体部署细节",
+      "model": "kimi-k2.6",
+      "question_id": "oms_q_ac003",
+      "question_title": "AC003 · 该部署的控制面位于何处",
+      "field_label": "Public cloud · 公共云"
+    },
+    "oms_ac002_partner": {
+      "zh": "是。腾讯云合作伙伴云按本地部署与数据驻留模式设计，具体法律义务以当地实体和客户合同为准。以泰国为例，腾讯云与True IDC联合发布了本地交互式AI云平台，提供将数据留存在泰国境内的选项。",
+      "en": "Yes. Tencent Cloud's partner cloud is designed for in-country deployment and data residency; exact legal obligations remain subject to the local entity and the customer contract. In Thailand, for example, Tencent Cloud and True IDC launched an in-country interactive and AI-enabled cloud platform that offers an option to secure their data in the country.",
+      "status": "READY",
+      "note": "以泰国True IDC单一案例为实证，不主张通用本地牌照，法律义务边界以当地实体及合同为准。",
+      "model": "kimi-k2.6",
+      "question_id": "oms_q_ac002",
+      "question_title": "AC002 · 是否在当地法律法规下运营",
+      "field_label": "Partner cloud · 合作伙伴云"
+    },
+    "oms_ac005_comments": {
+      "zh": "[REVIEW: product] 目前无公开来源可证实全局部署架构。需由产品团队逐项核对各产品组件，确认是否存在境外数据中心、跨境CDN节点、第三方托管服务或上游软件供应链依赖。在完成逐项核查前，无法就主权云边界给出确定性结论。",
+      "en": "[REVIEW: product] No public source currently exists to verify the global deployment architecture. Product teams must review each product component line-by-line to confirm whether offshore data centers, cross-border CDN nodes, third-party hosted services, or upstream software supply-chain dependencies are present. A definitive sovereign-cloud boundary cannot be stated until this item-by-item review is completed.",
+      "status": "NEEDS_REVIEW",
+      "note": "缺乏产品部署与跨境依赖的公开或内部证据，需产品团队逐项确认",
+      "model": "kimi-k2.6",
+      "question_id": "oms_q_ac005",
+      "question_title": "AC005 · 是否存在位于云所在国之外的服务或依赖项",
+      "field_label": "Comments · 来源说明 / Review hooks"
+    },
+    "oms_ac001_comments": {
+      "zh": "[REVIEW: product] 腾讯云目前未在公开渠道披露该主权云节点的人员国籍构成及居住地管理政策，因此无法验证其是否仅由居住于该国的本国公民进行管理和任职。现有草稿已明确该信息需由本地运营团队核实后方可补充准确表述。在获得内部确认前，此字段应保留为待确认状态。",
+      "en": "[REVIEW: product] Tencent Cloud does not currently disclose publicly the nationality and residency policies for personnel managing and staffing this sovereign cloud node, so we cannot verify whether it is exclusively managed and staffed by citizens of the country/region living there. The existing draft notes that this information must be verified by local operations teams before a definitive response can be finalized. This field should remain under review until internal confirmation is obtained.",
+      "status": "NEEDS_REVIEW",
+      "note": "给定资料中无公开来源或原文引文支撑该人员国籍政策声明，现有草稿已标记需本地运营团队核实，当前回答仅基于待确认状态转述。[[need-reference]]",
+      "model": "kimi-k2.6",
+      "question_id": "oms_q_ac001",
+      "question_title": "AC001 · 是否仅由居住在该国/地区的本国公民管理和任职",
+      "field_label": "Comments · 来源说明 / Review hooks"
+    },
+    "oms_ac006_priv": {
+      "zh": "[REVIEW: product] TCE 专有云场景下的硬件资产归属取决于具体的采购与部署合同，可能由客户、合作伙伴或项目实体持有。公开来源未披露适用于所有 TCE 项目的通用资产权属规则，亦无法从单一伙伴云案例外推至其他部署。目标场景的资产权属须由项目交付与法务团队依据实际合同逐单确认。",
+      "en": "[REVIEW: product] Hardware asset ownership in TCE private cloud deployments is governed by the specific procurement and deployment contract, and may reside with the customer, a partner, or the project entity. No publicly available universal ownership rule applies to all TCE engagements, and a partner-cloud example cannot be generalized. Delivery and legal teams must verify ownership against the actual contract for each target deployment.",
+      "status": "NEEDS_REVIEW",
+      "note": "公开来源未披露TCE通用硬件资产权属规则；已知权属取决于合同；此前泰国伙伴云资料无法支撑绝对化表述，已撤回，需法务与交付按目标合同逐单确认。",
+      "model": "kimi-k2.6",
+      "question_id": "oms_q_ac006",
+      "question_title": "AC006 · 资产归属于谁",
+      "field_label": "Private cloud · 私有云(TCE专有云)"
+    },
+    "oms_ad001_pub": {
+      "zh": "在公共云场景下，腾讯云由腾讯云团队通过远程方式按标准运维流程实施更新与缺陷修复。现有材料未提供该流程的具体覆盖范围、实施机制、客户通知方式或频率细节，待运维团队补充确认。",
+      "en": "For the public cloud environment, Tencent Cloud implements updates and bug fixes remotely through its operations team under standard operating procedures. The provided materials do not specify the scope, implementation mechanisms, customer notification methods, or frequency of these activities, pending confirmation from the operations team.",
+      "status": "NEEDS_REVIEW",
+      "note": "基于现有草稿单句及 needs-confirm 状态，无公开来源或流程细节支撑。",
+      "model": "kimi-k2.6",
+      "question_id": "oms_q_ad001",
+      "question_title": "AD001 · 如何实施更新和缺陷修复",
+      "field_label": "Public cloud · 公共云"
+    },
+    "oms_ad002_pub": {
+      "zh": "该公共云设施的物理访问权限仅限于经腾讯云授权的人员，以保障基础设施物理安全。当前可验证信息仅包含此项概括性描述，尚未获得关于授权标准、岗位职责范围或审计机制的公开来源与原文引文。",
+      "en": "Physical access to the public cloud facility is restricted to authorized Tencent Cloud personnel to safeguard physical infrastructure security. Verified information is currently limited to this general statement; disclosed sources or citations regarding specific authorization standards, role scopes, or audit mechanisms are not available.",
+      "status": "NEEDS_REVIEW",
+      "note": "无公开来源或原文引文，仅基于现有草稿中的概括性描述，需补充授权人员定义与范围细节 [[need-reference]]",
+      "model": "kimi-k2.6",
+      "question_id": "oms_q_ad002",
+      "question_title": "AD002 · 谁可以访问该设施",
+      "field_label": "Public cloud · 公共云"
+    },
+    "oms_ac006_pub": {
+      "zh": "[REVIEW: product] 腾讯云公共云资产的所有权结构因自建、租赁或托管等交付模式而异，现有公开信息及内部已披露资料均不足以支持“全部资产由腾讯云自有”的绝对化声明。由于公开来源尚未提供逐地域的资产权属清单，我们无法给出覆盖所有区域的统一所有权口径。为确保对外陈述准确合规，已提请基础设施与法务团队按地域提供经核实的资产归属结论。在获得正式确认前，本字段保持未核验状态，不对外作概括性所有权陈述。",
+      "en": "[REVIEW: product] Ownership of Tencent Cloud public cloud assets varies by delivery model—encompassing owned, leased, and colocation arrangements—and publicly available information does not support an absolute claim that all assets are wholly owned by Tencent Cloud. No region-by-region asset ownership breakdown has been disclosed, preventing a unified ownership position across all regions. To ensure accuracy and compliance in external disclosures, we have escalated to the infrastructure and legal teams to provide verified regional ownership positions. Until formal confirmation is received, this field remains unverified and no blanket ownership assertion is made.",
+      "status": "NEEDS_REVIEW",
+      "note": "公开及内部资料均未提供逐地域资产权属明细，资产所有权结论待基础设施与法务团队确认。",
+      "model": "kimi-k2.6",
+      "question_id": "oms_q_ac006",
+      "question_title": "AC006 · 资产归属于谁",
+      "field_label": "Public cloud · 公共云"
+    },
+    "oms_ad002_priv": {
+      "zh": "TCE 专有云环境的访问权限由客户完全自主管控，客户自行决定谁可以访问该设施。腾讯在默认情况下不具备任何访问权限，仅能在客户明确授权的前提下按客户策略受控接入。",
+      "en": "In a TCE private cloud environment, access to the facility is governed entirely by the customer, who alone determines which personnel or systems may enter or operate within the environment. Tencent holds no default access rights and may only interact with the infrastructure under explicit customer authorization and in accordance with the customer's policies.",
+      "status": "NEEDS_REVIEW",
+      "note": "基于现有内部草稿转述，证据包中无公开来源或原文引文",
+      "model": "kimi-k2.6",
+      "question_id": "oms_q_ad002",
+      "question_title": "AD002 · 谁可以访问该设施",
+      "field_label": "Private cloud · 私有云(TCE专有云)"
+    },
+    "oms_ad004_pub": {
+      "zh": "在腾讯云公共云模式下，管理员权限由腾讯云与经客户授权的管理员共同持有。客户可自主指定其组织内的授权人员担任管理员，与腾讯云协同对云上资源、账号及权限策略行使管理职责，确保客户对其云环境保持可控。",
+      "en": "Under Tencent Cloud's public cloud model, administrator access is shared between Tencent Cloud and authorized customer administrators. Customers may designate authorized personnel within their organizations to administer cloud resources, accounts, and permission policies in coordination with Tencent Cloud, ensuring they retain control over their environments.",
+      "status": "NEEDS_REVIEW",
+      "note": "基于现有内部草稿作答，证据包标记为needs-confirm且无公开来源或原文引文，需安全或产品团队确认公共云管理员权限的准确分配细节。",
+      "model": "kimi-k2.6",
+      "question_id": "oms_q_ad004",
+      "question_title": "AD004 · 谁拥有管理员权限",
+      "field_label": "Public cloud · 公共云"
+    },
+    "oms_ac006_partner": {
+      "zh": "就合作伙伴云而言，True IDC公开资料称其云服务和数据中心位于曼谷核心商务区，但这仅为其基础设施布局的陈述。现有公开信息无法证明用于腾讯云合作的具体设施之法律所有权归属，亦无法区分该等资产为自有、租赁或以其他模式持有。[REVIEW: product] 须由True IDC合作团队及法务部门提供产权文件或合同依据，以确认资产权属。",
+      "en": "For the partner cloud, True IDC publicly states that its cloud services and data centres are located in Bangkok's prime business districts, yet this merely describes infrastructure presence. Publicly available information does not establish legal ownership of the specific facilities used for the Tencent Cloud partnership, nor does it indicate whether the assets are owned, leased or otherwise held. [REVIEW: product] Confirmation from the True IDC alliance and legal teams—via title documentation or contractual evidence—is required to determine asset ownership.",
+      "status": "NEEDS_REVIEW",
+      "note": "仅依据True IDC官网公开描述，缺乏合作设施具体产权文件或合同佐证。",
+      "model": "kimi-k2.6",
+      "question_id": "oms_q_ac006",
+      "question_title": "AC006 · 资产归属于谁",
+      "field_label": "Partner cloud · 合作伙伴云"
+    },
+    "oms_ac005_pub": {
+      "zh": "腾讯云的部分全局性服务（如特定的AI基础模型能力）可能存在跨区域技术依赖，具体因服务而异。不同服务的部署架构不同，是否存在云所在国之外的依赖项需视具体服务而定。",
+      "en": "Certain Tencent Cloud global services, such as specific AI foundation-model capabilities, may carry cross-region technical dependencies; this varies by service. Deployment architectures differ by service, and whether dependencies exist outside the country where the cloud is based should be verified on a per-service basis.",
+      "status": "NEEDS_REVIEW",
+      "note": "Based solely on an unconfirmed internal draft with no public source or original citation available.\n[[need-reference]]",
+      "model": "kimi-k2.6",
+      "question_id": "oms_q_ac005",
+      "question_title": "AC005 · 是否存在位于云所在国之外的服务或依赖项",
+      "field_label": "Public cloud · 公共云"
+    },
+    "oms_ad003_priv": {
+      "zh": "TCE 专有云采用分级支持模式：由本地一线支持团队处理客户提出的问题，复杂或深层技术问题则升级至腾讯全球技术团队进行诊断与解决。该模式将本地化支持响应与全球技术专家资源相结合，服务于私有云部署环境。当前可确认的事实仅限于上述支持升级路径；关于具体支持范围、SLA、响应时效、服务渠道及覆盖区域等细节，尚无公开来源，有待补充确认。",
+      "en": "TCE uses a tiered support model for its private cloud offering: a local first-line team manages customer-raised issues, while complex or deep technical problems are escalated to Tencent’s global technical team for diagnosis and resolution. This model integrates localized support responsiveness with global engineering resources for private cloud environments. Currently, the only confirmed fact is this escalation path; specifics on support scope, SLAs, response times, service channels, and coverage areas lack public sources and await further confirmation.",
+      "status": "NEEDS_REVIEW",
+      "note": "现有草稿标记为 needs-confirm 且无公开来源，仅能确认分级升级路径，其余支持细节待补充",
+      "model": "kimi-k2.6",
+      "question_id": "oms_q_ad003",
+      "question_title": "AD003 · 如何管理支持服务",
+      "field_label": "Private cloud · 私有云(TCE专有云)"
+    },
+    "oms_ad001_priv": {
+      "zh": "TCE 专有云支持客户依据自身运维窗口自主排期执行平台更新；在物理隔离（air-gapped）环境中，通过离线升级包以人工方式完成部署，在满足网络隔离与合规要求的同时保持对变更节奏的完全控制。现有资料未明确缺陷修复的具体交付形态（如独立补丁或随版本合并发布），亦未覆盖非隔离环境下的更新机制，需产品团队进一步确认。",
+      "en": "TCE allows customers to schedule platform updates according to their own maintenance windows. In air-gapped environments, upgrades are applied manually via offline packages, maintaining full customer control over change timing while meeting network isolation and compliance requirements. Existing materials do not specify how bug fixes are delivered (e.g., standalone patches or bundled in releases) or describe the update mechanism for non-air-gapped environments; confirmation from the product team is required.",
+      "status": "NEEDS_REVIEW",
+      "note": "现有内部草稿仅确认客户自主排期与air-gapped离线包升级，未明确缺陷修复交付形态及非隔离环境机制，且无公开来源可验证。",
+      "model": "kimi-k2.6",
+      "question_id": "oms_q_ad001",
+      "question_title": "AD001 · 如何实施更新和缺陷修复",
+      "field_label": "Private cloud · 私有云(TCE专有云)"
+    },
+    "oms_ad005_priv": {
+      "zh": "在 TCE 专有云模式下，身份认证由客户自主管理，平台支持客户接入并控制自有身份方案。",
+      "en": "Identity management and control in TCE private cloud reside with the customer, who may bring and operate their own identity solutions.",
+      "status": "NEEDS_REVIEW",
+      "note": "仅依据标记为 needs-confirm 的内部草稿，无公开来源或技术引文支撑具体实现细节",
+      "model": "kimi-k2.6",
+      "question_id": "oms_q_ad005",
+      "question_title": "AD005 · 谁管理/控制身份认证",
+      "field_label": "Private cloud · 私有云(TCE专有云)"
+    },
+    "oms_ad006_pub": {
+      "zh": "腾讯云公共云的安全响应由全球化安全运营中心（SOC）团队负责。现有材料未提供该团队的具体办公所在地、区域分布或时区覆盖细节。",
+      "en": "Tencent Cloud's public cloud security response is handled by a global Security Operations Center (SOC) team. Specific office locations, regional distribution, and timezone coverage details are not provided in available materials.",
+      "status": "NEEDS_REVIEW",
+      "note": "现有草稿仅提及全球化SOC，无公开来源佐证，且当前状态为needs-confirm，具体所在地及区域分布待确认。",
+      "model": "kimi-k2.6",
+      "question_id": "oms_q_ad006",
+      "question_title": "AD006 · 安全响应团队位于何处",
+      "field_label": "Public cloud · 公共云"
+    },
+    "oms_ae001_partner": {
+      "zh": "合作伙伴云模式下，服务可用性受限于合作伙伴解决方案的覆盖能力。不同合作伙伴可提供的具体服务范围由其自身方案能力决定，存在差异。",
+      "en": "Under the partner-cloud model, service availability is constrained by the coverage of the partner's solutions. The specific service scope offered varies by partner and is determined by the partner's own solution capabilities.",
+      "status": "NEEDS_REVIEW",
+      "note": "缺乏公开来源佐证具体限制细节，资料包标注为 needs-confirm，需产品侧补充权威信源。",
+      "model": "kimi-k2.6",
+      "question_id": "oms_q_ae001",
+      "question_title": "AE001 · 服务可用性是否存在限制",
+      "field_label": "Partner cloud · 合作伙伴云"
+    },
+    "oms_ae001_pub": {
+      "zh": "腾讯云公共云的大部分服务已开放使用；部分高级人工智能或新兴技术服务可能因技术条件或监管要求而存在区域级可用性限制。",
+      "en": "Most Tencent Cloud public cloud services are available. Certain advanced AI or emerging-technology services may carry regional availability restrictions due to technical conditions or regulatory requirements.",
+      "status": "NEEDS_REVIEW",
+      "note": "仅依据现有待确认草稿转写，缺乏公开来源及具体受限服务清单佐证。",
+      "model": "kimi-k2.6",
+      "question_id": "oms_q_ae001",
+      "question_title": "AE001 · 服务可用性是否存在限制",
+      "field_label": "Public cloud · 公共云"
+    },
+    "oms_ad003_pub": {
+      "zh": "腾讯云依托全球统一的支持服务体系管理公共云服务，通过一致的标准和流程为客户提供支持。现有资料未涵盖支持范围、服务等级、响应机制或交付渠道的详细说明。",
+      "en": "Tencent Cloud manages public cloud support through a unified global support organization, delivering assistance via consistent standards and processes. Detailed information on coverage, service levels, response mechanisms, or delivery channels is not included in the current materials.",
+      "status": "NEEDS_REVIEW",
+      "note": "证据仅来自现有草稿的概括性陈述，无公开来源或运营细节支撑。",
+      "model": "kimi-k2.6",
+      "question_id": "oms_q_ad003",
+      "question_title": "AD003 · 如何管理支持服务",
+      "field_label": "Public cloud · 公共云"
+    },
+    "oms_ae002_comments": {
+      "zh": "[REVIEW: product] 截至当前，该形态的云所能提供的全球公共云服务精确占比尚无公开披露数据。需产品团队基于最新产品目录，对照全球公共云服务完整清单逐项核算，以确定可落地的服务范围与相应比例。目前无法提供经核实的具体百分比，建议在明确统计口径与服务边界后补充该数值。",
+      "en": "[REVIEW: product] As of now, the exact percentage of global public cloud services available in this cloud model has not been publicly disclosed. The product team needs to calculate this by mapping the current service catalog against the complete inventory of global public cloud offerings to determine the available service coverage and corresponding ratio. A validated percentage cannot be provided at this time; we recommend completing this calculation once the counting methodology and service scope are confirmed.",
+      "status": "NEEDS_REVIEW",
+      "note": "给定资料未包含该百分比或可用于推导的公开服务清单，需产品团队基于内部目录与统一统计口径核算后补充。",
+      "model": "kimi-k2.6",
+      "question_id": "oms_q_ae002",
+      "question_title": "AE002 · 该形态的云平均能提供全球公共云服务的百分之多少",
+      "field_label": "Comments · 来源说明 / Review hooks"
+    },
+    "oms_ae003_pub": {
+      "zh": "腾讯云拥有其公有云平台的完整源代码。根据腾讯专有云TCE技术白皮书的公开论述，腾讯云公有云与专有云采用统一架构与统一代码基线，将公有云能力以1:1方式输送至私有环境。这一架构同源设计表明，底层平台由腾讯云自主研发并持有，确保不同部署模式下技术栈的一致性与可控性。",
+      "en": "Tencent Cloud retains full ownership of its public cloud source code. As stated in the Tencent Cloud Enterprise (TCE) technical white paper, Tencent Cloud's public and private cloud share a unified architecture and common code base, delivering public cloud capabilities to private environments with 1:1 parity. This homologous-architecture design indicates that the underlying platform is self-developed and controlled by Tencent Cloud, ensuring consistency and governance across deployment models.",
+      "status": "READY",
+      "note": "基于腾讯云官方TCE白皮书所述统一架构、统一代码及现有已验证状态，可佐证公有云源代码由腾讯云自主研发和持有。",
+      "model": "kimi-k2.6",
+      "question_id": "oms_q_ae003",
+      "question_title": "AE003 · 谁拥有该云的源代码",
+      "field_label": "Public cloud · 公共云"
+    },
+    "oms_ad006_priv": {
+      "zh": "TCE 专有云模式下，安全响应团队可按客户要求进行本地化配置，具体的部署位置、组织架构及服务覆盖范围由项目合同约定。现有资料未公开团队默认驻地、具体规模或已交付案例，相关细节需依据实际项目确认。",
+      "en": "In TCE private cloud deployments, the security response team can be localized to align with customer requirements, with specific deployment locations, organizational structure, and service coverage defined under project agreements. Existing materials do not disclose the team's default location, scale, or delivered references; details are subject to individual project confirmation.",
+      "status": "NEEDS_REVIEW",
+      "note": "缺少公开来源与原文引文，具体团队驻地、规模及交付细节待产品或交付侧补充。",
+      "model": "kimi-k2.6",
+      "question_id": "oms_q_ad006",
+      "question_title": "AD006 · 安全响应团队位于何处",
+      "field_label": "Private cloud · 私有云(TCE专有云)"
+    },
+    "oms_ad005_pub": {
+      "zh": "腾讯云公共云默认由腾讯云 CAM（Cloud Access Management）身份与访问管理体系管理身份认证。CAM 是腾讯云提供的默认身份管理框架，用于云账户内用户及资源访问身份的管理与控制。",
+      "en": "Tencent Cloud's public cloud manages identity authentication by default through Tencent Cloud CAM (Cloud Access Management), the default identity management framework for administering and controlling user and resource access identities within cloud accounts.",
+      "status": "NEEDS_REVIEW",
+      "note": "仅依据现有草稿中'默认使用腾讯云 CAM'的陈述，缺乏公开来源、原文引文及公共云环境下身份管理责任边界的进一步佐证。",
+      "model": "kimi-k2.6",
+      "question_id": "oms_q_ad005",
+      "question_title": "AD005 · 谁管理/控制身份认证",
+      "field_label": "Public cloud · 公共云"
+    },
+    "oms_ae002_priv": {
+      "zh": "我们基于公有云同源架构打造的腾讯专有云 TCE，提供覆盖计算、存储、网络、安全、数据库、中间件等近百款产品的全栈私有化能力，产品能力与公有云高度对齐。关于该形态平均能提供全球公共云服务的具体百分比，目前未在公开渠道披露精确数值，需我们的产品团队依据最新产品清单逐项核实计算后方可确定。",
+      "en": "Our Tencent Cloud Enterprise (TCE) is built on the same-source architecture as our public cloud and delivers full-stack private-cloud capabilities across close to one hundred product lines spanning compute, storage, networking, security, databases, and middleware, closely aligned with our public-cloud offering. The exact percentage of global public cloud services available in this private-cloud form is not disclosed publicly and requires item-by-item verification by our product team against the latest product catalog.",
+      "status": "NEEDS_REVIEW",
+      "note": "精确百分比未在提供的白皮书及公开渠道中披露；当前回答仅基于'近百款产品'的事实边界。\n[[need-reference]]",
+      "model": "kimi-k2.6",
+      "question_id": "oms_q_ae002",
+      "question_title": "AE002 · 该形态的云平均能提供全球公共云服务的百分之多少",
+      "field_label": "Private cloud · 私有云(TCE专有云)"
+    },
+    "oms_ae001_comments": {
+      "zh": "[REVIEW: product] 服务可用性是否存在限制及具体受限服务清单，需按客户所在具体地域及适用的监管要求，由产品团队逐单核实。当前无公开来源提供统一的受限范围说明，建议结合目标可用区与合规框架确认最终可交付边界。",
+      "en": "[REVIEW: product] Whether any restrictions on service availability exist, and the specific list of restricted services, must be verified by the product team on a per-customer basis according to the customer's region and applicable regulatory requirements. No public source currently provides a unified statement on restricted scope; confirmation against the target availability zone and compliance framework is recommended to establish final deliverable boundaries.",
+      "status": "NEEDS_REVIEW",
+      "note": "无公开来源、推理或决策边界，全部事实均待产品团队补充验证",
+      "model": "kimi-k2.6",
+      "question_id": "oms_q_ae001",
+      "question_title": "AE001 · 服务可用性是否存在限制",
+      "field_label": "Comments · 来源说明 / Review hooks"
+    },
+    "oms_ae004_comments": {
+      "zh": "[REVIEW: product] 腾讯云公有云采用按量计费与包年包月两种订阅模式，专有云（TCE）采用项目制商业合同。具体授权许可条款、SLA 及计费细则因合同类型与客户场景而异，目前缺乏经法务/商务团队确认的标准条款文本，需由相关团队核实后补充正式表述。",
+      "en": "[REVIEW: product] Tencent Cloud public cloud offers pay-as-you-go and annual/monthly subscription models, while Tencent Cloud Enterprise (TCE) operates under project-based commercial contracts. Exact licensing terms, SLAs, and pricing details vary by contract type and customer scenario. A legally and commercially validated standard contract statement is not yet available and requires confirmation from the relevant teams.",
+      "status": "NEEDS_REVIEW",
+      "note": "仅内部草稿提及公有云按量/包年包月及TCE项目制两类模式，缺乏经法务确认的标准授权条款文本与对外承诺。",
+      "model": "kimi-k2.6",
+      "question_id": "oms_q_ae004",
+      "question_title": "AE004 · 该云的授权许可模式是怎样的",
+      "field_label": "Comments · 来源说明 / Review hooks"
+    },
+    "oms_ad004_priv": {
+      "zh": "在 TCE（Tencent Cloud Enterprise）专有云环境中，管理员权限完全由客户自主决定。腾讯云在平台交付后默认不具备管理员访问权限；若平台侧人员因运维或技术支持需要访问客户环境，须事先取得客户明确授权。客户可依据自身安全策略与组织分工，自行设定各角色的管理权限范围，保持对云平台控制面的完全自主。该模式支撑客户落实内部治理与合规要求。",
+      "en": "In a TCE private cloud environment, administrator access is determined entirely by the customer. Tencent does not hold default administrator rights following platform delivery; any Tencent personnel requiring access for operational or technical support purposes must obtain explicit customer authorization in advance. Customers define the scope of administrative rights for each role according to their own security policies and organizational needs, retaining full autonomy over the cloud platform control plane. This model supports customers in enforcing internal governance and compliance requirements.",
+      "status": "NEEDS_REVIEW",
+      "note": "基于内部待确认草稿复述，无公开来源或原文引文可供外部验证，当前标记为 needs-confirm。",
+      "model": "kimi-k2.6",
+      "question_id": "oms_q_ad004",
+      "question_title": "AD004 · 谁拥有管理员权限",
+      "field_label": "Private cloud · 私有云(TCE专有云)"
+    },
+    "oms_ae005_pub": {
+      "zh": "是。腾讯云公共云平台基于 Kubernetes、CNCF 等主流开放标准构建核心云原生架构，保障互操作性与生态兼容。在基础设施层，平台通过软硬件解耦设计避免绑定特定硬件品牌，并支持 X86（Intel、海光）及 ARM（鲲鹏、飞腾）等多种芯片架构，实现多元算力的统一调度。这种基于开放标准的工程实践使客户能够在不同硬件环境中保持部署灵活性，降低厂商锁定风险，并依托标准化接口与既有云原生工具链无缝集成。",
+      "en": "Yes. Tencent Cloud’s public cloud platform is built on mainstream open standards including Kubernetes and CNCF, ensuring interoperability and ecosystem compatibility across its cloud-native architecture. At the infrastructure layer, the platform employs a hardware-software decoupled design that avoids binding to specific hardware brands and supports multiple chip architectures, including X86 (Intel, Hygon) and ARM (Kunpeng, Phytium), enabling unified orchestration of heterogeneous compute. This standards-based approach allows customers to maintain deployment flexibility across diverse hardware environments, reduce vendor lock-in risks, and integrate seamlessly with existing cloud-native toolchains via standardized interfaces.",
+      "status": "NEEDS_REVIEW",
+      "note": "现有草稿提供 Kubernetes/CNCF 信息，证据包仅提供 TCE 白皮书中的软硬解耦与多芯支持事实，字段为公共云，TCE 与公共云技术栈的对应关系待确认。",
+      "model": "kimi-k2.6",
+      "question_id": "oms_q_ae005",
+      "question_title": "AE005 · 该软件是否基于开放标准构建",
+      "field_label": "Public cloud · 公共云"
+    },
+    "oms_af001_pub": {
+      "zh": "腾讯云在公共云场景下的主权云方案以 Tencent Cloud Enterprise（TCE）为核心载体，依托与腾讯公有云同源架构和一致代码基线，在公有云部署模式中交付数据主权、运营主权与技术主权的全栈能力；客户亦可按需延伸至私有、混合或完全物理隔离（air-gapped）环境，以适配不同司法辖区的合规要求。在《The Forrester Wave™: Sovereign Cloud Platforms, Q2 2026》中，腾讯云凭借 TCE 获评“领导者（Leader）”，为唯一进入该象限的中国厂商，同时被授予“Customer Favorite”，并在主权数据治理服务维度获得最高评分。",
+      "en": "Tencent Cloud’s sovereign cloud approach on the public cloud is anchored by Tencent Cloud Enterprise (TCE), which shares the same source-code architecture as Tencent Cloud’s public cloud. It delivers full-stack sovereign capabilities—spanning data, operational, and technical sovereignty—within public cloud deployments, while also supporting private, hybrid, and fully air-gapped extensions to meet jurisdictional compliance requirements. In The Forrester Wave™: Sovereign Cloud Platforms, Q2 2026, Tencent Cloud was named a Leader—the only Chinese hyperscaler in the Leaders quadrant—and recognized as a Customer Favorite, receiving the highest possible score in the Sovereign Data Governance Services criterion.",
+      "status": "NEEDS_REVIEW",
+      "note": "主权云方案属战略定位题型，且证据包提示核心框架仍待AR确认；TCE同源架构与多部署模式事实引自现有草稿。",
+      "model": "kimi-k2.6",
+      "question_id": "oms_q_af001",
+      "question_title": "AF001 · 说明贵司的主权云方案",
+      "field_label": "Public cloud · 公共云"
+    },
+    "oms_af001_comments": {
+      "zh": "[REVIEW: Kevin] 本题属于战略/愿景类设问，尚未形成可对外提交的确定方案。已知讨论倾向于将主权云定位为风险治理框架，以匹配Omdia Roy Illsley的评分透镜，但该叙事角度是否最能体现腾讯云差异化能力，需AR负责人Kevin确认。当前证据包缺乏可引用的主权云细节，包括[数据驻留与本地化架构]、[合规认证清单]、[运营主体与管辖边界]、[已服务行业或区域]等，需产品团队补充后方可作答。",
+      "en": "[REVIEW: Kevin] This is a Strategy/Vision question and no finalized, externally submitable approach is yet available. Internal discussion tentatively positions our sovereign cloud narrative within a risk-management framework to align with Omdia’s Roy Illsley scoring lens, but the AR lead must confirm whether this framing best captures Tencent Cloud’s differentiation. The evidence pack currently lacks attributable sovereign cloud specifics, including [data residency and local deployment architecture], [compliance certifications], [operating entity and jurisdictional boundaries], and [industries or regions served], all of which require input from the product team before a substantive response can be drafted.",
+      "status": "NEEDS_REVIEW",
+      "note": "证据包中无可引用的主权云事实，现有内容仅为待确认的叙事角度讨论。",
+      "model": "kimi-k2.6",
+      "question_id": "oms_q_af001",
+      "question_title": "AF001 · 说明贵司的主权云方案",
+      "field_label": "Comments · 来源说明 / Review hooks"
+    },
+    "oms_ae004_pub": {
+      "zh": "腾讯云公共云采用按需订阅或合同期限授权模式。现有材料未披露更细化的许可条款（如计费粒度、合同档位或BYOL支持），当前仅基于内部草稿确认该分类。",
+      "en": "Tencent Cloud's public cloud is licensed on a subscription or contract-term basis. Finer licensing terms—such as metering granularity, contract tiers, or BYOL support—are not disclosed in the available materials, and the classification above is based solely on the internal draft provided.",
+      "status": "NEEDS_REVIEW",
+      "note": "唯一证据为一句标记needs-confirm且无公开来源的内部草稿，缺乏具体授权条款细节，需内部确认。",
+      "model": "kimi-k2.6",
+      "question_id": "oms_q_ae004",
+      "question_title": "AE004 · 该云的授权许可模式是怎样的",
+      "field_label": "Public cloud · 公共云"
+    },
+    "oms_af002_pub": {
+      "zh": "腾讯云将AI能力直接集成至TCE云底座，支持客户在主权合规框架内构建大模型训练、推理及Agent应用。通过Agent Development Platform（ADP）等平台，企业可在本地化、隔离环境中部署基于混元大模型的AI应用，满足数据不出境、模型可控的监管要求。该方案覆盖从底层算力到上层应用的全栈隔离部署，使AI工作负载与基础设施处于同一主权边界内，实现“合规云”与“智能云”的一体化交付，为主权合规场景下的数字化转型提供安全路径。",
+      "en": "Tencent Cloud integrates AI capabilities directly into the TCE cloud foundation, enabling customers to build large-model training, inference and agent workloads within a sovereign compliance boundary. Through the Agent Development Platform (ADP), enterprises deploy Hunyuan-based AI applications in localized, isolated environments that keep data in-jurisdiction and the model under customer control. This approach covers the full stack from compute to application layer, unifying compliant cloud and intelligent cloud within the same sovereign boundary to provide a secure path for digital transformation in sovereign contexts.",
+      "status": "NEEDS_REVIEW",
+      "note": "给定资料均围绕TCE专有云底座阐述主权AI方案，未提供公共云专属技术细节，且缺少量化AI unit economics数据待确认。",
+      "model": "kimi-k2.6",
+      "question_id": "oms_q_af002",
+      "question_title": "AF002 · 说明贵司的主权AI方案",
+      "field_label": "Public cloud · 公共云"
+    },
+    "oms_ae005_priv": {
+      "zh": "TCE专有云基于开放标准构建。平台支持Kubernetes/CNCF标准，提供符合行业规范的容器编排与云原生能力；在基础设施层面兼容x86与ARM架构，支持Intel、海光、鲲鹏、飞腾等主流国产及国际芯片，同时适配银河麒麟、UOS等国产操作系统。通过软硬件解耦设计，TCE不绑定特定硬件品牌，客户可灵活选择底层基础设施，避免厂商锁定，满足多元部署需求。",
+      "en": "TCE is built on open standards. It supports Kubernetes/CNCF standards for container orchestration and cloud-native capabilities. At the infrastructure layer, it is compatible with x86 and ARM architectures, supporting mainstream domestic and international processors including Intel, Hygon, Kunpeng, and Phytium, as well as domestic operating systems such as Kylin and UOS. Through hardware-software decoupling, TCE avoids binding to specific hardware brands, allowing customers to flexibly select underlying infrastructure and prevent vendor lock-in to meet diverse deployment needs.",
+      "status": "READY",
+      "note": "基于给定双语文稿及TCE技术白皮书引文，其中Kubernetes/CNCF支持来自草稿陈述，多芯兼容与软硬解耦来自白皮书引文。",
+      "model": "kimi-k2.6",
+      "question_id": "oms_q_ae005",
+      "question_title": "AE005 · 该软件是否基于开放标准构建",
+      "field_label": "Private cloud · 私有云(TCE专有云)"
+    },
+    "oms_ae006_comments": {
+      "zh": "[REVIEW: product] 腾讯云未公开披露平台生态中ISV（独立软件开发商）的具体数量，该数据属于内部运营指标。当前公开渠道无权威数据可查，需由生态合作团队核实并提供经确认的数字后，方可填写最终答案。",
+      "en": "[REVIEW: product] Tencent Cloud does not publicly disclose the specific number of ISVs within its platform ecosystem; this figure is treated as an internal operating metric. No authoritative data is currently available through public channels, and the ecosystem team must verify and supply the confirmed number before the final answer can be completed.",
+      "status": "NEEDS_REVIEW",
+      "note": "无公开来源可验证ISV具体数量，需生态合作团队提供内部运营数据",
+      "model": "kimi-k2.6",
+      "question_id": "oms_q_ae006",
+      "question_title": "AE006 · 有多少ISV使用该平台交付第三方服务",
+      "field_label": "Comments · 来源说明 / Review hooks"
+    },
+    "oms_ae003_priv": {
+      "zh": "TCE与公有云采用同一套源代码架构（“架构同源”），由腾讯云统一开发并持续维护。部署至客户私有环境时，TCE以授权模式交付，客户仅获得合同约定的代码使用权，其使用范围、修改权限及二次分发均受双方合同条款约束，客户不取得源代码所有权。该模式既保证了私有云与公有云能力的1:1一致性，也通过合同条款明确了代码权属与使用边界。",
+      "en": "TCE is built on the same source-code architecture as Tencent Cloud's public cloud (\"same-source architecture\") and is developed and maintained by Tencent Cloud. When deployed in a customer's private environment, TCE is delivered under license; the customer obtains usage rights as defined by contract, while scope of use, modification, and redistribution are governed by contractual terms. Ownership of the source code is not transferred to the customer. This approach ensures 1:1 capability parity with the public cloud and clearly defines code ownership and usage boundaries through contractual terms.",
+      "status": "READY",
+      "note": "基于技术白皮书对TCE“架构同源、统一代码”的表述及现有草稿中关于合同约束的说明。",
+      "model": "kimi-k2.6",
+      "question_id": "oms_q_ae003",
+      "question_title": "AE003 · 谁拥有该云的源代码",
+      "field_label": "Private cloud · 私有云(TCE专有云)"
+    },
+    "oms_af003_comments": {
+      "zh": "[REVIEW: Kevin] 题目要求明确唯一核心差异化优势。现有材料显示，团队正在评估两个候选方向：一是架构同源，二是作为唯一入选 Leader 象限的中国厂商。但当前无任何公开来源、客户案例或第三方数据可对任一角度进行直接验证，且哪种 framing 最能打动分析师需由 AR lead 最终拍板。请 Kevin 确认：1）最终选用的核心差异化角度；2）支撑该角度的具体证据边界，如产品能力、客户场景、第三方认证等。",
+      "en": "[REVIEW: Kevin] The question requires us to identify the one key differentiator. Our team is currently evaluating two candidate angles: same-source architecture, and being the sole Chinese vendor positioned in the Leader quadrant. However, neither angle is substantiated by public sources, customer evidence, or third-party validation in the provided materials. Which framing most effectively resonates with analysts remains a decision for the AR lead. Please confirm: (1) the final differentiator to lead with; (2) the specific evidence boundaries, such as product capabilities, customer scenarios, or third-party citations, required to support it.",
+      "status": "NEEDS_REVIEW",
+      "note": "证据包未提供任何公开来源、客户证据或第三方验证，需 Kevin 确认最终 framing 及配套证据 [[need-reference]]",
+      "model": "kimi-k2.6",
+      "question_id": "oms_q_af003",
+      "question_title": "AF003 · 指出贵司认为能为客户提供的唯一核心差异化优势",
+      "field_label": "Comments · 来源说明 / Review hooks"
+    },
+    "oms_af003_pub": {
+      "zh": "[REVIEW: Kevin] 我们认为能为客户提供的核心差异化优势是“同源而不降级”。腾讯专有云TCE与公有云采用统一架构与统一代码，可将公有云能力1:1输送至私有化或物理隔离环境，支持从十几台到上万台节点扩展，使客户在获得主权可控性的同时无需牺牲功能与迭代速度。该主张的已知证据包括：TCE同源架构的产品事实、Forrester Wave公开摘要将腾讯云列入Leader组的独立市场认可，以及True IDC泰国合作所体现的本地交付能力。题目要求指出“唯一(the one)”核心差异化，目前以“架构同源”为主论点，但是否最终仅保留此项，仍需Kevin确认。",
+      "en": "[REVIEW: Kevin] Our proposed key differentiator is sovereignty without a downgraded cloud. Tencent Cloud Enterprise (TCE) shares one architecture and codebase with our public cloud, delivering equivalent public-cloud capabilities 1:1 into private or air-gapped environments and scaling from tens to tens of thousands of nodes. This allows customers to maintain sovereignty without sacrificing functionality or the pace of innovation. The claim is supported by: the same-source product architecture, independent recognition of Tencent Cloud in the Forrester Wave Leader group, and in-country execution demonstrated by the True IDC partnership in Thailand. The questionnaire asks for the one key differentiator; while we currently anchor on the same-source architecture, final confirmation from Kevin is required on whether this should remain the sole focus.",
+      "status": "NEEDS_REVIEW",
+      "note": "证据边界：基于TCE技术白皮书、Forrester Wave第三方摘要及True IDC公告的已验证事实；因题目要求“唯一”核心差异化而现有草稿仍待Kevin确认主论点取舍，故标记[[need-reference]]。",
+      "model": "kimi-k2.6",
+      "question_id": "oms_q_af003",
+      "question_title": "AF003 · 指出贵司认为能为客户提供的唯一核心差异化优势",
+      "field_label": "Public cloud · 公共云"
+    },
+    "oms_ae004_priv": {
+      "zh": "TCE 专有云通常采用与合同期限绑定的授权模式，续约时同步延续授权。",
+      "en": "TCE private cloud is typically licensed on a term tied to the contract, renewed alongside contract renewal.",
+      "status": "NEEDS_REVIEW",
+      "note": "现有草稿标记为needs-confirm且无公开来源或原文引文佐证，具体授权条款与计费机制需产品/商务团队补充确认\n[[need-reference]]",
+      "model": "kimi-k2.6",
+      "question_id": "oms_q_ae004",
+      "question_title": "AE004 · 该云的授权许可模式是怎样的",
+      "field_label": "Private cloud · 私有云(TCE专有云)"
+    },
+    "oms_af002_comments": {
+      "zh": "[REVIEW: Kevin] 我司当前资料库中无主权AI方案的公开来源或实证细节，暂无法向Omdia提供本题所需的完整回答。现有草稿仅提示Omdia关注AI unit economics（per-token / per-GPU-hour成本口径），且当前缺乏量化数据，是否补充由Kevin判断。待补充验证事实后再行完善。",
+      "en": "[REVIEW: Kevin] Our current repository contains no public sources or verified facts regarding our sovereign AI approach, so we cannot yet provide Omdia with a complete answer to this question. The existing draft only notes that Omdia weighs AI unit economics (per-token / per-GPU-hour cost) and that quantified figures are currently unavailable; whether to add them is a framing call for Kevin. We will complete this response once validated factual details are provided.",
+      "status": "NEEDS_REVIEW",
+      "note": "证据包内无主权AI方案的任何事实细节，仅有AI unit economics需确认的review hook。",
+      "model": "kimi-k2.6",
+      "question_id": "oms_q_af002",
+      "question_title": "AF002 · 说明贵司的主权AI方案",
+      "field_label": "Comments · 来源说明 / Review hooks"
+    }
+  },
+  "failures": {}
+}

@@ -3,7 +3,7 @@ import { resolve } from "node:path";
 import { OMDIA_SOVEREIGN_CLOUD_SECTIONS as sections } from "../src/data/omdiaSovereignCloud";
 import type { Field, Question, Section } from "../src/data/questionnaire";
 
-const GENERATED_DATE = "2026-07-17";
+const GENERATED_DATE = new Date().toISOString().slice(0, 10);
 const GENERATED_AT = `${GENERATED_DATE}T00:00:00.000Z`;
 const GENERATED_BY = "build-omdia-sovereign-pipeline";
 const OUT_DIR = resolve(import.meta.dirname, "../src/data/generated");

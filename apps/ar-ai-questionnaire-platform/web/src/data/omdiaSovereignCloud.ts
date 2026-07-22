@@ -1,6 +1,9 @@
 // Omdia Market Radar - Selecting a Public Sovereign Cloud Solution (2026)
 // Source: "questions - for vendors- final.xlsx" (vendor questionnaire, 6 categories, 33 scored questions).
 //
+// v4 — v3 evidence chain retained; every text field receives a Kimi K2.6
+// expert-pass rewrite from the question, existing draft, sources, quotes and
+// review boundary. Generated overrides live in generated/*-kimi-v4.json.
 // v3 — rebuilt as an auditable runner → grounding → wording → quality-checker → platform-export pipeline:
 //   - analyst-grounding audit-chain-format: every fact tagged [CITED] (with verbatim
 //     Source/Quote/Retrieved) or [INFERRED] (>=2 [CITED] refs + explicit reasoning);
@@ -11,11 +14,12 @@
 //     plain text only (no markdown), reframed rather than translated from Chinese.
 // Field ids namespaced "oms_*".
 
+import kimiV4 from "./generated/omdia-sovereign-cloud-kimi-v4.json";
 import type { Section, Source } from "./questionnaire";
 
 const src = (url: string, label: string): Source => ({ url, label });
 
-export const OMDIA_SOVEREIGN_CLOUD_SECTIONS: Section[] = [
+const OMDIA_SOVEREIGN_CLOUD_BASE_SECTIONS: Section[] = [
   {
     id: "oms_architecture",
     index: "1",
@@ -1637,3 +1641,42 @@ export const OMDIA_SOVEREIGN_CLOUD_SECTIONS: Section[] = [
     ],
   },
 ];
+
+type KimiOverride = {
+  zh: string;
+  en: string;
+  status: "READY" | "NEEDS_REVIEW";
+  note: string;
+};
+
+const kimiOverrides = kimiV4.fields as Record<string, KimiOverride>;
+
+/**
+ * v4 keeps the v3 questions, evidence, quotes and review hooks intact, while
+ * replacing only the bilingual answer text with the Kimi expert-pass output.
+ */
+export const OMDIA_SOVEREIGN_CLOUD_SECTIONS: Section[] =
+  OMDIA_SOVEREIGN_CLOUD_BASE_SECTIONS.map((section) => ({
+    ...section,
+    questions: section.questions.map((question) => ({
+      ...question,
+      groups: question.groups.map((group) => ({
+        ...group,
+        fields: group.fields.map((field) => {
+          if (field.kind !== "text") return field;
+          const override = kimiOverrides[field.id];
+          if (!override) return field;
+          const stillNeedsReview =
+            field.status === "needs-confirm" ||
+            override.zh.includes("[REVIEW:") ||
+            override.en.includes("[REVIEW:");
+          return {
+            ...field,
+            defaultValue: override.zh,
+            defaultValueEn: override.en,
+            status: stillNeedsReview ? "needs-confirm" : "verified",
+          };
+        }),
+      })),
+    })),
+  }));
