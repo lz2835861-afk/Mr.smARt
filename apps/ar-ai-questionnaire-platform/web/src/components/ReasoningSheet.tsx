@@ -374,10 +374,7 @@ export function ReasoningSheet({ reasoning, fieldLabel }: Props) {
                           href={s.url}
                           target="_blank"
                           rel="noopener noreferrer"
-                          onClick={(event) => {
-                            event.preventDefault();
-                            openExternalSource(s.url);
-                          }}
+                          onClick={(event) => openExternalSource(event, s.url)}
                           className="group flex items-start gap-2.5 rounded-[10px] px-2.5 py-2 transition-colors hover:bg-surface-secondary"
                         >
                           <SourceChip url={s.url} preset={LIST_CHIP} />
@@ -417,10 +414,7 @@ export function ReasoningSheet({ reasoning, fieldLabel }: Props) {
                                 href={src.url}
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                onClick={(event) => {
-                                  event.preventDefault();
-                                  openExternalSource(src.url);
-                                }}
+                                onClick={(event) => openExternalSource(event, src.url)}
                                 title={src.label}
                                 className="group/q block whitespace-pre-wrap rounded-r-md border-l-2 border-separator px-3 py-1.5 text-[12px] leading-relaxed text-foreground transition-colors hover:border-accent hover:bg-accent/10"
                               >

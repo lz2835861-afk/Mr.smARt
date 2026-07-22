@@ -140,10 +140,7 @@ function SourceRow({ s }: { s: ProvSource }) {
       href={s.url}
       target="_blank"
       rel="noopener noreferrer"
-      onClick={(event) => {
-        event.preventDefault();
-        openExternalSource(s.url);
-      }}
+      onClick={(event) => openExternalSource(event, s.url)}
       className="group flex items-start gap-2.5 rounded-[10px] px-2.5 py-2 transition-colors hover:bg-surface-secondary"
     >
       <SourceChip url={s.url} />

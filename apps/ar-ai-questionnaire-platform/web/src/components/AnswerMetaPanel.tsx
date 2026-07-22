@@ -206,10 +206,7 @@ export function AnswerMetaPanel({
                       href={e.source}
                       target="_blank"
                       rel="noopener noreferrer"
-                      onClick={(event) => {
-                        event.preventDefault();
-                        openExternalSource(e.source ?? "");
-                      }}
+                      onClick={(event) => openExternalSource(event, e.source ?? "")}
                       className="text-accent hover:underline break-all"
                     >
                       {e.source}
