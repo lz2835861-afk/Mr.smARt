@@ -3,6 +3,7 @@ import { Icon } from "@iconify/react";
 import { cn } from "../lib/utils";
 import type { Provenance, ProvSource } from "../types/provenance";
 import { isProvenanceEmpty } from "../data/aiInfra";
+import { openExternalSource } from "../lib/openExternalSource";
 
 // ─────────────────────────────────────────────────────────────────────────────
 // Source chip — brand icon resolved from the source URL (mirrors ReasoningSheet).
@@ -138,7 +139,11 @@ function SourceRow({ s }: { s: ProvSource }) {
     <a
       href={s.url}
       target="_blank"
-      rel="noreferrer"
+      rel="noopener noreferrer"
+      onClick={(event) => {
+        event.preventDefault();
+        openExternalSource(s.url);
+      }}
       className="group flex items-start gap-2.5 rounded-[10px] px-2.5 py-2 transition-colors hover:bg-surface-secondary"
     >
       <SourceChip url={s.url} />

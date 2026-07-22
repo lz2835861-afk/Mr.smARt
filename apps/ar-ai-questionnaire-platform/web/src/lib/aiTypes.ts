@@ -1,6 +1,6 @@
 /** Shared request/response contract between the client (useAi) and /api/ai. */
 
-export type AiMode = "polish" | "translate" | "draft" | "custom" | "ask";
+export type AiMode = "polish" | "translate" | "draft" | "custom" | "ask" | "batch-rewrite";
 
 export interface AiRequest {
   mode: AiMode;

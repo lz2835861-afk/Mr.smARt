@@ -10,7 +10,8 @@
     "preview": "vite preview",
     "sync-defaults": "tsx scripts/sync-defaults.ts",
     "import-skill": "tsx scripts/import-skill-output.ts",
-    "build:omdia-pipeline": "tsx scripts/build-omdia-sovereign-pipeline.ts"
+    "build:omdia-pipeline": "tsx scripts/build-omdia-sovereign-pipeline.ts",
+    "rewrite:omdia-kimi": "tsx scripts/rewrite-omdia-with-kimi.ts"
   },
   "dependencies": {
     "@gravity-ui/icons": "^2.18.0",

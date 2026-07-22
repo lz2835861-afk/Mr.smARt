@@ -83,6 +83,24 @@ function buildUserPrompt(r: AiRequest): string {
       }${r.selection ? `\n\n【用户选中的片段（背景）】\n${r.selection}` : ""}${
         r.material ? `\n\n【参考资料（用户上传，请优先依据）】\n${r.material}` : ""
       }${r.zh ? `\n\n【当前答案草稿（仅作背景，请勿改写）】\n${r.zh}` : ""}`;
+    case "batch-rewrite":
+      return `${header}你正在执行 Omdia Market Radar 主权云问卷的专家团批量改写。请同时扮演分析师写手、证据审计员、合规审查员和英文编辑。
+
+严格规则：
+1. 只能使用【事实与证据包】以及现有草稿里的事实；不得增加包中没有的数字、客户、认证、产品能力、市场排名、合同承诺或未来计划。
+2. 普通能力题应在安全范围内写得更完整：直接回答、实现/覆盖范围、客户价值、证据边界。中文通常 150–300 字；如果材料很少，可以更短，但不能空泛凑字。
+3. 如果现有草稿以 [REVIEW: 开头，保留该标记，不得把待确认事项伪装成已验证事实；应清楚写明已知事实、缺失信息、需要谁确认。
+4. 中文和英文必须事实一致。英文使用克制、专业的 analyst questionnaire 语气，不做机械逐字翻译。
+5. 不要输出 Markdown 代码块或任何解释。只输出可被 JSON.parse 解析的单行 JSON：{"zh":"中文答案","en":"English answer","status":"READY 或 NEEDS_REVIEW","note":"一句话说明证据边界"}。
+
+【现有中文草稿】
+${r.zh ?? ""}
+
+【现有英文草稿】
+${r.en ?? ""}
+
+【事实与证据包】
+${r.material ?? ""}`;
     case "custom":
       if (r.selection) {
         return `${header}用户在中栏选中了下面这段文字，并给出一条指令。请只按指令修改这段【选中文字】，其余未选中的内容一律保持不变、不要重写整段答案。只输出修改后的选中段落本身（不要附带未选中的内容，不要加引号或解释）。保留所有 [占位符]。\n\n【指令】\n${r.instruction ?? ""}${selectionBlock}${

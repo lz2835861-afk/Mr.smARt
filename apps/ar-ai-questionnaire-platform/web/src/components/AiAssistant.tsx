@@ -32,6 +32,7 @@ const MODE_LABEL: Record<AiMode, string> = {
   draft: "起草",
   custom: "自定义",
   ask: "提问",
+  "batch-rewrite": "专家团批量改写",
 };
 
 const AI_TOOLS: Tool[] = [
