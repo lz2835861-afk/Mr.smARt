@@ -13,11 +13,13 @@ import {
   buildLexiangQuery,
   searchLexiangKnowledge,
 } from "./_lexiang.js";
+import { requireAccess } from "./_access.js";
 import type { AiRequest, KnowledgeResponse } from "../src/lib/aiTypes";
 
 interface Req {
   method?: string;
   body?: unknown;
+  headers?: Record<string, string | undefined>;
 }
 interface Res {
   status: (code: number) => Res;
@@ -25,6 +27,7 @@ interface Res {
 }
 
 export default async function handler(req: Req, res: Res): Promise<void> {
+  if (!requireAccess(req, res)) return;
   if (req.method !== "POST") {
     res.status(405).json({ error: "Method not allowed" });
     return;

@@ -20,6 +20,7 @@ import { QuestionDetail } from "./components/QuestionDetail";
 import { EnglishReview } from "./components/EnglishReview";
 import { AiInfraDocView, AI_INFRA_SLUG } from "./components/AiInfraDocView";
 import { AuthGate } from "./components/AuthGate";
+import { AccessGate } from "./lib/accessGate";
 import { PresenceBar } from "./components/PresenceBar";
 import { AiAssistant } from "./components/AiAssistant";
 import { ResizableWorkspace } from "./components/ResizableWorkspace";
@@ -448,7 +449,7 @@ function QuestionnaireRoute({ auth }: { auth: ReturnType<typeof useAuth> }) {
 
 export default function App() {
   return (
-    <>
+    <AccessGate>
       <AuthGate>
         {(auth) => (
           <Routes>
@@ -462,6 +463,6 @@ export default function App() {
         )}
       </AuthGate>
       <Toaster richColors position="bottom-center" />
-    </>
+    </AccessGate>
   );
 }

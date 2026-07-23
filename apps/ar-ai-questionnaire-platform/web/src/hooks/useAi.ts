@@ -19,6 +19,7 @@ export function useAi(): UseAiResult {
       const r = await fetch("/api/ai", {
         method: "POST",
         headers: { "content-type": "application/json" },
+        credentials: "same-origin",
         body: JSON.stringify(req),
       });
       const j = (await r.json().catch(() => ({}))) as Partial<AiResponse> & { error?: string };

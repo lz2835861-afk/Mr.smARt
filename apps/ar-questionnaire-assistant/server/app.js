@@ -17,6 +17,21 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
+// ====== 访问令牌门（外部白名单）======
+// 仅允许携带有效 ar_access session cookie（由 /api/access 在校验门户令牌后下发）
+// 的请求访问 /api/*，外部直接调用一律 401。/api/health 例外（无害探针）。
+app.use('/api', (req, res, next) => {
+  if (req.path === '/health') return next();
+  const cookie = req.headers.cookie || '';
+  const ok = cookie
+    .split(';')
+    .some((c) => c.trim().startsWith('ar_access=1'));
+  if (!ok) {
+    return res.status(401).json({ error: 'unauthorized: access token required' });
+  }
+  next();
+});
+
 // ====== 数据源配置 ======
 const SOURCE_CONFIG = {
   lexiang: {
