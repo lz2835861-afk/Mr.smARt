@@ -21,9 +21,32 @@ export interface AiRequest {
   selection?: string;
 }
 
+export type AiSourceTier = "yunzhi" | "tencent-cloud-market";
+
+export interface AiSource {
+  title: string;
+  url: string;
+  snippet?: string;
+  tier: AiSourceTier;
+  /** Human-readable source label displayed in the UI. */
+  source: "云知知识库" | "腾讯云市场精选";
+}
+
+export interface KnowledgeResponse {
+  sources: AiSource[];
+  status: "ok" | "skipped" | "not-configured" | "error";
+  usedFallback: boolean;
+  primaryCount: number;
+  fallbackCount: number;
+  warning?: string;
+}
+
 export interface AiResponse {
   text: string;
   model?: string;
+  /** Sources retrieved server-side from Tencent Lexiang for this answer. */
+  sources?: AiSource[];
+  knowledge?: Omit<KnowledgeResponse, "sources">;
 }
 
 /** Request/response for POST /api/extract — uploads a file to Moonshot's

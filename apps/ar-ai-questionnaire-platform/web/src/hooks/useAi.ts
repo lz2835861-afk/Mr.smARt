@@ -2,7 +2,7 @@ import { useCallback, useState } from "react";
 import type { AiRequest, AiResponse } from "../lib/aiTypes";
 
 export interface UseAiResult {
-  run: (req: AiRequest) => Promise<string | null>;
+  run: (req: AiRequest) => Promise<AiResponse | null>;
   loading: boolean;
   error: string | null;
 }
@@ -12,7 +12,7 @@ export function useAi(): UseAiResult {
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
 
-  const run = useCallback(async (req: AiRequest): Promise<string | null> => {
+  const run = useCallback(async (req: AiRequest): Promise<AiResponse | null> => {
     setLoading(true);
     setError(null);
     try {
@@ -23,7 +23,12 @@ export function useAi(): UseAiResult {
       });
       const j = (await r.json().catch(() => ({}))) as Partial<AiResponse> & { error?: string };
       if (!r.ok) throw new Error(j.error || `HTTP ${r.status}`);
-      return j.text ?? "";
+      return {
+        text: j.text ?? "",
+        model: j.model,
+        sources: j.sources,
+        knowledge: j.knowledge,
+      };
     } catch (e) {
       setError((e as Error).message);
       return null;

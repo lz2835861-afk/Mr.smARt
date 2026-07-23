@@ -7,7 +7,7 @@ import type { Answers } from "../hooks/useQuestionnaire";
 import type { AnswerMeta } from "../hooks/useAnswerMeta";
 import type { TextareaSelection } from "../hooks/useMainColumnSelection";
 import { useAi } from "../hooks/useAi";
-import type { AiMode, ExtractRequest, ExtractResponse } from "../lib/aiTypes";
+import type { AiMode, AiSource, ExtractRequest, ExtractResponse } from "../lib/aiTypes";
 import {
   Composer,
   type ComposerContextOption,
@@ -72,6 +72,8 @@ interface ChatTurn {
   needsReference?: boolean;
   /** The user's question for this turn — copied to clipboard for the 云知 jump. */
   askText?: string;
+  /** Server-side sources retrieved from Lexiang and used by Kimi. */
+  sources?: AiSource[];
 }
 
 /**
@@ -124,6 +126,51 @@ function YunzhiNudge({ question }: { question?: string }) {
         className={"size-3.5 shrink-0 " + (copied ? "text-success" : "text-[#3b5bff]")}
       />
     </a>
+  );
+}
+
+function LexiangSources({ sources }: { sources: AiSource[] }) {
+  if (!sources.length) return null;
+  return (
+    <div className="rounded-xl border border-border bg-surface-secondary/40 p-2.5">
+      <div className="mb-1.5 flex items-center gap-1.5 text-[10px] font-semibold text-muted">
+        <Icon icon="gravity-ui:database" className="size-3 text-[#3b5bff]" />
+        腾讯乐享来源 · 云知优先
+      </div>
+      <div className="space-y-1">
+        {sources.map((source, index) => (
+          <a
+            key={`${source.url}-${index}`}
+            href={source.url}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="group flex items-start gap-2 rounded-lg px-2 py-1.5 hover:bg-surface"
+          >
+            <span
+              className={
+                "mt-0.5 shrink-0 rounded px-1.5 py-0.5 text-[9px] font-medium " +
+                (source.tier === "yunzhi"
+                  ? "bg-[#3b5bff]/10 text-[#3b5bff]"
+                  : "bg-[#00bbff]/10 text-[#008ec2]")
+              }
+            >
+              {source.tier === "yunzhi" ? "云知" : "云市场"}
+            </span>
+            <span className="min-w-0 flex-1">
+              <span className="block truncate text-[11px] text-foreground/80 group-hover:text-[#3b5bff]">
+                {source.title}
+              </span>
+              {source.snippet && (
+                <span className="mt-0.5 block line-clamp-2 text-[10px] leading-relaxed text-muted">
+                  {source.snippet}
+                </span>
+              )}
+            </span>
+            <Icon icon="gravity-ui:arrow-up-right-from-square" className="mt-0.5 size-3 shrink-0 text-muted" />
+          </a>
+        ))}
+      </div>
+    </div>
   );
 }
 
@@ -354,7 +401,7 @@ export function AiAssistant({
     setMaterial("");
     setLoadingLine(excerpt ? SELECTION_LOADING_LINE : pickLoadingLine());
 
-    const text = await run({
+    const result = await run({
       mode: effectiveMode,
       zh,
       material: materialNow || meta?.fact_notes || undefined,
@@ -365,7 +412,8 @@ export function AiAssistant({
       wordLimit: meta?.word_limit ?? undefined,
     });
 
-    if (text !== null) {
+    if (result !== null) {
+      const text = result.text;
       // The model appends a need-reference marker when it judges it lacks facts —
       // strip it (any bracket variant) and surface a Yunzhi nudge instead.
       const stripped = text.replace(NEED_REFERENCE_RE, "");
@@ -387,6 +435,7 @@ export function AiAssistant({
           text: cleanText,
           needsReference,
           askText: instruction || question.title,
+          sources: result.sources,
         },
       ]);
       if (appliable) {
@@ -495,6 +544,7 @@ export function AiAssistant({
                       <div className="rounded-xl border border-[#00bbff]/25 bg-[#00bbff]/5 px-3 py-2 text-[12px] leading-relaxed text-foreground/90 whitespace-pre-wrap">
                         {t.text}
                       </div>
+                      {t.sources && t.sources.length > 0 && <LexiangSources sources={t.sources} />}
                       {t.needsReference && <YunzhiNudge question={t.askText} />}
                     </div>
                   ),
