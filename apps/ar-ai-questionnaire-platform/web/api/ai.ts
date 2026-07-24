@@ -69,7 +69,11 @@ export default async function handler(req: Req, res: Res): Promise<void> {
           material: [body.material, lexiangContext].filter(Boolean).join("\n\n"),
         }
       : body;
-    const out = await handleAi(enrichedBody, process.env.KIMI_API_KEY, process.env.KIMI_MODEL);
+    // 双轨：配了 HUNYUAN_API_KEY 走境内混元，否则回退 Kimi。切换无需改代码。
+    const useHunyuan = !!process.env.HUNYUAN_API_KEY;
+    const apiKey = process.env.HUNYUAN_API_KEY || process.env.KIMI_API_KEY;
+    const aiModel = useHunyuan ? process.env.HUNYUAN_MODEL : process.env.KIMI_MODEL;
+    const out = await handleAi(enrichedBody, apiKey, aiModel, useHunyuan ? "hunyuan" : "kimi");
     const { sources, ...knowledgeMeta } = knowledge;
     res.status(200).json({ ...out, sources, knowledge: knowledgeMeta });
   } catch (e) {

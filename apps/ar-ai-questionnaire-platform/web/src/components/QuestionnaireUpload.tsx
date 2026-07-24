@@ -190,7 +190,7 @@ export function QuestionnaireUpload({ onImported }: Props) {
           onClick={() => inputRef.current?.click()}
           aria-label="点击或拖放问卷文件到这里"
         >
-          将 .xlsx、.xls 或 .csv 文件拖到这里，最大 10MB
+          将 .xlsx、.xls 或 .csv 文件拖到这里（不限大小，本地解析）
         </button>
       )}
 

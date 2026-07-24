@@ -9,20 +9,44 @@
  */
 import type { AiRequest, AiResponse } from "../src/lib/aiTypes";
 
-// Vercel cannot reach the mainland .cn API even from hkg1. Use Kimi's official
-// international endpoint and an API key created on platform.moonshot.ai.
-const BASE = "https://api.moonshot.ai/v1";
-const DEFAULT_MODEL = "kimi-k2.6";
-
 /**
- * Retry transient HTTP 429/5xx failures. Kimi K2.6 is the general-purpose model
- * used by this questionnaire assistant and accepts temperature 1.
+ * 双 provider（2026-07 合规改造）：
+ *   - "kimi"    → 境外 Kimi/Moonshot 国际站（Vercel 连不上 .cn，用 .ai）。过渡期默认。
+ *   - "hunyuan" → 境内 腾讯混元（api.hunyuan.cloud.tencent.com），迁内网合规态。
+ * 由 api/ai.ts 依据配置了哪个环境变量自动决定，切换无需改代码。
+ * 两家都是 OpenAI 兼容接口：POST {base}/chat/completions。
  */
-const FALLBACK_MODELS = ["kimi-k2.6"];
+export type AiProvider = "kimi" | "hunyuan";
+
+interface ProviderConfig {
+  base: string;
+  defaultModel: string;
+  fallbackModels: string[];
+  tempFor: (m: string) => number;
+  extraBody?: Record<string, unknown>;
+  label: string;
+}
+
+const PROVIDERS: Record<AiProvider, ProviderConfig> = {
+  kimi: {
+    base: "https://api.moonshot.ai/v1",
+    defaultModel: "kimi-k2.6",
+    fallbackModels: ["kimi-k2.6"],
+    tempFor: (m) => (/^kimi-k2/.test(m) ? 1 : 0.3),
+    label: "Kimi",
+  },
+  hunyuan: {
+    base: "https://api.hunyuan.cloud.tencent.com/v1",
+    defaultModel: "hunyuan-turbos-latest",
+    fallbackModels: ["hunyuan-turbos-latest", "hunyuan-standard", "hunyuan-lite"],
+    tempFor: () => 0.3,
+    extraBody: { enable_enhancement: true },
+    label: "混元",
+  },
+};
+
 const RETRIES_PER_MODEL = 2;
 const sleep = (ms: number) => new Promise((r) => setTimeout(r, ms));
-/** kimi-k2.* only accept temperature 1; everything else uses 0.3. */
-const tempFor = (m: string) => (/^kimi-k2/.test(m) ? 1 : 0.3);
 const EXPANSION_RE = /更详细|扩写|展开|丰富|补充细节|写长|增加细节/i;
 const compactText = (value: string) =>
   value.replace(/\s+/g, "").replace(/[，。；：、,.!?！？()[\]【】]/g, "");
@@ -128,8 +152,10 @@ export async function handleAi(
   body: AiRequest,
   apiKey: string | undefined,
   model: string | undefined,
+  provider: AiProvider = "kimi",
 ): Promise<AiResponse> {
-  if (!apiKey) throw new Error("KIMI_API_KEY 未配置（服务端）");
+  const cfg = PROVIDERS[provider] ?? PROVIDERS.kimi;
+  if (!apiKey) throw new Error(`${cfg.label} API Key 未配置（服务端）`);
   if (!body?.mode) throw new Error("缺少 mode");
 
   const messages = [
@@ -141,15 +167,15 @@ export async function handleAi(
 
   // Try the configured model first, then fall back across the family. Each
   // model gets a couple of retries with backoff before moving on.
-  const primary = model || DEFAULT_MODEL;
-  const models = [primary, ...FALLBACK_MODELS.filter((m) => m !== primary)];
+  const primary = model || cfg.defaultModel;
+  const models = [primary, ...cfg.fallbackModels.filter((m) => m !== primary)];
 
-  let lastError = "Kimi 调用失败";
+  let lastError = `${cfg.label}调用失败`;
   for (const usedModel of models) {
     for (let attempt = 1; attempt <= RETRIES_PER_MODEL; attempt++) {
       let resp: Response;
       try {
-        resp = await fetch(`${BASE}/chat/completions`, {
+        resp = await fetch(`${cfg.base}/chat/completions`, {
           method: "POST",
           headers: {
             "content-type": "application/json",
@@ -157,8 +183,9 @@ export async function handleAi(
           },
           body: JSON.stringify({
             model: usedModel,
-            temperature: tempFor(usedModel),
+            temperature: cfg.tempFor(usedModel),
             messages,
+            ...(cfg.extraBody ?? {}),
           }),
         });
       } catch (error) {
@@ -169,7 +196,7 @@ export async function handleAi(
           .filter(Boolean)
           .join(": ");
         const wrapped = new Error(
-          `Kimi API 网络连接失败（${new URL(BASE).hostname}）：${detail}`,
+          `${cfg.label} API 网络连接失败（${new URL(cfg.base).hostname}）：${detail}`,
         ) as Error & { cause?: unknown };
         wrapped.cause = error;
         throw wrapped;
@@ -187,18 +214,18 @@ export async function handleAi(
               compactText(originalText);
           if (!unchangedExpansion) return { text, model: usedModel };
 
-          lastError = "Kimi 未产生实质扩写，请补充事实材料或换一个更具体的指令";
+          lastError = `${cfg.label}未产生实质扩写，请补充事实材料或换一个更具体的指令`;
           if (attempt < RETRIES_PER_MODEL) {
             await sleep(500 * attempt);
             continue;
           }
           break;
         }
-        lastError = "Kimi 返回空内容";
+        lastError = `${cfg.label}返回空内容`;
         break; // empty body — try the next model
       }
 
-      lastError = json.error?.message || `Kimi API HTTP ${resp.status}`;
+      lastError = json.error?.message || `${cfg.label} API HTTP ${resp.status}`;
       const overloaded =
         resp.status === 429 ||
         resp.status >= 500 ||

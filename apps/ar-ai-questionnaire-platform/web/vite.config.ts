@@ -16,7 +16,12 @@ import type { AiRequest, ExtractRequest, KnowledgeResponse } from "./src/lib/aiT
  * node-side env (NOT exposed to the client bundle) so the AI assistant works
  * under `vite dev` exactly like in production.
  */
-function aiDevProxy(apiKey?: string, model?: string, lexiangToken?: string): Plugin {
+function aiDevProxy(
+  apiKey?: string,
+  model?: string,
+  lexiangToken?: string,
+  provider: "kimi" | "hunyuan" = "kimi",
+): Plugin {
   return {
     name: "ai-dev-proxy",
     configureServer(server) {
@@ -57,7 +62,7 @@ function aiDevProxy(apiKey?: string, model?: string, lexiangToken?: string): Plu
             const enrichedBody = context
               ? { ...body, material: [body.material, context].filter(Boolean).join("\n\n") }
               : body;
-            const out = await handleAi(enrichedBody, apiKey, model);
+            const out = await handleAi(enrichedBody, apiKey, model, provider);
             const { sources, ...knowledgeMeta } = knowledge;
             res.setHeader("content-type", "application/json");
             res.end(JSON.stringify({ ...out, sources, knowledge: knowledgeMeta }));
@@ -141,7 +146,12 @@ export default defineConfig(({ mode }) => {
     plugins: [
       react(),
       tailwindcss(),
-      aiDevProxy(env.KIMI_API_KEY, env.KIMI_MODEL, env.LEXIANG_TOKEN),
+      aiDevProxy(
+        env.HUNYUAN_API_KEY || env.KIMI_API_KEY,
+        env.HUNYUAN_API_KEY ? env.HUNYUAN_MODEL : env.KIMI_MODEL,
+        env.LEXIANG_TOKEN,
+        env.HUNYUAN_API_KEY ? "hunyuan" : "kimi",
+      ),
     ],
     server: { port: 5173, host: true },
   };

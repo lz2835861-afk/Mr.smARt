@@ -2,7 +2,6 @@ import * as XLSX from "xlsx";
 import type { Question, Section } from "../data/questionnaire";
 import type { Questionnaire } from "../data/questionnaires";
 
-const MAX_FILE_SIZE = 10 * 1024 * 1024;
 const ALLOWED_EXTENSIONS = new Set(["xlsx", "xls", "csv"]);
 const CJK_RE = /[\u3400-\u9fff\uf900-\ufaff]/;
 
@@ -222,7 +221,7 @@ export async function parseQuestionnaireFile(
     throw new Error("仅支持 .xlsx、.xls 或 .csv 文件。");
   }
   if (file.size === 0) throw new Error("文件为空，请选择包含问卷题目的文件。");
-  if (file.size > MAX_FILE_SIZE) throw new Error("文件不能超过 10MB。");
+  // 不再限制文件大小（本地浏览器解析，文件不出境）。
   if (!isValidDate(metadata.deadline)) {
     throw new Error("截止日期必须是合法的 YYYY-MM-DD 日期。");
   }

@@ -263,7 +263,6 @@ export function AiAssistant({
 
   /** Upload a file → server extracts its text (Moonshot Files API) → use as material. */
   const onPickFile = useCallback(async (file: File) => {
-    const MAX_MB = 3;
     const id = `up-${file.name}-${file.size}`;
     const baseFile = {
       id,
@@ -271,11 +270,7 @@ export function AiAssistant({
       type: file.type || "application/octet-stream",
       url: "",
     };
-    if (file.size > MAX_MB * 1024 * 1024) {
-      setMaterial("");
-      setAttachedFiles([{ ...baseFile, description: `❌ 文件超过 ${MAX_MB}MB，请换小一点的` }]);
-      return;
-    }
+    // 不再限制文件大小（本地解析，文件不出境）。
     setMaterial("");
     setExtracting(true);
     setAttachedFiles([{ ...baseFile, isUploading: true, description: "解析中…" }]);
@@ -290,6 +285,7 @@ export function AiAssistant({
       const r = await fetch("/api/extract", {
         method: "POST",
         headers: { "content-type": "application/json" },
+        credentials: "same-origin",
         body: JSON.stringify(req),
       });
       const j = (await r.json().catch(() => ({}))) as Partial<ExtractResponse> & { error?: string };
