@@ -33,6 +33,7 @@ import {
 } from "./lib/locale";
 import { STATE_INDICATOR } from "./lib/workflowStates";
 import { useMainColumnSelection } from "./hooks/useMainColumnSelection";
+import { refreshCloudQuestionnaireCache } from "./lib/contentRepository";
 
 function StateDot({ state }: { state: AnswerState }) {
   return <span className={`size-2 rounded-full ${STATE_INDICATOR[state]}`} />;
@@ -56,8 +57,10 @@ function AppInner({ auth, questionnaire }: InnerProps) {
   const navigate = useNavigate();
   const { questionId: routeQuestionId } = useParams();
   const [searchParams, setSearchParams] = useSearchParams();
-  const remote = auth.status === "signed-in" && !questionnaire.imported;
-  const questionnaires = getAllQuestionnaires();
+  // Imported questionnaires are also remote-synced once Supabase is configured;
+  // their field ids are content-hash namespaced, so they do not collide.
+  const remote = auth.status === "signed-in";
+  const questionnaires = getAllQuestionnaires({ includeHidden: true });
   const q = useRemoteAnswers({ remote, questionnaire });
   const meta = useAnswerMeta({ remote, questionnaire });
   const displayName = auth.user?.user_metadata?.display_name as string | undefined;
@@ -442,7 +445,32 @@ function AppInner({ auth, questionnaire }: InnerProps) {
  *  Unknown slug → redirect home. Keyed by slug so switching remounts cleanly. */
 function QuestionnaireRoute({ auth }: { auth: ReturnType<typeof useAuth> }) {
   const { slug } = useParams();
-  const questionnaire = getQuestionnaireBySlug(slug);
+  const [questionnaire, setQuestionnaire] = useState<Questionnaire | undefined>(() => getQuestionnaireBySlug(slug));
+  const [loading, setLoading] = useState(!questionnaire);
+
+  useEffect(() => {
+    const local = getQuestionnaireBySlug(slug);
+    if (local) {
+      setQuestionnaire(local);
+      setLoading(false);
+      return;
+    }
+    let cancelled = false;
+    setLoading(true);
+    void refreshCloudQuestionnaireCache()
+      .then(() => {
+        if (!cancelled) setQuestionnaire(getQuestionnaireBySlug(slug));
+      })
+      .catch(() => undefined)
+      .finally(() => {
+        if (!cancelled) setLoading(false);
+      });
+    return () => {
+      cancelled = true;
+    };
+  }, [slug]);
+
+  if (loading) return <div className="grid min-h-dvh place-items-center text-sm text-muted">正在同步问卷…</div>;
   if (!questionnaire) return <Navigate to="/" replace />;
   return <AppInner key={questionnaire.slug} auth={auth} questionnaire={questionnaire} />;
 }
@@ -453,7 +481,7 @@ export default function App() {
       <AuthGate>
         {(auth) => (
           <Routes>
-            <Route path="/" element={<HomePage />} />
+            <Route path="/" element={<HomePage auth={auth} />} />
             <Route path={`/${AI_INFRA_SLUG}`} element={<AiInfraDocView />} />
             <Route path={`/${AI_INFRA_SLUG}/:questionId`} element={<AiInfraDocView />} />
             <Route path="/q/:slug" element={<QuestionnaireRoute auth={auth} />} />

@@ -60,6 +60,12 @@ export interface Questionnaire {
   sourceName?: string;
   /** ISO timestamp for a browser-imported questionnaire. */
   importedAt?: string;
+  /** Whether the questionnaire is shown in the shared workspace list. */
+  published?: boolean;
+  /** True when this definition is backed by the shared Supabase catalog. */
+  remoteManaged?: boolean;
+  /** Optional Supabase Storage path for the original uploaded report. */
+  reportPath?: string;
   sections: Section[];
 }
 
@@ -129,6 +135,7 @@ export const DEFAULT_QUESTIONNAIRE_ID = "gartner-container-2026";
 
 export const ACTIVE_QUESTIONNAIRE_STORAGE_KEY = "active_questionnaire_id";
 export const IMPORTED_QUESTIONNAIRES_STORAGE_KEY = "imported_questionnaires_v1";
+export const CLOUD_QUESTIONNAIRES_STORAGE_KEY = "cloud_questionnaires_cache_v1";
 
 function isQuestionnaire(value: unknown): value is Questionnaire {
   if (!value || typeof value !== "object") return false;
@@ -143,10 +150,10 @@ function isQuestionnaire(value: unknown): value is Questionnaire {
   );
 }
 
-export function getImportedQuestionnaires(): Questionnaire[] {
+function readQuestionnaireCache(key: string): Questionnaire[] {
   if (typeof window === "undefined") return [];
   try {
-    const raw = window.localStorage.getItem(IMPORTED_QUESTIONNAIRES_STORAGE_KEY);
+    const raw = window.localStorage.getItem(key);
     if (!raw) return [];
     const parsed: unknown = JSON.parse(raw);
     if (!Array.isArray(parsed) || !parsed.every(isQuestionnaire)) return [];
@@ -156,8 +163,26 @@ export function getImportedQuestionnaires(): Questionnaire[] {
   }
 }
 
-export function getAllQuestionnaires(): Questionnaire[] {
-  return [...BUILT_IN_QUESTIONNAIRES, ...getImportedQuestionnaires()];
+export function getImportedQuestionnaires(): Questionnaire[] {
+  return readQuestionnaireCache(IMPORTED_QUESTIONNAIRES_STORAGE_KEY);
+}
+
+export function getCloudQuestionnaires(): Questionnaire[] {
+  return readQuestionnaireCache(CLOUD_QUESTIONNAIRES_STORAGE_KEY);
+}
+
+export function cacheCloudQuestionnaires(questionnaires: Questionnaire[]): void {
+  if (typeof window === "undefined") return;
+  window.localStorage.setItem(CLOUD_QUESTIONNAIRES_STORAGE_KEY, JSON.stringify(questionnaires));
+}
+
+export function getAllQuestionnaires(options?: { includeHidden?: boolean }): Questionnaire[] {
+  const byId = new Map<string, Questionnaire>();
+  BUILT_IN_QUESTIONNAIRES.forEach((q) => byId.set(q.id, { ...q, published: q.published ?? true }));
+  getImportedQuestionnaires().forEach((q) => byId.set(q.id, q));
+  getCloudQuestionnaires().forEach((q) => byId.set(q.id, q));
+  const all = Array.from(byId.values());
+  return options?.includeHidden ? all : all.filter((q) => q.published !== false);
 }
 
 export function saveImportedQuestionnaire(questionnaire: Questionnaire): void {
@@ -181,7 +206,7 @@ export function deleteImportedQuestionnaire(id: string): void {
 
 /** Look up by stable id (storage scope, registry default). */
 export function getQuestionnaire(id: string | null | undefined): Questionnaire {
-  const questionnaires = getAllQuestionnaires();
+  const questionnaires = getAllQuestionnaires({ includeHidden: true });
   return (
     questionnaires.find((q) => q.id === id) ??
     questionnaires.find((q) => q.id === DEFAULT_QUESTIONNAIRE_ID) ??
@@ -192,5 +217,5 @@ export function getQuestionnaire(id: string | null | undefined): Questionnaire {
 /** Look up by URL slug. Returns undefined for an unknown slug so the route can
  *  redirect home instead of silently falling back to a default. */
 export function getQuestionnaireBySlug(slug: string | null | undefined): Questionnaire | undefined {
-  return getAllQuestionnaires().find((q) => q.slug === slug);
+  return getAllQuestionnaires({ includeHidden: true }).find((q) => q.slug === slug);
 }

@@ -12,6 +12,8 @@ import {
   saveImportedQuestionnaire,
   type Questionnaire,
 } from "../data/questionnaires";
+import { saveQuestionnaireToCloud } from "../lib/contentRepository";
+import { isRemoteEnabled } from "../lib/supabase";
 
 const ACCEPTED_FILES = ".xlsx,.xls,.csv";
 
@@ -43,8 +45,13 @@ function metadataFor(file: File): QuestionnaireImportMetadata {
 
 function isValidDate(value: string): boolean {
   if (!/^\d{4}-\d{2}-\d{2}$/.test(value)) return false;
-  const date = new Date(`${value}T00:00:00`);
-  return !Number.isNaN(date.getTime()) && date.toISOString().slice(0, 10) === value;
+  const [year, month, day] = value.split("-").map(Number);
+  const date = new Date(year, month - 1, day);
+  return (
+    date.getFullYear() === year &&
+    date.getMonth() === month - 1 &&
+    date.getDate() === day
+  );
 }
 
 export function QuestionnaireUpload({ onImported }: Props) {
@@ -52,12 +59,15 @@ export function QuestionnaireUpload({ onImported }: Props) {
   const inputRef = useRef<HTMLInputElement>(null);
   const [parsed, setParsed] = useState<ParsedQuestionnaire | null>(null);
   const [metadata, setMetadata] = useState<QuestionnaireImportMetadata | null>(null);
+  const [sourceFile, setSourceFile] = useState<File | null>(null);
   const [loading, setLoading] = useState(false);
+  const [saving, setSaving] = useState(false);
   const [dragging, setDragging] = useState(false);
 
   const reset = () => {
     setParsed(null);
     setMetadata(null);
+    setSourceFile(null);
     setDragging(false);
     if (inputRef.current) inputRef.current.value = "";
   };
@@ -69,6 +79,7 @@ export function QuestionnaireUpload({ onImported }: Props) {
       const result = await parseQuestionnaireFile(file, initialMetadata);
       setParsed(result);
       setMetadata(initialMetadata);
+      setSourceFile(file);
       toast.success(`已解析 ${result.questionCount} 道题，请确认问卷信息。`);
     } catch (error) {
       reset();
@@ -78,7 +89,7 @@ export function QuestionnaireUpload({ onImported }: Props) {
     }
   };
 
-  const createQuestionnaire = () => {
+  const createQuestionnaire = async () => {
     if (!parsed || !metadata) return;
     const title = metadata.title.trim();
     const firm = metadata.firm.trim();
@@ -96,21 +107,41 @@ export function QuestionnaireUpload({ onImported }: Props) {
       ...parsed.questionnaire,
       label: title,
       titleZh: title,
-      subtitle: `${firm} · 本机导入`,
+      subtitle: `${firm} · ${isRemoteEnabled ? "共享导入" : "本机导入"}`,
       firm,
       vendor,
       products: [{ name: vendor, abbr: vendor.slice(0, 12) }],
       nextMilestone: { label: "截止日期", date: metadata.deadline },
       importedAt: new Date().toISOString(),
+      published: !isRemoteEnabled,
     };
 
+    setSaving(true);
     try {
+      // Always keep a local copy first, so a temporary cloud failure never blocks filling.
       saveImportedQuestionnaire(questionnaire);
-      onImported?.(questionnaire);
-      toast.success("问卷已保存到本机浏览器。");
-      navigate(`/q/${questionnaire.slug}`);
-    } catch {
-      toast.error("保存失败，浏览器本地存储空间可能不足。");
+      let saved = questionnaire;
+      let cloudWarning: string | null = null;
+      if (isRemoteEnabled) {
+        try {
+          saved = await saveQuestionnaireToCloud(questionnaire, sourceFile ?? undefined);
+          saveImportedQuestionnaire(saved);
+        } catch (error) {
+          cloudWarning = error instanceof Error ? error.message : "云端同步失败";
+        }
+      }
+      onImported?.(saved);
+      const firstQuestionId = saved.sections[0]?.questions[0]?.id;
+      if (cloudWarning) {
+        toast.warning(`已保存到本机并进入填写；${cloudWarning}`);
+      } else {
+        toast.success(isRemoteEnabled ? "问卷已保存到共享管理系统，可直接填写。" : "问卷已保存到本机浏览器。");
+      }
+      navigate(firstQuestionId ? `/q/${saved.slug}/${firstQuestionId}` : `/q/${saved.slug}`);
+    } catch (error) {
+      toast.error(error instanceof Error ? error.message : "问卷保存失败。");
+    } finally {
+      setSaving(false);
     }
   };
 
@@ -146,11 +177,13 @@ export function QuestionnaireUpload({ onImported }: Props) {
               <h2 id="questionnaire-upload-title" className="text-base font-semibold text-foreground">
                 上传问卷
               </h2>
-              <p className="text-xs text-muted">支持 Excel / CSV，文件仅在当前浏览器中解析</p>
+              <p className="text-xs text-muted">支持 Excel / CSV，本地解析后可直接进入填写</p>
             </div>
           </div>
           <p className="mt-3 text-xs leading-relaxed text-warning">
-            本机导入：问卷定义和填写内容不会作为团队共享问卷发布。
+            {isRemoteEnabled
+              ? "共享导入：原始报告、问卷结构和填写内容将同步到 Supabase；默认不公开展示。"
+              : "本机导入：配置 Supabase 前，问卷定义和填写内容只保存在当前浏览器。"}
           </p>
         </div>
         <div>
@@ -276,8 +309,8 @@ export function QuestionnaireUpload({ onImported }: Props) {
             <Button variant="outline" size="sm" onPress={() => inputRef.current?.click()}>
               重新选择文件
             </Button>
-            <Button variant="primary" size="sm" onPress={createQuestionnaire}>
-              创建并进入问卷
+            <Button variant="primary" size="sm" isPending={saving} isDisabled={saving} onPress={() => void createQuestionnaire()}>
+              {saving ? "保存中…" : "创建并进入问卷"}
               <Icon icon="gravity-ui:arrow-right" className="size-3.5" />
             </Button>
           </div>

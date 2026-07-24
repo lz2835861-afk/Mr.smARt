@@ -58,7 +58,7 @@ export function SiteNavbar() {
           <span className="inline-flex size-8 items-center justify-center rounded-lg bg-sky-500/10 text-sky-600 shadow-md shadow-sky-500/25">
             <Icon icon="gravity-ui:cloud" className="size-4" />
           </span>
-          <span className="text-base font-semibold text-zinc-900">AR 问卷协作台</span>
+          <span className="text-base font-semibold text-zinc-900">AR 智能问卷工作台</span>
         </Link>
       }
       cta={

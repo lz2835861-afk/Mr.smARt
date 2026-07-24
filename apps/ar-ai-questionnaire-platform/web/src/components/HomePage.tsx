@@ -4,13 +4,17 @@ import { Button } from "@heroui/react";
 import { Icon } from "@iconify/react";
 import {
   deleteImportedQuestionnaire,
-  getAllQuestionnaires,
   type Questionnaire,
   type QuestionnaireProduct,
 } from "../data/questionnaires";
 import { exportQuestionnaireXlsx, loadAnswersForExport, localAnswers, questionProgress } from "../lib/exportXlsx";
 import { SiteNavbar } from "./SiteNavbar";
 import { QuestionnaireUpload } from "./QuestionnaireUpload";
+import { ManagementPanel } from "./ManagementPanel";
+import { PublishedReports } from "./PublishedReports";
+import { useQuestionnaireCatalog } from "../hooks/useQuestionnaireCatalog";
+import type { UseAuthResult } from "../hooks/useAuth";
+import { roleForName } from "../lib/supabase";
 import {
   AI_INFRA_FIRM,
   AI_INFRA_QUESTIONS,
@@ -95,7 +99,12 @@ function QuestionnaireCard({ q, onDeleted }: { q: Questionnaire; onDeleted: () =
         <div className="flex shrink-0 flex-wrap justify-end gap-1.5">
           {q.imported && (
             <span className="rounded-md bg-warning/10 px-2 py-0.5 text-[11px] font-semibold text-warning">
-              本机导入
+              {q.remoteManaged ? "共享导入" : "本机导入"}
+            </span>
+          )}
+          {q.published === false && (
+            <span className="rounded-md bg-default-100 px-2 py-0.5 text-[11px] font-semibold text-muted">
+              未展示
             </span>
           )}
           <span className="rounded-md bg-accent/10 px-2 py-0.5 text-[11px] font-semibold text-accent">
@@ -152,7 +161,7 @@ function QuestionnaireCard({ q, onDeleted }: { q: Questionnaire; onDeleted: () =
             <Icon icon="gravity-ui:arrow-down-to-line" className="size-3.5" />
             {exporting ? "导出中…" : "导出 Excel"}
           </Button>
-          {q.imported && (
+          {q.imported && !q.remoteManaged && (
             <Button variant="ghost" size="sm" onPress={onDelete} aria-label={`删除 ${q.titleZh}`}>
               <Icon icon="gravity-ui:trash-bin" className="size-3.5" />
               删除
@@ -228,28 +237,49 @@ function AiInfraCard() {
   );
 }
 
-/** Landing page — a launcher listing the in-progress questionnaires. */
-export function HomePage() {
-  const [questionnaires, setQuestionnaires] = useState<Questionnaire[]>(getAllQuestionnaires);
-  const refreshQuestionnaires = () => setQuestionnaires(getAllQuestionnaires());
+/** Landing page — a launcher and management surface for questionnaires. */
+export function HomePage({ auth }: { auth: UseAuthResult }) {
+  const displayName = auth.user?.user_metadata?.display_name as string | undefined;
+  const canManage = auth.status === "remote-disabled" || roleForName(displayName) === "ar";
+  const catalog = useQuestionnaireCatalog(canManage);
+
+  const refreshAfterImport = () => {
+    catalog.refreshLocal();
+    void catalog.reload();
+  };
 
   return (
     <div className="min-h-dvh bg-background">
       <SiteNavbar />
       <main className="mx-auto max-w-5xl px-6 py-10">
         <header className="mb-8">
-          <h1 className="text-2xl font-semibold text-foreground">进行中的问卷</h1>
+          <h1 className="text-2xl font-semibold text-foreground">AR 智能问卷工作台</h1>
           <p className="mt-1 text-sm text-muted">
-            选择一份分析师问卷进入协作填写 · Analyst Questionnaire Workspace
+            上传问卷、调用智能体起草、多人协作填写，并统一管理报告展示
           </p>
         </header>
 
-        <QuestionnaireUpload onImported={refreshQuestionnaires} />
+        {canManage && (
+          <ManagementPanel questionnaires={catalog.questionnaires} onChanged={catalog.reload} />
+        )}
 
+        <QuestionnaireUpload onImported={refreshAfterImport} />
+        <PublishedReports />
+
+        {catalog.error && (
+          <div className="mb-4 rounded-xl border border-warning/30 bg-warning/10 px-4 py-3 text-xs text-foreground">
+            {catalog.error}；当前展示本机缓存。
+          </div>
+        )}
+
+        <div className="mb-3 flex items-center justify-between text-xs text-muted">
+          <span>{canManage ? "全部问卷（含未展示）" : "团队正在展示的问卷"}</span>
+          {catalog.loading && <span>正在同步云端目录…</span>}
+        </div>
         <div className="grid gap-4 sm:grid-cols-2">
           <AiInfraCard />
-          {questionnaires.map((q) => (
-            <QuestionnaireCard key={q.id} q={q} onDeleted={refreshQuestionnaires} />
+          {catalog.questionnaires.map((q) => (
+            <QuestionnaireCard key={q.id} q={q} onDeleted={refreshAfterImport} />
           ))}
         </div>
       </main>
